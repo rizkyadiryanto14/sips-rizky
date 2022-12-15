@@ -1,0 +1,356 @@
+ERROR - 2022-12-15 05:58:38 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 05:58:40 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 05:59:11 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 68
+ERROR - 2022-12-15 06:18:53 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 06:19:16 --> 404 Page Not Found: kaprodi/Dashboard/index
+ERROR - 2022-12-15 06:22:24 --> 404 Page Not Found: kaprodi/Dashboard/index
+ERROR - 2022-12-15 06:22:25 --> 404 Page Not Found: kaprodi/Dashboard/index
+ERROR - 2022-12-15 06:22:46 --> 404 Page Not Found: kaprodi/Dashboard/index
+ERROR - 2022-12-15 06:26:07 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 68
+ERROR - 2022-12-15 06:46:26 --> 404 Page Not Found: admin/Pengumuman_skripsi/index
+ERROR - 2022-12-15 06:48:24 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 68
+ERROR - 2022-12-15 06:52:26 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 68
+ERROR - 2022-12-15 07:25:10 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 68
+ERROR - 2022-12-15 08:31:32 --> Query error: Unknown column 'asbtrak' in 'field list' - Invalid query: INSERT INTO `daftar_judul` (`nim`, `nama`, `asbtrak`, `tahun_lulul`) VALUES ('1901013044', 'Rizky', 'ini adalah abtrak', '2019')
+ERROR - 2022-12-15 08:32:25 --> Query error: Unknown column 'asbtrak' in 'field list' - Invalid query: INSERT INTO `daftar_judul` (`nim`, `nama`, `asbtrak`, `tahun_lulul`) VALUES ('1901013044', 'Rizky', 'ini adalah abstrak', '2019')
+ERROR - 2022-12-15 08:38:05 --> 404 Page Not Found: %20admin/Daftar_judul
+ERROR - 2022-12-15 08:39:34 --> 404 Page Not Found: %20admin/daftar_judul
+ERROR - 2022-12-15 08:41:16 --> 404 Page Not Found: %20admin/Daftar_judul
+ERROR - 2022-12-15 08:42:35 --> 404 Page Not Found: admin/Admin/Daftar_judul
+ERROR - 2022-12-15 08:43:01 --> Query error: Unknown column 'asbtrak' in 'field list' - Invalid query: INSERT INTO `daftar_judul` (`nim`, `nama`, `asbtrak`, `tahun_lulus`) VALUES ('dasdas', 'sadasd', 'asdasd', '2019')
+ERROR - 2022-12-15 09:33:45 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 68
+ERROR - 2022-12-15 09:33:46 --> Severity: Warning --> filesize(): stat failed for /opt/lampp/temp//ci_sessione20d92f472042405dbdb7f8300826a59f96e495f /opt/lampp/htdocs/olivera/system/libraries/Session/drivers/Session_files_driver.php 208
+ERROR - 2022-12-15 09:33:46 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 09:34:10 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 68
+ERROR - 2022-12-15 09:34:41 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 68
+ERROR - 2022-12-15 09:35:00 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 68
+ERROR - 2022-12-15 09:35:08 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 68
+ERROR - 2022-12-15 09:39:27 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 68
+ERROR - 2022-12-15 09:40:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 09:40:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 09:40:40 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 68
+ERROR - 2022-12-15 09:40:44 --> Severity: Warning --> unlink(/opt/lampp/htdocs/olivera/cdn/vendor/skripsi/sk_tim/): No such file or directory /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 303
+ERROR - 2022-12-15 09:40:44 --> Severity: Warning --> unlink(/opt/lampp/htdocs/olivera/cdn/vendor/skripsi/persetujuan/): No such file or directory /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 304
+ERROR - 2022-12-15 09:40:44 --> Severity: Warning --> unlink(/opt/lampp/htdocs/olivera/cdn/vendor/skripsi/bukti_konsultasi/): No such file or directory /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 305
+ERROR - 2022-12-15 09:55:08 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 09:57:19 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 10:59:45 --> Query error: Unknown column 'deadline' in 'field list' - Invalid query: UPDATE `proposal_mahasiswa` SET `status` = '0', `deadline` = NULL
+WHERE `proposal_mahasiswa`.`id` = '40'
+ERROR - 2022-12-15 11:00:53 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 11:01:21 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:01:21 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:01:26 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:01:26 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:01:33 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:01:33 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:01:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 11:01:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 11:02:06 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:02:06 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:03:00 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:03:00 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:03:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 11:03:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 11:03:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 11:03:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 11:03:07 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:03:07 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:05:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 11:05:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 11:05:07 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:05:07 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:05:13 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:05:13 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:11:52 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:11:52 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:12:51 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:12:51 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:15:13 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:15:13 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:17:29 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:17:29 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:24:30 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 11:25:30 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 11:26:00 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-15 11:26:00 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:26:28 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-15 11:26:28 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:27:07 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:27:07 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:27:13 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:27:13 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:27:22 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-15 11:27:22 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:27:28 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-15 11:27:28 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:30:03 --> Query error: Unknown column 'seminar.dosen_penguji_id' in 'field list' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-15 11:30:03 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:30:07 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 11:30:07 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 11:30:07 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 17:30:55 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Skripsi_model.php 68
+ERROR - 2022-12-15 11:30:59 --> Query error: Unknown column 'seminar.dosen_penguji_id' in 'field list' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '3'
+ERROR - 2022-12-15 11:30:59 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:37:06 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '3'
+ERROR - 2022-12-15 11:37:06 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:37:10 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 11:42:15 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:42:15 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:42:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 11:42:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 11:42:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 11:42:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 11:42:25 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:42:25 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 11:45:26 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 11:45:26 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 11:45:26 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 11:45:26 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 14:02:25 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 14:02:43 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 14:02:43 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 14:02:51 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 14:02:51 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 14:02:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 14:02:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 14:02:57 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_penguji_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+ERROR - 2022-12-15 14:02:57 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-15 14:22:40 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Seminar' does not have a method 'index_get' /opt/lampp/htdocs/olivera/application/libraries/REST_Controller.php 742
+ERROR - 2022-12-15 14:41:33 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 14:43:51 --> 404 Page Not Found: api/Seminar_mahasiswa/destroy
+ERROR - 2022-12-15 14:43:53 --> 404 Page Not Found: api/Seminar_mahasiswa/destroy
+ERROR - 2022-12-15 14:52:52 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 14:58:36 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 15:24:40 --> Query error: Unknown column 'd.nama' in 'field list' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_id`, `seminar`.`dosen_penguji_id`, `seminar`.`tempat`, `seminar`.`surat_permohonan`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `mahasiswa`.`id` as `mahasiswa_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`email`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+WHERE `seminar`.`id` = '25'
+ERROR - 2022-12-15 15:24:40 --> Severity: error --> Exception: Call to a member function row_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 139
+ERROR - 2022-12-15 15:25:25 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_id`, `seminar`.`dosen_penguji_id`, `seminar`.`tempat`, `seminar`.`surat_permohonan`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `mahasiswa`.`id` as `mahasiswa_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`email`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `seminar`.`id` = '25'
+ERROR - 2022-12-15 15:25:25 --> Severity: error --> Exception: Call to a member function row_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 141
+ERROR - 2022-12-15 15:30:42 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 15:45:36 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 15:46:01 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 16:18:07 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 16:23:48 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 17:02:53 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 17:12:25 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-15 17:12:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 17:12:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 17:12:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 17:12:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 17:13:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 17:13:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 17:14:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 17:14:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 17:14:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 17:14:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 17:15:12 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 17:15:12 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 17:16:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 17:16:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 18:57:07 --> Severity: Warning --> unlink(./assets/essence/img/tandatangan/): Is a directory /opt/lampp/htdocs/olivera/application/controllers/dosen/Seminar.php 40
+ERROR - 2022-12-15 18:57:07 --> Query error: Unknown column 'tandatangan' in 'field list' - Invalid query: UPDATE `seminar` SET `tandatangan` = ''
+WHERE `id` = '25'
+ERROR - 2022-12-15 18:57:07 --> 404 Page Not Found: Seminar/tandatangan
+ERROR - 2022-12-15 18:58:14 --> Severity: Warning --> unlink(./assets/essence/img/tandatangan/): Is a directory /opt/lampp/htdocs/olivera/application/controllers/dosen/Seminar.php 40
+ERROR - 2022-12-15 18:58:14 --> Query error: Unknown column 'tandatangan' in 'field list' - Invalid query: UPDATE `seminar` SET `tandatangan` = ''
+WHERE `id` = '25'
+ERROR - 2022-12-15 18:58:14 --> 404 Page Not Found: dosen/Seminar/tandatangan
+ERROR - 2022-12-15 19:00:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:00:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:00:44 --> Severity: Warning --> unlink(./assets/essence/img/tandatangan/): Is a directory /opt/lampp/htdocs/olivera/application/controllers/dosen/Seminar.php 40
+ERROR - 2022-12-15 19:00:44 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ''
+WHERE `id` = '25'' at line 1 - Invalid query: UPDATE `seminar` SET  = ''
+WHERE `id` = '25'
+ERROR - 2022-12-15 19:00:44 --> 404 Page Not Found: dosen/Seminar/tandatangan
+ERROR - 2022-12-15 19:02:29 --> 404 Page Not Found: dosen/Seminar/tandatangan
+ERROR - 2022-12-15 19:02:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:02:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:02:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:02:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:02:39 --> Severity: Warning --> unlink(./assets/essence/img/tandatangan/): Is a directory /opt/lampp/htdocs/olivera/application/controllers/dosen/Seminar.php 40
+ERROR - 2022-12-15 19:02:39 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ''
+WHERE `id` = '25'' at line 1 - Invalid query: UPDATE `seminar` SET  = ''
+WHERE `id` = '25'
+ERROR - 2022-12-15 19:02:39 --> 404 Page Not Found: dosen/Seminar/tandatangan
+ERROR - 2022-12-15 19:03:54 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:03:54 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:03:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:03:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:04:15 --> Severity: Warning --> unlink(./assets/essence/img/tandatangan/): Is a directory /opt/lampp/htdocs/olivera/application/controllers/dosen/Seminar.php 40
+ERROR - 2022-12-15 19:04:15 --> Query error: Unknown column 'download.jpeg' in 'field list' - Invalid query: UPDATE `seminar` SET `download`.`jpeg` = ''
+WHERE `id` = '25'
+ERROR - 2022-12-15 19:04:15 --> 404 Page Not Found: dosen/Seminar/tandatangan
+ERROR - 2022-12-15 19:04:18 --> 404 Page Not Found: dosen/Seminar/tandatangan
+ERROR - 2022-12-15 19:40:41 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:40:41 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:45:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:45:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:45:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:45:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:45:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:45:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:46:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:46:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:46:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:46:44 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:46:53 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:46:53 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:47:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:47:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:51:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:51:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:56:58 --> Severity: error --> Exception: Call to a member function get_timeline() on null /opt/lampp/htdocs/olivera/application/controllers/dosen/Dashboard.php 9
+ERROR - 2022-12-15 19:59:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:59:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 19:59:12 --> Severity: error --> Exception: Call to a member function get_timeline() on null /opt/lampp/htdocs/olivera/application/controllers/dosen/Dashboard.php 9
+ERROR - 2022-12-15 20:00:42 --> Severity: error --> Exception: Call to a member function get_timeline() on null /opt/lampp/htdocs/olivera/application/controllers/dosen/Dashboard.php 9
+ERROR - 2022-12-15 20:00:42 --> Severity: error --> Exception: Call to a member function get_timeline() on null /opt/lampp/htdocs/olivera/application/controllers/dosen/Dashboard.php 9
+ERROR - 2022-12-15 20:00:51 --> Severity: error --> Exception: Call to a member function get_timeline() on null /opt/lampp/htdocs/olivera/application/controllers/dosen/Dashboard.php 9
+ERROR - 2022-12-15 20:05:00 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-15 20:05:00 --> 404 Page Not Found: Cdn/vendor

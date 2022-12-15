@@ -1,0 +1,959 @@
+ERROR - 2022-12-09 05:24:25 --> Severity: Warning --> max(): Array must contain at least one element C:\xampp\htdocs\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 05:25:49 --> Severity: Warning --> unlink(C:\xampp\htdocs\olivera\cdn/vendor/skripsi/sk_tim/): No such file or directory C:\xampp\htdocs\olivera\application\models\Skripsi_model.php 303
+ERROR - 2022-12-09 05:25:49 --> Severity: Warning --> unlink(C:\xampp\htdocs\olivera\cdn/vendor/skripsi/persetujuan/): No such file or directory C:\xampp\htdocs\olivera\application\models\Skripsi_model.php 304
+ERROR - 2022-12-09 05:25:49 --> Severity: Warning --> unlink(C:\xampp\htdocs\olivera\cdn/vendor/skripsi/bukti_konsultasi/): No such file or directory C:\xampp\htdocs\olivera\application\models\Skripsi_model.php 305
+ERROR - 2022-12-09 05:37:23 --> Query error: Column 'dosen_penguji_id' in field list is ambiguous - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`tempat`, `seminar`.`dosen_penguji_id`, `seminar`.`surat_permohonan`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `mahasiswa`.`id` as `mahasiswa_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`email`, `dosen_penguji_id` as `dosen_penguji_id`
+FROM `seminar`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+WHERE `seminar`.`id` = '19'
+ERROR - 2022-12-09 05:37:23 --> Severity: error --> Exception: Call to a member function row_array() on bool C:\xampp\htdocs\olivera\application\models\Seminar_model.php 132
+ERROR - 2022-12-09 05:41:19 --> Query error: Column 'dosen_penguji_id' in field list is ambiguous - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`tempat`, `seminar`.`dosen_penguji_id`, `seminar`.`surat_permohonan`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `mahasiswa`.`id` as `mahasiswa_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`email`, `dosen_penguji_id` as `dosen_penguji_id`
+FROM `seminar`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `seminar`.`dosen_penguji_id`
+WHERE `seminar`.`id` = '19'
+ERROR - 2022-12-09 05:41:19 --> Severity: error --> Exception: Call to a member function row_array() on bool C:\xampp\htdocs\olivera\application\models\Seminar_model.php 133
+ERROR - 2022-12-09 05:41:25 --> Query error: Column 'dosen_penguji_id' in field list is ambiguous - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`tempat`, `seminar`.`dosen_penguji_id`, `seminar`.`surat_permohonan`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `mahasiswa`.`id` as `mahasiswa_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`email`, `dosen_penguji_id` as `dosen_penguji_id`
+FROM `seminar`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `seminar`.`dosen_penguji_id`
+WHERE `seminar`.`id` = '19'
+ERROR - 2022-12-09 05:41:25 --> Severity: error --> Exception: Call to a member function row_array() on bool C:\xampp\htdocs\olivera\application\models\Seminar_model.php 133
+ERROR - 2022-12-09 05:55:27 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`id`, `dosen`.`nama` as `nama_penguji`
+FROM `seminar`
+LEFT JOIN `proposal_ma...' at line 1 - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`tempat`, `seminar`.`dosen_penguji_id`, `seminar`.`surat_permohonan`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `mahasiswa`.`id` as `mahasiswa_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`email`, `dosen`.`id` as `dosen`.`id`, `dosen`.`nama` as `nama_penguji`
+FROM `seminar`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `seminar`.`dosen_penguji_id`
+WHERE `seminar`.`id` = '19'
+ERROR - 2022-12-09 05:55:27 --> Severity: error --> Exception: Call to a member function row_array() on bool C:\xampp\htdocs\olivera\application\models\Seminar_model.php 134
+ERROR - 2022-12-09 05:59:17 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`id`, `dosen`.`nama` as `nama_penguji`
+FROM `seminar`
+LEFT JOIN `proposal_ma...' at line 1 - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`tempat`, `seminar`.`dosen_penguji_id`, `seminar`.`surat_permohonan`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `mahasiswa`.`id` as `mahasiswa_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`email`, `dosen`.`id` as `dosen`.`id`, `dosen`.`nama` as `nama_penguji`
+FROM `seminar`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `seminar`.`dosen_penguji_id`
+WHERE `seminar`.`id` = '19'
+ERROR - 2022-12-09 05:59:17 --> Severity: error --> Exception: Call to a member function row_array() on bool C:\xampp\htdocs\olivera\application\models\Seminar_model.php 134
+ERROR - 2022-12-09 06:00:55 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`id`, `dosen`.`nama` as `nama_penguji`
+FROM `seminar`
+LEFT JOIN `proposal_ma...' at line 1 - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`tempat`, `seminar`.`dosen_penguji_id`, `seminar`.`surat_permohonan`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `mahasiswa`.`id` as `mahasiswa_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`email`, `dosen`.`id` as `dosen`.`id`, `dosen`.`nama` as `nama_penguji`
+FROM `seminar`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `seminar`.`dosen_penguji_id`
+WHERE `seminar`.`id` = '19'
+ERROR - 2022-12-09 06:00:55 --> Severity: error --> Exception: Call to a member function row_array() on bool C:\xampp\htdocs\olivera\application\models\Seminar_model.php 134
+ERROR - 2022-12-09 06:21:35 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 06:21:35 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 07:53:14 --> 404 Page Not Found: api/Seminar_mahasiswa/destroy
+ERROR - 2022-12-09 07:53:16 --> 404 Page Not Found: api/Seminar_mahasiswa/destroy
+ERROR - 2022-12-09 07:53:43 --> Severity: Warning --> unlink(C:\xampp\htdocs\olivera\cdn/vendor/sk_tim/): Is a directory C:\xampp\htdocs\olivera\application\models\Seminar_model.php 164
+ERROR - 2022-12-09 07:53:48 --> Severity: Warning --> unlink(C:\xampp\htdocs\olivera\cdn/vendor/sk_tim/): Is a directory C:\xampp\htdocs\olivera\application\models\Seminar_model.php 164
+ERROR - 2022-12-09 09:32:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:32:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:33:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:33:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:35:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:35:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:36:19 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:36:19 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:36:19 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:36:19 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:40:36 --> Query error: Unknown column 'proposal_mahasiswa_v.nama_pembimbing hasil_seminar.status' in 'field list' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `proposal_mahasiswa_v`.`nama_pembimbing hasil_seminar`.`status` as `hasil_seminar_status`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-09 09:40:36 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\olivera\application\models\Seminar_model.php 37
+ERROR - 2022-12-09 09:40:52 --> Query error: Unknown column 'proposal_mahasiswa_v.nama_pembimbing' in 'field list' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `proposal_mahasiswa_v`.`nama_pembimbing`, `hasil_seminar`.`status` as `hasil_seminar_status`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-09 09:40:52 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\olivera\application\models\Seminar_model.php 37
+ERROR - 2022-12-09 09:40:56 --> Query error: Unknown column 'proposal_mahasiswa_v.nama_pembimbing' in 'field list' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `proposal_mahasiswa_v`.`nama_pembimbing`, `hasil_seminar`.`status` as `hasil_seminar_status`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-09 09:40:56 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\olivera\application\models\Seminar_model.php 37
+ERROR - 2022-12-09 09:44:03 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:44:03 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:45:44 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:45:44 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:48:19 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:48:19 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:48:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 09:48:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:14:32 --> Severity: Warning --> mysqli::real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ C:\xampp\htdocs\olivera\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2022-12-09 11:14:32 --> Unable to connect to the database
+ERROR - 2022-12-09 11:14:32 --> Severity: error --> Exception: Call to a member function real_escape_string() on bool C:\xampp\htdocs\olivera\system\database\drivers\mysqli\mysqli_driver.php 391
+ERROR - 2022-12-09 11:14:35 --> Severity: Warning --> mysqli::real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ C:\xampp\htdocs\olivera\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2022-12-09 11:14:35 --> Unable to connect to the database
+ERROR - 2022-12-09 11:14:35 --> Severity: error --> Exception: Call to a member function real_escape_string() on bool C:\xampp\htdocs\olivera\system\database\drivers\mysqli\mysqli_driver.php 391
+ERROR - 2022-12-09 11:14:39 --> Severity: Warning --> mysqli::real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ C:\xampp\htdocs\olivera\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2022-12-09 11:14:39 --> Unable to connect to the database
+ERROR - 2022-12-09 11:14:39 --> Severity: error --> Exception: Call to a member function real_escape_string() on bool C:\xampp\htdocs\olivera\system\database\drivers\mysqli\mysqli_driver.php 391
+ERROR - 2022-12-09 11:14:46 --> Severity: Warning --> mysqli::real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ C:\xampp\htdocs\olivera\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2022-12-09 11:14:46 --> Unable to connect to the database
+ERROR - 2022-12-09 17:14:51 --> Severity: Warning --> mysqli::real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ C:\xampp\htdocs\olivera\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2022-12-09 17:14:51 --> Unable to connect to the database
+ERROR - 2022-12-09 17:14:51 --> Query error: No connection could be made because the target machine actively refused it.
+ - Invalid query: SELECT *
+FROM `skripsi_vl`
+ERROR - 2022-12-09 17:14:51 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\olivera\application\models\Skripsi_model.php 24
+ERROR - 2022-12-09 11:16:14 --> Severity: Warning --> mysqli::real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ C:\xampp\htdocs\olivera\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2022-12-09 11:16:14 --> Unable to connect to the database
+ERROR - 2022-12-09 11:17:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:17:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:17:35 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:17:35 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:17:42 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:17:42 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:26:14 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`dosen_id` USING (`left`)
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'' at line 5 - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+JOIN `dosen`.`id =` `seminar`.`dosen_id` USING (`left`)
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-09 11:26:14 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\olivera\application\models\Seminar_model.php 39
+ERROR - 2022-12-09 11:26:19 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`dosen_id` USING (`left`)
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'' at line 5 - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+JOIN `dosen`.`id =` `seminar`.`dosen_id` USING (`left`)
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-09 11:26:19 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\olivera\application\models\Seminar_model.php 39
+ERROR - 2022-12-09 11:28:30 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`dosen_id` USING (`left`)
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'' at line 5 - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+JOIN `dosen`.`id =` `seminar`.`dosen_id` USING (`left`)
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-09 11:28:30 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\olivera\application\models\Seminar_model.php 39
+ERROR - 2022-12-09 11:28:51 --> 404 Page Not Found: api/Seminar_mahasiswa/destroy
+ERROR - 2022-12-09 11:30:36 --> 404 Page Not Found: api/Seminar_mahasiswa/destroy
+ERROR - 2022-12-09 11:30:41 --> 404 Page Not Found: api/Seminar_mahasiswa/destroy
+ERROR - 2022-12-09 11:30:45 --> 404 Page Not Found: api/Seminar_mahasiswa/destroy
+ERROR - 2022-12-09 11:30:47 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:30:47 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:35:03 --> 404 Page Not Found: api/Seminar_mahasiswa/destroy
+ERROR - 2022-12-09 11:39:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:39:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:39:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:39:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:39:46 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:39:46 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 11:39:52 --> 404 Page Not Found: api/Seminar_mahasiswa/destroy
+ERROR - 2022-12-09 11:39:56 --> 404 Page Not Found: api/Seminar_mahasiswa/destroy
+ERROR - 2022-12-09 11:40:54 --> Severity: Warning --> unlink(C:\xampp\htdocs\olivera\cdn/vendor/skripsi/sk_tim/): No such file or directory C:\xampp\htdocs\olivera\application\models\Skripsi_model.php 303
+ERROR - 2022-12-09 11:40:54 --> Severity: Warning --> unlink(C:\xampp\htdocs\olivera\cdn/vendor/skripsi/persetujuan/): No such file or directory C:\xampp\htdocs\olivera\application\models\Skripsi_model.php 304
+ERROR - 2022-12-09 11:40:54 --> Severity: Warning --> unlink(C:\xampp\htdocs\olivera\cdn/vendor/skripsi/bukti_konsultasi/): No such file or directory C:\xampp\htdocs\olivera\application\models\Skripsi_model.php 305
+ERROR - 2022-12-09 11:40:54 --> Severity: Warning --> max(): Array must contain at least one element C:\xampp\htdocs\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 11:40:58 --> Severity: Warning --> unlink(C:\xampp\htdocs\olivera\cdn/vendor/skripsi/sk_tim/): No such file or directory C:\xampp\htdocs\olivera\application\models\Skripsi_model.php 303
+ERROR - 2022-12-09 11:40:58 --> Severity: Warning --> unlink(C:\xampp\htdocs\olivera\cdn/vendor/skripsi/persetujuan/): No such file or directory C:\xampp\htdocs\olivera\application\models\Skripsi_model.php 304
+ERROR - 2022-12-09 11:40:58 --> Severity: Warning --> unlink(C:\xampp\htdocs\olivera\cdn/vendor/skripsi/bukti_konsultasi/): No such file or directory C:\xampp\htdocs\olivera\application\models\Skripsi_model.php 305
+ERROR - 2022-12-09 17:41:11 --> Severity: Warning --> max(): Array must contain at least one element C:\xampp\htdocs\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:41:42 --> Severity: Warning --> max(): Array must contain at least one element C:\xampp\htdocs\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 18:48:17 --> Severity: Warning --> unlink(./assets/essence/img/timeline/): Is a directory C:\xampp\htdocs\olivera\application\controllers\Home.php 328
+ERROR - 2022-12-09 18:48:17 --> Severity: error --> Exception: Call to a member function data() on null C:\xampp\htdocs\olivera\application\controllers\Home.php 332
+ERROR - 2022-12-09 12:51:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 12:51:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 12:57:27 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 12:57:27 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 18:57:42 --> Severity: Warning --> unlink(./assets/essence/img/slider/): Is a directory C:\xampp\htdocs\olivera\application\controllers\Home.php 327
+ERROR - 2022-12-09 18:57:42 --> Severity: error --> Exception: Call to a member function data() on null C:\xampp\htdocs\olivera\application\controllers\Home.php 331
+ERROR - 2022-12-09 12:57:54 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 12:57:54 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 18:58:14 --> Severity: Warning --> unlink(./assets/essence/img/slider/): Is a directory C:\xampp\htdocs\olivera\application\controllers\Home.php 327
+ERROR - 2022-12-09 18:58:14 --> Severity: error --> Exception: Call to a member function data() on null C:\xampp\htdocs\olivera\application\controllers\Home.php 331
+ERROR - 2022-12-09 12:58:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 12:58:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 12:58:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 12:58:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 18:58:32 --> Severity: Warning --> unlink(./assets/essence/img/slider/uts1.jpg): No such file or directory C:\xampp\htdocs\olivera\application\controllers\Home.php 291
+ERROR - 2022-12-09 12:58:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 12:58:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 13:00:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 13:00:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 13:21:49 --> Severity: Warning --> mysqli::real_connect(): (HY000/1049): Unknown database 'coba2' C:\laragon\www\olivera\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2022-12-09 13:21:49 --> Unable to connect to the database
+ERROR - 2022-12-09 20:21:49 --> Severity: Warning --> mysqli::real_connect(): (HY000/1049): Unknown database 'coba2' C:\laragon\www\olivera\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2022-12-09 20:21:49 --> Unable to connect to the database
+ERROR - 2022-12-09 20:21:49 --> Query error: Unknown database 'coba2' - Invalid query: SELECT *
+FROM `home_template`
+ERROR - 2022-12-09 20:21:49 --> Severity: error --> Exception: Call to a member function result() on bool C:\laragon\www\olivera\application\controllers\Home.php 15
+ERROR - 2022-12-09 13:39:44 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 13:41:34 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 13:41:37 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 13:41:45 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 13:42:53 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 13:52:45 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 13:58:15 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 13:58:17 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 13:58:22 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 13:58:22 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 13:58:26 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 13:58:41 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 13:58:41 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:00:21 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:00:21 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:00:22 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:00:22 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:00:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:00:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:00:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:00:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:02:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:02:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:02:22 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:02:23 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:07:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:07:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:07:42 --> 404 Page Not Found: api/AuthMahasiswa/login
+ERROR - 2022-12-09 14:08:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:08:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:08:26 --> 404 Page Not Found: api/AuthMahasiswa/login
+ERROR - 2022-12-09 14:08:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:08:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:08:36 --> 404 Page Not Found: api/AuthMahasiswa/login
+ERROR - 2022-12-09 14:10:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:10:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:10:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:10:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:10:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:10:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:10:30 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:16:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:16:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:16:19 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:16:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:16:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:16:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:16:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:16:31 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:16:46 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:17:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:17:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:17:08 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:17:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:17:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:17:15 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_post' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:17:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:17:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:18:39 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:18:39 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:18:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:18:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:20:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:20:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:20:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:20:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:20:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:20:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:20:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:20:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:21:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:21:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:22:54 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:22:54 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:22:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:22:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:23:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:23:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:23:12 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:23:12 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:23:27 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:23:27 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:23:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:23:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:23:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:23:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:23:44 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:23:44 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:23:44 --> 404 Page Not Found: api/AuthMahasiswa/login
+ERROR - 2022-12-09 14:29:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:29:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:29:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:29:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:29:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:29:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:34:46 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:34:46 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:34:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:34:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:34:51 --> 404 Page Not Found: api/AuthMahasiswa/login
+ERROR - 2022-12-09 14:35:02 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:35:02 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:35:03 --> 404 Page Not Found: api/AuthMahasiswa/login
+ERROR - 2022-12-09 14:35:04 --> 404 Page Not Found: api/AuthMahasiswa/login
+ERROR - 2022-12-09 14:35:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:35:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:35:07 --> 404 Page Not Found: api/AuthMahasiswa/login
+ERROR - 2022-12-09 14:35:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:35:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:35:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:35:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:35:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:35:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:36:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:36:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 21:36:55 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 14:36:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:36:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:37:05 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 14:37:05 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 14:37:05 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 14:37:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:37:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:38:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:38:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:38:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:38:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:38:21 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:38:21 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:38:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:38:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:39:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:39:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:39:53 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:39:53 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:39:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:39:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:40:12 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:40:12 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:40:12 --> 404 Page Not Found: api/AuthMahasiswa/login
+ERROR - 2022-12-09 14:41:04 --> 404 Page Not Found: api/Login/index
+ERROR - 2022-12-09 14:41:13 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_get' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:41:19 --> 404 Page Not Found: api/AuthMahasiswa/login
+ERROR - 2022-12-09 14:41:21 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_get' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:42:18 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_get' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:42:33 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_get' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:42:36 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_get' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:42:48 --> 404 Page Not Found: api/AuthMahasiswa/login
+ERROR - 2022-12-09 14:42:56 --> 404 Page Not Found: api/AuthMahasiswa/login
+ERROR - 2022-12-09 14:43:18 --> 404 Page Not Found: api/AuthMahasiswa/login
+ERROR - 2022-12-09 14:43:25 --> 404 Page Not Found: api/AuthMahasiswa/login
+ERROR - 2022-12-09 14:43:27 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Auth' does not have a method 'index_get' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:43:48 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'AuthMahasiswa' does not have a method 'index_get' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 14:44:03 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:44:03 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:44:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:44:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:45:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:45:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:45:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:45:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:47:42 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:47:42 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:48:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:48:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:49:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:49:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:49:58 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:49:58 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:57:47 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:57:47 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:58:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:58:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:58:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 14:58:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:00:27 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:00:27 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:00:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:00:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:01:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:01:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:01:33 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:01:33 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:02:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:02:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:06:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:06:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:06:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:06:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 22:06:23 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 15:06:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:06:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:07:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:07:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 22:07:34 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 15:07:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:07:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:08:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:08:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:08:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:08:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:09:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:09:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 22:09:10 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 15:09:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:09:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:09:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:09:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:10:46 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 15:10:46 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 15:10:46 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 15:10:51 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:10:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:10:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:10:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:10:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:10:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:11:05 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 15:11:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:11:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:11:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:11:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:13:03 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 15:16:01 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:01 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:41 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 15:16:47 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:16:47 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:18:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:18:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:18:09 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:18:09 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:18:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:18:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:18:14 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 15:18:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:18:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:19:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:19:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:19:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:19:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:19:26 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:19:26 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:19:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:19:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:19:58 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:19:58 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:01 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:01 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:05 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 15:20:09 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:09 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:17 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 15:20:21 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:21 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:39 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:39 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:44 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:20:44 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:21:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:21:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:23:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:23:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:24:43 --> 404 Page Not Found: admin/Crud/getAllData
+ERROR - 2022-12-09 15:24:51 --> 404 Page Not Found: admin/Crud/getAllData
+ERROR - 2022-12-09 15:24:54 --> 404 Page Not Found: admin/GetAllData/mahasiswa
+ERROR - 2022-12-09 15:33:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:33:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:34:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:34:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:34:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:34:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:34:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:34:49 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:34:49 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:34:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:34:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:34:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:34:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:34:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:34:58 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:34:58 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:35:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:35:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:35:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:35:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:35:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:36:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:36:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:37:53 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 15:37:53 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 15:37:53 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 15:37:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:37:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:37:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:37:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 22:38:02 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 15:38:02 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:38:02 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:38:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:38:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:38:26 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:38:26 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:44:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:44:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:44:53 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:44:53 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:45:19 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:45:19 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:45:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:45:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:45:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:45:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:46:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:46:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:47:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:47:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:47:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:47:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:47:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:47:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:48:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:48:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:48:42 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:48:42 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:48:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:48:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:50:51 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:50:51 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:51:09 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:51:09 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:54:48 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Mahasiswa' does not have a method 'index_get' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 15:55:03 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Mahasiswa' does not have a method 'index_get' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 15:55:12 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Mahasiswa' does not have a method 'index_get' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 15:55:16 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Mahasiswa' does not have a method 'index_get' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 15:59:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 15:59:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:00:26 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 16:00:26 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 16:00:26 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 16:00:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:00:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:00:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:00:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:00:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:00:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:01:11 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:01:12 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:01:12 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:01:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:01:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:01:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:01:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:01:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:01:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:02:05 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 16:02:05 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 16:02:05 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 16:02:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:02:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:02:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:02:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 23:02:14 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:02:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:02:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:02:22 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:02:22 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:02:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:02:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:10:54 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:10:54 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:11:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:11:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:11:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:11:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:11:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:11:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:12:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:12:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:12:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:12:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:13:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:13:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:13:26 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:13:26 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:14:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:14:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:16:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:16:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 23:17:15 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:17:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:17:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:20:26 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 16:20:26 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 16:20:26 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-09 16:20:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:20:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:20:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:20:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:21:03 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:21:03 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:21:03 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:22:16 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:22:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:22:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:22:34 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:22:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:22:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:37:32 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:37:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:37:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:37:55 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:37:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:37:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:37:55 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:37:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:37:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:38:10 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:38:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:38:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:38:10 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:38:11 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:38:11 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:38:11 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:38:11 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:38:11 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:38:11 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:38:11 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:38:11 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:38:25 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:38:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:38:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:39:03 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:39:03 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:39:03 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:40:43 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:40:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:40:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:41:01 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:41:01 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:41:01 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:41:20 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:41:21 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:41:21 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:41:50 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:41:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:41:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:42:26 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:42:26 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:42:26 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:42:45 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:42:46 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:42:46 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:43:28 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:43:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:43:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:43:52 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:43:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:43:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:43:57 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:43:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:43:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:44:25 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:44:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:44:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:44:36 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:44:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:44:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:44:44 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:44:44 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:44:44 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:44:48 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:44:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:44:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:44:57 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:44:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:44:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:45:22 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:45:22 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:45:22 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:45:37 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:45:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:45:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:48:03 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:48:03 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:48:03 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:48:11 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:48:11 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:48:11 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:48:13 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:48:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:48:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:48:21 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:48:22 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:48:22 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:48:43 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:48:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:48:43 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:49:01 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:49:01 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:49:02 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:49:16 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:49:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:49:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:51:30 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:51:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:51:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:51:52 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:51:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:51:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:52:01 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:52:01 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:52:01 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:52:18 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:52:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:52:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:52:42 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:52:42 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:52:42 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:53:11 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:53:11 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:53:11 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:53:31 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:53:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:53:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:54:05 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:54:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:54:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:54:15 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:54:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:54:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:55:37 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:55:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:55:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:56:18 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:56:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:56:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:56:36 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:56:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:56:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:56:52 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:56:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:56:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:57:05 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:57:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:57:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:57:29 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:57:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:57:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:57:59 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:58:00 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:58:00 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:58:10 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:58:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:58:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:58:13 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:58:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:58:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:58:16 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:58:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:58:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:58:45 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:58:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:58:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:59:12 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:59:12 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:59:12 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:59:18 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:59:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:59:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:59:31 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:59:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:59:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:59:47 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:59:47 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:59:47 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:59:56 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:59:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:59:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:59:56 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 16:59:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 16:59:56 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:00:13 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:00:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:00:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:00:17 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:00:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:00:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:00:28 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:00:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:00:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:00:36 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:00:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:00:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:00:43 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:00:44 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:00:44 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:02:08 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:02:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:02:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:02:15 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:02:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:02:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:02:26 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:02:26 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:02:26 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:02:49 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:02:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:02:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:03:38 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:03:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:03:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:03:53 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:03:53 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:03:53 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:04:17 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:04:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:04:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:04:23 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:04:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:04:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:04:33 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:04:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:04:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:07:32 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:07:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:07:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:07:41 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:07:41 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:07:41 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:17:48 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:17:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:17:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:18:52 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:18:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:18:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:19:45 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:19:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:19:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:19:57 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:19:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:19:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:20:09 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:20:09 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:20:09 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:20:36 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:21:17 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:21:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:21:18 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:24:04 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:24:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:24:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:24:11 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:26:08 --> Severity: error --> Exception: Too few arguments to function Skripsi_model::viewWhereAssosiative(), 2 passed in C:\laragon\www\olivera\application\controllers\admin\Dashboard.php on line 17 and exactly 3 expected C:\laragon\www\olivera\application\models\Skripsi_model.php 394
+ERROR - 2022-12-09 17:26:23 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:27:17 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:27:31 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:27:35 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:27:35 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:27:35 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:27:48 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:27:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:27:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:30:01 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:30:01 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:30:26 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Mahasiswa' does not have a method 'index_get' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 17:30:27 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Mahasiswa' does not have a method 'index_get' C:\laragon\www\olivera\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-09 17:30:39 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:31:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:31:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:32:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:32:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:33:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:33:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:33:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:33:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:33:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:33:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:34:01 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:34:01 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:34:01 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:34:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:34:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:34:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:34:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:34:33 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:34:33 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:34:44 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:34:44 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:34:49 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:34:49 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-09 17:39:24 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:41:48 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-09 17:57:23 --> Severity: error --> Exception: WriteHTML() requires $html be an integer, float, string, boolean or an object with the __toString() magic method. C:\laragon\www\olivera\vendor\mpdf\mpdf\src\Mpdf.php 13213
+ERROR - 2022-12-09 17:57:43 --> Severity: error --> Exception: WriteHTML() requires $html be an integer, float, string, boolean or an object with the __toString() magic method. C:\laragon\www\olivera\vendor\mpdf\mpdf\src\Mpdf.php 13213
+ERROR - 2022-12-09 18:00:54 --> Severity: error --> Exception: WriteHTML() requires $html be an integer, float, string, boolean or an object with the __toString() magic method. C:\laragon\www\olivera\vendor\mpdf\mpdf\src\Mpdf.php 13213
+ERROR - 2022-12-09 18:00:59 --> Severity: error --> Exception: WriteHTML() requires $html be an integer, float, string, boolean or an object with the __toString() magic method. C:\laragon\www\olivera\vendor\mpdf\mpdf\src\Mpdf.php 13213
+ERROR - 2022-12-09 18:03:05 --> Query error: Unknown column 'proposal_mahasiswa.mahasiswa.id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `mahasiswa`.`nim` AS `nim`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id`=`proposal_mahasiswa`.`mahasiswa`.`id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `seminar`.`id` = '21'
+ERROR - 2022-12-09 18:03:05 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\laragon\www\olivera\application\controllers\mahasiswa\Seminar.php 62
+ERROR - 2022-12-09 18:03:23 --> Query error: Unknown column 'proposal_mahasiswa_v.mahasiswa.id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `mahasiswa`.`nim` AS `nim`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id`=`proposal_mahasiswa_v`.`mahasiswa`.`id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `seminar`.`id` = '21'
+ERROR - 2022-12-09 18:03:23 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\laragon\www\olivera\application\controllers\mahasiswa\Seminar.php 62
+ERROR - 2022-12-09 18:03:24 --> Query error: Unknown column 'proposal_mahasiswa_v.mahasiswa.id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `mahasiswa`.`nim` AS `nim`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id`=`proposal_mahasiswa_v`.`mahasiswa`.`id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `seminar`.`id` = '21'
+ERROR - 2022-12-09 18:03:24 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\laragon\www\olivera\application\controllers\mahasiswa\Seminar.php 62
+ERROR - 2022-12-09 18:03:43 --> Query error: Unknown column 'proposal_mahasiswa_v.mahasiswa.id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `mahasiswa`.`nim` AS `nim`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id`=`proposal_mahasiswa_v`.`mahasiswa`.`id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `seminar`.`id` = '21'
+ERROR - 2022-12-09 18:03:43 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\laragon\www\olivera\application\controllers\mahasiswa\Seminar.php 62

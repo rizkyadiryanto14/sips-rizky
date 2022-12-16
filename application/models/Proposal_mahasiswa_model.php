@@ -31,6 +31,7 @@ class Proposal_mahasiswa_model extends CI_Model
             $this->db->where($kondisi);
         }
         $proposal_mahasiswa = $this->db->get($this->table)->result_array();
+        $proposal_mahasiswa = $this->checkPlagiat($proposal_mahasiswa);
 
         $hasil['error'] = false;
         $hasil['message'] = ($proposal_mahasiswa) ? "data berhasil ditemukan" : "data tidak tersedia";
@@ -81,6 +82,30 @@ class Proposal_mahasiswa_model extends CI_Model
         }
 
         return $hasil;
+    }
+
+    private function checkPlagiat($data)
+    {
+        $allData = [];
+        $id = [];
+        $judul = [];
+        foreach ($data as $item) {
+            $id[] = $item['id'];
+            $judul[] = $item['judul_skripsi'];
+        }
+
+        foreach ($data as $item) {
+            $resultCheck = [];
+            for ($i = 0; $i < count($judul); $i++) {
+                if ($item['id'] != $id[$i]) {
+                    similar_text(strtolower(str_replace(' ', '', $judul[$i])), strtolower(str_replace(' ', '', $item['judul_skripsi'])), $resPercent);
+                    $resultCheck[] = $resPercent;
+                }
+            }
+            $item['plagiat'] = round(max($resultCheck), 2) . '%';
+            $allData[] = $item;
+        }
+        return $allData;
     }
 
     public function update($input, $id)

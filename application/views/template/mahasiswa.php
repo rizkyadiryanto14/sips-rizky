@@ -68,10 +68,6 @@ foreach ($dataUser as $du) {
                                     <i class="ni ni-app text-warning"></i>
                                     <span class="nav-link-text">Pendaftaran Skripsi</span>
                                 </a>
-                                <a class="nav-link" href="<?= base_url() ?>mahasiswa/konsultasi">
-                                    <i class="ni ni-pin-3 text-success"></i>
-                                    <span class="nav-link-text">Bimbingan</span>
-                                </a>
                                 <a class="nav-link" href="<?= base_url() ?>mahasiswa/seminar">
                                     <i class="ni ni-books text-danger"></i>
                                     <span class="nav-link-text">Seminar Proposal</span>
@@ -95,10 +91,6 @@ foreach ($dataUser as $du) {
                                 <a class="nav-link" href="<?= base_url() ?>mahasiswa/pengumuman_proposal">
                                     <i class="ni ni-app text-warning"></i>
                                     <span class="nav-link-text">Skripsi</span>
-                                </a>
-                                <a class="nav-link" href="<?= base_url() ?>mahasiswa/konsultasi">
-                                    <i class="ni ni-pin-3 text-success"></i>
-                                    <span class="nav-link-text">Bimbingan</span>
                                 </a>
                                 <a class="nav-link" href="<?= base_url() ?>mahasiswa/pengumuman_seminar">
                                     <i class="ni ni-books text-danger"></i>

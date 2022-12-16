@@ -13,7 +13,7 @@ a[disabled="disabled"] {
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Data Seminar</div>
+                <div class="card-title">Pengumuman Seminar</div>
             </div>
         </div>
         <div class="card-body">
@@ -29,10 +29,6 @@ a[disabled="disabled"] {
                             <th>tempat</th>
                             <th>Dosen Penguji</th>
                             <th>Dosen Pembimbing</th>
-                            <!-- <th>Surat Permohonan</th>
-                            <th>File Proposal</th>
-                            <th>Syarat_Seminar</th>
-                            <th>Kartu Bimbingan</th> -->
                             <th>status</th>
                             <th>Berita Acara</th>
                             <th>Aksi</th>
@@ -150,35 +146,6 @@ a[disabled="disabled"] {
                             }
                         }
                     },
-                    // {
-                    //     data: "surat_permohonan",
-                    //     render: function(data) {
-                    //         return '<a href="' + base_url + 'cdn/vendor/surat_permohonan/' +
-                    //             data + '">' + data + '</a>';
-                    //     }
-                    // },
-                    // {
-                    //     data: "file_proposal",
-                    //     render: function(data) {
-                    //         return '<a href="' + base_url + 'cdn/vendor/file_proposal/' +
-                    //             data +
-                    //             '">' + data + '</a>';
-                    //     }
-                    // },
-                    // {
-                    //     data: "syarat_seminar",
-                    //     render: function(data) {
-                    //         return '<a href="' + base_url + 'cdn/vendor/syarat_seminar/' +
-                    //             data + '">' + data + '</a>';
-                    //     }
-                    // },
-                    // {
-                    //     data: "kartu_bimbingan",
-                    //     render: function(data) {
-                    //         return '<a href="' + base_url + 'cdn/vendor/kartu_bimbingan/' +
-                    //             data + '">' + data + '</a>';
-                    //     }
-                    // },
                     {
 
                         data: "hasil_seminar_status",
@@ -243,63 +210,63 @@ a[disabled="disabled"] {
             })
         }
 
-        show();
+        // show();
 
-        $(document).on('submit', 'form#tambah', function(e) {
-            e.preventDefault();
-            call('api/seminar/create', $(this).serialize()).done(function(res) {
-                if (res.error == true) {
-                    notif(res.message, 'error', true);
-                } else {
-                    notif(res.message, 'success');
-                    $('form#tambah [name]').val('');
-                    $('div#tambah').modal('hide');
-                    show();
-                }
-            })
-        })
+        // $(document).on('submit', 'form#tambah', function(e) {
+        //     e.preventDefault();
+        //     call('api/seminar/create', $(this).serialize()).done(function(res) {
+        //         if (res.error == true) {
+        //             notif(res.message, 'error', true);
+        //         } else {
+        //             notif(res.message, 'success');
+        //             $('form#tambah [name]').val('');
+        //             $('div#tambah').modal('hide');
+        //             show();
+        //         }
+        //     })
+        // })
 
-        $(document).on('change', '[name=pilih-file_proposal]', function() {
-            read('[name=pilih-file_proposal]', function(data) {
-                $('[name=file_proposal]').val(data.result);
-            })
-        })
+        // $(document).on('change', '[name=pilih-file_proposal]', function() {
+        //     read('[name=pilih-file_proposal]', function(data) {
+        //         $('[name=file_proposal]').val(data.result);
+        //     })
+        // })
 
-        $(document).on('change', '[name=pilih-surat_permohonan]', function() {
-            read('[name=pilih-surat_permohonan]', function(data) {
-                $('[name=surat_permohonan]').val(data.result);
-            })
-        })
+        // $(document).on('change', '[name=pilih-surat_permohonan]', function() {
+        //     read('[name=pilih-surat_permohonan]', function(data) {
+        //         $('[name=surat_permohonan]').val(data.result);
+        //     })
+        // })
 
-        $(document).on('change', '[name=pilih-syarat_seminar]', function() {
-            read('[name=pilih-syarat_seminar]', function(data) {
-                $('[name=syarat_seminar]').val(data.result);
-            })
-        })
+        // $(document).on('change', '[name=pilih-syarat_seminar]', function() {
+        //     read('[name=pilih-syarat_seminar]', function(data) {
+        //         $('[name=syarat_seminar]').val(data.result);
+        //     })
+        // })
 
-        $(document).on('change', '[name=pilih-kartu_bimbingan]', function() {
-            read('[name=pilih-kartu_bimbingan]', function(data) {
-                $('[name=kartu_bimbingan]').val(data.result);
-            })
-        })
+        // $(document).on('change', '[name=pilih-kartu_bimbingan]', function() {
+        //     read('[name=pilih-kartu_bimbingan]', function(data) {
+        //         $('[name=kartu_bimbingan]').val(data.result);
+        //     })
+        // })
 
-        $(document).on('click', 'button.btn-hapus', function() {
-            $('form#hapus .id').val($(this).data('id'));
-        })
+        // $(document).on('click', 'button.btn-hapus', function() {
+        //     $('form#hapus .id').val($(this).data('id'));
+        // })
 
-        $(document).on('submit', 'form#hapus', function(e) {
-            e.preventDefault();
-            const id = $('form#hapus .id').val();
-            call('api/seminar_mahasiswa/destroy/' + id).done(function(res) {
-                if (res.error == true) {
-                    notif(res.message, 'error', true);
-                } else {
-                    notif(res.message, 'success');
-                    $('div#hapus').modal('hide');
-                    show();
-                }
-            })
-        })
+        // $(document).on('submit', 'form#hapus', function(e) {
+        //     e.preventDefault();
+        //     const id = $('form#hapus .id').val();
+        //     call('api/seminar_mahasiswa/destroy/' + id).done(function(res) {
+        //         if (res.error == true) {
+        //             notif(res.message, 'error', true);
+        //         } else {
+        //             notif(res.message, 'success');
+        //             $('div#hapus').modal('hide');
+        //             show();
+        //         }
+        //     })
+        // })
 
     })
     </script>

@@ -9,12 +9,6 @@
             <div class="col">
                 <div class="card-title">Seminar Akhir / Skripsi</div>
             </div>
-            <div class="col text-right">
-                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">
-                    <i class="fa fa-plus"></i>
-                    Tambah
-                </button>
-            </div>
         </div>
         <div class="card-tools mt-2">
             <span class="badge badge-success"><i class="fa fa-check"></i> Disetujui</span>

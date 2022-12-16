@@ -47,6 +47,7 @@
                         <th>KRS</th>
                         <th>Ringkasan</th>
                         <th>Pembimbing</th>
+                        <th>Plagiarisme</th>
                         <th>Status</th>
                         <th>Aksi</th>
                     </tr>
@@ -283,6 +284,9 @@ $(document).ready(function() {
                     render: function(data) {
                         return data.pembimbing.nama
                     }
+                },
+                {
+                    data: "plagiat"
                 },
                 {
                     data: null,

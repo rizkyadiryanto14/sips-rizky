@@ -16,16 +16,18 @@ class Daftar_judul extends MY_Controller
     {
         $this->load->model('Daftar_judul_model');
 
-        $nim        = $this->input->post('nim');
-        $nama       = $this->input->post('nama');
-        $abstrak    = $this->input->post('abstrak');
-        $tahun_lulus = $this->input->post('tahun_lulus');
+        $nim            = $this->input->post('nim');
+        $nama           = $this->input->post('nama');
+        $judul_skripsi  = $this->input->post('judul_skripsi');
+        $abstrak        = $this->input->post('abstrak');
+        $tahun_lulus    = $this->input->post('tahun_lulus');
 
         $data = array(
             'nim'           => $nim,
             'nama'          => $nama,
             'abstrak'       => $abstrak,
-            'tahun_lulus'   => $tahun_lulus
+            'tahun_lulus'   => $tahun_lulus,
+            'judul_skripsi' => $judul_skripsi
         );
 
         $this->Daftar_judul_model->tambahData($data);

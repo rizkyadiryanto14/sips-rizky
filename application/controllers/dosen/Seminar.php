@@ -30,6 +30,24 @@ class Seminar extends MY_Controller
         if ($id) {
             $def_tandatangan = $this->input->post('tandatangan');
             $tandatangan = $_FILES['tandatangan']['name'];
+
+            $path                               = './assets/essence/panduanskripsi' . $def_tandatangan;
+            $config['upload_path']              = $path;
+            $config['allowed_types']            = 'pdf|png|jpeg|doc|docx';
+            $config['max_size']                 = 2048;
+            $this->load->library('upload', $config);
+            $this->upload->initialize($config);
+            unlink($path);
+            if (!$this->upload->do_upload('tandatangan')) {
+                echo json_encode($this->upload->display_errors());
+            } else {
+                $upload_data = $this->upload->data();
+
+                $data['tandatangan'] = $upload_data['file_name'];
+                if ($this->db->update('seminar')) {
+                    # code...
+                }
+            }
         }
     }
 }

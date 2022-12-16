@@ -26,6 +26,12 @@ class Seminar extends REST_Controller
 		return $this->response($response);
 	}
 
+	public function update_post($id = null)
+	{
+		$response = $this->model->update($this->input->post(), $id);
+		return $this->response($response);
+	}
+
 	public function destroy_post($id = null)
 	{
 		$response = $this->model->destroy($id);

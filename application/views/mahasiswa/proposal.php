@@ -153,51 +153,6 @@
         </div>
     </div>
 </div>
-<div class="modal fade" id="buat-konsultasi">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form id="buat-konsultasi">
-                <div class="modal-header">
-                    <div class="modal-title">Buat Konsultasi</div>
-                </div>
-                <div class="modal-body">
-                    <input type="hidden" name="proposal_mahasiswa_id">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="form-group">
-                                <label>Tanggal</label>
-                                <input name="tanggal" type="date" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Jam</label>
-                                <input name="jam" type="time" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Isi</label>
-                        <textarea name="isi" rows="5" class="form-control" placeholder="Masukkan Isi"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label>Bukti</label>
-                        <div class="custom-file pilih-bukti">
-                            <label class="custom-file-label">Pilih File</label>
-                            <input type="file" class="custom-file-input">
-                        </div>
-                    </div>
-                    <input type="hidden" name="bukti">
-                    <input type="hidden" name="bukti_file">
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-primary">Simpan</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
 <?php $this->app->endSection('content') ?>
 
 <?php $this->app->section() ?>

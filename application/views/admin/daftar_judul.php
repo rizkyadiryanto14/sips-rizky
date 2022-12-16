@@ -30,6 +30,7 @@ $this->app->extend('template/admin') ?>
                             <th>No</th>
                             <th>Nim</th>
                             <th>Nama</th>
+                            <th>Judul Skripsi</th>
                             <th>Abstrak</th>
                             <th>Tahun Lulus</th>
                         </tr>
@@ -43,6 +44,7 @@ $this->app->extend('template/admin') ?>
                             <td><?php echo $no++ ?></td>
                             <td><?php echo $daftar->nim ?></td>
                             <td><?php echo $daftar->nama ?></td>
+                            <td><?php echo $daftar->judul_skripsi ?></td>
                             <td><?php echo $daftar->abstrak ?></td>
                             <td><?php echo $daftar->tahun_lulus ?></td>
                         </tr>
@@ -71,8 +73,12 @@ $this->app->extend('template/admin') ?>
                         <input type="text" name="nama" class="form-control" placeholder="Masukan Nama" required>
                     </div>
                     <div class="modal-body">
+                        <label for="">Judul Skripsi</label>
+                        <input type="text" name="judul_skripsi" id="judul_skripsi" class="form-control">
+                    </div>
+                    <div class="modal-body">
                         <label for="">Abstrak</label>
-                        <input type="text" name="abstrak" class="form-control" placeholder="Masukan Abstrak" required>
+                        <textarea name="abstrak" id="abstrak" cols="30" rows="10" class="form-control"></textarea>
                     </div>
                     <div class="modal-body">
                         <label for="">Tahun Lulus</label>

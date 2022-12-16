@@ -109,6 +109,77 @@ class Seminar_model extends CI_Model
 		return $hasil;
 	}
 
+	public function update($input, $id)
+	{
+		$data = [
+			'proposal_mahasiswa_id' => $input['proposal_mahasiswa_id'],
+			'dosen_id' => $input['dosen_id'],
+			'file_proposal' => $input['file_proposal'],
+			'kartu_bimbingan' => $input['kartu_bimbingan'],
+			'surat_permohonan' => $input['surat_permohonan'],
+			'syarat_seminar' => $input['syarat_seminar'],
+		];
+
+		$kondisi = ['seminar.id' => $id];
+		$cek = $this->db->get_where($this->table, $kondisi)->num_rows();
+
+		if ($cek > 0) {
+			$validate = $this->app->validate($data);
+			if ($validate === true) {
+
+				if ($input['file_proposal'] != '') {
+					unlink(FCPATH . 'cdn/vendor/file_proposal/' . $input['def_file_proposal']);
+					$file_nama = date('Ymdhis') . '.pdf';
+
+					$file_proposal_file = explode(';base64,', $input['file_proposal'])[1];
+					file_put_contents(FCPATH . 'cdn/vendor/file_proposal/' . $file_nama, base64_decode($file_proposal_file));
+					$data['file_proposal'] = $file_nama;
+				}
+
+				if ($input['kartu_bimbingan'] != '') {
+					unlink(FCPATH . 'cdn/vendor/kartu_bimbingan/' . $input['def_kartu_bimbingan']);
+					$file_nama = date('Ymdhis') . '.pdf';
+
+					$kartu_bimbingan_file = explode(';base64,', $input['kartu_bimbingan'])[1];
+					file_put_contents(FCPATH . 'cdn/vendor/kartu_bimbingan/' . $file_nama, base64_decode($kartu_bimbingan_file));
+					$data['kartu_bimbingan'] = $file_nama;
+				}
+
+				if ($input['surat_permohonan'] != '') {
+					unlink(FCPATH . 'cdn/vendor/kartu_bimbingan/' . $input['def_kartu_bimbingan']);
+					$file_nama = date('Ymdhis') . '.pdf';
+
+					$surat_permohonan_file = explode(';base64,', $input['surat_permohonan'])[1];
+					file_put_contents(FCPATH . 'cdn/vendor/surat_permohonan/' . $file_nama, base64_decode($surat_permohonan_file));
+					$data['surat_permohonan'] = $file_nama;
+				}
+
+				if ($input['syarat_seminar'] != '') {
+					unlink(FCPATH . 'cdn/vendor/syarat_seminar/' . $input['def_syarat_bimbingan']);
+					$file_nama = date('Ymdhis') . '.pdf';
+
+					$syarat_seminar_file = explode(';base64,', $input['syarat_seminar'])[1];
+					file_put_contents(FCPATH . 'cdn/vendor/syarat_seminar/' . $file_nama, base64_decode($syarat_seminar_file));
+					$data['syarat_seminar'] = $file_nama;
+				}
+
+				$this->db->update($this->table, $data, $kondisi);
+				$hasil = [
+					'error' 	=> false,
+					'message' 	=> "data berhasil diedit"
+				];
+			} else {
+				$hasil = $validate;
+			}
+		} else {
+			$hasil = [
+				'error' => true,
+				'message' => "data tidak ditemukan"
+			];
+		}
+		return $hasil;
+	}
+
 	public function details($id)
 	{
 		$this->db->select('
@@ -160,9 +231,6 @@ class Seminar_model extends CI_Model
 		if ($seminar) {
 			$hasil_seminar = $this->db->get_where('hasil_seminar', ['seminar_id' => $id])->result_array();
 			foreach ($hasil_seminar as $key => $item) {
-				if ($item['berita_acara']) {
-					unlink(FCPATH . 'cdn/vendor/berita_acara/' . $item['berita_acara']);
-				}
 				if ($item['masukan']) {
 					unlink(FCPATH . 'cdn/vendor/masukan/' . $item['masukan']);
 				}

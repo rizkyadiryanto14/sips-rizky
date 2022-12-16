@@ -12,7 +12,7 @@ class Cekjudul extends CI_Controller
     {
         $v['data'] = [];
         if ($this->input->post('judul')) {
-            $skripsi = $this->db->get('skripsi_vl')->result_array();
+            $skripsi = $this->db->get('daftar_judul')->result_array();
             foreach ($skripsi as $item) {
                 similar_text(strtolower(str_replace(' ', '', $this->input->post('judul'))), strtolower(str_replace(' ', '', $item['judul_skripsi'])), $resPercent);
 

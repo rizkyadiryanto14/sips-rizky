@@ -52,37 +52,19 @@ a[disabled="disabled"] {
 </div>
 <div class="modal fade" id="tambah">
     <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content modal-lg">
             <form id="tambah">
                 <div class="modal-header">
                     <div class="modal-title">Tambah Seminar</div>
                 </div>
                 <div class="modal-body">
+                    <input type="hidden" name="mahasiswa_id" value="<?= $this->session->userdata('id') ?>">
                     <div class="form-group">
                         <label>Proposal</label>
                         <select name="proposal_mahasiswa_id" class="form-control">
                             <option value="">- Pilih Proposal -</option>
                         </select>
                     </div>
-                    <!-- <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Tanggal</label>
-                                <input type="date" name="tanggal" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md">
-                            <div class="form-group">
-                                <label>Jam</label>
-                                <input type="time" name="jam" class="form-control">
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="form-group">
-                        <label>Tempat</label>
-                        <textarea name="tempat" rows="3" class="form-control"
-                            placeholder="Masukkan Tempat Seminar"></textarea>
-                    </div> -->
                     <div class="form-group">
                         <label for="">Dosen Pembimbing</label>
                         <select name="dosen_id" id="" class="form-control">
@@ -118,6 +100,63 @@ a[disabled="disabled"] {
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="edit">
+    <div class="modal-dialog">
+        <div class="modal-content modal-lg">
+            <form id="edit">
+                <div class="modal-header">
+                    <div class="modal-title">Edit Seminar</div>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" class="id">
+                    <input type="hidden" name="mahasiswa_id" value="<?= $this->session->userdata('id') ?>">
+                    <div class="form-group">
+                        <label>Proposal</label>
+                        <select name="proposal_mahasiswa_id" class="form-control">
+                            <option value="">- Pilih Proposal -</option>
+                        </select>
+                    </div>
+                    <div class=" form-group">
+                        <label for="">Dosen Pembimbing</label>
+                        <select name="dosen_id" id="" class="form-control">
+                            <option value="">- Pilih Dosen Pembimbing -</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Surat Permohonan</label>
+                        <input type="file" class="form-control" name="pilih-surat_permohonan" accept="application/pdf">
+                        <input type="hidden" name="surat_permohonan">
+                        <input type="hidden" name="def_surat_permohonan">
+                    </div>
+                    <div class="form-group">
+                        <label>File Proposal</label>
+                        <input type="file" class="form-control" name="pilih-file_proposal" accept="application/pdf">
+                        <input type="hidden" name="file_proposal">
+                        <input type="hidden" name="def_file_proposal">
+                    </div>
+                    <div class="form-group">
+                        <label>Syarat Seminar</label>
+                        <input type="file" class="form-control" name="pilih-syarat_seminar" accept="application/pdf">
+                        <input type="hidden" name="syarat_seminar">
+                        <input type="hidden" name="def_syarat_seminar">
+                    </div>
+                    <div class="form-group">
+                        <label>Kartu Bimbingan</label>
+                        <input type="file" class="form-control" name="pilih-kartu_bimbingan" accept="application/pdf">
+                        <input type="hidden" name="kartu_bimbingan">
+                        <input type="hidden" name="def_kartu_bimbingan">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="hapus">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -308,7 +347,7 @@ $(document).ready(function() {
                     data: null,
                     render: function(data) {
                         return `
-                        <div class="text-center">
+                        <div class="text-center">\
                             <a href="` + base_url + `mahasiswa/seminar/detail/` + data.id +
                             `" class="btn btn-sm btn-success">
                                 <i class="fa fa-search"></i>
@@ -316,6 +355,9 @@ $(document).ready(function() {
                             <button class="btn btn-danger btn-hapus btn-sm" type="button" data-toggle="modal" data-target="#hapus" data-id="` +
                             data.id + `">
                                 <i class="fa fa-trash"></i>
+                            </button>\
+                            <button class="btn btn-sm btn-info btn-edit" type="button" data-toggle="modal" data-target="#edit" data-id="' + data.id + '" data-mahasiswa_id="' + data.mahasiswa_id + '" data-proposal_mahasiswa_id ="' + data.proposal_mahasiwa_id + '" data-dosen_id="' + data.dosen_id + '" data-file_skripsi="' + data.file_skripsi + '" data-syarat_seminar="' + data.syarat_seminar + '" data-kartu_bimbingan="' + data.kartu_bimbingan + '" data-surat_permohonan="' + data.surat_permohonan + '">
+                                <i class="fa fa-pen"></i>
                             </button>
                         </div>
                         `;
@@ -368,6 +410,31 @@ $(document).ready(function() {
         })
     })
 
+    $(document).on('change', 'form#edit [name=pilih-surat_permohonan]', function() {
+        read('form#edit [name=pilih-surat_permohonan]', function(data) {
+            $('form#edit [name=surat_permohonan]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#edit [name=pilih-file_proposal]', function() {
+        read('form#edit [name=pilih-file_proposal]', function(data) {
+            $('form#edit [name=file_proposal]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#edit [name=pilih-kartu_bimbingan]', function() {
+        read('form#edit [name=pilih-kartu_bimbingan]', function(data) {
+            $('form#edit [name=kartu_bimbingan]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#edit [name=pilih-syarat_seminar]', function() {
+        read('form#edit [name=pilih-syarat_seminar]', function(data) {
+            $('form#edit [name=syarat_seminar]').val(data.result);
+        })
+    })
+
+
     $(document).on('click', 'button.btn-hapus', function() {
         $('form#hapus .id').val($(this).data('id'));
     })
@@ -375,12 +442,37 @@ $(document).ready(function() {
     $(document).on('submit', 'form#hapus', function(e) {
         e.preventDefault();
         const id = $('form#hapus .id').val();
-        call('api/seminar_mahasiswa/destroy/' + id).done(function(res) {
+        call('api/seminar/destroy/' + id).done(function(res) {
             if (res.error == true) {
                 notif(res.message, 'error', true);
             } else {
                 notif(res.message, 'success');
                 $('div#hapus').modal('hide');
+                show();
+            }
+        })
+    })
+
+    $(document).on('click', 'button.btn-edit', function() {
+        $('form#edit .id').val($(this).data('id'));
+        $('form#edit [name=proposal_mahasiswa_id]').val($(this).data('proposal_mahasiswa_id'));
+        $('form#edit [name=dosen_id]').val($(this).data('dosen_id'));
+        $('form#edit [name=def_surat_permohonan]').val($(this).data('surat_permohonan'));
+        $('form#edit [name=def_file_proposal]').val($(this).data('file_proposal'));
+        $('form#edit [name=def_kartu_bimbingan]').val($(this).data('kartu_bimbingan'));
+        $('form#edit [name=def_syarat_seminar]').val($(this).data('syarat_seminar'));
+    })
+
+    $(document).on('submit', 'form#edit', function(e) {
+        e.preventDefault();
+        var id = $('form#edit .id').val();
+        call('api/seminar/update/' + id, $(this).serialize()).done(function(req) {
+            if (req.error == true) {
+                notif(req.message, 'error', true);
+            } else {
+                notif(req.message, 'success');
+                $('form#edit [name]').val('');
+                $('div#edit').modal('hide');
                 show();
             }
         })

@@ -14,6 +14,7 @@ class Seminar_model extends CI_Model
 			seminar.tanggal,
 			seminar.jam,
 			seminar.dosen_penguji_id,
+			seminar.dosen_penguji2_id,
 			seminar.dosen_id,
 			seminar.tempat,
 			seminar.file_proposal,
@@ -146,7 +147,7 @@ class Seminar_model extends CI_Model
 				}
 
 				if ($input['surat_permohonan'] != '') {
-					unlink(FCPATH . 'cdn/vendor/kartu_bimbingan/' . $input['def_kartu_bimbingan']);
+					unlink(FCPATH . 'cdn/vendor/surat_permohonan/' . $input['def_surat_permohonan']);
 					$file_nama = date('Ymdhis') . '.pdf';
 
 					$surat_permohonan_file = explode(';base64,', $input['surat_permohonan'])[1];
@@ -155,13 +156,22 @@ class Seminar_model extends CI_Model
 				}
 
 				if ($input['syarat_seminar'] != '') {
-					unlink(FCPATH . 'cdn/vendor/syarat_seminar/' . $input['def_syarat_bimbingan']);
+					unlink(FCPATH . 'cdn/vendor/syarat_seminar/' . $input['def_syarat_seminar']);
 					$file_nama = date('Ymdhis') . '.pdf';
 
 					$syarat_seminar_file = explode(';base64,', $input['syarat_seminar'])[1];
 					file_put_contents(FCPATH . 'cdn/vendor/syarat_seminar/' . $file_nama, base64_decode($syarat_seminar_file));
 					$data['syarat_seminar'] = $file_nama;
 				}
+
+				$this->db->update($this->table, $data);
+				$data_id = $this->db->insert_id();
+				$this->db->update("hasil_seminar", [
+					'seminar_id' => $data_id,
+					'berita_acara' => "",
+					'masukan' => "",
+					'status' => '3'
+				]);
 
 				$this->db->update($this->table, $data, $kondisi);
 				$hasil = [

@@ -50,6 +50,7 @@ a[disabled="disabled"] {
         </div>
     </div>
 </div>
+
 <div class="modal fade" id="tambah">
     <div class="modal-dialog">
         <div class="modal-content modal-lg">
@@ -102,8 +103,8 @@ a[disabled="disabled"] {
 </div>
 
 <div class="modal fade" id="edit">
-    <div class="modal-dialog">
-        <div class="modal-content modal-lg">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content ">
             <form id="edit">
                 <div class="modal-header">
                     <div class="modal-title">Edit Seminar</div>
@@ -176,6 +177,7 @@ a[disabled="disabled"] {
         </div>
     </div>
 </div>
+
 <?php $this->app->endSection('content') ?>
 
 <?php $this->app->section() ?>
@@ -346,21 +348,22 @@ $(document).ready(function() {
                 {
                     data: null,
                     render: function(data) {
-                        return `
-                        <div class="text-center">\
-                            <a href="` + base_url + `mahasiswa/seminar/detail/` + data.id +
-                            `" class="btn btn-sm btn-success">
-                                <i class="fa fa-search"></i>
-                            </a>
-                            <button class="btn btn-danger btn-hapus btn-sm" type="button" data-toggle="modal" data-target="#hapus" data-id="` +
-                            data.id + `">
-                                <i class="fa fa-trash"></i>
+                        return '<div class="text-center">\
+                            <button class="btn btn-sm btn-info btn-edit" type="button" data-toggle="modal" data-target="#edit" data-id="' +
+                            data.id +
+                            '" data-proposal_mahasiswa_id="' + data.proposal_mahasiswa_id +
+                            '" data-syarat_seminar="' + data.syarat_seminar +
+                            '" data-dosen_id="' + data.dosen_id +
+                            '" data-kartu_bimbingan="' + data.kartu_bimbingan +
+                            '" data-surat_permohonan="' + data.surat_permohonan +
+                            '">\
+                                <i class="fa fa-pen"></i>\
                             </button>\
-                            <button class="btn btn-sm btn-info btn-edit" type="button" data-toggle="modal" data-target="#edit" data-id="' + data.id + '" data-mahasiswa_id="' + data.mahasiswa_id + '" data-proposal_mahasiswa_id ="' + data.proposal_mahasiwa_id + '" data-dosen_id="' + data.dosen_id + '" data-file_skripsi="' + data.file_skripsi + '" data-syarat_seminar="' + data.syarat_seminar + '" data-kartu_bimbingan="' + data.kartu_bimbingan + '" data-surat_permohonan="' + data.surat_permohonan + '">
-                                <i class="fa fa-pen"></i>
-                            </button>
-                        </div>
-                        `;
+    						<button class="btn btn-danger btn-sm btn-hapus" type="button" data-toggle="modal" data-target="#hapus" data-id="' +
+                            data.id + '">\
+    							<i class="fa fa-trash"></i>\
+    						</button>\
+    					</div>'
                     }
                 }
             ],
@@ -386,27 +389,27 @@ $(document).ready(function() {
         })
     })
 
-    $(document).on('change', '[name=pilih-file_proposal]', function() {
-        read('[name=pilih-file_proposal]', function(data) {
-            $('[name=file_proposal]').val(data.result);
+    $(document).on('change', 'form#tambah [name=pilih-file_proposal]', function() {
+        read('form#tambah [name=pilih-file_proposal]', function(data) {
+            $('form#tambah [name=file_proposal]').val(data.result);
         })
     })
 
-    $(document).on('change', '[name=pilih-surat_permohonan]', function() {
-        read('[name=pilih-surat_permohonan]', function(data) {
-            $('[name=surat_permohonan]').val(data.result);
+    $(document).on('change', 'form#tambah [name=pilih-surat_permohonan]', function() {
+        read('form#tambah [name=pilih-surat_permohonan]', function(data) {
+            $('form#tambah [name=surat_permohonan]').val(data.result);
         })
     })
 
-    $(document).on('change', '[name=pilih-syarat_seminar]', function() {
-        read('[name=pilih-syarat_seminar]', function(data) {
-            $('[name=syarat_seminar]').val(data.result);
+    $(document).on('change', 'form#tambah [name=pilih-syarat_seminar]', function() {
+        read('form#tambah [name=pilih-syarat_seminar]', function(data) {
+            $('form#tambah [name=syarat_seminar]').val(data.result);
         })
     })
 
-    $(document).on('change', '[name=pilih-kartu_bimbingan]', function() {
-        read('[name=pilih-kartu_bimbingan]', function(data) {
-            $('[name=kartu_bimbingan]').val(data.result);
+    $(document).on('change', 'form#tambah [name=pilih-kartu_bimbingan]', function() {
+        read('form#tambah [name=pilih-kartu_bimbingan]', function(data) {
+            $('form#tambah [name=kartu_bimbingan]').val(data.result);
         })
     })
 
@@ -453,31 +456,31 @@ $(document).ready(function() {
         })
     })
 
-    $(document).on('click', 'button.btn-edit', function() {
-        $('form#edit .id').val($(this).data('id'));
-        $('form#edit [name=proposal_mahasiswa_id]').val($(this).data('proposal_mahasiswa_id'));
-        $('form#edit [name=dosen_id]').val($(this).data('dosen_id'));
-        $('form#edit [name=def_surat_permohonan]').val($(this).data('surat_permohonan'));
-        $('form#edit [name=def_file_proposal]').val($(this).data('file_proposal'));
-        $('form#edit [name=def_kartu_bimbingan]').val($(this).data('kartu_bimbingan'));
-        $('form#edit [name=def_syarat_seminar]').val($(this).data('syarat_seminar'));
-    })
+})
 
-    $(document).on('submit', 'form#edit', function(e) {
-        e.preventDefault();
-        var id = $('form#edit .id').val();
-        call('api/seminar/update/' + id, $(this).serialize()).done(function(req) {
-            if (req.error == true) {
-                notif(req.message, 'error', true);
-            } else {
-                notif(req.message, 'success');
-                $('form#edit [name]').val('');
-                $('div#edit').modal('hide');
-                show();
-            }
-        })
-    })
+$(document).on('click', 'button.btn-edit', function() {
+    $('form#edit .id').val($(this).data('id'));
+    $('form#edit [name=proposal_mahasiswa_id]').val($(this).data('proposal_mahasiswa_id'));
+    $('form#edit [name=dosen_id]').val($(this).data('dosen_id'));
+    $('form#edit [name=def_surat_permohonan]').val($(this).data('surat_permohonan'));
+    $('form#edit [name=def_file_proposal]').val($(this).data('file_proposal'));
+    $('form#edit [name=def_kartu_bimbingan]').val($(this).data('kartu_bimbingan'));
+    $('form#edit [name=def_syarat_seminar]').val($(this).data('syarat_seminar'));
+})
 
+$(document).on('submit', 'form#edit', function(e) {
+    e.preventDefault();
+    var id = $('form#edit .id').val();
+    call('api/seminar/update/' + id, $(this).serialize()).done(function(req) {
+        if (req.error == true) {
+            notif(req.message, 'error', true);
+        } else {
+            notif(req.message, 'success');
+            $('form#edit [name]').val('');
+            $('div#edit').modal('hide');
+            show();
+        }
+    })
 })
 </script>
 <?php $this->app->endSection('script') ?>

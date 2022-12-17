@@ -22,8 +22,14 @@
                 <input type="time" name="jam" id="" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="">Dosen Penguji</label>
+                <label for="">Dosen Penguji 1</label>
                 <select name="dosen_penguji_id" class="form-control" required>
+                    <option value="">- Pilih Penguji -</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">Dosen Penguji 2 </label>
+                <select name="dosen_penguji2_id" class="form-control" required>
                     <option value="">- Pilih Penguji -</option>
                 </select>
             </div>
@@ -49,6 +55,7 @@ $(document).ready(function(res) {
             })
         }
         $('[name=dosen_penguji_id]').html(dosen);
+        $('[name=dosen_penguji2_id').html(dosen);
     })
 })
 </script>

@@ -56,8 +56,6 @@
                         <th>Surat Bebas Bauk</th>
                         <th>Lembar Persetujuan Pembimbing</th>
                         <th>Plagiarisme</th>
-                        <th>Aksi</th>
-                        <th>Atur jadwal_skripsi</th>
                     </tr>
                 </thead>
                 <tbody></tbody>
@@ -401,48 +399,6 @@ $(document).ready(function() {
                 },
                 {
                     data: "plagiat"
-                },
-                {
-                    data: null,
-                    render: function(data) {
-                        return '<div class="text-center">\
-                            <button class="btn btn-sm btn-info btn-edit" type="button" data-toggle="modal" data-target="#edit" data-id="' +
-                            data.id + '" data-mahasiswa_id="' + data.mahasiswa_id +
-                            '" data-judul_skripsi="' + data.judul_skripsi +
-                            '" data-jadwal_skripsi="' + data.jadwal_skripsi +
-                            '" data-dosen_id="' + data.dosen_id +
-                            '" data-dosen_penguji_id="' + data.dosen_penguji_id +
-                            '" data-file_skripsi="' + data.file_skripsi +
-                            '" data-krs="' + data.krs + '" data-formulir="' + data
-                            .formulir + '" data-kwitansi="' + data
-                            .kwitansi + '" data-kartu_bimbingan="' + data.kartu_bimbingan +
-                            '" data-transkip="' + data.transkip + '" data-lulus_mkWajib="' +
-                            data.lulus_mkWajib + '" data-sertifikat="' +
-                            '" data-bebas_bauk="' + data.bebas_bauk +
-                            '" data-lembar_persetujuan="' + data.lembar_persetujuan +
-                            data.sertifikat +
-                            '">\
-                                <i class="fa fa-pen"></i>\
-                            </button>\
-    						<button class="btn btn-danger btn-sm btn-hapus" type="button" data-toggle="modal" data-target="#hapus" data-id="' +
-                            data.id + '">\
-    							<i class="fa fa-trash"></i>\
-    						</button>\
-    					</div>'
-                    }
-                },
-                {
-                    data: null,
-                    render: function(data) {
-                        return `
-                        <div class="text-center">
-                            <a href="` + base_url + `admin/skripsi/status/` + data.id +
-                            `" class="btn btn-sm btn-info ${data.tempat != null ? 'd-none' : '' }">
-                                Atur Jadwal</i>
-                            </a>
-                        </div>
-                        `;
-                    }
                 }
             ],
             "language": {

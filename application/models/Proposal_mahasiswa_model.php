@@ -53,7 +53,7 @@ class Proposal_mahasiswa_model extends CI_Model
             'ringkasan' => $input['ringkasan'],
             'dosen_id' => $input['dosen_id'],
             'krs' => $input['krs'],
-            'transkip' => $input['transkip'],
+            'transkip' => $input['transkip']
         ];
 
         $validate = $this->app->validate($data);
@@ -232,7 +232,7 @@ class Proposal_mahasiswa_model extends CI_Model
                 $email = $dp->email;
             }
 
-            if ($this->db->update($this->table, ['status' => "0", 'deadline' => null], $kondisi)) {
+            if ($this->db->update($this->table, ['status' => "0"], $kondisi)) {
 
                 $isi_email = '
                     <p>Usulan proposal anda tidak disetujui, silahkan membenarkan usulan proposal anda.</p>

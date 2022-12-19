@@ -32,6 +32,12 @@ class Mahasiswa extends REST_Controller
         return $this->response($response);
     }
 
+    public function password_post($id = null)
+    {
+        $response = $this->model->update($this->input->post(), $id);
+        return $this->response($response);
+    }
+
     public function update2_post($id = null)
     {
         $response = $this->model->update2($this->input->post(), $id);

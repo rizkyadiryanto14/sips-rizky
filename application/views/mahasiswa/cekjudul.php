@@ -17,7 +17,7 @@ foreach ($dataUser as $du) {
     </div>
     <div class="card-body">
         <form action="" method="POST" class="form-group d-flex">
-            <input type="text" name="judul" id="" class="form-control" placeholder="Judul A" required
+            <input type="text" name="judul" id="" class="form-control" placeholder="Masukan Judul" required
                 value="<?= get_instance()->input->post('judul') ? get_instance()->input->post('judul') : '' ?>">
             <div class="mx-2"></div>
             <input type="submit" value="Cek" class="btn btn-primary">

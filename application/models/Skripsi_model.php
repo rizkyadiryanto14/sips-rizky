@@ -390,7 +390,7 @@ class Skripsi_model extends CI_Model
         $query = $this->db->get();
         return $query;
     }
-    
+
     public function viewWhereAssosiative($select, $tbl, $assosiative)
     {
         $this->db->select($select);

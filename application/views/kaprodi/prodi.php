@@ -8,12 +8,6 @@
             <div class="col-6">
                 <div class="card-title">Data Prodi</div>
             </div>
-            <div class="col-6 text-right">
-                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">
-                    <i class="fa fa-plus"></i>
-                    Tambah
-                </button>
-            </div>
         </div>
     </div>
     <div class="card-body">
@@ -26,105 +20,10 @@
                         <th>Nama</th>
                         <th>Fakultas</th>
                         <th>Ketua Prodi</th>
-                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody></tbody>
             </table>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="tambah">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form id="tambah">
-                <div class="modal-header">
-                    <div class="modal-title">Tambah Prodi</div>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label>Kode</label><input type="text" class="form-control" name="kode"
-                            placeholder="Masukkan Kode" autocomplete="off">
-                    </div>
-                    <div class="form-group">
-                        <label>Nama</label><input type="text" class="form-control" name="nama"
-                            placeholder="Masukkan Nama" autocomplete="off">
-                    </div>
-                    <div class="form-group">
-                        <label>Fakultas</label>
-                        <select name="fakultas_id" class="form-control">
-                            <option value="">- Pilih Fakultas -</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Ketua Prodi</label>
-                        <select name="dosen_id" class="form-control">
-                            <option value="">- Pilih Dosen -</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-primary">Simpan</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="edit">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form id="edit">
-                <div class="modal-header">
-                    <div class="modal-title">Edit Prodi</div>
-                </div>
-                <div class="modal-body">
-                    <input type="hidden" class="id">
-                    <div class="form-group">
-                        <label>Kode</label><input type="text" class="form-control" name="kode"
-                            placeholder="Masukkan Kode" autocomplete="off">
-                    </div>
-                    <div class="form-group">
-                        <label>Nama</label><input type="text" class="form-control" name="nama"
-                            placeholder="Masukkan Nama" autocomplete="off">
-                    </div>
-                    <div class="form-group">
-                        <label>Fakultas</label>
-                        <select name="fakultas_id" class="form-control">
-                            <option value="">- Pilih Fakultas -</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Ketua Prodi</label>
-                        <select name="dosen_id" class="form-control">
-                            <option value="">- Pilih Dosen -</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-primary">Simpan</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="hapus">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form id="hapus">
-                <div class="modal-header">
-                    <div class="modal-title">Hapus Prodi</div>
-                </div>
-                <div class="modal-body">
-                    <input type="hidden" class="id">
-                    <p>Anda yakin menghapus prodi <strong class="nama">Nama Posen</strong> ?</p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" typpe="button" data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-danger">Hapus</button>
-                </div>
-            </form>
         </div>
     </div>
 </div>
@@ -188,42 +87,6 @@ $(document).ready(function() {
                     data: "kaprodi",
                     render: function(data) {
                         return data.nama
-                    }
-                },
-                {
-                    data: null,
-                    render: function(data) {
-                        if (level == '1') {
-                            return `
-								<div class="text-center">
-									<button 
-										class="btn btn-edit btn-info btn-sm" 
-										type="button" 
-										data-toggle="modal" 
-										data-target="#edit"
-										data-id="` + data.id + `"
-										data-kode="` + data.kode + `"
-										data-nama="` + data.nama + `"
-										data-dosen_id="` + data.dosen_id + `"
-										data-fakultas_id="` + data.fakultas_id + `"
-									>
-										<i class="fa fa-pen"></i>
-									</button>
-									<button 
-										class="btn btn-hapus btn-danger btn-sm" 
-										type="button" 
-										data-toggle="modal" 
-										data-target="#hapus"
-										data-id="` + data.id + `"
-										data-nama="` + data.nama + `"
-									>
-										<i class="fa fa-trash"></i>
-									</button>
-								</div>
-								`
-                        } else {
-                            return '-';
-                        }
                     }
                 }
             ]

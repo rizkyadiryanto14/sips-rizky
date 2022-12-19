@@ -42,18 +42,19 @@ foreach ($dataUser as $du) {
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() ?>mahasiswa/dashboard">
-                                <i class="fa fa-book-open text-primary"></i>
+                            <a class="nav-link" href="<?= base_url() ?>mahasiswa/daftar_judul">
+                                <i class="fa fa-book text-primary"></i>
                                 <span class="nav-link-text">Daftar Judul</span>
                             </a>
                         </li>
+
                         <?php if ($verifikasi == 1) { ?>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="<?= base_url() ?>mahasiswa/cekjudul">
                                 <i class="ni ni-app text-warning"></i>
                                 <span class="nav-link-text">Cek Kemiripan Judul</span>
                             </a>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="collapse" href="#pendaftaran" role="button"
@@ -102,18 +103,6 @@ foreach ($dataUser as $du) {
                                 </a>
                             </div>
                         </div>
-                        <!-- <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url() ?>mahasiswa/penelitian">
-                                    <i class="ni ni-bulb-61 text-purple"></i>
-                                    <span class="nav-link-text">Seminar Hasil Penelitian</span>
-                                </a>
-                            </li> -->
-                        <!-- <li class="nav-item">
-                                <a class="nav-link" href="<?= base_url() ?>mahasiswa/hasilkegiatan">
-                                    <i class="fa fa-crown text-warning"></i>
-                                    <span class="nav-link-text">HK3</span>
-                                </a>
-                            </li> -->
                         <?php } ?>
                     </ul>
                 </div>
@@ -181,6 +170,11 @@ foreach ($dataUser as $du) {
                                 <a href="<?= base_url() ?>mahasiswa/profil" class="dropdown-item">
                                     <i class="ni ni-single-02"></i>
                                     <span>Profil</span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="<?= base_url() ?>mahasiswa/ganti_password" class="dropdown-item">
+                                    <i class="fa fa-key"></i>
+                                    <span>Change Password</span>
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a href="<?= base_url() ?>auth/logout" class="dropdown-item">

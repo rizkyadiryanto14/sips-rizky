@@ -12,28 +12,6 @@ foreach ($dataUser as $du) {
 
 <?php $this->app->section() ?>
 <?php if ($verifikasi == 1) { ?>
-<div class="card">
-    <div class="card-header">
-        <h5 class="card-title text-uppercase text-muted mb-0">Deadline Proposal Sampai Skripsi</h5>
-    </div>
-    <div class="card-body">
-        <div class="table-responsive">
-            <table class="table dataTable">
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Deadline Skripsi Countdown</th>
-                        <th>Tanggal Deadline</th>
-                        <th>Judul Proposal</th>
-                    </tr>
-                </thead>
-                <tbody id="_tbody">
-
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
 <div class="card card-stats">
     <div class="card-body">
         <div class="row">
@@ -53,7 +31,61 @@ foreach ($dataUser as $du) {
         </p>
     </div>
 </div>
+
 <?php } ?>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title text-uppercase text-muted mb-0 text-center">Cek Kemiripan Judul Skripsi</h5>
+    </div>
+    <div class="card-body">
+        <form action="" method="POST" class="form-group d-flex">
+            <input type="text" name="judul" id="" class="form-control" placeholder="Masukan Judul" required
+                value="<?= get_instance()->input->post('judul') ? get_instance()->input->post('judul') : '' ?>">
+            <div class="mx-2"></div>
+            <input type="submit" value="Cek" class="btn btn-primary">
+        </form>
+        <div class="table-responsive">
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul Skripsi</th>
+                        <th>Plagiarisme</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($data as $i => $item) { ?>
+                    <tr>
+                        <td><?= $i + 1; ?></td>
+                        <td><?= $item['judul_skripsi']; ?></td>
+                        <td><?= $item['plagiat']; ?></td>
+                    </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
+        </div>
+        <div class="card-header">
+            <h5 class="card-title text-uppercase text-muted mb-0 ">Keterangan : </h5>
+            <h5 class="card-title text-uppercase text-muted mt-3">Presentase di bawah 40% judul <span
+                    class="badge badge-danger">Ditolak</span></h5>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <card class="header">
+            <h2 class="text-center">Timeline</h2>
+        </card>
+        <div class="text-center">
+            <?php foreach ($template as $row) { ?>
+            <img width="80%" src="<?= base_url('assets/essence/img/timeline/') . $row->timeline; ?>" alt="timeline">
+            <?php } ?>
+        </div>
+    </div>
+</div>
+
 <div class="card">
     <div class="card-body">
         <div class="row">
@@ -92,6 +124,9 @@ foreach ($dataUser as $du) {
 </div>
 <div class="card">
     <div class="card-body">
+        <div class="card-header">
+            <h4 class="text-center">Grafik Judul Diterima Dan di Tolak</h4>
+        </div>
         <canvas id="judul-status" style="width: 100%; text-align: center; max-height: 300px;"></canvas>
     </div>
 </div>
@@ -121,92 +156,92 @@ $(document).ready(function() {
 
 })
 
-$.ajax({
-    url: base_url + '/getDeadline',
-    data: {
-        mahasiswa_id: <?= $this->session->userdata('id') ?>
-    },
-    type: 'post',
-    dataType: 'json',
-    success: function(res) {
-        no = 1
-        $.each(res, function(i, item) {
-            if (item.deadline != '') {
-                now = new Date();
-                _x = new Date(item.deadline);
-                if (now > _x) {
-                    $.ajax({
-                        url: base_url + 'cekdeadline/' + item.mahasiswa_id,
-                        dataType: 'json',
-                        type: 'get',
-                        success: function(res) {
-                            if (res == 'waktu habis') {
-                                alert(
-                                    'Waktu habis dan data skripsi tidak ada, akun anda dinon-verifikasi'
-                                    )
-                                location.reload()
-                            }
-                            if (res == "aman") {
-                                $("#deadline_" + item.id).html(
-                                    'Waktu habis dan data skripsi ada')
-                            }
-                        }
+// $.ajax({
+//     url: base_url + '/getDeadline',
+//     data: {
+//         mahasiswa_id: <?= $this->session->userdata('id') ?>
+//     },
+//     type: 'post',
+//     dataType: 'json',
+//     success: function(res) {
+//         no = 1
+//         $.each(res, function(i, item) {
+//             if (item.deadline != '') {
+//                 now = new Date();
+//                 _x = new Date(item.deadline);
+//                 if (now > _x) {
+//                     $.ajax({
+//                         url: base_url + 'cekdeadline/' + item.mahasiswa_id,
+//                         dataType: 'json',
+//                         type: 'get',
+//                         success: function(res) {
+//                             if (res == 'waktu habis') {
+//                                 alert(
+//                                     'Waktu habis dan data skripsi tidak ada, akun anda dinon-verifikasi'
+//                                 )
+//                                 location.reload()
+//                             }
+//                             if (res == "aman") {
+//                                 $("#deadline_" + item.id).html(
+//                                     'Waktu habis dan data skripsi ada')
+//                             }
+//                         }
 
-                    })
-                }
-            }
+//                     })
+//                 }
+//             }
 
-            bulanIndo = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus',
-                'September', 'Oktober', 'November', 'Desember'
-            ];
-            _tgl = new Date(item.deadline)
-            _hari = _tgl.getDay();
-            _bulan = _tgl.getMonth();
-            _tahun = _tgl.getFullYear();
-            _jam = _tgl.getHours();
-            _menit = _tgl.getMinutes();
+//             bulanIndo = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus',
+//                 'September', 'Oktober', 'November', 'Desember'
+//             ];
+//             _tgl = new Date(item.deadline)
+//             _hari = _tgl.getDay();
+//             _bulan = _tgl.getMonth();
+//             _tahun = _tgl.getFullYear();
+//             _jam = _tgl.getHours();
+//             _menit = _tgl.getMinutes();
 
 
-            _tbody =
-                '<tr>+' +
-                '<td>' + no++ + '</td>' +
-                '<td><b><span id="deadline_' + item.id + '"></span><b></td>' +
-                '<td>' + _hari + ' ' + bulanIndo[_bulan] + ' ' + _tahun + ' Pukul ' + _jam + ':' +
-                _menit + '</td>' +
-                '<td>' + item.judul + '</td>' +
-                '</tr>'
-            $("#_tbody").append(_tbody)
+//             _tbody =
+//                 '<tr>+' +
+//                 '<td>' + no++ + '</td>' +
+//                 '<td><b><span id="deadline_' + item.id + '"></span><b></td>' +
+//                 '<td>' + _hari + ' ' + bulanIndo[_bulan] + ' ' + _tahun + ' Pukul ' + _jam + ':' +
+//                 _menit + '</td>' +
+//                 '<td>' + item.judul + '</td>' +
+//                 '</tr>'
+//             $("#_tbody").append(_tbody)
 
-            $("#deadline_" + item.id)
-                .countdown(item.deadline, function(event) {
-                    $(this).text(
-                        event.strftime('Waktu Terisisa %D Hari %H Jam %M Menit %S Detik')
-                    );
-                }).on('finish.countdown', function() {
-                    $("#deadline_" + item.id).html('Waktu Habis')
-                    $.ajax({
-                        url: base_url + 'cekdeadline/' + item.mahasiswa_id,
-                        dataType: 'json',
-                        type: 'get',
-                        success: function(res) {
-                            if (res == 'waktu habis') {
-                                alert(
-                                    'Waktu habis dan data skripsi tidak ada, akun anda dinon-verifikasi'
-                                    )
-                                location.reload()
-                            }
-                            if (res == "aman") {
-                                $("#deadline_" + item.id).html(
-                                    'Waktu habis dan data skripsi ada')
-                            }
-                        }
+//             $("#deadline_" + item.id)
+//                 .countdown(item.deadline, function(event) {
+//                     $(this).text(
+//                         event.strftime('Waktu Terisisa %D Hari %H Jam %M Menit %S Detik')
+//                     );
+//                 }).on('finish.countdown', function() {
+//                     $("#deadline_" + item.id).html('Waktu Habis')
+//                     $.ajax({
+//                         url: base_url + 'cekdeadline/' + item.mahasiswa_id,
+//                         dataType: 'json',
+//                         type: 'get',
+//                         success: function(res) {
+//                             if (res == 'waktu habis') {
+//                                 alert(
+//                                     'Waktu habis dan data skripsi tidak ada, akun anda dinon-verifikasi'
+//                                 )
+//                                 location.reload()
+//                             }
+//                             if (res == "aman") {
+//                                 $("#deadline_" + item.id).html(
+//                                     'Waktu habis dan data skripsi ada')
+//                             }
+//                         }
 
-                    })
-                });
-        })
-        $(".dataTable").dataTable();
-    }
-})
+//                     })
+//                 });
+//         })
+//         $(".dataTable").dataTable();
+//     }
+// })
 
 judulDiterima = 0;
 judulDitolak = 0;

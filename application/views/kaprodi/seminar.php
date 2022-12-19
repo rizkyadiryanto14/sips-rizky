@@ -36,7 +36,6 @@
                         <th>Syarat Seminar</th>
                         <th>Kartu Bimbingan</th>
                         <th>Status</th>
-                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody></tbody>
@@ -175,27 +174,6 @@ $(document).ready(function() {
                             return '<span class="badge badge-danger">Ditolak/Belum di nilai</span>'
                         }
                     }
-                },
-                {
-                    data: null,
-                    render: function(data) {
-                        return `
-                        <div class="text-center">
-                            <a href="` + base_url + `admin/seminar/detail/` + data.id + `" class="btn btn-sm btn-success">
-                                <i class="fa fa-search"></i>
-                            </a>
-                            <a href="` + base_url + `admin/seminar/status/` + data.id +
-                            `" class="btn btn-sm btn-info ${data.tempat != null ? 'd-none' : '' }">
-                                <i class="fa fa-check"></i>
-                            </a>
-                            <button class="btn btn-danger btn-hapus btn-sm" type="button" data-toggle="modal" data-target="#hapus" data-id="` +
-                            data
-                            .id + `">
-                                <i class="fa fa-trash"></i>
-                            </button>
-                        </div>
-                        `;
-                    }
                 }
             ],
             "language": {
@@ -205,32 +183,6 @@ $(document).ready(function() {
     }
 
     show();
-
-    // $(document).on('submit', 'form#tambah', function(e) {
-    //     e.preventDefault();
-    //     call('api/seminar/create', $(this).serialize()).done(function(res) {
-    //         if (res.error == true) {
-    //             notif(res.message, 'error', true);
-    //         } else {
-    //             notif(res.message, 'success');
-    //             $('form#tambah [name]').val('');
-    //             $('div#tambah').modal('hide');
-    //             show();
-    //         }
-    //     })
-    // })
-
-    // $(document).on('change', '[name=pilih-file_proposal]', function() {
-    //     read('[name=pilih-file_proposal]', function(data) {
-    //         $('[name=file_proposal]').val(data.result);
-    //     })
-    // })
-
-    // $(document).on('change', '[name=pilih-sk_tim]', function() {
-    //     read('[name=pilih-sk_tim]', function(data) {
-    //         $('[name=sk_tim]').val(data.result);
-    //     })
-    // })
 
     $(document).on('click', 'button.btn-hapus', function() {
         $('form#hapus .id').val($(this).data('id'));

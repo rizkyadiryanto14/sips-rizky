@@ -27,6 +27,8 @@
                 <thead>
                     <tr>
                         <th>No</th>
+                        <th>Nim</th>
+                        <th>Nama</th>
                         <th>Judul</th>
                         <th>Transkip</th>
                         <th>KRS</th>
@@ -181,6 +183,18 @@ $(document).ready(function() {
                     }
                 },
                 {
+                    data: "mahasiswa",
+                    render: function(data) {
+                        return data.nim;
+                    }
+                },
+                {
+                    data: "mahasiswa",
+                    render: function(data) {
+                        return data.nama;
+                    }
+                },
+                {
                     data: "judul"
                 },
                 {
@@ -212,7 +226,7 @@ $(document).ready(function() {
                         if (data.status == 1) {
                             return '<span class="badge badge-success">Judul Diterima</span>';
                         } else if (data.status == 0) {
-                            return '<span class="badge badge-danger">Judul Ditolak</span>';
+                            return '<span class="badge badge-danger">Menunggu Di Review</span>';
                         } else if (data.status == 2) {
                             return '<span class="badge badge-warning">Menunggu Di Review</span>';
                         }
@@ -228,8 +242,6 @@ $(document).ready(function() {
                             data.id + '" data-mahasiswa_id="' + data.mahasiswa_id +
                             '" data-judul="' + data.judul + '" data-ringkasan="' + data
                             .ringkasan + '" data-dosen_id="' + data.dosen_id +
-                            '" data-dosen2_id="' + data.dosen2_id +
-                            '" data-dosen_penguji_id="' + data.dosen_penguji_id +
                             '">\
                                 <i class="fa fa-pen"></i>\
                             </button>\
@@ -341,32 +353,6 @@ $(document).ready(function() {
                 notif(req.message, 'success');
                 $('form#hapus [name]').val('');
                 $('div#hapus').modal('hide');
-                show();
-            }
-        })
-    })
-
-    $(document).on('click', 'button.buat-konsultasi', function() {
-        $('form#buat-konsultasi [name=proposal_mahasiswa_id]').val($(this).data(
-            'proposal_mahasiswa_id'));
-    })
-
-    $(document).on('change', '.pilih-bukti', function() {
-        read('.pilih-bukti [type=file]', function(data) {
-            $('form#buat-konsultasi [name=bukti]').val(data.result);
-            $('form#buat-konsultasi [name=bukti_file]').val(data.file);
-        })
-    })
-
-    $(document).on('submit', 'form#buat-konsultasi', function(e) {
-        e.preventDefault();
-        call('api/konsultasi/create', $(this).serialize()).done(function(req) {
-            if (req.error == true) {
-                notif(req.message, 'error', true);
-            } else {
-                notif(req.message, 'success');
-                $('form#buat-konsultasi [name]').val('');
-                $('div#buat-konsultasi').modal('hide');
                 show();
             }
         })

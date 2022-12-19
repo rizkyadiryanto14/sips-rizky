@@ -1,4 +1,4 @@
-<?php $this->app->extend('template/admin') ?>
+<?php $this->app->extend('template/kaprodi') ?>
 
 <?php $this->app->setVar('title', 'Seminar') ?>
 

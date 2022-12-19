@@ -40,7 +40,7 @@ class Proposal_mahasiswa extends REST_Controller
 
     public function agree_post($id = null)
     {
-        $response = $this->model->agree($id, $this->input->post());
+        $response = $this->model->agree($id);
         return $this->response($response);
     }
 

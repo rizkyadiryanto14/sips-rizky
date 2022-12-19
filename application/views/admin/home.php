@@ -92,6 +92,7 @@
             </div>
             <hr>
 
+            <div class="alert alert-info">Rekomendasi Type file .png agar tidak pecah</div>
             <h3>Uploud Timeline</h3>
             <div class="row mb-3">
                 <div class="col-md-4 col-xs-12">

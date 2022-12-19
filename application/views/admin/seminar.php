@@ -19,6 +19,12 @@
     <div class="card-header">
         <div class="card-title">Data Seminar</div>
     </div>
+    <div class="col text-right">
+        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">
+            <i class="fa fa-plus"></i>
+            Tambah
+        </button>
+    </div>
     <div class="card-body">
         <div class="table-responsive">
             <table class="table table-hover" id="data-seminar">
@@ -46,6 +52,58 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="tambah">
+    <div class="modal-dialog">
+        <div class="modal-content modal-lg">
+            <form id="tambah">
+                <div class="modal-header">
+                    <div class="modal-title">Tambah Seminar</div>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Proposal</label>
+                        <select name="proposal_mahasiswa_id" class="form-control">
+                            <option value="">- Pilih Proposal -</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Dosen Pembimbing</label>
+                        <select name="dosen_id" id="" class="form-control">
+                            <option value="">- Pilih Dosen Pembimbing -</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Surat Permohonan</label>
+                        <input type="file" class="form-control" name="pilih-surat_permohonan" accept="application/pdf">
+                        <input type="hidden" name="surat_permohonan">
+                    </div>
+                    <div class="form-group">
+                        <label>File Proposal</label>
+                        <input type="file" class="form-control" name="pilih-file_proposal" accept="application/pdf">
+                        <input type="hidden" name="file_proposal">
+                    </div>
+                    <div class="form-group">
+                        <label>Syarat Seminar</label>
+                        <input type="file" class="form-control" name="pilih-syarat_seminar" accept="application/pdf">
+                        <input type="hidden" name="syarat_seminar">
+                    </div>
+                    <div class="form-group">
+                        <label>Kartu Bimbingan</label>
+                        <input type="file" class="form-control" name="pilih-kartu_bimbingan" accept="application/pdf">
+                        <input type="hidden" name="kartu_bimbingan">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
 <div class="modal fade" id="hapus">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -72,20 +130,62 @@
 <script src="<?= base_url() ?>cdn/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="<?= base_url() ?>cdn/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script>
+base_url = '<?= base_url() ?>'
 $(document).ready(function() {
+
+    // $.ajax({
+    //     url: base_url + 'getData/proposal_mahasiswa',
+    //     type: 'post',
+    //     data: {
+    //         mahasiswa_id: <?= $this->session->userdata('id') ?>
+    //     },
+    //     dataType: 'json',
+    //     success: function(res) {
+    //         proposal = `<option value="">- Pilih Proposal -</option>`;
+    //         $.each(res, function(i, item) {
+    //             if (item.status == '1') {
+    //                 proposal += `<option value="` + item.id + `">` + item.judul +
+    //                     `</option>`;
+    //             }
+    //         })
+    //         $('[name=proposal_mahasiswa_id]').html(proposal);
+    //     }
+    // })
     getDataSelect()
-    call('api/konsultasi').done(function(req) {
+    call('api/proposal_mahasiswa').done(function(req) {
         proposal = `<option value="">- Pilih Proposal -</option>`;
         if (req.data) {
             req.data.forEach(obj => {
-                if (obj.persetujuan_pembimbing == '1' && obj.persetujuan_kaprodi == '1') {
-                    proposal += `<option value="` + obj.proposal_mahasiswa_id + `">` + obj
-                        .proposal_mahasiswa_judul + `</option>`;
+                if (obj.status == 1) {
+                    proposal += `<option value="` + obj.proposal_mahasiswa_id +
+                        `">` + obj.judul + `</option>`;
                 }
             })
         }
         $('[name=proposal_mahasiswa_id]').html(proposal);
     })
+
+    // call('api/proposal_mahasiswa').done(function(res) {
+    //     proposal = `<option value="">- Pilih Proposal -</option>`;
+    //     if (res.data) {
+    //         res.data.forEach(obj => {
+    //             proposal += `<option value="` + item.id + `">` + item.judul +
+    //                 `</option>`;
+    //         })
+    //     }
+    //     $('[name=proposal_mahasiswa_id]').html(proposal);
+    // })
+
+    call('api/dosen').done(function(res) {
+        dosen = `<option value="">- Pilih Dosen -</option>`;
+        if (res.data) {
+            res.data.forEach(obj => {
+                dosen += `<option value="` + obj.id + `">` + obj.nama + `</option>`;
+            })
+        }
+        $('[name=dosen_id]').html(dosen);
+    })
+
 
     show = () => {
         $('#data-seminar').DataTable().destroy();
@@ -141,8 +241,10 @@ $(document).ready(function() {
                 {
                     data: null,
                     render: function(data) {
-                        if (data.penguji_nama != null) {
-                            return data.penguji_nama;
+                        if (data.dosen_penguji_id != null) {
+                            return '1. ' + data.dosen_penguji_id + '<br>2. ' +
+                                data
+                                .dosen_penguji2_id;
                         } else {
                             return '<span class="badge badge-danger">Data Belum di set</span>';
                         }
@@ -161,28 +263,32 @@ $(document).ready(function() {
                 {
                     data: "surat_permohonan",
                     render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/surat_permohonan/' +
+                        return '<a href="' + base_url +
+                            'cdn/vendor/surat_permohonan/' +
                             data + '">' + data + '</a>';
                     }
                 },
                 {
                     data: "file_proposal",
                     render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/file_proposal/' + data +
+                        return '<a href="' + base_url +
+                            'cdn/vendor/file_proposal/' + data +
                             '">' + data + '</a>';
                     }
                 },
                 {
                     data: "syarat_seminar",
                     render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/syarat_seminar/' +
+                        return '<a href="' + base_url +
+                            'cdn/vendor/syarat_seminar/' +
                             data + '">' + data + '</a>';
                     }
                 },
                 {
                     data: "kartu_bimbingan",
                     render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/kartu_bimbingan/' +
+                        return '<a href="' + base_url +
+                            'cdn/vendor/kartu_bimbingan/' +
                             data + '">' + data + '</a>';
                     }
                 },
@@ -270,7 +376,8 @@ function getDataSelect() {
         success: function(res) {
             data = '<option value=""></option>'
             $.each(res, function(i, item) {
-                data += '<option value="' + item.id + '">(' + item.nim + ') ' + item.nama +
+                data += '<option value="' + item.id + '">(' + item.nim + ') ' + item
+                    .nama +
                     '</option>'
             })
             $("#wadah_select2").html(data)

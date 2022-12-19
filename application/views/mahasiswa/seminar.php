@@ -47,6 +47,25 @@ a[disabled="disabled"] {
                 </thead>
                 <tbody></tbody>
             </table>
+            <div class="card-footer">
+                <div class="card-header">
+                    <strong>Keterangan :</strong>
+                </div>
+                <div class="card-body">
+                    <section>
+                        <i class="fa fa-info-circle text-green"></i>
+                        = Detail Seminar
+                    </section>
+                    <section class="mt-3">
+                        <i class="fa fa-pen text-primary"></i>
+                        = Edit Seminar
+                    </section>
+                    <section class="mt-3">
+                        <i class="fa fa-trash text-danger"></i>
+                        = Hapus Seminar
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -271,10 +290,11 @@ $(document).ready(function() {
 
                     data: null,
                     render: function(data) {
-                        if (data.penguji_nama != null) {
-                            return data.penguji_nama
+                        if (data.dosen_penguji_id != null) {
+                            return '1. ' + data.dosen_penguji_id + '<br>2. ' + data
+                                .dosen_penguji2_id;
                         } else {
-                            return '<span class="badge badge-danger">Data Belum di set</span>'
+                            return '<span class="badge badge-danger">Data Belum di set</span>';
                         }
                     }
                 },
@@ -349,6 +369,8 @@ $(document).ready(function() {
                     data: null,
                     render: function(data) {
                         return '<div class="text-center">\
+                        \<a href="' + base_url + 'mahasiswa/seminar/detail/' + data.id +
+                            '" class="btn btn-sm btn-success"><i class="fa fa-info-circle"></i></a>\
                             <button class="btn btn-sm btn-info btn-edit" type="button" data-toggle="modal" data-target="#edit" data-id="' +
                             data.id +
                             '" data-proposal_mahasiswa_id="' + data.proposal_mahasiswa_id +

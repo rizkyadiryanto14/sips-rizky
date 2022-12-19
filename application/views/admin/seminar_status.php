@@ -22,16 +22,14 @@
                 <input type="time" name="jam" id="" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="">Dosen Penguji 1</label>
-                <select name="dosen_penguji_id" class="form-control" required>
-                    <option value="">- Pilih Penguji -</option>
-                </select>
+                <label for="">Nama Dosen Penguji 1</label>
+                <input type="text" name="dosen_penguji_id" id="" class="form-control"
+                    placeholder="Masukan Dosen Penguji 1" required>
             </div>
             <div class="form-group">
-                <label for="">Dosen Penguji 2 </label>
-                <select name="dosen_penguji2_id" class="form-control" required>
-                    <option value="">- Pilih Penguji -</option>
-                </select>
+                <label for="">Nama Dosen Penguji 2</label>
+                <input type="text" name="dosen_penguji2_id" id="" class="form-control"
+                    placeholder="Masukan Dosen Penguji 2" required>
             </div>
             <div class="form-group text-right">
                 <input type="submit" class="btn btn-primary" valid="Update">

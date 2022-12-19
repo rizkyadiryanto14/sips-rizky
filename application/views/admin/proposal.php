@@ -1,6 +1,6 @@
 <?php $this->app->extend('template/admin') ?>
 
-<?php $this->app->setVar('title', "Pendaftaran Skripsi") ?>
+<?php $this->app->setVar('title', "Proposal") ?>
 
 <?php $this->app->section() ?>
 <div class="card">
@@ -19,7 +19,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Data Pendaftaran Skripsi</div>
+                <div class="card-title">Data Proposal</div>
             </div>
             <div class="col text-right">
                 <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">
@@ -41,13 +41,11 @@
                         <th>No</th>
                         <th>NIM</th>
                         <th>Mahasiswa</th>
-                        <!-- <th>Nama Prodi</th> -->
                         <th>Judul</th>
                         <th>Transkip</th>
                         <th>KRS</th>
                         <th>Ringkasan</th>
                         <th>Pembimbing</th>
-                        <th>Plagiarisme</th>
                         <th>Status</th>
                         <th>Aksi</th>
                     </tr>
@@ -76,12 +74,6 @@
                     <div class="form-group">
                         <label>Dosen Pembimbing</label>
                         <select name="dosen_id" class="form-control">
-                            <option value="">- Pilih Dosen -</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Dosen Penguji</label>
-                        <select name="dosen_penguji_id" class="form-control">
                             <option value="">- Pilih Dosen -</option>
                         </select>
                     </div>
@@ -186,14 +178,13 @@
         <div class="modal-content">
             <form id="setujui">
                 <div class="modal-header">
-                    <div class="modal-title">Status Proposal</div>
+                    <div class="modal-title">Status Skripsi</div>
                 </div>
                 <div class="modal-body">
                     <input type="hidden" class="id">
                     <input type="hidden" class="status">
-                    <p>Anda yakin <span class="status">mengetujui / batal menyetujui</span> proposal <strong
+                    <p>Anda yakin <span class="status">mengetujui / batal menyetujui</span> skripsi <strong
                             class="judul">Judul Proposal</strong> ?</p>
-                    <div id="wadah_jadwal"></div>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
@@ -222,6 +213,16 @@ $(document).ready(function() {
         $('[name=mahasiswa_id]').html(mahasiswa);
     })
 
+    call('api/dosen').done(function(req) {
+        dosen = '<option value="">- Pilih Dosen -</option>';
+        if (req.data) {
+            $.each(req.data, function(index, obj) {
+                dosen += '<option value="' + obj.id + '">' + obj.nama + '</option>';
+            })
+        }
+        $('[name=dosen_id]').html(dosen);
+    })
+
     function show() {
         $('#data-proposal').DataTable().destroy();
         $('#data-proposal').DataTable({
@@ -239,23 +240,11 @@ $(document).ready(function() {
                     }
                 },
                 {
-                    data: "mahasiswa",
-                    render: function(data) {
-                        return data.nim;
-                    }
+                    data: "mahasiswa.nim",
                 },
                 {
-                    data: "mahasiswa",
-                    render: function(data) {
-                        return data.nama;
-                    }
+                    data: "mahasiswa.nama",
                 },
-                // {
-                //     data: "mahasiswa",
-                //     render: function(data) {
-                //         return data.nama_prodi;
-                //     }
-                // },
                 {
                     data: "judul"
                 },
@@ -274,77 +263,35 @@ $(document).ready(function() {
                     }
                 },
                 {
-                    data: "ringkasan",
-                    render: function(data) {
-                        return data
-                    }
+                    data: "ringkasan"
+                },
+                {
+                    data: "pembimbing.nama"
                 },
                 {
                     data: null,
                     render: function(data) {
-                        return data.pembimbing.nama
-                    }
-                },
-                {
-                    data: "plagiat"
-                },
-                {
-                    data: null,
-                    render: function(data) {
-                        if (data.dosen_id == '<?= $this->session->userdata('id') ?>') {
-                            if (data.status == '1') {
-                                status = '\
+                        if (data.status == '1') {
+                            status = '\
                             <button class="btn btn-sm btn-setuju btn-success" type="button" data-id="' + data.id +
-                                    '" data-judul="' + data.judul + '" data-status="' + data
-                                    .status + '" data-toggle="modal" data-target="#setujui">\
+                                '" data-judul="' + data.judul + '" data-status="' + data
+                                .status + '" data-toggle="modal" data-target="#setujui">\
                                 <i class="fa fa-check"></i>\
                             </button>\
-                            ';
-                            } else {
-                                status = '\
-                            <button class="btn btn-sm btn-setuju btn-danger" type="button" data-id="' + data.id +
-                                    '" data-judul="' + data.judul + '" data-status="' + data
-                                    .status + '" data-toggle="modal" data-target="#setujui">\
-                                <i class="fa fa-times"></i>\
-                            </button>\
-                            ';
-                            }
-
-                            return '\
-                            <div class="text-center">' + status + '</div>\
                             ';
                         } else {
-                            if (data.status == '1') {
-                                status = '\
-                            <button class="btn btn-sm btn-setuju btn-success" type="button">\
-                                <i class="fa fa-check"></i>\
-                            </button>\
-                            ';
-                            } else {
-                                status = '\
-                            <button class="btn btn-sm btn-setuju btn-danger" type="button">\
+                            status = '\
+                            <button class="btn btn-sm btn-setuju btn-danger" type="button" data-id="' + data.id +
+                                '" data-judul="' + data.judul + '" data-status="' + data
+                                .status + '" data-toggle="modal" data-target="#setujui">\
                                 <i class="fa fa-times"></i>\
                             </button>\
                             ';
-                            }
-
-                            return '\
+                        }
+                        return '\
                             <div class="text-center">' + status + '</div>\
                             ';
-                        }
                     }
-
-                    // data: null,
-                    // render: function(data) {
-                    //     if (data.status == 1) {
-                    //         return '<span class="badge badge-success">Judul Diterima</span>';
-                    //     } else if (data.status == 0) {
-                    //         return '<span class="badge badge-danger">Judul Ditolak</span>';
-                    //     } else if (data.status == 2) {
-                    //         return '<span class="badge badge-warning">Judul Belum Di nilai</span>';
-                    //     }
-                    // }
-
                 },
                 {
                     data: null,
@@ -354,10 +301,7 @@ $(document).ready(function() {
                                 <div class="text-center">\
                                 <button class="btn btn-sm btn-info btn-edit" type="button" data-toggle="modal" data-target="#edit" data-id="' +
                                 data.id + '" data-mahasiswa_id="' + data.mahasiswa_id +
-                                '" data-judul="' + data.judul + '" data-ringkasan="' + data
-                                .ringkasan + '" data-dosen_id="' + data.dosen_id +
-                                '" data-dosen2_id="' + data.dosen2_id +
-                                '" data-dosen_penguji_id="' + data.dosen_penguji_id +
+                                '" data-judul="' + data.judul + '" data-ringkasan="' +
                                 '">\
                                     <i class="fa fa-pen"></i>\
                                 </button>\
@@ -382,18 +326,6 @@ $(document).ready(function() {
 
     show();
 
-    call('api/dosen').done(function(req) {
-        dosen = '<option value="">- Pilih Dosen -</option>';
-        if (req.data) {
-            $.each(req.data, function(index, obj) {
-                dosen += '<option value="' + obj.id + '">' + obj.nama + '</option>';
-            })
-        }
-        $('[name=dosen_id]').html(dosen);
-        $('[name=dosen2_id]').html(dosen);
-        $('[name=dosen_penguji_id]').html(dosen);
-    })
-
     $(document).on('submit', 'form#tambah', function(e) {
         e.preventDefault();
         call('api/proposal_mahasiswa/create', $(this).serialize()).done(function(req) {
@@ -405,6 +337,30 @@ $(document).ready(function() {
                 $('div#tambah').modal('hide');
                 show();
             }
+        })
+    })
+
+    $(document).on('change', 'form#tambah [name=pilih-transkip]', function() {
+        read('form#tambah [name=pilih-transkip]', function(data) {
+            $('form#tambah [name=transkip]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#tambah [name=pilih-krs]', function() {
+        read('form#tambah [name=pilih-krs]', function(data) {
+            $('form#tambah [name=krs]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#edit [name=pilih-file_transkip]', function() {
+        read('form#edit [name=pilih-file_transkip]', function(data) {
+            $('form#edit [name=file_transkip]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#edit [name=pilih-file_krs]', function() {
+        read('form#edit [name=pilih-file_krs]', function(data) {
+            $('form#edit [name=file_krs]').val(data.result);
         })
     })
 
@@ -456,52 +412,29 @@ $(document).ready(function() {
     $(document).on('click', 'button.btn-setuju', function() {
         $('form#setujui .id').val($(this).data('id'));
         $('form#setujui input.status').val($(this).data('status'));
-        $('form#setujui span.status').html(($(this).data('status') == '1') ?
-            'batal menyetujui dan deadline skripsi akan direset untuk ' : 'menyetujui');
-        $('form#setujui .judul').html($(this).data('judul'));
-        if ($(this).data('status') == 1) {
-            $("#wadah_jadwal").html('')
-        } else {
-            $("#wadah_jadwal").html(
-                '<input name="deadline_skripsi" type="text" class="form-control dateTime" placeholder="Masukkan Deadline Skripsi" readonly required>'
-            )
-            $(".dateTime").flatpickr({
-                enableTime: true,
-                dateFormat: "Y-m-d H:i",
-            });
-        }
+        $('form#setujui span.status').html(($(this).data('status') == '1') ? 'batal menyetujui' :
+            'menyetujui');
+        $('form#setujui .judul').html($(this).data('judul_skripsi'));
     })
 
 
     $(document).on('submit', 'form#setujui', function(e) {
         e.preventDefault();
         $(".btn-konfirmasi").attr('disabled', true).html('Loading...')
-        if ($('form#setujui .status').val() != 1) {
-            if ($("form#setujui input[name=deadline_skripsi]").val() == "") {
-                alert('Harap Isi Deadline Skripsi Terlebih Dahulu')
+        const id = $('form#setujui .id').val();
+        call('api/proposal_mahasiswa/' + (($('form#setujui .status').val() == '1') ? 'disagree' :
+                'agree') + '/' +
+            id).done(function(req) {
+            if (req.error == true) {
+                notif(req.message, 'error', true);
                 $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
             } else {
-                action()
+                notif(req.message, 'success');
+                $('div#setujui').modal('hide');
+                show();
+                $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
             }
-        } else {
-            action()
-        }
-
-        function action() {
-            const id = $('form#setujui .id').val();
-            call('api/proposal_mahasiswa/' + (($('form#setujui .status').val() == '1') ? 'disagree' :
-                'agree') + '/' + id, $('form#setujui').serialize()).done(function(req) {
-                if (req.error == true) {
-                    notif(req.message, 'error', true);
-                    $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
-                } else {
-                    notif(req.message, 'success');
-                    $('div#setujui').modal('hide');
-                    show();
-                    $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
-                }
-            })
-        }
+        })
     })
 
 })

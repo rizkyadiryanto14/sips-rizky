@@ -17,7 +17,10 @@ class Cekjudul extends CI_Controller
                 similar_text(strtolower(str_replace(' ', '', $this->input->post('judul'))), strtolower(str_replace(' ', '', $item['judul_skripsi'])), $resPercent);
 
                 $plg = round($resPercent, 2);
-                if ($plg >= 50) {
+                if ($plg >= 60) {
+                    $item['plagiat'] =  $plg . '%';
+                    $v['data'][] = $item;
+                } else if ($plg <= 60) {
                     $item['plagiat'] =  $plg . '%';
                     $v['data'][] = $item;
                 }

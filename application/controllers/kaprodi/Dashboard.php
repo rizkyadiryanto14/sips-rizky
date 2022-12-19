@@ -23,7 +23,9 @@ class Dashboard extends MY_Controller
             'judul'     => base64_encode(json_encode($this->model->admin_index($this->input->post()))),
             'sudah'     => $PropDoneMahasiswa . "," . $SeminarMahasiswa . "," . $SkripsiMahasiswa,
             'belum'     => ($jmlhMahasiswa - $PropDoneMahasiswa) . "," . ($jmlhMahasiswa - $SeminarMahasiswa) . "," . ($jmlhMahasiswa - $SkripsiMahasiswa)
+
         ];
+        $v['template'] = $this->db->get('home_template')->result();
         return $this->load->view('kaprodi/dashboard', $v);
     }
 }

@@ -59,20 +59,19 @@
         </div>
     </div>
 </div>
-<section id="timeline" class="section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Timeline</h2>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-xs-12">
-                <div class="item-boxes services-item wow fadeInDown shadow border-0" data-wow-delay="0.2s">
-                    <img width="80%" src="<?= base_url('assets/essence/img/timeline/'); ?>" alt="timeline">
-                </div>
-            </div>
+
+<div class="card">
+    <div class="card-header">
+        <h3>Timeline</h3>
+    </div>
+    <div class="card-body">
+        <div class="text-center">
+            <?php foreach ($template as $row) { ?>
+            <img width="80%" src="<?= base_url('assets/essence/img/timeline/') . $row->timeline; ?>" alt="timeline">
+            <?php } ?>
         </div>
     </div>
-</section>
+</div>
 
 <div class="card">
     <div class="card-header">

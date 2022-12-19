@@ -332,9 +332,9 @@ class Home extends MY_Controller
         if ($timeline = null || $timeline == "") {
         } else {
             $path                           = './assets/essence/img/timeline/' . $def_timeline;
-            $config['upload_path']              = $path;
-            $config['allowed_types']            = 'jpg|png|jpeg|pdf';
-            $config['max_size']                 = 2048;
+            $config['upload_path']          = $path;
+            $config['allowed_types']        = 'png|jpeg|jpg';
+            $config['max_size']             = 2048;
             $this->load->library('upload', $config);
             $this->upload->initialize($config);
             unlink($path);

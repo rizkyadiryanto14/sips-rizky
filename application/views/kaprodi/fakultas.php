@@ -9,12 +9,6 @@
             <div class="col-6">
                 <div class="card-title">Data Fakultas</div>
             </div>
-            <div class="col-6 text-right">
-                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">
-                    <i class="fa fa-plus"></i>
-                    Tambah
-                </button>
-            </div>
         </div>
     </div>
     <div class="card-body">
@@ -61,7 +55,7 @@ $(document).ready(function() {
                 },
                 {
                     data: "dekan"
-                },
+                }
             ]
         })
     }

@@ -7,5 +7,18 @@
 ## Penambahan Dosen Penguji
 
 ```
-    1. Penambahan dosenn penguji
+    1. Penambahan dosenn penguji 2
+```
+
+## Update Field Seminar
+
+```
+    1. Perubahan Pada kolom tabel seminar
+    2. Perubahan Pada status seminar
+```
+
+## Update Daftar Judul
+
+```
+    1. Perubahan Pada kolom
 ```

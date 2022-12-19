@@ -6,7 +6,7 @@ class Dashboard extends MY_Controller
 
     public function index()
     {
-        $data = $this->db->get('home_template')->row();
+        $data['template'] = $this->db->get('home_template')->result();
         return $this->load->view('dosen/dashboard', $data);
     }
 }

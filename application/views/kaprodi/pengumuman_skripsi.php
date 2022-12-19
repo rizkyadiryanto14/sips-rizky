@@ -1,13 +1,25 @@
-<?php $this->app->extend('template/mahasiswa') ?>
+<?php $this->app->extend('template/kaprodi') ?>
 
-<?php $this->app->setVar('title', 'Pengumuman') ?>
+<?php $this->app->setVar('title', 'Sidang Skripsi') ?>
 
 <?php $this->app->section() ?>
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">Cari Mahasiswa : </div>
+        <form id="form_cari" action="<?= base_url('hasil-pencarian-mahasiswa'); ?>" method="POST"
+            onsubmit="disableBtn()">
+            <input type="hidden" name="level" value="Admin">
+            <select class="select2" name="id" required id="wadah_select2"> </select>
+            <button class="btn btn-primary mt-3 btn-act" type="sumbit">Lihat Selengkapnya <i
+                    class="fa fa-chevron-right"></i></button>
+        </form>
+    </div>
+</div>
 <div class="card">
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Pengumuman Sidang Skripsi</div>
+                <div class="card-title">Seminar Akhir / Skripsi</div>
             </div>
         </div>
         <div class="card-tools mt-2">
@@ -29,7 +41,6 @@
                         <th>Dosen Penguji</th>
                         <th>Jadwal Skripsi</th>
                         <th>Tempat</th>
-                        <th>Plagiarisme</th>
                     </tr>
                 </thead>
                 <tbody></tbody>
@@ -45,6 +56,7 @@
 <script src="<?= base_url() ?>cdn/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script>
 $(document).ready(function() {
+    getDataSelect()
     call('api/dosen').done(function(res) {
         dosen = `<option value="">- Pilih Dosen -</option>`;
         if (res.data) {
@@ -61,10 +73,10 @@ $(document).ready(function() {
         $('#data-skripsi').DataTable({
             "deferRender": true,
             "ajax": {
-                "url": base_url + "api/skripsi",
+                "url": base_url + "api/skripsi/admin_index",
                 "method": "POST",
                 "data": {
-                    mahasiswa_id: "<?= $this->session->userdata('id') ?>"
+                    user_id: "<?= $this->session->userdata('id') ?>"
                 },
                 "dataSrc": "data"
             },
@@ -79,10 +91,11 @@ $(document).ready(function() {
                     render: function(data) {
                         if (data.status == '1') {
                             status = '\
-                            <span class="badge badge-success mr-2"><i class="fa fa-check"></i></span>';
+                            <span class="badge badge-success">Telah Diverifikasi Dospem</span>\
+                            ';
                         } else {
                             status = '\
-                            <span class="badge badge-danger"><i class="fa fa-times"></i></span>\
+                            <span class="badge badge-danger">Belum Diverifikasi Dospem</span>\
                             ';
                         }
                         return '\
@@ -91,16 +104,10 @@ $(document).ready(function() {
                     }
                 },
                 {
-                    data: "mahasiswa",
-                    render: function(data) {
-                        return data.nim;
-                    }
+                    data: "mahasiswa.nim"
                 },
                 {
-                    data: "mahasiswa",
-                    render: function(data) {
-                        return data.nama;
-                    }
+                    data: "mahasiswa.nama"
                 },
                 {
                     data: "judul_skripsi"
@@ -132,16 +139,6 @@ $(document).ready(function() {
                         }
                     }
                 },
-                {
-                    data: null,
-                    render: function(data) {
-                        if (data.status == "") {
-                            return "Checking..."
-                        } else {
-                            return data.plagiat;
-                        }
-                    }
-                },
             ],
             "language": {
                 "zeroRecords": "data tidak tersedia"
@@ -150,7 +147,28 @@ $(document).ready(function() {
     }
 
     show();
+
 })
+
+function getDataSelect() {
+    $.ajax({
+        url: base_url + 'getAllData/mahasiswa',
+        dataType: 'json',
+        type: 'get',
+        success: function(res) {
+            data = '<option value=""></option>'
+            $.each(res, function(i, item) {
+                data += '<option value="' + item.id + '">(' + item.nim + ') ' + item.nama +
+                    '</option>'
+            })
+            $("#wadah_select2").html(data)
+        }
+    })
+}
+
+function disableBtn() {
+    $(".btn-act").attr('disabled', true).html('Loading ...')
+}
 </script>
 <?php $this->app->endSection('script') ?>
 

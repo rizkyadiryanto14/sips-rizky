@@ -44,9 +44,6 @@
                         <th>
                             <center>Skripsi</center>
                         </th>
-                        <th>
-                            <center>Aksi</center>
-                        </th>
                     </tr>
                 </thead>
                 <tbody></tbody>
@@ -155,21 +152,6 @@ function show() {
                     }
                 }
             },
-            {
-                data: null,
-                render: function(data) {
-                    return `
-                            <div class="text-center">
-                                <a href="` + base_url + `admin/mahasiswa/detail/` + data.id + `" class="btn btn-primary btn-sm">
-                                    <i class="fa fa-edit"></i>
-                                </a>
-                                <button type="button" class="btn btn-danger btn-sm" onclick="hapusData(` + data.id + `)">
-                                    <i class="fa fa-trash"></i>
-                                </button>
-                            </div>
-                            `;
-                }
-            }
         ]
     });
 }

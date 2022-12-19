@@ -1,4 +1,4 @@
-<?php $this->app->extend('template/mahasiswa') ?>
+<?php $this->app->extend('template/kaprodi') ?>
 
 <?php $this->app->setVar('title', "Proposal") ?>
 

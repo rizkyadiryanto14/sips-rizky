@@ -38,6 +38,29 @@ class Mahasiswa_model extends CI_Model
 
         return $hasil;
     }
+    public function password($input, $id)
+    {
+        $data = [
+            'password' => $input['password'] ? password_hash($input['password'], PASSWORD_DEFAULT) : ''
+        ];
+
+        $validate = $this->app->validate($data);
+
+        if ($validate === true) {
+
+            $data_id = $this->db->insert_id();
+
+            $hasil = [
+                'error' => false,
+                'message' => "Password berhasil diedit",
+                'data_id' => $data_id
+            ];
+        } else {
+            $hasil = $validate;
+        }
+
+        return $hasil;
+    }
 
     public function create($input)
     {

@@ -42,12 +42,6 @@
                                 <span class="nav-link-text">Dashboard</span>
                             </a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() ?>home-template">
-                                <i class="fa fa-edit text-warning"></i>
-                                <span class="nav-link-text">Website</span>
-                            </a>
-                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="collapse" href="#pendaftaran" role="button"
                                 aria-expanded="false" aria-controls="collapseExample">
@@ -57,15 +51,15 @@
                         </li>
                         <div class="collapse" id="pendaftaran">
                             <div class="card card-body">
-                                <a href="<?= base_url() ?>kaprodi/proposal" class="nav-item ml-3">
+                                <a href="<?= base_url() ?>kaprodi/proposal" class="nav-link">
                                     <i class="ni ni-app text-red"></i>
                                     <span class="nav-link-text">Pendaftaran Skripsi</span>
                                 </a>
-                                <a class="nav-item ml-3" href="<?= base_url() ?>kaprodi/seminar">
+                                <a class="nav-link" href="<?= base_url() ?>kaprodi/seminar">
                                     <i class="ni ni-books text-danger"></i>
                                     <span class="nav-link-text">Seminar Proposal</span>
                                 </a>
-                                <a class="nav-item ml-3" href="<?= base_url() ?>kaprodi/skripsi">
+                                <a class="nav-link" href="<?= base_url() ?>kaprodi/skripsi">
                                     <i class="fa fa-list text-primary"></i>
                                     <span class="nav-link-text">Seminar Akhir / Skripsi</span>
                                 </a>
@@ -80,17 +74,17 @@
                         </li>
                         <div class="collapse" id="pengumuman">
                             <div class="card card-body">
-                                <a href="<?= base_url() ?>kaprodi/proposal" class="nav-item ml-3">
+                                <a href="<?= base_url() ?>kaprodi/pengumuman_proposal" class="nav-link">
                                     <i class="ni ni-app text-red"></i>
-                                    <span class="nav-link-text" style="font-size: 14px;">Pendaftaran Skripsi</span>
+                                    <span class="nav-link-text" style="font-size: 14px;">Skripsi</span>
                                 </a>
-                                <a class="nav-item ml-3" href="<?= base_url() ?>kaprodi/seminar">
+                                <a class="nav-link" href="<?= base_url() ?>kaprodi/pengumuman_sempro">
                                     <i class="ni ni-books text-danger"></i>
                                     <span class="nav-link-text" style="font-size: 14px;">Seminar Proposal</span>
                                 </a>
-                                <a class="nav-item ml-3" href="<?= base_url() ?>kaprodi/skripsi">
+                                <a class="nav-link" href="<?= base_url() ?>kaprodi/pengumuman_skripsi">
                                     <i class="fa fa-list text-primary"></i>
-                                    <span class="nav-link-text" style="font-size: 14px;">Seminar Akhir / Skripsi</span>
+                                    <span class="nav-link-text" style="font-size: 14px;">Sidang Skripsi</span>
                                 </a>
                             </div>
                         </div>

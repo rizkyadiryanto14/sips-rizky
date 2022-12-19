@@ -14,7 +14,24 @@ class Dashboard extends MY_Controller
     public function index()
     {
         $v['judul'] = base64_encode(json_encode($this->model->index($this->input->post())));
-        return $this->load->view('mahasiswa/dashboard',$v);
+        $v['template'] = $this->db->get('home_template')->result();
+        $v['data'] = [];
+        if ($this->input->post('judul')) {
+            $skripsi = $this->db->get('daftar_judul')->result_array();
+            foreach ($skripsi as $item) {
+                similar_text(strtolower(str_replace(' ', '', $this->input->post('judul'))), strtolower(str_replace(' ', '', $item['judul_skripsi'])), $resPercent);
+
+                $plg = round($resPercent, 2);
+                if ($plg >= 60) {
+                    $item['plagiat'] =  $plg . '%';
+                    $v['data'][] = $item;
+                } else if ($plg <= 60) {
+                    $item['plagiat'] =  $plg . '%';
+                    $v['data'][] = $item;
+                }
+            }
+        }
+        return $this->load->view('mahasiswa/dashboard', $v);
     }
 
     public function cekdeadline($id)

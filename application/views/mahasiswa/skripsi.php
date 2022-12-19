@@ -28,6 +28,8 @@
                     <tr>
                         <th>No</th>
                         <th>Status</th>
+                        <th>Nim</th>
+                        <th>Nama</th>
                         <th>Judul Skripsi</th>
                         <th>Dosen Pembimbing</th>
                         <th>Dosen Penguji</th>
@@ -277,6 +279,18 @@ $(document).ready(function() {
                         return '\
                             <div class="text-center">' + status + '</div>\
                             ';
+                    }
+                },
+                {
+                    data: "mahasiswa",
+                    render: function(data) {
+                        return data.nim;
+                    }
+                },
+                {
+                    data: "mahasiswa",
+                    render: function(data) {
+                        return data.nama;
                     }
                 },
                 {

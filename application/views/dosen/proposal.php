@@ -154,46 +154,10 @@ $(document).ready(function() {
                 {
                     data: null,
                     render: function(data) {
-                        if (data.dosen_id == '<?= $this->session->userdata('id') ?>') {
-                            if (data.status == '1') {
-                                status = '\
-                            <button class="btn btn-sm btn-setuju btn-success" type="button" data-id="' + data.id +
-                                    '" data-judul="' + data.judul + '" data-status="' + data
-                                    .status + '" data-toggle="modal" data-target="#setujui">\
-                                <i class="fa fa-check"></i>\
-                            </button>\
-                            ';
-                            } else {
-                                status = '\
-                            <button class="btn btn-sm btn-setuju btn-danger" type="button" data-id="' + data.id +
-                                    '" data-judul="' + data.judul + '" data-status="' + data
-                                    .status + '" data-toggle="modal" data-target="#setujui">\
-                                <i class="fa fa-times"></i>\
-                            </button>\
-                            ';
-                            }
-
-                            return '\
-                            <div class="text-center">' + status + '</div>\
-                            ';
+                        if (data.status = 1) {
+                            return '<span class="badge badge-success">Judul di Acc</span>'
                         } else {
-                            if (data.status == '1') {
-                                status = '\
-                            <button class="btn btn-sm btn-setuju btn-success" type="button">\
-                                <i class="fa fa-check"></i>\
-                            </button>\
-                            ';
-                            } else {
-                                status = '\
-                            <button class="btn btn-sm btn-setuju btn-danger" type="button">\
-                                <i class="fa fa-times"></i>\
-                            </button>\
-                            ';
-                            }
-
-                            return '\
-                            <div class="text-center">' + status + '</div>\
-                            ';
+                            return '<span class="badge badge-danger">Judul Belum di Acc</span>'
                         }
                     }
 
@@ -205,52 +169,6 @@ $(document).ready(function() {
         });
     }
     show();
-
-
-    $(document).on('click', 'button.btn-setuju', function() {
-        $('form#setujui .id').val($(this).data('id'));
-        $('form#setujui input.status').val($(this).data('status'));
-        $('form#setujui span.status').html(($(this).data('status') == '1') ?
-            'batal menyetujui dan deadline skripsi akan direset untuk ' : 'menyetujui');
-        $('form#setujui .judul').html($(this).data('judul'));
-        if ($(this).data('status') == 1) {
-            $("#wadah_jadwal").html('')
-        } else {
-            $("#wadah_jadwal").html(
-                '<input name="deadline_skripsi" type="text" class="form-control dateTime" placeholder="Masukkan Deadline Skripsi" readonly required>'
-            )
-            $(".dateTime").flatpickr({
-                enableTime: true,
-                dateFormat: "Y-m-d H:i",
-            });
-        }
-    })
-
-    $(document).on('submit', 'form#setujui', function(e) {
-        e.preventDefault();
-        $(".btn-konfirmasi").attr('disabled', true).html('Loading...')
-        if ($('form#setujui .status').val() != 1) {
-            action()
-        } else {
-            action()
-        }
-
-        function action() {
-            const id = $('form#setujui .id').val();
-            call('api/proposal_mahasiswa/' + (($('form#setujui .status').val() == '1') ? 'disagree' :
-                'agree') + '/' + id, $('form#setujui').serialize()).done(function(req) {
-                if (req.error == true) {
-                    notif(req.message, 'error', true);
-                    $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
-                } else {
-                    notif(req.message, 'success');
-                    $('div#setujui').modal('hide');
-                    show();
-                    $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
-                }
-            })
-        }
-    })
 
 })
 

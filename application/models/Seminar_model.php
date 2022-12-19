@@ -27,7 +27,7 @@ class Seminar_model extends CI_Model
 			proposal_mahasiswa_v.nama_prodi,
 			hasil_seminar.status as hasil_seminar_status,
 			d.nama AS pembimbing_nama,
-			e.nama AS penguji_nama
+			e.nama AS penguji_nama,
 		');
 
 		$this->db->from($this->table);
@@ -35,7 +35,6 @@ class Seminar_model extends CI_Model
 		$this->db->join('proposal_mahasiswa_v', 'proposal_mahasiswa_v.id = seminar.proposal_mahasiswa_id', 'left');
 		$this->db->join('dosen d', 'd.id=proposal_mahasiswa_v.dosen_id', 'LEFT');
 		$this->db->join('dosen e', 'e.id=proposal_mahasiswa_v.dosen_penguji_id', 'LEFT');
-
 		if ($input['mahasiswa_id']) {
 			$this->db->where('proposal_mahasiswa_v.mahasiswa_id', $input['mahasiswa_id']);
 		}
@@ -93,7 +92,6 @@ class Seminar_model extends CI_Model
 			$data_id = $this->db->insert_id();
 			$this->db->insert("hasil_seminar", [
 				'seminar_id' => $data_id,
-				'berita_acara' => "",
 				'masukan' => "",
 				'status' => '3'
 			]);
@@ -163,15 +161,6 @@ class Seminar_model extends CI_Model
 					file_put_contents(FCPATH . 'cdn/vendor/syarat_seminar/' . $file_nama, base64_decode($syarat_seminar_file));
 					$data['syarat_seminar'] = $file_nama;
 				}
-
-				$this->db->update($this->table, $data);
-				$data_id = $this->db->insert_id();
-				$this->db->update("hasil_seminar", [
-					'seminar_id' => $data_id,
-					'berita_acara' => "",
-					'masukan' => "",
-					'status' => '3'
-				]);
 
 				$this->db->update($this->table, $data, $kondisi);
 				$hasil = [

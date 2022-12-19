@@ -21,39 +21,33 @@
             <div class="col">
                 <div class="card-title">Data Proposal</div>
             </div>
-            <div class="col text-right">
-                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">
-                    <i class="fa fa-plus"></i>
-                    Tambah
-                </button>
-            </div>
-        </div>
-        <div class="card-tools mt-2">
-            <span class="badge badge-success"><i class="fa fa-check"></i> Disetujui</span>
-            <span class="badge badge-danger ml-3"><i class="fa fa-times"></i> Belum/Tidak Disetujui</span>
         </div>
     </div>
-    <div class="card-body">
-        <div class="table-responsive">
-            <table class="table table-hover" id="data-proposal">
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>NIM</th>
-                        <th>Mahasiswa</th>
-                        <th>Nama Prodi</th>
-                        <th>Judul</th>
-                        <th>Transkip</th>
-                        <th>KRS</th>
-                        <th>Ringkasan</th>
-                        <th>Pembimbing</th>
-                        <th>Status</th>
-                        <th>Aksi</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
+    <div class="card-tools mt-2">
+        <span class="badge badge-success"><i class="fa fa-check"></i> Disetujui</span>
+        <span class="badge badge-danger ml-3"><i class="fa fa-times"></i> Belum/Tidak Disetujui</span>
     </div>
+</div>
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table table-hover" id="data-proposal">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>NIM</th>
+                    <th>Mahasiswa</th>
+                    <th>Nama Prodi</th>
+                    <th>Judul</th>
+                    <th>Transkip</th>
+                    <th>KRS</th>
+                    <th>Ringkasan</th>
+                    <th>Pembimbing</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
 </div>
 <div class="modal fade" id="tambah">
     <div class="modal-dialog">
@@ -299,32 +293,6 @@ $(document).ready(function() {
                             <div class="text-center">' + status + '</div>\
                             ';
                     }
-                },
-                {
-                    data: null,
-                    render: function(data) {
-                        if (level == '1') {
-                            return '\
-                                <div class="text-center">\
-                                <button class="btn btn-sm btn-info btn-edit" type="button" data-toggle="modal" data-target="#edit" data-id="' +
-                                data.id + '" data-mahasiswa_id="' + data.mahasiswa_id +
-                                '" data-judul="' + data.judul + '" data-ringkasan="' + data
-                                .ringkasan + '" data-dosen_id="' + data.dosen_id +
-                                '" data-dosen2_id="' + data.dosen2_id +
-                                '" data-dosen_penguji_id="' + data.dosen_penguji_id +
-                                '">\
-                                    <i class="fa fa-pen"></i>\
-                                </button>\
-                                <button class="btn btn-sm btn-danger btn-hapus" type="button" data-toggle="modal" data-target="#hapus" data-id="' + data.id +
-                                '" data-judul="' + data.judul + '">\
-                                    <i class="fa fa-trash"></i>\
-                                </button>\
-                                </div>\
-                                ';
-                        } else {
-                            return '-';
-                        }
-                    }
                 }
             ],
             "language": {
@@ -417,7 +385,7 @@ $(document).ready(function() {
         } else {
             $("#wadah_jadwal").html(
                 '<input name="deadline_skripsi" type="text" class="form-control dateTime" placeholder="Masukkan Deadline Skripsi" readonly required>'
-                )
+            )
             $(".dateTime").flatpickr({
                 enableTime: true,
                 dateFormat: "Y-m-d H:i",

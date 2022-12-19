@@ -39,4 +39,16 @@ class Daftar_judul_model extends CI_Model
     {
         return $this->db->insert('daftar_judul', $data);
     }
+
+    public function updateData($data, $id)
+    {
+        $this->db->where('id', $id['id']);
+        $this->db->update('daftar_judul', $data);
+    }
+
+    public function deleteData($id, $table)
+    {
+        $this->db->where($id);
+        $this->db->delete($table);
+    }
 }

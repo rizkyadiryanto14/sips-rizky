@@ -18,6 +18,16 @@ class Dosen_model extends CI_Model
         return $hasil;
     }
 
+    public function getSignature($where = null)
+    {
+        $this->db->select('signature');
+        $this->db->from('dosen');
+        if ($where != null) {
+            $this->db->where('id', $where);
+        }
+        return $this->db->get()->row();
+    }
+
     public function getById()
     {
         $dosen = $this->db->get_where($this->table, array('id' => $this->input->post('id')))->result();
@@ -125,6 +135,17 @@ class Dosen_model extends CI_Model
         }
 
         return $hasil;
+    }
+
+    public function update_signature($table, $post)
+    {
+        $params = [
+            'signature' => $post['ttd']
+        ];
+
+        $this->db->where('id', $post['id']);
+        
+        $this->db->update($table, $params);
     }
 
     public function details($id)

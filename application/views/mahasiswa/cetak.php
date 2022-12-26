@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .left-item {
+            position: absolute;
+            left: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -97,10 +103,11 @@
                     Pembimbing Utama
                 </td>
             </tr>
-            <tr>
-                <th style="height: 150px;">
-                    <br />
-                </th>
+            <tr class="font-weight">
+                <td style="height: 150px;">
+                
+                    <img src="<?= base_url() ?>assets/uploads/signature/<?=  $showData[0]['penguji_signatutre']; ?>" height="15%">
+                </td>
             <tr>
             <tr class="font-weight">
                 <td style="font-weight: bold">
@@ -113,7 +120,6 @@
                 </td>
                 <td style="font-weight: bold">
                     (<?= $showData[0]['pembimbing_nama']; ?>)
-                    <br>
                     NIDN <?= $showData[0]['pembimbing_nip']; ?>
                 </td>
             </tr>

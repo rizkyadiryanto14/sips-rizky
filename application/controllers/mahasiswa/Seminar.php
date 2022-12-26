@@ -56,6 +56,7 @@ class Seminar extends MY_Controller
                 hasil_seminar.status as hasil_seminar_status,
                 d.nama AS penguji_nama,
                 d.nip AS penguji_nip,
+                d.signature AS penguji_signatutre,
                 e.nama AS pembimbing_nama,
                 e.nip AS pembimbing_nip
             ',
@@ -63,6 +64,8 @@ class Seminar extends MY_Controller
             ['seminar.id'        => $id],
             $join,
             )->result_array();
+
+        // var_dump($v);
             
         $data       = $this->load->view('mahasiswa/cetak', $v, true);
         $mpdf->WriteHTML($data);

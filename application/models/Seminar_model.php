@@ -52,8 +52,6 @@ class Seminar_model extends CI_Model
 
 	public function create($input)
 	{
-
-
 		$data = [
 			'proposal_mahasiswa_id' => $input['proposal_mahasiswa_id'],
 			'dosen_id' => $input['dosen_id'],
@@ -112,11 +110,11 @@ class Seminar_model extends CI_Model
 	{
 		$data = [
 			'proposal_mahasiswa_id' => $input['proposal_mahasiswa_id'],
-			'dosen_id' => $input['dosen_id'],
-			'file_proposal' => $input['file_proposal'],
-			'kartu_bimbingan' => $input['kartu_bimbingan'],
-			'surat_permohonan' => $input['surat_permohonan'],
-			'syarat_seminar' => $input['syarat_seminar'],
+			'dosen_id' 				=> $input['dosen_id'],
+			'file_proposal' 		=> $input['file_proposal'],
+			'kartu_bimbingan' 		=> $input['kartu_bimbingan'],
+			'surat_permohonan' 		=> $input['surat_permohonan'],
+			'syarat_seminar' 		=> $input['syarat_seminar'],
 		];
 
 		$kondisi = ['seminar.id' => $id];

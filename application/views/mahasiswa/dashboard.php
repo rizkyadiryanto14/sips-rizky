@@ -16,7 +16,7 @@ foreach ($dataUser as $du) {
     <div class="card-body">
         <div class="row">
             <div class="col">
-                <h5 class="card-title text-uppercase text-muted mb-0">Total Proposal</h5>
+                <h5 class="card-title text-uppercase text-muted mb-0">Total Pendaftaran Skrispi</h5>
                 <span class="h2 font-weight-bold mb-0 total-proposal">0</span>
             </div>
             <div class="col-auto">
@@ -51,7 +51,7 @@ foreach ($dataUser as $du) {
                     <tr>
                         <th>No</th>
                         <th>Judul Skripsi</th>
-                        <th>Plagiarisme</th>
+                        <th>TIngkat Kemiripan Judul</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -66,9 +66,11 @@ foreach ($dataUser as $du) {
             </table>
         </div>
         <div class="card-header">
-            <h5 class="card-title text-uppercase text-muted mb-0 ">Keterangan : </h5>
+            <h5 class="card-title text-uppercase text-muted mb-0 ">Catatan : </h5>
             <h5 class="card-title text-uppercase text-muted mt-3">Presentase di bawah 40% judul <span
-                    class="badge badge-danger">Ditolak</span></h5>
+                    class="badge badge-success">Diterima</span></h5>
+            <h5 class="card-title text-uppercase text-muted mt-3">Presentase di Atas 40% judul <span
+                    class="badge badge-danger">Tolak</span></h5>
         </div>
     </div>
 </div>

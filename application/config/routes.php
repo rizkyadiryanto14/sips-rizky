@@ -68,6 +68,7 @@ $route['atur-send-email']           = 'admin/pengaturan/atur_send_email';
 // Home
 $route['home-template']             = 'Home/home_template';
 $route['update-home-template']      = 'Home/update_home_template';
+$route['signature-add']             = 'dosen/Seminar/signature';
 
 $route['404_override']              = '';
 $route['translate_uri_dashes']      = FALSE;

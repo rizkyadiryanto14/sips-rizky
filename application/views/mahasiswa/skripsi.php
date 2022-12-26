@@ -1,13 +1,13 @@
 <?php $this->app->extend('template/mahasiswa') ?>
 
-<?php $this->app->setVar('title', 'Seminar Akhir') ?>
+<?php $this->app->setVar('title', 'Sidang Skripsi') ?>
 
 <?php $this->app->section() ?>
 <div class="card">
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Seminar Akhir / Skripsi</div>
+                <div class="card-title">Sidang Skripsi</div>
             </div>
             <div class="col text-right">
                 <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">
@@ -35,7 +35,7 @@
                         <th>Dosen Penguji</th>
                         <th>Jadwal Skripsi</th>
                         <th>Tempat</th>
-                        <th>KRS Semenster</th>
+                        <th>KRS Terakhir</th>
                         <th>File Skripsi</th>
                         <th>Formulir Pendaftaran</th>
                         <th>Kartu Bimbingan</th>
@@ -124,7 +124,7 @@
         <div class="modal-content">
             <form id="tambah">
                 <div class="modal-header">
-                    <div class="modal-title">Tambah Skripsi</div>
+                    <div class="modal-title">Tambah Sidang Skripsi</div>
                 </div>
                 <div class="modal-body">
                     <input type="hidden" name="mahasiswa_id" value="<?= $this->session->userdata('id'); ?>">
@@ -150,7 +150,7 @@
                         <input name="jadwal_skripsi" type="text" class="form-control dateTime" placeholder="Pilih Jadwal Skripsi" readonly>
                     </div> -->
                     <div class="form-group">
-                        <label>KRS Semester</label>
+                        <label>KRS Terakhir</label>
                         <input type="file" class="form-control" name="pilih-krs" accept="application/pdf">
                         <input type="hidden" name="krs">
                     </div>
@@ -160,17 +160,12 @@
                         <input type="hidden" name="file_skripsi">
                     </div>
                     <div class="form-group">
-                        <label>SK Tim</label>
-                        <input type="file" class="form-control" name="pilih-formulir" accept="application/pdf">
-                        <input type="hidden" name="formulir">
-                    </div>
-                    <div class="form-group">
                         <label>Kwitansi Pembayaran</label>
                         <input type="file" class="form-control" name="pilih-kwitansi" accept="application/pdf">
                         <input type="hidden" name="kwitansi">
                     </div>
                     <div class="form-group">
-                        <label>Lulus Mk Wajib</label>
+                        <label>Lulus MK Wajib</label>
                         <input type="file" class="form-control" name="pilih-lulus_mkWajib" accept="application/pdf">
                         <input type="hidden" name="lulus_mkWajib">
                     </div>
@@ -180,12 +175,12 @@
                         <input type="hidden" name="kartu_bimbingan">
                     </div>
                     <div class="form-group">
-                        <label>Transkip</label>
+                        <label>Transkrip</label>
                         <input type="file" class="form-control" name="pilih-transkip" accept="application/pdf">
                         <input type="hidden" name="transkip">
                     </div>
                     <div class="form-group">
-                        <label>Sertifikat</label>
+                        <label>3 Sertifikat</label>
                         <input type="file" class="form-control" name="pilih-sertifikat" accept="application/pdf">
                         <input type="hidden" name="sertifikat">
                     </div>
@@ -196,7 +191,7 @@
                         <input type="hidden" name="lembar_persetujuan">
                     </div>
                     <div class="form-group">
-                        <label>Bebas Bauk</label>
+                        <label>Surat Pernyataan Bebas Bauk</label>
                         <input type="file" class="form-control" name="pilih-bebas_bauk" accept="application/pdf">
                         <input type="hidden" name="bebas_bauk">
                     </div>

@@ -44,7 +44,7 @@
                         <th>Judul</th>
                         <th>Transkip</th>
                         <th>KRS</th>
-                        <th>Ringkasan</th>
+                        <th>Outline</th>
                         <th>Pembimbing</th>
                         <th>Status</th>
                         <th>Aksi</th>
@@ -263,7 +263,12 @@ $(document).ready(function() {
                     }
                 },
                 {
-                    data: "ringkasan"
+                    data: "outline_skripsi",
+                    render: function(data) {
+                        return '<a href="' + base_url + 'cdn/vendor/skripsi/outline_skripsi/' +
+                            data +
+                            '">' + data + '</a>';
+                    }
                 },
                 {
                     data: "pembimbing.nama"

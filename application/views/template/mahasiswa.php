@@ -99,7 +99,7 @@ foreach ($dataUser as $du) {
                                 </a>
                                 <a class="nav-link" href="<?= base_url() ?>mahasiswa/pengumuman_skripsi">
                                     <i class="fa fa-list text-primary"></i>
-                                    <span class="nav-link-text">Seminar Akhir / Skripsi</span>
+                                    <span class="nav-link-text">Sidang Skripsi</span>
                                 </a>
                             </div>
                         </div>
@@ -116,7 +116,7 @@ foreach ($dataUser as $du) {
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Search form -->
-                    <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+                    <!-- <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
                         <div class="form-group mb-0">
                             <div class="input-group input-group-alternative input-group-merge">
                                 <div class="input-group-prepend">
@@ -129,7 +129,7 @@ foreach ($dataUser as $du) {
                             aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
-                    </form>
+                    </form> -->
                     <!-- Navbar links -->
                     <ul class="navbar-nav align-items-center  ml-md-auto ">
                         <li class="nav-item d-xl-none">
@@ -142,11 +142,6 @@ foreach ($dataUser as $du) {
                                     <i class="sidenav-toggler-line"></i>
                                 </div>
                             </div>
-                        </li>
-                        <li class="nav-item d-sm-none">
-                            <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
-                                <i class="ni ni-zoom-split-in"></i>
-                            </a>
                         </li>
                     </ul>
                     <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
@@ -230,9 +225,11 @@ foreach ($dataUser as $du) {
                 <div class="row align-items-center justify-content-lg-between">
                     <div class="col-lg-6">
                         <div class="copyright text-center  text-lg-left  text-muted">
-                            &copy; <?= date('Y') ?> <a href="#" class="font-weight-bold ml-1" target="_blank">SIPS</a>
+                            &copy; <a href="#" class="font-weight-bold ml-1" target="_blank">SIPS
+                                Informatika UTS <?= date('Y') ?></a>
                         </div>
                     </div>
+                </div>
             </footer>
         </div>
     </div>

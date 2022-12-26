@@ -1,13 +1,13 @@
 <?php $this->app->extend('template/mahasiswa') ?>
 
-<?php $this->app->setVar('title', "Proposal") ?>
+<?php $this->app->setVar('title', "Pendaftaran Skripsi") ?>
 
 <?php $this->app->section() ?>
 <div class="card">
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Data Proposal</div>
+                <div class="card-title">Data Pendaftaran Skripsi</div>
             </div>
             <div class="col text-right">
                 <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">
@@ -29,9 +29,9 @@
                         <th>No</th>
                         <th>Nim</th>
                         <th>Nama</th>
-                        <th>Judul</th>
-                        <th>Transkip</th>
-                        <th>KRS</th>
+                        <th>Judul Skripsi</th>
+                        <th>Transkrip</th>
+                        <th>KRS Terakhir</th>
                         <th>Outline</th>
                         <th>Pembimbing</th>
                         <th>Status</th>
@@ -47,7 +47,7 @@
         <div class="modal-content">
             <form id="tambah" action="javascript:;">
                 <div class="modal-header">
-                    <div class="modal-title">Tambah Proposal</div>
+                    <div class="modal-title">Tambah Pendaftaran </div>
                 </div>
                 <div class="modal-body">
                     <input type="hidden" name="mahasiswa_id" value="<?= $this->session->userdata('id') ?>">
@@ -63,19 +63,20 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Transkip</label>
+                        <label>Transkrip</label>
                         <input type="file" class="form-control" name="pilih-transkip" accept="application/pdf">
                         <input type="hidden" name="transkip">
                     </div>
                     <div class="form-group">
-                        <label>KRS</label>
+                        <label>KRS Terakhir</label>
                         <input type="file" class="form-control" name="pilih-krs" accept="application/pdf">
                         <input type="hidden" name="krs">
                     </div>
                     <div class="form-group">
                         <label>Outline</label>
-                        <textarea name="ringkasan" rows="5" class="form-control"
-                            placeholder="Masukkan Ringkasan"></textarea>
+                        <input type="file" class="form-control" name="pilih-outline_skripsi" id="outline_skripsi"
+                            accept="application/pdf">
+                        <input type="hidden" name="outline_skripsi">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -108,7 +109,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Transkip</label>
+                        <label>Transkrip</label>
                         <input type="file" class="form-control" name="pilih-transkip" accept="application/pdf">
                         <input type="hidden" name="transkip">
                         <input type="hidden" name="def_transkip">
@@ -212,7 +213,12 @@ $(document).ready(function() {
                     }
                 },
                 {
-                    data: "ringkasan"
+                    data: "outline_skripsi",
+                    render: function(data) {
+                        return '<a href="' + base_url + 'cdn/vendor/skripsi/outline_skripsi/' +
+                            data +
+                            '">' + data + '</a>';
+                    }
                 },
                 {
                     data: null,
@@ -289,6 +295,8 @@ $(document).ready(function() {
         })
     })
 
+
+    // form tambah file
     $(document).on('change', 'form#tambah [name=pilih-transkip]', function() {
         read('form#tambah [name=pilih-transkip]', function(data) {
             $('form#tambah [name=transkip]').val(data.result);
@@ -301,6 +309,14 @@ $(document).ready(function() {
         })
     })
 
+    $(document).on('change', 'form#tambah [name=pilih-outline_skripsi]', function() {
+        read('form#tambah [name=pilih-outline_skripsi]', function(data) {
+            $('form#tambah [name=outline_skripsi]').val(data.result);
+        })
+    })
+
+
+    // form edit file
     $(document).on('change', 'form#edit [name=pilih-file_transkip]', function() {
         read('form#edit [name=pilih-file_transkip]', function(data) {
             $('form#edit [name=file_transkip]').val(data.result);

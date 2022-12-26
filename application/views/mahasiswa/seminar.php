@@ -1,6 +1,6 @@
 <?php $this->app->extend('template/mahasiswa') ?>
 
-<?php $this->app->setVar('title', 'Seminar') ?>
+<?php $this->app->setVar('title', 'Seminar Proposal') ?>
 
 <?php $this->app->section() ?>
 
@@ -13,7 +13,7 @@ a[disabled="disabled"] {
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Data Seminar</div>
+                <div class="card-title">Data Seminar Proposal</div>
             </div>
             <div class="col text-right">
                 <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">
@@ -47,25 +47,6 @@ a[disabled="disabled"] {
                 </thead>
                 <tbody></tbody>
             </table>
-            <div class="card-footer">
-                <div class="card-header">
-                    <strong>Keterangan :</strong>
-                </div>
-                <div class="card-body">
-                    <section>
-                        <i class="fa fa-info-circle text-green"></i>
-                        = Detail Seminar
-                    </section>
-                    <section class="mt-3">
-                        <i class="fa fa-pen text-primary"></i>
-                        = Edit Seminar
-                    </section>
-                    <section class="mt-3">
-                        <i class="fa fa-trash text-danger"></i>
-                        = Hapus Seminar
-                    </section>
-                </div>
-            </div>
         </div>
     </div>
 </div>

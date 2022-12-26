@@ -50,7 +50,7 @@ class Proposal_mahasiswa_model extends CI_Model
         $data = [
             'mahasiswa_id' => $input['mahasiswa_id'],
             'judul' => $input['judul'],
-            'ringkasan' => $input['ringkasan'],
+            'outline_skripsi' => $input['outline_skripsi'],
             'dosen_id' => $input['dosen_id'],
             'krs' => $input['krs'],
             'transkip' => $input['transkip']
@@ -69,6 +69,10 @@ class Proposal_mahasiswa_model extends CI_Model
             $krs_file = explode(';base64,', $data['krs'])[1];
             file_put_contents(FCPATH . 'cdn/vendor/skripsi/krs/' . $file_nama, base64_decode($krs_file));
             $data['krs'] = $file_nama;
+
+            $outline_skripsi_file = explode(';base64,', $data['outline_skripsi'])[1];
+            file_put_contents(FCPATH . 'cdn/vendor/skripsi/outline_skripsi/' . $file_nama, base64_decode($outline_skripsi_file));
+            $data['outline_skripsi'] = $file_nama;
 
             $this->db->insert($this->table, $data);
             $data_id = $this->db->insert_id();

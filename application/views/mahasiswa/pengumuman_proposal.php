@@ -1,13 +1,13 @@
 <?php $this->app->extend('template/mahasiswa') ?>
 
-<?php $this->app->setVar('title', "Proposal") ?>
+<?php $this->app->setVar('title', "Pengumuman") ?>
 
 <?php $this->app->section() ?>
 <div class="card">
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Data Pendaftaran Skripsi</div>
+                <div class="card-title">Pengumman Pendaftaran</div>
             </div>
         </div>
         <div class="card-tools mt-2">
@@ -23,7 +23,7 @@
                         <th>No</th>
                         <th>Nim</th>
                         <th>Nama</th>
-                        <th>Judul</th>
+                        <th>Judul Skripsi</th>
                         <th>Outline</th>
                         <th>Pembimbing</th>
                         <th>Status</th>
@@ -77,7 +77,12 @@ $(document).ready(function() {
                     data: "judul"
                 },
                 {
-                    data: "ringkasan"
+                    data: "outline_skripsi",
+                    render: function(data) {
+                        return '<a href="' + base_url + 'cdn/vendor/skripsi/outline_skripsi/' +
+                            data +
+                            '">' + data + '</a>';
+                    }
                 },
                 {
                     data: null,

@@ -1,0 +1,141 @@
+ERROR - 2022-12-21 07:57:05 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-21 08:17:42 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:17:42 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:18:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:18:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:19:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:19:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:19:53 --> Severity: Warning --> file_put_contents(/opt/lampp/htdocs/olivera/cdn/vendor/skripsi/outline_skripsi/20221221081953.pdf): failed to open stream: Permission denied /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 74
+ERROR - 2022-12-21 08:19:53 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:20:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:20:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:20:28 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:20:35 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:20:35 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:20:35 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:21:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:21:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:21:20 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:21:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:21:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:21:26 --> Query error: View 'olivera.proposal_mahasiswa_v' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_penguji2_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-21 08:21:26 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-21 08:21:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:21:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:21:45 --> Query error: View 'olivera.proposal_mahasiswa_v' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_penguji2_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-21 08:21:45 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-21 08:22:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:22:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:22:33 --> Query error: View 'olivera.proposal_mahasiswa_v' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_penguji2_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-21 08:22:33 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-21 08:23:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:23:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:23:14 --> Query error: View 'olivera.proposal_mahasiswa_v' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_penguji2_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-21 08:23:14 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-21 08:23:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:23:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:23:57 --> Query error: View 'olivera.proposal_mahasiswa_v' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_penguji2_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-21 08:23:57 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-21 08:24:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:24:21 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:24:21 --> Query error: View 'olivera.proposal_mahasiswa_v' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_penguji2_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-21 08:24:21 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-21 08:27:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:27:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:27:55 --> Query error: View 'olivera.proposal_mahasiswa_v' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_penguji2_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-21 08:27:55 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-21 08:28:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:28:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:28:56 --> Query error: View 'olivera.proposal_mahasiswa_v' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_penguji2_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-21 08:28:56 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-21 08:30:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:30:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:30:24 --> Query error: View 'olivera.proposal_mahasiswa_v' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_penguji_id`, `seminar`.`dosen_penguji2_id`, `seminar`.`dosen_id`, `seminar`.`tempat`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`surat_permohonan`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa_v`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa_v`.`nama_mahasiswa`, `proposal_mahasiswa_v`.`nim`, `proposal_mahasiswa_v`.`nama_prodi`, `hasil_seminar`.`status` as `hasil_seminar_status`, `d`.`nama` AS `pembimbing_nama`, `e`.`nama` AS `penguji_nama`
+FROM `seminar`
+LEFT JOIN `hasil_seminar` ON `hasil_seminar`.`seminar_id` = `seminar`.`id`
+LEFT JOIN `proposal_mahasiswa_v` ON `proposal_mahasiswa_v`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+LEFT JOIN `dosen` `e` ON `e`.`id`=`proposal_mahasiswa_v`.`dosen_penguji_id`
+WHERE `proposal_mahasiswa_v`.`mahasiswa_id` = '18'
+ERROR - 2022-12-21 08:30:24 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/olivera/application/models/Seminar_model.php 42
+ERROR - 2022-12-21 08:31:35 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:31:35 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:32:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:32:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:32:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:32:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:39:18 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:40:32 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:40:46 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:41:09 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:41:15 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:42:44 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:42:50 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:43:08 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:43:14 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:43:40 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:44:06 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:44:29 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:45:02 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:45:02 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:45:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:45:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:45:38 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:45:47 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:45:47 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-21 08:45:47 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:46:40 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:46:49 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:47:56 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:50:23 --> Severity: Warning --> Invalid argument supplied for foreach() /opt/lampp/htdocs/olivera/application/models/Daftar_judul_model.php 19
+ERROR - 2022-12-21 08:50:23 --> Severity: Warning --> Invalid argument supplied for foreach() /opt/lampp/htdocs/olivera/application/models/Daftar_judul_model.php 24
+ERROR - 2022-12-21 08:50:44 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/olivera/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-21 08:51:16 --> 404 Page Not Found: Assets/essence

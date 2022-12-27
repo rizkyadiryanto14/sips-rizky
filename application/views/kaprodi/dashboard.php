@@ -41,24 +41,6 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="card card-stats">
-            <!-- Card body -->
-            <div class="card-body">
-                <div class="row">
-                    <div class="col">
-                        <h5 class="card-title text-uppercase text-muted mb-0">Total Prodi</h5>
-                        <span class="h2 font-weight-bold mb-0 prodi-total">0</span>
-                    </div>
-                    <div class="col-auto">
-                        <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
-                            <i class="ni ni-money-coins"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
 <div class="card">
@@ -101,7 +83,7 @@
                             <center>Seminar Proposal</center>
                         </th>
                         <th>
-                            <center>Skripsi</center>
+                            <center>Sidang Skripsi</center>
                         </th>
                     </tr>
                 </thead>
@@ -111,14 +93,14 @@
     </div>
 </div>
 
-<div class="card">
+<!-- <div class="card">
     <div class="card-header">
         <div class="card-title">Grafik Mahasiswa per Prodi</div>
     </div>
     <div class="card-body">
         <canvas id="mahasiswa-per-prodi" style="width: 100%; text-align: center; max-height: 300px;"></canvas>
     </div>
-</div>
+</div> -->
 
 <div class="card">
     <div class="card-header">

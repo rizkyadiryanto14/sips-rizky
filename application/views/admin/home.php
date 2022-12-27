@@ -111,6 +111,15 @@
                 </div>
             </div>
 
+            <h3>Uploud Berita Acara</h3>
+            <div class="row mb-3">
+                <div class="col-md-4 col-xs-12">
+                    <label>Upload Berita Acara </label>
+                    <input type="hidden" name="def_panduanskripsi" value="<?= $panduanskripsi; ?>">
+                    <input class=form-control type="file" name="panduanskripsi">
+                </div>
+            </div>
+
             <h3>Tentang Kami</h3>
             <div class="row mb-3">
                 <div class="col-md-12">
@@ -154,7 +163,7 @@
                 </div>
                 <div class="col-md-6 col-xs-12">
                     <div class="form-group">
-                        <label>Link Twitter : </label>
+                        <label>Link Instagram : </label>
                         <input name="link_twitter" type="text" class="form-control" value="<?= $link_twitter; ?>">
                     </div>
                 </div>

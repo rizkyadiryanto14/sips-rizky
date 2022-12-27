@@ -41,7 +41,6 @@ a[disabled="disabled"] {
                         <th>Syarat_Seminar</th>
                         <th>Kartu Bimbingan</th>
                         <th>status</th>
-                        <th>Berita Acara</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -320,31 +319,6 @@ $(document).ready(function() {
                         }
                     }
 
-                },
-                {
-                    data: null,
-                    render: function(data) {
-                        if (data.hasil_seminar_status == 1 || data.hasil_seminar_status ==
-                            2) {
-                            return `
-                        <div class="text-center">
-                            <a href="` + base_url + `mahasiswa/seminar/cetak/` + data.id +
-                                `" class="btn btn-sm btn-primary" target="_blank" >
-                                Cetak Berita Acara</i>
-                            </a>
-                        </div>
-                        `;
-                        } else {
-                            return `
-                        <div class="text-center">
-                            <a href="` + base_url + `mahasiswa/seminar/cetak/` + data.id +
-                                `" class="btn btn-sm btn-primary" target="_blank" disabled="disabled">
-                                Cetak Berita Acara</i>
-                            </a>
-                        </div>
-                        `;
-                        }
-                    }
                 },
                 {
                     data: null,

@@ -1,13 +1,13 @@
 <?php $this->app->extend('template/admin') ?>
 
-<?php $this->app->setVar('title', 'Tambah Users') ?>
+<?php $this->app->setVar('title', 'Manage Users') ?>
 
 <?php $this->app->section() ?>
 <div class="card">
     <div class="card-header">
         <div class="row">
             <div class="col-6">
-                <div class="card-title">Tambah Data Users</div>
+                <div class="card-title">Manage Users</div>
             </div>
             <div class="col-6 text-right">
                 <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambahdosen">

@@ -8,7 +8,7 @@ class Seminar extends MY_Controller
         parent::__construct();
         $this->load->model('Skripsi_model', 'model');
     }
-    
+
     public function index()
     {
         return $this->load->view('mahasiswa/seminar');
@@ -20,6 +20,11 @@ class Seminar extends MY_Controller
             return $this->load->view('mahasiswa/seminar_detail', ['seminar_id' => $id]);
         }
         redirect(base_url('mahasiswa/seminar'));
+    }
+
+    public function download()
+    {
+        force_download('cdn/berita_acara/berita-acara.pdf', null);
     }
 
     public function cetak($id = null)
@@ -63,10 +68,10 @@ class Seminar extends MY_Controller
             'seminar',
             ['seminar.id'        => $id],
             $join,
-            )->result_array();
+        )->result_array();
 
         // var_dump($v);
-            
+
         $data       = $this->load->view('mahasiswa/cetak', $v, true);
         $mpdf->WriteHTML($data);
         $mpdf->Output();

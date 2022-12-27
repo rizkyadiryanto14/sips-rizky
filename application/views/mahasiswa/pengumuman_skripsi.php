@@ -29,7 +29,6 @@
                         <th>Dosen Penguji</th>
                         <th>Jadwal Skripsi</th>
                         <th>Tempat</th>
-                        <th>Plagiarisme</th>
                     </tr>
                 </thead>
                 <tbody></tbody>
@@ -132,16 +131,7 @@ $(document).ready(function() {
                         }
                     }
                 },
-                {
-                    data: null,
-                    render: function(data) {
-                        if (data.status == "") {
-                            return "Checking..."
-                        } else {
-                            return data.plagiat;
-                        }
-                    }
-                },
+
             ],
             "language": {
                 "zeroRecords": "data tidak tersedia"

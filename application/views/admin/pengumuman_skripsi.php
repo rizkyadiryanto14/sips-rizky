@@ -1,6 +1,6 @@
 <?php $this->app->extend('template/admin') ?>
 
-<?php $this->app->setVar('title', 'Seminar Akhir') ?>
+<?php $this->app->setVar('title', 'Sidang Skripsi') ?>
 
 <?php $this->app->section() ?>
 <div class="card">
@@ -19,7 +19,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Seminar Akhir / Skripsi</div>
+                <div class="card-title">Sidang Skripsi</div>
             </div>
             <!-- <div class="col text-right">
                 <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">
@@ -45,19 +45,6 @@
                         <th>Dosen Penguji</th>
                         <th>Jadwal Skripsi</th>
                         <th>Tempat</th>
-                        <!-- <th>KRS</th>
-                        <th>File Skripsi</th>
-                        <th>Formulir</th>
-                        <th>kwitansi</th>
-                        <th>Lulus Mk Wajib</th>
-                        <th>Kartu Bimbingan</th>
-                        <th>Transkip</th>
-                        <th>3 Sertifikat</th>
-                        <th>Surat Bebas Bauk</th>
-                        <th>Lembar Persetujuan Pembimbing</th>
-                        <th>Plagiarisme</th>
-                        <th>Aksi</th>
-                        <th>Atur jadwal_skripsi</th> -->
                     </tr>
                 </thead>
                 <tbody></tbody>

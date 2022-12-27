@@ -45,7 +45,6 @@
                         <th>3 Sertifikas</th>
                         <th>Lembar Persetujuan Pembimbing</th>
                         <th>Surat Pernyataan Bauk</th>
-                        <th>Plagiarisme</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -87,7 +86,7 @@
                             placeholder="Pilih Jadwal Skripsi" readonly>
                     </div>
                     <div class="form-group">
-                        <label>Persetujuan</label>
+                        <label>Lembar Persetujuan Pembimbing</label>
                         <input type="file" class="form-control" name="pilih-krs" accept="application/pdf">
                         <input type="hidden" name="persetujuan">
                         <input type="hidden" name="def_persetujuan">
@@ -145,10 +144,6 @@
                             <option value="">- Pilih Penguji -</option>
                         </select>
                     </div>
-                    <!-- <div class="form-group">
-                        <label>Jadwal Skripsi</label>
-                        <input name="jadwal_skripsi" type="text" class="form-control dateTime" placeholder="Pilih Jadwal Skripsi" readonly>
-                    </div> -->
                     <div class="form-group">
                         <label>KRS Terakhir</label>
                         <input type="file" class="form-control" name="pilih-krs" accept="application/pdf">
@@ -185,7 +180,7 @@
                         <input type="hidden" name="sertifikat">
                     </div>
                     <div class="form-group">
-                        <label>Lembar Persetujuan</label>
+                        <label>Lembar Persetujuan Pembimbing</label>
                         <input type="file" class="form-control" name="pilih-lembar_persetujuan"
                             accept="application/pdf">
                         <input type="hidden" name="lembar_persetujuan">
@@ -389,16 +384,6 @@ $(document).ready(function() {
                     render: function(data) {
                         return '<a href="' + base_url + 'cdn/vendor/skripsi/bebas_bauk/' +
                             data + '">' + data + '</a>';
-                    }
-                },
-                {
-                    data: null,
-                    render: function(data) {
-                        if (data.status == "") {
-                            return "Checking..."
-                        } else {
-                            return data.plagiat;
-                        }
                     }
                 },
                 {

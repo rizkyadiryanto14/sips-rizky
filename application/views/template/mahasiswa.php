@@ -26,6 +26,7 @@ foreach ($dataUser as $du) {
             <!-- Brand -->
             <div class="sidenav-header  align-items-center">
                 <a class="navbar-brand" href="javascript:void(0)">
+                    <span style="font-size: medium;">SIPS</span>
                     <img src="<?= base_url() ?>cdn/img/icons/<?= $app->icon ? $app->icon : 'default.png' ?>"
                         class="navbar-brand-img" alt="...">
                 </a>
@@ -225,8 +226,8 @@ foreach ($dataUser as $du) {
                 <div class="row align-items-center justify-content-lg-between">
                     <div class="col-lg-6">
                         <div class="copyright text-center  text-lg-left  text-muted">
-                            &copy; <a href="#" class="font-weight-bold ml-1" target="_blank">SIPS
-                                Informatika UTS <?= date('Y') ?></a>
+                            <a href="#" class="font-weight-bold ml-1" target="_blank">@Copyright. SIPS Informatika UTS.
+                                <?= date('Y') ?></a>
                         </div>
                     </div>
                 </div>

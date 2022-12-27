@@ -19,7 +19,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Data Proposal</div>
+                <div class="card-title">Data Pendaftaran Skripsi</div>
             </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
                     <th>Judul</th>
                     <th>Transkip</th>
                     <th>KRS</th>
-                    <th>Ringkasan</th>
+                    <th>Outline</th>
                     <th>Pembimbing</th>
                     <th>Status</th>
                 </tr>
@@ -48,153 +48,7 @@
         </table>
     </div>
 </div>
-</div>
-<div class="modal fade" id="tambah">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form id="tambah">
-                <div class="modal-header">
-                    <div class="modal-title">Tambah Proposal</div>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label>Mahasiswa</label>
-                        <select name="mahasiswa_id" class="form-control"></select>
-                    </div>
-                    <div class="form-group">
-                        <label>Judul</label>
-                        <input name="judul" placeholder="Masukkan Judul" autocomplete="off" type="text"
-                            class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Dosen Pembimbing</label>
-                        <select name="dosen_id" class="form-control">
-                            <option value="">- Pilih Dosen -</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Dosen Penguji</label>
-                        <select name="dosen_penguji_id" class="form-control">
-                            <option value="">- Pilih Dosen -</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Transkip</label>
-                        <input type="file" class="form-control" name="pilih-transkip" accept="application/pdf">
-                        <input type="hidden" name="transkip">
-                    </div>
-                    <div class="form-group">
-                        <label>KRS</label>
-                        <input type="file" class="form-control" name="pilih-krs" accept="application/pdf">
-                        <input type="hidden" name="krs">
-                    </div>
-                    <div class="form-group">
-                        <label>Outline</label>
-                        <textarea name="ringkasan" rows="5" class="form-control"
-                            placeholder="Masukkan Ringkasan"></textarea>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-primary">Simpan</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="edit">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form id="edit">
-                <div class="modal-header">
-                    <div class="modal-title">Edit Proposal</div>
-                </div>
-                <div class="modal-body">
-                    <input type="hidden" class="id">
-                    <div class="form-group">
-                        <label>Mahasiswa</label>
-                        <select name="mahasiswa_id" class="form-control"></select>
-                    </div>
-                    <div class="form-group">
-                        <label>Judul</label>
-                        <input name="judul" placeholder="Masukkan Judul" autocomplete="off" type="text"
-                            class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Dosen Pembimbing</label>
-                        <select name="dosen_id" class="form-control">
-                            <option value="">- Pilih Dosen -</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Transkip</label>
-                        <input type="file" class="form-control" name="pilih-transkip" accept="application/pdf">
-                        <input type="hidden" name="transkip">
-                        <input type="hidden" name="def_transkip">
-                    </div>
-                    <div class="form-group">
-                        <label>KRS</label>
-                        <input type="file" class="form-control" name="pilih-krs" accept="application/pdf">
-                        <input type="hidden" name="krs">
-                        <input type="hidden" name="def_krs">
-                    </div>
-                    <div class="form-group">
-                        <label>Outline</label>
-                        <textarea name="ringkasan" rows="5" class="form-control"
-                            placeholder="Masukkan Ringkasan"></textarea>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-primary">Simpan</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="hapus">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form id="hapus">
-                <div class="modal-header">
-                    <div class="modal-title">Hapus Proposal</div>
-                </div>
-                <div class="modal-body">
-                    <input type="hidden" class="id">
-                    <p>Anda yakin menghapus proposal <strong class="judul">Judul Proposal</strong> ?</p>
-                    <li>Konsultasi proposal juga akan terhapus</li>
-                    <li>Seminar proposal juga akan terhapus</li>
-                    <li>Penelitian proposal juga akan terhapus</li>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-danger">Hapus</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<!--<div class="modal fade" id="setujui">-->
-<!--    <div class="modal-dialog">-->
-<!--        <div class="modal-content">-->
-<!--            <form id="setujui">-->
-<!--                <div class="modal-header">-->
-<!--                    <div class="modal-title">Status Proposal</div>-->
-<!--                </div>-->
-<!--                <div class="modal-body">-->
-<!--                    <input type="hidden" class="id">-->
-<!--                    <input type="hidden" class="status">-->
-<!--                    <p>Anda yakin <span class="status">mengetujui / batal menyetujui</span> proposal <strong class="judul">Judul Proposal</strong> ?</p>-->
-<!--                    <div id="wadah_jadwal"></div>-->
-<!--                </div>-->
-<!--                <div class="modal-footer">-->
-<!--                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>-->
-<!--                    <button type="submit" class="btn btn-primary btn-konfirmasi">Konfirmasi</button>-->
-<!--                </div>-->
-<!--            </form>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+
 <?php $this->app->endSection('content') ?>
 
 <?php $this->app->section() ?>
@@ -266,9 +120,11 @@ $(document).ready(function() {
                     }
                 },
                 {
-                    data: "ringkasan",
+                    data: "outline_skripsi",
                     render: function(data) {
-                        return data
+                        return '<a href="' + base_url + 'cdn/vendor/skripsi/outline_skripsi/' +
+                            data +
+                            '">' + data + '</a>';
                     }
                 },
                 {
@@ -303,128 +159,6 @@ $(document).ready(function() {
 
     show();
 
-    call('api/dosen').done(function(req) {
-        dosen = '<option value="">- Pilih Dosen -</option>';
-        if (req.data) {
-            $.each(req.data, function(index, obj) {
-                dosen += '<option value="' + obj.id + '">' + obj.nama + '</option>';
-            })
-        }
-        $('[name=dosen_id]').html(dosen);
-        $('[name=dosen2_id]').html(dosen);
-        $('[name=dosen_penguji_id]').html(dosen);
-    })
-
-    $(document).on('submit', 'form#tambah', function(e) {
-        e.preventDefault();
-        call('api/proposal_mahasiswa/create', $(this).serialize()).done(function(req) {
-            if (req.error == true) {
-                notif(req.message, 'error', true);
-            } else {
-                notif(req.message, 'success');
-                $('form#tambah [name]').val('');
-                $('div#tambah').modal('hide');
-                show();
-            }
-        })
-    })
-
-    $(document).on('click', 'button.btn-edit', function() {
-        $('form#edit .id').val($(this).data('id'));
-        $('form#edit [name=mahasiswa_id]').val($(this).data('mahasiswa_id'));
-        $('form#edit [name=judul]').val($(this).data('judul'));
-        $('form#edit [name=dosen_id]').val($(this).data('dosen_id'));
-        $('form#edit [name=def_transkip]').val($(this).data('transkip'));
-        $('form#edit [name=def_krs]').val($(this).data('krs'));
-        $('form#edit [name=ringkasan]').val($(this).data('ringkasan'));
-    })
-
-    $(document).on('submit', 'form#edit', function(e) {
-        e.preventDefault();
-        var id = $('form#edit .id').val();
-        call('api/proposal_mahasiswa/update/' + id, $(this).serialize()).done(function(req) {
-            if (req.error == true) {
-                notif(req.message, 'error', true);
-            } else {
-                notif(req.message, 'success');
-                $('form#edit [name]').val('');
-                $('div#edit').modal('hide');
-                show();
-            }
-        })
-    })
-
-    $(document).on('click', 'button.btn-hapus', function() {
-        $('form#hapus .id').val($(this).data('id'));
-        $('form#hapus .judul').html($(this).data('judul'));
-    })
-
-    $(document).on('submit', 'form#hapus', function(e) {
-        e.preventDefault();
-        var id = $('form#hapus .id').val();
-        call('api/proposal_mahasiswa/destroy/' + id).done(function(req) {
-            if (req.error == true) {
-                notif(req.message, 'error', true);
-            } else {
-                notif(req.message, 'success');
-                $('form#hapus [name]').val('');
-                $('div#hapus').modal('hide');
-                show();
-            }
-        })
-    })
-
-    $(document).on('click', 'button.btn-setuju', function() {
-        $('form#setujui .id').val($(this).data('id'));
-        $('form#setujui input.status').val($(this).data('status'));
-        $('form#setujui span.status').html(($(this).data('status') == '1') ?
-            'batal menyetujui dan deadline skripsi akan direset untuk ' : 'menyetujui');
-        $('form#setujui .judul').html($(this).data('judul'));
-        if ($(this).data('status') == 1) {
-            $("#wadah_jadwal").html('')
-        } else {
-            $("#wadah_jadwal").html(
-                '<input name="deadline_skripsi" type="text" class="form-control dateTime" placeholder="Masukkan Deadline Skripsi" readonly required>'
-            )
-            $(".dateTime").flatpickr({
-                enableTime: true,
-                dateFormat: "Y-m-d H:i",
-            });
-        }
-    })
-
-
-    $(document).on('submit', 'form#setujui', function(e) {
-        e.preventDefault();
-        $(".btn-konfirmasi").attr('disabled', true).html('Loading...')
-        if ($('form#setujui .status').val() != 1) {
-            if ($("form#setujui input[name=deadline_skripsi]").val() == "") {
-                alert('Harap Isi Deadline Skripsi Terlebih Dahulu')
-                $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
-            } else {
-                action()
-            }
-        } else {
-            action()
-        }
-
-        function action() {
-            const id = $('form#setujui .id').val();
-            call('api/proposal_mahasiswa/' + (($('form#setujui .status').val() == '1') ? 'disagree' :
-                'agree') + '/' + id, $('form#setujui').serialize()).done(function(req) {
-                if (req.error == true) {
-                    notif(req.message, 'error', true);
-                    $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
-                } else {
-                    notif(req.message, 'success');
-                    $('div#setujui').modal('hide');
-                    show();
-                    $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
-                }
-            })
-        }
-    })
-
 })
 
 function getDataSelect() {
@@ -441,10 +175,6 @@ function getDataSelect() {
             $("#wadah_select2").html(data)
         }
     })
-}
-
-function disableBtn() {
-    $(".btn-act").attr('disabled', true).html('Loading ...')
 }
 </script>
 <?php $this->app->endSection('script') ?>

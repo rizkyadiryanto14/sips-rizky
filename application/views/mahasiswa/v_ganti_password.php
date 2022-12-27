@@ -1,11 +1,11 @@
 <?php $this->app->extend('template/mahasiswa') ?>
 
-<?php $this->app->setVar('title', "Halaman") ?>
+<?php $this->app->setVar('title', "Change Password") ?>
 
 <?php $this->app->section() ?>
 <div class="card">
     <div class="card-header">
-        <div class="card-title">Ganti Password</div>
+        <div class="card-title">Change Password</div>
     </div>
     <div class="card-body">
         <span class="text-danger">*</span> Harus Diisi

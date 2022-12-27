@@ -1,6 +1,6 @@
 <?php $this->app->extend('template/admin') ?>
 
-<?php $this->app->setVar('title', "Proposal") ?>
+<?php $this->app->setVar('title', "Pendaftaran Skripsi") ?>
 
 <?php $this->app->section() ?>
 <div class="card">
@@ -19,7 +19,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Data Proposal</div>
+                <div class="card-title">Data Pendaftaran Skripsi</div>
             </div>
             <div class="col text-right">
                 <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">

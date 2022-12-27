@@ -26,9 +26,6 @@ a[disabled="disabled"] {
 <div class="card">
     <div class="card-header">
         <div class="card-title">Data Seminar</div>
-        <div class="text-right">
-            <button class="btn btn-primary" data-target="#tandatangan" data-toggle="modal">Tanda Tangan</button>
-        </div>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -37,7 +34,6 @@ a[disabled="disabled"] {
                     <tr>
                         <th>No</th>
                         <th>Status</th>
-                        <th>Tanda tangan</th>
                         <th>Nim</th>
                         <th>Mahasiswa</th>
                         <th>Nama Prodi</th>
@@ -49,7 +45,7 @@ a[disabled="disabled"] {
                         <th>Surat Permohonan</th>
                         <th>File Proposal</th>
                         <th>Syarat_Seminar</th>
-                        <th>Kartu Bimbingan</th>s
+                        <th>Kartu Bimbingan</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -132,28 +128,6 @@ $(document).ready(function() {
                             return '<span class="badge badge-warning">Lanjut (Perbaikan)</span>'
                         } else {
                             return '<span class="badge badge-danger">Ditolak/Belum di nilai</span>'
-                        }
-                    }
-                },
-                {
-                    data: null,
-                    render: function(data) {
-                        if (data.hasil_seminar_status == 1) {
-                            return ` <div class = "text-center" >
-                                            <a href = "` + base_url + `dosen/seminar/tandatangan/` + data.id +
-                                `" class="btn btn-sm btn-warning">
-                                <i class="fa fa-edit"></i>
-                            </a>
-                        </div>
-                        `;
-                        } else {
-                            return ` <div class = "text-center" >
-                                            <a href = "` + base_url + `dosen/seminar/tandantangan/` + data.id +
-                                `" class="btn btn-sm btn-warning ${data.tanda_tangan != null ? 'd-none' : '' }">
-                                <i class="fa fa-edit"></i>
-                            </a>
-                        </div>
-                        `;
                         }
                     }
                 },

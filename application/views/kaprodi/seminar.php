@@ -17,7 +17,7 @@
 </div>
 <div class="card">
     <div class="card-header">
-        <div class="card-title">Data Seminar</div>
+        <div class="card-title">Data Seminar Proposal</div>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -71,18 +71,6 @@
 <script>
 $(document).ready(function() {
     getDataSelect()
-    call('api/konsultasi').done(function(req) {
-        proposal = `<option value="">- Pilih Proposal -</option>`;
-        if (req.data) {
-            req.data.forEach(obj => {
-                if (obj.persetujuan_pembimbing == '1' && obj.persetujuan_kaprodi == '1') {
-                    proposal += `<option value="` + obj.proposal_mahasiswa_id + `">` + obj
-                        .proposal_mahasiswa_judul + `</option>`;
-                }
-            })
-        }
-        $('[name=proposal_mahasiswa_id]').html(proposal);
-    })
 
     show = () => {
         $('#data-seminar').DataTable().destroy();
@@ -184,24 +172,6 @@ $(document).ready(function() {
 
     show();
 
-    $(document).on('click', 'button.btn-hapus', function() {
-        $('form#hapus .id').val($(this).data('id'));
-    })
-
-    $(document).on('submit', 'form#hapus', function(e) {
-        e.preventDefault();
-        const id = $('form#hapus .id').val();
-        call('api/seminar/destroy/' + id).done(function(res) {
-            if (res.error == true) {
-                notif(res.message, 'error', true);
-            } else {
-                notif(res.message, 'success');
-                $('div#hapus').modal('hide');
-                show();
-            }
-        })
-    })
-
 })
 
 function getDataSelect() {
@@ -218,10 +188,6 @@ function getDataSelect() {
             $("#wadah_select2").html(data)
         }
     })
-}
-
-function disableBtn() {
-    $(".btn-act").attr('disabled', true).html('Loading ...')
 }
 </script>
 <?php $this->app->endSection('script') ?>

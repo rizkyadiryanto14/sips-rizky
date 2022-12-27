@@ -41,31 +41,46 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="card card-stats">
-            <!-- Card body -->
-            <div class="card-body">
-                <div class="row">
-                    <div class="col">
-                        <h5 class="card-title text-uppercase text-muted mb-0">Total Prodi</h5>
-                        <span class="h2 font-weight-bold mb-0 prodi-total">0</span>
-                    </div>
-                    <div class="col-auto">
-                        <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
-                            <i class="ni ni-money-coins"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
+
 <div class="card">
     <div class="card-header">
-        <div class="card-title">Grafik Mahasiswa per Prodi</div>
+        <h5 class="card-title text-uppercase text-muted mb-0 text-center">Cek Kemiripan Judul Skripsi</h5>
     </div>
     <div class="card-body">
-        <canvas id="mahasiswa-per-prodi" style="width: 100%; text-align: center; max-height: 300px;"></canvas>
+        <form action="" method="POST" class="form-group d-flex">
+            <input type="text" name="judul" id="" class="form-control" placeholder="Masukan Judul" required
+                value="<?= get_instance()->input->post('judul') ? get_instance()->input->post('judul') : '' ?>">
+            <div class="mx-2"></div>
+            <input type="submit" value="Cek" class="btn btn-primary">
+        </form>
+        <div class="table-responsive">
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul Skripsi</th>
+                        <th>TIngkat Kemiripan Judul</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($data as $i => $item) { ?>
+                    <tr>
+                        <td><?= $i + 1; ?></td>
+                        <td><?= $item['judul_skripsi']; ?></td>
+                        <td><?= $item['plagiat']; ?></td>
+                    </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
+        </div>
+        <div class="card-header">
+            <h5 class="card-title text-uppercase text-muted mb-0 ">Catatan : </h5>
+            <h5 class="card-title text-uppercase text-muted mt-3">Presentase di bawah 40% judul <span
+                    class="badge badge-success">Diterima</span></h5>
+            <h5 class="card-title text-uppercase text-muted mt-3">Presentase di Atas 40% judul <span
+                    class="badge badge-danger">Tolak</span></h5>
+        </div>
     </div>
 </div>
 
@@ -80,7 +95,7 @@
 
 <div class="card">
     <div class="card-header">
-        <div class="card-title">Status Proposal</div>
+        <div class="card-title">Progress Skripsi</div>
     </div>
     <div class="card-body">
         <canvas id="proposal-status" style="width: 100%; text-align: center; max-height: 300px;"></canvas>
@@ -104,12 +119,12 @@ $(document).ready(function() {
                 datasets: [{
                         label: "Sudah",
                         backgroundColor: "blue",
-                        data: [<?= $sudah;?>],
+                        data: [<?= $sudah; ?>],
                     },
                     {
                         label: "Belum",
                         backgroundColor: "#fae637",
-                        data: [<?= $belum;?>],
+                        data: [<?= $belum; ?>],
                     },
                 ]
             },

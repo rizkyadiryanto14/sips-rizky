@@ -19,7 +19,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Seminar Akhir / Skripsi</div>
+                <div class="card-title">Pengumuma Sidang Skripsi</div>
             </div>
         </div>
         <div class="card-tools mt-2">
@@ -57,16 +57,6 @@
 <script>
 $(document).ready(function() {
     getDataSelect()
-    call('api/dosen').done(function(res) {
-        dosen = `<option value="">- Pilih Dosen -</option>`;
-        if (res.data) {
-            res.data.forEach(obj => {
-                dosen += `<option value="` + obj.id + `">` + obj.nama + `</option>`;
-            })
-        }
-        $('[name=dosen_id]').html(dosen);
-        $('[name=dosen_penguji_id]').html(dosen);
-    })
 
     show = () => {
         $('#data-skripsi').DataTable().destroy();
@@ -164,10 +154,6 @@ function getDataSelect() {
             $("#wadah_select2").html(data)
         }
     })
-}
-
-function disableBtn() {
-    $(".btn-act").attr('disabled', true).html('Loading ...')
 }
 </script>
 <?php $this->app->endSection('script') ?>

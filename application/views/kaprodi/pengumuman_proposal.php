@@ -1,6 +1,6 @@
 <?php $this->app->extend('template/kaprodi') ?>
 
-<?php $this->app->setVar('title', "Proposal") ?>
+<?php $this->app->setVar('title', "Pendaftaran Skripsi") ?>
 
 <?php $this->app->section() ?>
 <div class="card">

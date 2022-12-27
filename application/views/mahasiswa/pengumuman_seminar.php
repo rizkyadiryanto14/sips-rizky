@@ -162,7 +162,7 @@ $(document).ready(function() {
                             2) {
                             return `
                         <div class="text-center">
-                            <a href="` + base_url + `mahasiswa/seminar/cetak/` + data.id +
+                            <a href="` + base_url + `mahasiswa/seminar/download/` + data.id +
                                 `" class="btn btn-sm btn-primary" target="_blank" >
                                 Cetak Berita Acara</i>
                             </a>
@@ -171,7 +171,7 @@ $(document).ready(function() {
                         } else {
                             return `
                         <div class="text-center">
-                            <a href="` + base_url + `mahasiswa/seminar/cetak/` + data.id +
+                            <a href="` + base_url + `mahasiswa/seminar/download/` + data.id +
                                 `" class="btn btn-sm btn-primary" target="_blank" disabled="disabled">
                                 Cetak Berita Acara</i>
                             </a>

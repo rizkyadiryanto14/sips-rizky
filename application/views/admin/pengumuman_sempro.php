@@ -50,18 +50,7 @@
 <script>
 $(document).ready(function() {
     getDataSelect()
-    call('api/konsultasi').done(function(req) {
-        proposal = `<option value="">- Pilih Proposal -</option>`;
-        if (req.data) {
-            req.data.forEach(obj => {
-                if (obj.persetujuan_pembimbing == '1' && obj.persetujuan_kaprodi == '1') {
-                    proposal += `<option value="` + obj.proposal_mahasiswa_id + `">` + obj
-                        .proposal_mahasiswa_judul + `</option>`;
-                }
-            })
-        }
-        $('[name=proposal_mahasiswa_id]').html(proposal);
-    })
+
 
     show = () => {
         $('#data-seminar').DataTable().destroy();

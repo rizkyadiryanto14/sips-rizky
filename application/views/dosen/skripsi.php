@@ -1,6 +1,6 @@
 <?php $this->app->extend('template/dosen') ?>
 
-<?php $this->app->setVar('title', 'Seminar Akhir') ?>
+<?php $this->app->setVar('title', 'Sidang Skripsi') ?>
 
 <?php $this->app->section() ?>
 <div class="card">
@@ -22,14 +22,8 @@
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Seminar Akhir / Skripsi</div>
+                <div class="card-title">Sidang Skripsi</div>
             </div>
-            <!-- <div class="col text-right">
-                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">
-                    <i class="fa fa-plus"></i>
-                    Tambah
-                </button>
-            </div> -->
         </div>
         <div class="card-tools mt-2">
             <span class="badge badge-success"><i class="fa fa-check"></i> Disetujui</span>
@@ -53,10 +47,16 @@
                         <th>Dosen Pembimbing</th>
                         <th>Dosen Penguji</th>
                         <th>Jadwal Skripsi</th>
-                        <th>Persetujuan</th>
+                        <th>KRS Terakhir</th>
                         <th>File Skripsi</th>
-                        <th>SK Tim</th>
-                        <th>Bukti Konsultasi</th>
+                        <th>Formulir Pendaftaran</th>
+                        <th>Kartu Bimbingan</th>
+                        <th>Kwitansi Pembayaran</th>
+                        <th>Pernyataan Lulus Mk wajib</th>
+                        <th>Transkip Nilai</th>
+                        <th>3 Sertifikas</th>
+                        <th>Lembar Persetujuan Pembimbing</th>
+                        <th>Surat Pernyataan Bauk</th>
                     </tr>
                 </thead>
                 <tbody></tbody>

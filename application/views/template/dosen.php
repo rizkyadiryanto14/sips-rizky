@@ -26,6 +26,7 @@
             <!-- Brand -->
             <div class="sidenav-header  align-items-center">
                 <a class="navbar-brand" href="javascript:void(0)">
+                    <span style="font-size: medium;">SIPS</span>
                     <img src="<?= base_url() ?>cdn/img/icons/<?= $app->icon ? $app->icon : 'default.png' ?>"
                         class="navbar-brand-img" alt="...">
                 </a>
@@ -51,14 +52,6 @@
                         </li>
                         <div class="collapse" id="akademik">
                             <div class="card card-body">
-                                <a class="nav-link" href="<?= base_url() ?>dosen/fakultas">
-                                    <i class="fa fa-building text-primary"></i>
-                                    <span class="nav-link-text">Fakultas</span>
-                                </a>
-                                <a class="nav-link" href="<?= base_url() ?>dosen/prodi">
-                                    <i class="fa fa-map text-green"></i>
-                                    <span class="nav-link-text">Prodi</span>
-                                </a>
                                 <a class="nav-link" href="<?= base_url() ?>dosen/dosen">
                                     <i class="fa fa-user-tie text-purple"></i>
                                     <span class="nav-link-text">Dosen</span>
@@ -89,7 +82,31 @@
                                 </a>
                                 <a class="nav-link" href="<?= base_url() ?>dosen/skripsi">
                                     <i class="fa fa-list text-primary"></i>
-                                    <span class="nav-link-text">Seminar Akhir / Skripsi</span>
+                                    <span class="nav-link-text">Sidang Skripsi</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" href="#pengumuman" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fa fa-bullhorn text-primary"></i>
+                                <span>Pengumuman</span>
+                            </a>
+                        </li>
+                        <div class="collapse" id="pengumuman">
+                            <div class="card card-body">
+                                <a class="nav-link" href="<?= base_url() ?>dosen/pengumuman_proposal">
+                                    <i class="ni ni-app text-red"></i>
+                                    <span class="nav-link-text">Skripsi</span>
+                                </a>
+                                <a class="nav-link" href="<?= base_url() ?>dosen/pengumuman_seminar">
+                                    <i class="ni ni-books text-danger"></i>
+                                    <span class="nav-link-text">Seminar Proposal</span>
+                                </a>
+                                <a class="nav-link" href="<?= base_url() ?>dosen/pengumuman_sidang">
+                                    <i class="fa fa-list text-primary"></i>
+                                    <span class="nav-link-text">Sidang Skripsi</span>
                                 </a>
                             </div>
                         </div>
@@ -104,21 +121,6 @@
         <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Search form -->
-                    <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
-                        <div class="form-group mb-0">
-                            <div class="input-group input-group-alternative input-group-merge">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-search"></i></span>
-                                </div>
-                                <input class="form-control" placeholder="Search" type="text">
-                            </div>
-                        </div>
-                        <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main"
-                            aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </form>
                     <!-- Navbar links -->
                     <ul class="navbar-nav align-items-center  ml-md-auto ">
                         <li class="nav-item d-xl-none">
@@ -148,7 +150,7 @@
                                             src="<?= base_url() ?>cdn/img/mahasiswa/default.png">
                                     </span>
                                     <div class="media-body  ml-2  d-none d-lg-block">
-                                        <span class="mb-0 text-sm  font-weight-bold">Dosen</span>
+                                        <span class="mb-0 text-sm  font-weight-bold">Dosen Pembimbing</span>
                                     </div>
                                 </div>
                             </a>
@@ -214,8 +216,9 @@
                 <div class="row align-items-center justify-content-lg-between">
                     <div class="col-lg-6">
                         <div class="copyright text-center  text-lg-left  text-muted">
-                            &copy; <a href="#" class="font-weight-bold ml-1" target="_blank">SIPS
-                                Informatika UTS <?= date('Y') ?></a>
+                            <a href="#" class="font-weight-bold ml-1" target="_blank">
+                                @Copyright. SIPS Informatika UTS. <?= date('Y') ?>
+                            </a>
                         </div>
                     </div>
                 </div>

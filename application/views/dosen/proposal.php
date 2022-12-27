@@ -1,6 +1,6 @@
 <?php $this->app->extend('template/dosen') ?>
 
-<?php $this->app->setVar('title', "Proposal") ?>
+<?php $this->app->setVar('title', "Pendaftaran Skripsi") ?>
 
 <?php $this->app->section() ?>
 <div class="card">
@@ -20,7 +20,7 @@
 </div>
 <div class="card">
     <div class="card-header">
-        <div class="card-title">Data Proposal</div>
+        <div class="card-title">Data Pendaftaran Skripsi</div>
         <div class="card-tools mt-2">
             <span class="badge badge-success"><i class="fa fa-check"></i> Disetujui</span>
             <span class="badge badge-danger ml-3"><i class="fa fa-times"></i> Belum/Tidak Disetujui</span>
@@ -42,7 +42,7 @@
                         <th>Judul</th>
                         <th>Transkip</th>
                         <th>KRS</th>
-                        <th>Ringkasan</th>
+                        <th>Outline</th>
                         <th>Pembimbing</th>
                         <th>Status</th>
                     </tr>
@@ -143,7 +143,12 @@ $(document).ready(function() {
                     }
                 },
                 {
-                    data: "ringkasan"
+                    data: "outline_skripsi",
+                    render: function(data) {
+                        return '<a href="' + base_url + 'cdn/vendor/skripsi/outline_skripsi/' +
+                            data +
+                            '">' + data + '</a>';
+                    }
                 },
                 {
                     data: null,

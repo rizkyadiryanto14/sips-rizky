@@ -1,6 +1,6 @@
 <?php $this->app->extend('template/admin') ?>
 
-<?php $this->app->setVar('title', 'Seminar Akhir') ?>
+<?php $this->app->setVar('title', 'Sidang Skripsi') ?>
 
 <?php $this->app->section() ?>
 <div class="card">
@@ -19,14 +19,14 @@
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Seminar Akhir / Skripsi</div>
+                <div class="card-title">Data Sidang Skripsi</div>
             </div>
-            <!-- <div class="col text-right">
+            <div class="col text-right">
                 <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">
                     <i class="fa fa-plus"></i>
                     Tambah
                 </button>
-            </div> -->
+            </div>
         </div>
         <div class="card-tools mt-2">
             <span class="badge badge-success"><i class="fa fa-check"></i> Disetujui</span>
@@ -55,7 +55,6 @@
                         <th>3 Sertifikat</th>
                         <th>Surat Bebas Bauk</th>
                         <th>Lembar Persetujuan Pembimbing</th>
-                        <th>Plagiarisme</th>
                         <th>Aksi</th>
                         <th>Atur jadwal_skripsi</th>
                     </tr>
@@ -65,6 +64,93 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="tambah">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form id="tambah">
+                <div class="modal-header">
+                    <div class="modal-title">Tambah Sidang Skripsi</div>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="mahasiswa_id" value="<?= $this->session->userdata('id'); ?>">
+                    <div class="form-group">
+                        <label for="">Nama Mahasiswa</label>
+                        <input type="text" name="mahasiswa_id" id="mahasiswa_id">
+                    </div>
+                    <div class="form-group">
+                        <label>Judul Skripsi</label>
+                        <input type="text" class="form-control" name="judul_skripsi"
+                            placeholder="Masukkan Judul Skripsi">
+                    </div>
+                    <div class="form-group">
+                        <label>Pembimbing</label>
+                        <select name="dosen_id" class="form-control">
+                            <option value="">- Pilih Pembimbing -</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Penguji</label>
+                        <select name="dosen_penguji_id" class="form-control">
+                            <option value="">- Pilih Penguji -</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>KRS Terakhir</label>
+                        <input type="file" class="form-control" name="pilih-krs" accept="application/pdf">
+                        <input type="hidden" name="krs">
+                    </div>
+                    <div class="form-group">
+                        <label>File Skripsi</label>
+                        <input type="file" class="form-control" name="pilih-file_skripsi" accept="application/pdf">
+                        <input type="hidden" name="file_skripsi">
+                    </div>
+                    <div class="form-group">
+                        <label>Kwitansi Pembayaran</label>
+                        <input type="file" class="form-control" name="pilih-kwitansi" accept="application/pdf">
+                        <input type="hidden" name="kwitansi">
+                    </div>
+                    <div class="form-group">
+                        <label>Lulus MK Wajib</label>
+                        <input type="file" class="form-control" name="pilih-lulus_mkWajib" accept="application/pdf">
+                        <input type="hidden" name="lulus_mkWajib">
+                    </div>
+                    <div class="form-group">
+                        <label>Kartu Bimbingan</label>
+                        <input type="file" class="form-control" name="pilih-kartu_bimbingan" accept="application/pdf">
+                        <input type="hidden" name="kartu_bimbingan">
+                    </div>
+                    <div class="form-group">
+                        <label>Transkrip</label>
+                        <input type="file" class="form-control" name="pilih-transkip" accept="application/pdf">
+                        <input type="hidden" name="transkip">
+                    </div>
+                    <div class="form-group">
+                        <label>3 Sertifikat</label>
+                        <input type="file" class="form-control" name="pilih-sertifikat" accept="application/pdf">
+                        <input type="hidden" name="sertifikat">
+                    </div>
+                    <div class="form-group">
+                        <label>Lembar Persetujuan Pembimbing</label>
+                        <input type="file" class="form-control" name="pilih-lembar_persetujuan"
+                            accept="application/pdf">
+                        <input type="hidden" name="lembar_persetujuan">
+                    </div>
+                    <div class="form-group">
+                        <label>Surat Pernyataan Bebas Bauk</label>
+                        <input type="file" class="form-control" name="pilih-bebas_bauk" accept="application/pdf">
+                        <input type="hidden" name="bebas_bauk">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="edit">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -167,31 +253,6 @@
                 <div class="modal-footer">
                     <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
                     <button type="submit" class="btn btn-primary">Simpan</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="jadwal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form id="edit" action="<?= base_url() ?>admin/skripsi/updatestatus/<?= $skripsi_id ?>" method="POST">
-                <div class="card-header">
-                    <div class="card-title">Update Skripsi</div>
-                </div>
-                <div class="card-body">
-                    <div class="form-group">
-                        <label for="">Tempat Seminar</label>
-                        <input type="text" name="tempat" id="" class="form-control" placeholder="Tempat A" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Jadwal Skripsi</label>
-                        <input name="jadwal_skripsi" type="text" class="form-control dateTime"
-                            placeholder="Pilih Jadwal Skripsi" readonly>
-                    </div>
-                    <div class="form-group text-right">
-                        <input type="submit" class="btn btn-primary" valid="Update">
-                    </div>
                 </div>
             </form>
         </div>
@@ -310,7 +371,6 @@ $(document).ready(function() {
                             return 'Belum Di Set'
                         }
                     }
-                    // data: "jadwal_skripsi"
                 },
                 {
                     data: null,
@@ -400,9 +460,6 @@ $(document).ready(function() {
                     }
                 },
                 {
-                    data: "plagiat"
-                },
-                {
                     data: null,
                     render: function(data) {
                         return '<div class="text-center">\
@@ -467,61 +524,61 @@ $(document).ready(function() {
         })
     })
 
-    $(document).on('change', '[name=pilih-file_skripsi]', function() {
+    $(document).on('change', 'form#tambah [name=pilih-file_skripsi]', function() {
         read('[name=pilih-file_skripsi]', function(data) {
             $('[name=file_skripsi]').val(data.result);
         })
     })
 
-    $(document).on('change', '[name=pilih-krs]', function() {
+    $(document).on('change', 'form#tambah [name=pilih-krs]', function() {
         read('[name=pilih-krs]', function(data) {
             $('[name=krs]').val(data.result);
         })
     })
 
-    $(document).on('change', '[name=pilih-formulir]', function() {
+    $(document).on('change', 'form#tambah [name=pilih-formulir]', function() {
         read('[name=pilih-formulir]', function(data) {
             $('[name=formulir]').val(data.result);
         })
     })
 
-    $(document).on('change', '[name=pilih-kwitansi]', function() {
+    $(document).on('change', 'form#tambah [name=pilih-kwitansi]', function() {
         read('[name=pilih-kwitansi]', function(data) {
             $('[name=kwitansi]').val(data.result);
         })
     })
 
-    $(document).on('change', '[name=pilih-kartu_bimbingan]', function() {
+    $(document).on('change', 'form#tambah [name=pilih-kartu_bimbingan]', function() {
         read('[name=pilih-kartu_bimbingan]', function(data) {
             $('[name=kartu_bimbingan]').val(data.result);
         })
     })
 
-    $(document).on('change', '[name=pilih-transkip]', function() {
+    $(document).on('change', 'form#tambah [name=pilih-transkip]', function() {
         read('[name=pilih-transkip]', function(data) {
             $('[name=transkip]').val(data.result);
         })
     })
 
-    $(document).on('change', '[name=pilih-sertifikat]', function() {
+    $(document).on('change', 'form#tambah [name=pilih-sertifikat]', function() {
         read('[name=pilih-sertifikat]', function(data) {
             $('[name=sertifikat]').val(data.result);
         })
     })
 
-    $(document).on('change', '[name=pilih-bebas_bauk]', function() {
+    $(document).on('change', 'form#tambah [name=pilih-bebas_bauk]', function() {
         read('[name=pilih-bebas_bauk]', function(data) {
             $('[name=bebas_bauk]').val(data.result);
         })
     })
 
-    $(document).on('change', '[name=pilih-lembar_persetujuan]', function() {
+    $(document).on('change', 'form#tambah [name=pilih-lembar_persetujuan]', function() {
         read('[name=pilih-lembar_persetujuan]', function(data) {
             $('[name=lembar_persetujuan]').val(data.result);
         })
     })
 
-    $(document).on('change', '[name=pilih-lulus_mkWajib]', function() {
+    $(document).on('change', 'form#tambah [name=pilih-lulus_mkWajib]', function() {
         read('[name=pilih-lulus_mkWajib]', function(data) {
             $('[name=lulus_mkWajib]').val(data.result);
         })

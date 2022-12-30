@@ -220,8 +220,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="site-info float-left">
-                            <p>Copyright &copy;
-                                <? date('Y') ?> SIPS, All rights reserved
+                            <p>
+                                @Copyright. SIPS Informatika UTS. <?= date('Y') ?>
                             </p>
                         </div>
                     </div>

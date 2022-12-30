@@ -67,7 +67,7 @@ class Hasil_seminar_model extends CI_Model
 		} else {
 			$hasil = [
 				'error' => true,
-				'message' => "data tidak ditemukan"
+				'message' => "Ups!! upload berita acara belum berhasil"
 			];
 		}
 

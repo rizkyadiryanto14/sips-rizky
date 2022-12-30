@@ -167,10 +167,12 @@ $(document).ready(function() {
                 {
                     data: null,
                     render: function(data) {
-                        if (data.penguji_nama != null) {
-                            return data.penguji_nama;
+                        if (data.dosen_penguji_id != null) {
+                            return '1. ' + data.dosen_penguji_id + '<br>2. ' +
+                                data
+                                .dosen_penguji2_id;
                         } else {
-                            return "<span class='badge badge-danger'>Belum Di set</span>"
+                            return '<span class="badge badge-danger">Data Belum di set</span>';
                         }
                     }
                 },
@@ -211,7 +213,7 @@ $(document).ready(function() {
                         return ` <div class = "text-center" >
                                             <a href = "` + base_url + `dosen/seminar/detail/` + data.id +
                             `" class="btn btn-sm btn-success">
-                                <i class="fa fa-search"></i>
+                                ACC</i>
                             </a>
                         </div>
                         `;

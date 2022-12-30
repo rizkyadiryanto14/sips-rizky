@@ -52,16 +52,20 @@
                         <th class="penguji_nama"></th>
                     </tr>
                     <tr>
-                        <td>Masukan</td>
-                        <th class="masukan"></th>
+                        <td>Berita Acara</td>
+                        <th class="berita_acara"></th>
                     </tr>
+                    <!-- <tr>
+                        <td>Status</td>
+                        <th class="status"></th>
+                    </tr> -->
                     <tr>
                         <td>Status</td>
                         <th>
                             <select name="status" class="form-control">
-                                <option value="1">Lanjut (Sempurna)</option>
-                                <option value="2">Lanjut (Perbaikan)</option>
-                                <option value="3">Ditolak/Belum Dinilai</option>
+                                <option hidden value="1">Lanjut (Sempurna)</option>
+                                <option hidden value="2">Lanjut (Perbaikan)</option>
+                                <option hidden value="3">Ditolak/Belum Dinilai</option>
                             </select>
                         </th>
                     </tr>
@@ -97,7 +101,8 @@ $(document).ready(function() {
                 $('.mahasiswa_nama').html(res.data.mahasiswa_nama);
                 $('.tanggal_jam').html(res.data.tanggal + ' ' + res.data.jam);
                 $('.pembimbing_nama').html(res.data.pembimbing_nama);
-                $('.penguji_nama').html(res.data.penguji_nama);
+                $('.penguji_nama').html('1. ' + res.data.dosen_penguji_id + '<br>2. ' + res.data
+                    .dosen_penguji2_id);
                 $('.tempat').html(res.data.tempat);
                 $('.syarat_seminar').html(`<a href="` + base_url + `cdn/vendor/syarat_seminar/` + res
                     .data.syarat_seminar + `">` + res.data.syarat_seminar + `</a>`);
@@ -112,11 +117,14 @@ $(document).ready(function() {
                     .berita_acara + `</a>` :
                     '<input type="file" accept="application/pdf" class="form-control" name="pilih-berita_acara">'
                 );
-                $('.masukan').html((res.data.hasil.masukan) ? `<a href="` + base_url +
-                    `cdn/vendor/masukan/` + res.data.hasil.masukan + `">` + res.data.hasil.masukan +
-                    `</a>` :
-                    '<input type="file" accept="application/pdf" class="form-control" name="pilih-masukan">'
-                );
+                // if (res.data.hasil.status == '1') {
+                //     status = "1";
+                // } else if (res.data.hasil.status == '2') {
+                //     status = "2";
+                // } else {
+                //     status = "3";
+                // }
+
                 $('[name=status]').val(res.data.hasil.status);
                 $('[name=email]').val(res.data.email);
                 $('[name=def_status]').val(res.data.hasil.status);
@@ -127,16 +135,16 @@ $(document).ready(function() {
     show()
 
     $(document).on('change', '[name=pilih-berita_acara]', function() {
-        read('[name=pilih-berita_acara]', function(data) {
-            $('[name=berita_acara]').val(data.result);
-        })
-    }), 7
+            read('[name=pilih-berita_acara]', function(data) {
+                $('[name=berita_acara]').val(data.result);
+            })
+        }),
 
-    $(document).on('change', '[name=pilih-masukan]', function() {
-        read('[name=pilih-masukan]', function(data) {
-            $('[name=masukan]').val(data.result);
+        $(document).on('change', '[name=pilih-masukan]', function() {
+            read('[name=pilih-masukan]', function(data) {
+                $('[name=masukan]').val(data.result);
+            })
         })
-    })
 
     $(document).on('submit', 'form#edit', function(e) {
         e.preventDefault();

@@ -156,6 +156,11 @@ $(document).ready(function() {
 
                 },
                 {
+                    // data: null,
+                    // render: function(data) {
+
+                    // }
+
                     data: null,
                     render: function(data) {
                         if (data.hasil_seminar_status == 1 || data.hasil_seminar_status ==

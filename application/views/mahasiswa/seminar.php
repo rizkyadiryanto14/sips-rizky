@@ -307,7 +307,6 @@ $(document).ready(function() {
                     }
                 },
                 {
-
                     data: "hasil_seminar_status",
                     render: function(data) {
                         if (data == 1) {
@@ -336,10 +335,6 @@ $(document).ready(function() {
                             '">\
                                 <i class="fa fa-pen"></i>\
                             </button>\
-    						<button class="btn btn-danger btn-sm btn-hapus" type="button" data-toggle="modal" data-target="#hapus" data-id="' +
-                            data.id + '">\
-    							<i class="fa fa-trash"></i>\
-    						</button>\
     					</div>'
                     }
                 }

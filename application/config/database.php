@@ -72,14 +72,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $active_group = 'default';
 $query_builder = TRUE;
-$web = parse_ini_file(FCPATH . '.env');
+// $web = parse_ini_file(FCPATH . '.env');
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => $web['hostname'],
-	'username' => $web['username'],
-	'password' => $web['password'],
-	'database' => $web['database'],
+// 	'hostname' => $web['hostname'],
+// 	'username' => $web['username'],
+// 	'password' => $web['password'],
+// 	'database' => $web['database'],
+	'hostname' => 'localhost',
+	'username' => 'jaksparo_sips',
+	'password' => 'Rizky140820!',
+	'database' => 'jaksparo_sips',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

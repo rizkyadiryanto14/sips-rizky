@@ -42,7 +42,7 @@
                         <th>Kwitansi Pembayaran</th>
                         <th>Pernyataan Lulus Mk wajib</th>
                         <th>Transkip Nilai</th>
-                        <th>3 Sertifikas</th>
+                        <th>3 Sertifikat</th>
                         <th>Lembar Persetujuan Pembimbing</th>
                         <th>Surat Pernyataan Bauk</th>
                         <th>Aksi</th>
@@ -58,7 +58,7 @@
         <div class="modal-content">
             <form id="edit">
                 <div class="modal-header">
-                    <div class="modal-title">Edit Proposal</div>
+                    <div class="modal-title">Edit Sidang Skripsi</div>
                 </div>
                 <div class="modal-body">
                     <input type="hidden" class="id">
@@ -155,6 +155,11 @@
                         <input type="hidden" name="file_skripsi">
                     </div>
                     <div class="form-group">
+                        <label for="">Formulir Pendaftaran</label>
+                        <input type="file" class="form-control" name="pilih-formulir" accept="application/pdf">
+                        <input type="hidden" name="formulir">
+                    </div>
+                    <div class="form-group">
                         <label>Kwitansi Pembayaran</label>
                         <input type="file" class="form-control" name="pilih-kwitansi" accept="application/pdf">
                         <input type="hidden" name="kwitansi">
@@ -218,14 +223,16 @@
         </div>
     </div>
 </div>
-<?php $this->app->endSection('content') ?>
 
+<?php $this->app->endSection('content') ?>
 <?php $this->app->section() ?>
 <link rel="stylesheet" href="<?= base_url() ?>cdn/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+
 <script src="<?= base_url() ?>cdn/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="<?= base_url() ?>cdn/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script>
 $(document).ready(function() {
+    getDataSelect()
     call('api/dosen').done(function(res) {
         dosen = `<option value="">- Pilih Dosen -</option>`;
         if (res.data) {
@@ -272,25 +279,33 @@ $(document).ready(function() {
                     }
                 },
                 {
-                    data: "mahasiswa",
-                    render: function(data) {
-                        return data.nim;
-                    }
+                    data: "nim"
                 },
                 {
-                    data: "mahasiswa",
-                    render: function(data) {
-                        return data.nama;
-                    }
+                    data: "nama_mahasiswa"
                 },
                 {
                     data: "judul_skripsi"
                 },
                 {
-                    data: "nama_pembimbing"
+                    data: null,
+                    render: function(data) {
+                        if (data.nama_pembimbing != null) {
+                            return data.nama_pembimbing;
+                        } else {
+                            return 'data belum di set';
+                        }
+                    }
                 },
                 {
-                    data: "nama_penguji"
+                    data: null,
+                    render: function(data) {
+                        if (data.nama_penguji != null) {
+                            return data.nama_penguji;
+                        } else {
+                            return 'data belum diset';
+                        }
+                    }
                 },
                 {
                     data: null,
@@ -301,7 +316,7 @@ $(document).ready(function() {
                             return 'Belum Di Set'
                         }
                     }
-                    // data: "jadwal_skripsi"
+
                 },
                 {
                     data: null,
@@ -432,6 +447,7 @@ $(document).ready(function() {
         })
     })
 
+    // form tambah
     $(document).on('change', 'form#tambah [name=pilih-file_skripsi]', function() {
         read('form#tambah [name=pilih-file_skripsi]', function(data) {
             $('form#tambah [name=file_skripsi]').val(data.result);
@@ -492,6 +508,9 @@ $(document).ready(function() {
         })
     })
 
+    // end form tambah
+
+    // form edit
     $(document).on('change', 'form#edit [name=pilih-file_skripsi]', function() {
         read('form#edit [name=pilih-file_skripsi]', function(data) {
             $('form#edit [name=file_skripsi]').val(data.result);
@@ -516,6 +535,8 @@ $(document).ready(function() {
         })
     })
 
+    // end form edit
+
     $(document).on('click', 'button.btn-hapus', function() {
         $('form#hapus .id').val($(this).data('id'));
     })
@@ -535,6 +556,26 @@ $(document).ready(function() {
     })
 
 })
+
+function getDataSelect() {
+    $.ajax({
+        url: base_url + 'getAllData/mahasiswa',
+        dataType: 'json',
+        type: 'get',
+        success: function(res) {
+            data = '<option value=""></option>'
+            $.each(res, function(i, item) {
+                data += '<option value="' + item.id + '">(' + item.nim + ') ' + item.nama +
+                    '</option>'
+            })
+            $("#wadah_select2").html(data)
+        }
+    })
+}
+
+function disableBtn() {
+    $(".btn-act").attr('disabled', true).html('Loading ...')
+}
 
 $(document).on('click', 'button.btn-edit', function() {
     $('form#edit .id').val($(this).data('id'));

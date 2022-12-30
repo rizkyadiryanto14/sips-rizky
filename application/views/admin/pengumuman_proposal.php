@@ -115,25 +115,10 @@ $(document).ready(function() {
                     data: null,
                     render: function(data) {
                         if (data.status == '1') {
-                            status = '\
-                            <button class="btn btn-sm btn-setuju btn-success" type="button" data-id="' + data.id +
-                                '" data-judul="' + data.judul + '" data-status="' + data
-                                .status + '" data-toggle="modal" data-target="#setujui">\
-                                <i class="fa fa-check"></i>\
-                            </button>\
-                            ';
+                            return '<span class="badge badge-success">Judul Di ACC</span>';
                         } else {
-                            status = '\
-                            <button class="btn btn-sm btn-setuju btn-danger" type="button" data-id="' + data.id +
-                                '" data-judul="' + data.judul + '" data-status="' + data
-                                .status + '" data-toggle="modal" data-target="#setujui">\
-                                <i class="fa fa-times"></i>\
-                            </button>\
-                            ';
+                            return '<span class="badge badge-danger">Judul belum dinilai/ditolak';
                         }
-                        return '\
-                            <div class="text-center">' + status + '</div>\
-                            ';
                     }
                 },
 

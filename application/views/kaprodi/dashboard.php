@@ -113,7 +113,7 @@
 
 <div class="card">
     <div class="card-header">
-        <div class="card-title">Status Proposal</div>
+        <div class="card-title">Progress Skripsi</div>
     </div>
     <div class="card-body">
         <canvas id="proposal-status" style="width: 100%; text-align: center; max-height: 300px;"></canvas>

@@ -40,6 +40,8 @@
                     <tr>
                         <th>No</th>
                         <th>Status</th>
+                        <th>Nim</th>
+                        <th>Nama</th>
                         <th>Judul Skripsi</th>
                         <th>Dosen Pembimbing</th>
                         <th>Dosen Penguji</th>
@@ -258,6 +260,7 @@
         </div>
     </div>
 </div>
+
 <div class="modal fade" id="hapus">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -277,6 +280,7 @@
         </div>
     </div>
 </div>
+
 <div class="modal fade" id="setujui">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -298,6 +302,7 @@
         </div>
     </div>
 </div>
+
 <?php $this->app->endSection('content') ?>
 
 <?php $this->app->section() ?>
@@ -352,6 +357,12 @@ $(document).ready(function() {
                             <div class="text-center">' + status + '</div>\
                             ';
                     }
+                },
+                {
+                    data: "nim"
+                },
+                {
+                    data: "nama_mahasiswa"
                 },
                 {
                     data: "judul_skripsi"

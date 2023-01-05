@@ -89,14 +89,14 @@
                     </div>
                     <div class="form-group">
                         <label>Outline</label>
-                        <textarea name="ringkasan" rows="5" class="form-control"
-                            placeholder="Masukkan Ringkasan"></textarea>
+                        <input type="file" class="form-control" name="pilih-outline_skripsi" id="outline_skripsi"
+                            accept="application/pdf">
+                        <input type="hidden" name="outline_skripsi">
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-primary">Simpan</button>
-                </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
+                        <button type="submit" class="btn btn-primary">Simpan</button>
+                    </div>
             </form>
         </div>
     </div>
@@ -366,6 +366,12 @@ $(document).ready(function() {
     $(document).on('change', 'form#edit [name=pilih-file_krs]', function() {
         read('form#edit [name=pilih-file_krs]', function(data) {
             $('form#edit [name=file_krs]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#tambah [name=pilih-outline_skripsi]', function() {
+        read('form#tambah [name=pilih-outline_skripsi]', function(data) {
+            $('form#tambah [name=outline_skripsi]').val(data.result);
         })
     })
 

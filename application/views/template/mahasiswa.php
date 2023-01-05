@@ -50,12 +50,6 @@ foreach ($dataUser as $du) {
                         </li>
 
                         <?php if ($verifikasi == 1) { ?>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() ?>mahasiswa/cekjudul">
-                                <i class="ni ni-app text-warning"></i>
-                                <span class="nav-link-text">Cek Kemiripan Judul</span>
-                            </a>
-                        </li> -->
 
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="collapse" href="#pendaftaran" role="button"
@@ -76,7 +70,7 @@ foreach ($dataUser as $du) {
                                 </a>
                                 <a class="nav-link" href="<?= base_url() ?>mahasiswa/skripsi">
                                     <i class="fa fa-list text-primary"></i>
-                                    <span class="nav-link-text">Seminar Akhir / Skripsi</span>
+                                    <span class="nav-link-text">Sidang Skripsi</span>
                                 </a>
                             </div>
                         </div>

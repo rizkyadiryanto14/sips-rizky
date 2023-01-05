@@ -22,7 +22,6 @@ class Skripsi_model extends CI_Model
         }
 
         $skripsi = $this->db->get('skripsi_vl')->result_array();
-        $skripsi = self::checkPlagiat($skripsi);
 
         $hasil = [
             'error' => false,
@@ -36,7 +35,6 @@ class Skripsi_model extends CI_Model
     public function admin_index($input)
     {
         $skripsi = $this->db->get('skripsi_vl')->result_array();
-        $skripsi = self::checkPlagiat($skripsi);
 
         $hasil = [
             'error' => false,
@@ -47,36 +45,11 @@ class Skripsi_model extends CI_Model
         return $hasil;
     }
 
-    private function checkPlagiat($data)
-    {
-        $allData = [];
-        $id = [];
-        $judul = [];
-        foreach ($data as $item) {
-            $id[] = $item['id'];
-            $judul[] = $item['judul_skripsi'];
-        }
-
-        foreach ($data as $item) {
-            $resultCheck = [];
-            for ($i = 0; $i < count($judul); $i++) {
-                if ($item['id'] != $id[$i]) {
-                    similar_text(strtolower(str_replace(' ', '', $judul[$i])), strtolower(str_replace(' ', '', $item['judul_skripsi'])), $resPercent);
-                    $resultCheck[] = $resPercent;
-                }
-            }
-            $item['plagiat'] = round(max($resultCheck), 2) . '%';
-            $allData[] = $item;
-        }
-        return $allData;
-    }
-
 
     public function create($input)
     {
         $data = [
             'judul_skripsi' => $input['judul_skripsi'],
-            // 'jadwal_skripsi' => $input['jadwal_skripsi'],
             'dosen_id' => $input['dosen_id'],
             'dosen_penguji_id' => $input['dosen_penguji_id'],
             'mahasiswa_id' => $input['mahasiswa_id'],

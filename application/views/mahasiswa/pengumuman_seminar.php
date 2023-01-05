@@ -156,13 +156,18 @@ $(document).ready(function() {
 
                 },
                 {
+                    // data: null,
+                    // render: function(data) {
+
+                    // }
+
                     data: null,
                     render: function(data) {
                         if (data.hasil_seminar_status == 1 || data.hasil_seminar_status ==
                             2) {
                             return `
                         <div class="text-center">
-                            <a href="` + base_url + `mahasiswa/seminar/download/` + data.id +
+                            <a href="` + base_url + `mahasiswa/seminar/cetak/` + data.id +
                                 `" class="btn btn-sm btn-primary" target="_blank" >
                                 Cetak Berita Acara</i>
                             </a>

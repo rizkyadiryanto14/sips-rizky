@@ -44,6 +44,7 @@
                         <th>Syarat Seminar</th>
                         <th>Kartu Bimbingan</th>
                         <th>Status</th>
+                        <th>Atur Jadwal</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -118,6 +119,25 @@
                 <div class="modal-footer">
                     <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
                     <button type="submit" class="btn btn-primary">Hapus</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="alerts">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="hapus">
+                <div class="modal-header">
+                    <div class="modal-title">Warning !!!</div>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" class="id">
+                    <p>Belum Di ACC Dosen Pembimbing</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
                 </div>
             </form>
         </div>
@@ -307,14 +327,38 @@ $(document).ready(function() {
                 {
                     data: null,
                     render: function(data) {
+                        data: "hasil_seminar_status"
+                        if (data.hasil_seminar_status == 1 || data.hasil_seminar_status ==
+                            2) {
+                            return `
+                        <div class="text-center">
+                            <a href="` + base_url + `admin/seminar/status/` + data.id +
+                                `" class="btn btn-sm btn-info ${data.tempat != null ? 'd-none' : '' }">
+                                <i class="fa fa-check"></i>
+                            </a>
+                        </div>
+                        `;
+                        } else {
+                            return `
+                        <div class="text-center">
+                            <button class="btn btn-sm btn-info" type="button" data-toggle="modal" data-target="#alerts" data-id="` +
+                                data
+                                .id + `">
+                                <i class="fa fa-check"></i>
+                            </button>
+                        </div>
+                        `;
+                        }
+                    }
+                },
+                {
+                    data: null,
+                    render: function(data) {
                         return `
                         <div class="text-center">
-                            <a href="` + base_url + `admin/seminar/detail/` + data.id + `" class="btn btn-sm btn-success">
+                            <a href="` + base_url + `admin/seminar/detail/` + data.id +
+                            `" class="btn btn-sm btn-success">
                                 <i class="fa fa-search"></i>
-                            </a>
-                            <a href="` + base_url + `admin/seminar/status/` + data.id +
-                            `" class="btn btn-sm btn-info ${data.tempat != null ? 'd-none' : '' }">
-                                <i class="fa fa-check"></i>
                             </a>
                             <button class="btn btn-danger btn-hapus btn-sm" type="button" data-toggle="modal" data-target="#hapus" data-id="` +
                             data

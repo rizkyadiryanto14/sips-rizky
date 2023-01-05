@@ -150,3 +150,208 @@ ERROR - 2022-12-27 07:48:07 --> Severity: Warning --> max(): Array must contain 
 ERROR - 2022-12-27 08:20:28 --> 404 Page Not Found: Assets/essence
 ERROR - 2022-12-27 08:20:52 --> 404 Page Not Found: Assets/essence
 ERROR - 2022-12-27 13:23:56 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 13:29:23 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 13:29:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:29:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:30:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:30:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:30:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:30:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:30:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:30:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:30:46 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:30:46 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:31:11 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 13:31:11 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 13:31:11 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 13:31:11 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 13:31:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:31:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:31:27 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:31:27 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:31:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:31:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:35:34 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 13:38:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:38:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:38:41 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:38:41 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:42:03 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:42:03 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:42:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:42:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:45:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:45:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:45:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:45:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:50:15 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 13:50:58 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 13:56:24 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 68
+ERROR - 2022-12-27 13:56:29 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 68
+ERROR - 2022-12-27 13:56:54 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:56:54 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:56:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:56:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:56:58 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 68
+ERROR - 2022-12-27 13:57:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:57:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:57:16 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 13:57:26 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 13:57:31 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 68
+ERROR - 2022-12-27 13:57:34 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 68
+ERROR - 2022-12-27 13:57:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:57:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:57:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:57:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:57:40 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 68
+ERROR - 2022-12-27 13:57:58 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:57:58 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:57:58 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 68
+ERROR - 2022-12-27 13:58:06 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 68
+ERROR - 2022-12-27 13:58:10 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 68
+ERROR - 2022-12-27 13:58:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:58:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 13:58:58 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 68
+ERROR - 2022-12-27 14:03:46 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:03:46 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:03:46 --> Severity: error --> Exception: Call to undefined method Skripsi_model::checkPlagiat() /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 25
+ERROR - 2022-12-27 14:03:51 --> Severity: error --> Exception: Call to undefined method Skripsi_model::checkPlagiat() /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 25
+ERROR - 2022-12-27 14:04:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:04:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:04:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:04:09 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:04:09 --> Severity: error --> Exception: Call to undefined method Skripsi_model::checkPlagiat() /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 25
+ERROR - 2022-12-27 14:07:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:07:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:07:14 --> Severity: error --> Exception: Call to undefined method Skripsi_model::checkPlagiat() /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 25
+ERROR - 2022-12-27 14:07:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:07:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:07:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:07:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:12:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:12:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:12:28 --> Severity: error --> Exception: Call to undefined method Skripsi_model::checkPlagiat() /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 25
+ERROR - 2022-12-27 14:17:19 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:17:19 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:17:27 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:17:27 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 14:31:40 --> Severity: Warning --> Invalid argument supplied for foreach() /opt/lampp/htdocs/sips/application/models/Daftar_judul_model.php 19
+ERROR - 2022-12-27 14:31:40 --> Severity: Warning --> Invalid argument supplied for foreach() /opt/lampp/htdocs/sips/application/models/Daftar_judul_model.php 24
+ERROR - 2022-12-27 14:31:44 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 14:33:28 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 14:43:13 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 14:43:33 --> Severity: Warning --> unlink(/opt/lampp/htdocs/sips/cdn/vendor/skripsi/sk_tim/): No such file or directory /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 276
+ERROR - 2022-12-27 14:43:33 --> Severity: Warning --> unlink(/opt/lampp/htdocs/sips/cdn/vendor/skripsi/persetujuan/): No such file or directory /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 277
+ERROR - 2022-12-27 14:43:33 --> Severity: Warning --> unlink(/opt/lampp/htdocs/sips/cdn/vendor/skripsi/bukti_konsultasi/): No such file or directory /opt/lampp/htdocs/sips/application/models/Skripsi_model.php 278
+ERROR - 2022-12-27 14:47:59 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 14:48:13 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 17:50:52 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 17:53:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 17:53:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 17:53:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 17:53:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 17:54:22 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 17:54:22 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 17:55:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 17:55:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 17:55:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 17:55:36 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 17:57:43 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 18:00:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 18:00:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 18:00:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 18:00:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 18:03:42 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 18:03:42 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 18:07:13 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 18:12:56 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 18:43:42 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 18:43:58 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 18:45:50 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 18:46:34 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 18:52:41 --> Query error: Unknown column 'proposal_mahasiswa_v.dosen_id' in 'on clause' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`dosen_penguji2_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_id`, `seminar`.`dosen_penguji_id`, `seminar`.`tempat`, `seminar`.`surat_permohonan`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `mahasiswa`.`id` as `mahasiswa_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`email`, `d`.`nama` AS `pembimbing_nama`
+FROM `seminar`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `dosen` `d` ON `d`.`id`=`proposal_mahasiswa_v`.`dosen_id`
+WHERE `seminar`.`id` = '31'
+ERROR - 2022-12-27 18:52:41 --> Severity: error --> Exception: Call to a member function row_array() on bool /opt/lampp/htdocs/sips/application/models/Seminar_model.php 208
+ERROR - 2022-12-27 18:53:07 --> Query error: Unknown column 'd.nama' in 'field list' - Invalid query: SELECT `seminar`.`id`, `seminar`.`proposal_mahasiswa_id`, `seminar`.`dosen_penguji2_id`, `seminar`.`tanggal`, `seminar`.`jam`, `seminar`.`dosen_id`, `seminar`.`dosen_penguji_id`, `seminar`.`tempat`, `seminar`.`surat_permohonan`, `seminar`.`file_proposal`, `seminar`.`syarat_seminar`, `seminar`.`kartu_bimbingan`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `mahasiswa`.`id` as `mahasiswa_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`email`, `d`.`nama` AS `pembimbing_nama`
+FROM `seminar`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `seminar`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+WHERE `seminar`.`id` = '31'
+ERROR - 2022-12-27 18:53:07 --> Severity: error --> Exception: Call to a member function row_array() on bool /opt/lampp/htdocs/sips/application/models/Seminar_model.php 207
+ERROR - 2022-12-27 18:58:10 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 18:58:26 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 19:00:04 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 19:00:32 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 19:01:12 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 19:18:33 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 19:18:51 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 19:19:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 19:19:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 19:19:11 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 19:19:11 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 19:20:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 19:20:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 19:20:54 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 19:20:54 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 19:24:12 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 19:24:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-27 19:32:15 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 19:35:13 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 19:36:15 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 19:37:11 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 19:37:27 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 19:38:33 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 19:38:56 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 19:39:13 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 19:52:11 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 19:54:28 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 19:56:19 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:23:52 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 20:24:56 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:26:47 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 20:27:28 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 20:27:41 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:33:28 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:38:33 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:39:03 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:39:35 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:39:52 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:40:14 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:40:25 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:41:20 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:43:04 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:43:21 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:44:21 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:44:41 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:45:46 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:46:45 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:46:56 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:47:14 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:47:52 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:48:27 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:48:46 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:49:18 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:49:30 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:49:38 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:49:48 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:51:52 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:52:17 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:52:39 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:52:55 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:53:30 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:53:55 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:54:23 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:54:38 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:54:50 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:55:04 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:55:34 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:56:01 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 20:56:54 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:57:11 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 20:57:32 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-27 21:06:08 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-27 21:06:25 --> 404 Page Not Found: Cdn/vendor

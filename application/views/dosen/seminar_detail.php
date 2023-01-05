@@ -4,58 +4,74 @@
 
 <?php $this->app->section() ?>
 <div class="card">
-    <div class="card-header">
-        <div class="card-title">Detail Seminar</div>
-    </div>
-    <div class="card-body">
-        <div class="table-responsive">
-            <table class="table table-hover">
-                <tr>
-                    <td>Proposal</td>
-                    <th class="proposal_mahasiswa_judul">-</th>
-                </tr>
-                <tr>
-                    <td>Mahasiswa</td>
-                    <th class="mahasiswa_nama">-</th>
-                </tr>
-                <tr>
-                    <td>Waktu Seminar</td>
-                    <th class="tanggal_jam">0000-00-00 00:00 AM</th>
-                </tr>
-                <tr>
-                    <td>Tempat</td>
-                    <th class="tempat">-</th>
-                </tr>
-                <tr>
-                    <td>File Proposal</td>
-                    <th class="file_proposal">-</th>
-                </tr>
-                <tr>
-                    <td>Surat Permohonan</td>
-                    <th class="surat_permohonan">-</th>
-                </tr>
-                <tr>
-                    <td>Kartu Bimbingan</td>
-                    <th class="kartu_bimbingan">-</th>
-                </tr>
-                <tr>
-                    <td>Syarat Seminar</td>
-                    <th class="syarat_seminar">-</th>
-                </tr>
-                <tr>
-                    <td>Masukan</td>
-                    <th class="masukan">-</th>
-                </tr>
-                <tr>
+    <form id="edit">
+        <div class="card-header">
+            <div class="card-title">Detail Seminar</div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <tr>
+                        <td>Proposal</td>
+                        <th class="proposal_mahasiswa_judul">-</th>
+                    </tr>
+                    <tr>
+                        <td>Mahasiswa</td>
+                        <th class="mahasiswa_nama">-</th>
+                    </tr>
+                    <tr>
+                        <td>Waktu Seminar</td>
+                        <th class="tanggal_jam">0000-00-00 00:00 AM</th>
+                    </tr>
+                    <tr>
+                        <td>Tempat</td>
+                        <th class="tempat">-</th>
+                    </tr>
+                    <tr>
+                        <td>File Proposal</td>
+                        <th class="file_proposal">-</th>
+                    </tr>
+                    <tr>
+                        <td>Surat Permohonan</td>
+                        <th class="surat_permohonan">-</th>
+                    </tr>
+                    <tr>
+                        <td>Kartu Bimbingan</td>
+                        <th class="kartu_bimbingan">-</th>
+                    </tr>
+                    <tr>
+                        <td>Syarat Seminar</td>
+                        <th class="syarat_seminar">-</th>
+                    </tr>
+                    <tr>
+                        <td>Berita Acara</td>
+                        <th class="berita_acara"></th>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <th>
+                            <select name="status" class="form-control">
+                                <option value="1">Lanjut (Sempurna)</option>
+                                <option value="2">Lanjut (Perbaikan)</option>
+                                <option value="3">Ditolak/Belum Dinilai</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <!-- <tr>
                     <td>Status</td>
                     <th class="status"></th>
-                </tr>
-            </table>
+                </tr> -->
+                </table>
+                <input type="hidden" name="masukan">
+                <input type="hidden" name="email">
+                <input type="hidden" name="def_status">
+            </div>
         </div>
-    </div>
-    <div class="card-footer text-right">
-        <a href="<?= base_url() ?>dosen/seminar" class="btn btn-default">Kembali</a>
-    </div>
+        <div class="card-footer text-right">
+            <a href="<?= base_url() ?>admin/seminar" class="btn btn-default">Kembali</a>
+            <button type="submit" class="btn btn-primary btn-act">Simpan</button>
+        </div>
+    </form>
 </div>
 <?php $this->app->endSection('content') ?>
 
@@ -86,22 +102,41 @@ $(document).ready(function() {
                 $('.syarat_seminar').html((res.data.syarat_seminar) ? `<a href="` + base_url +
                     `cdn/vendor/syarat_seminar/` + res.data.syarat_seminar + `">` + res.data
                     .syarat_seminar + `</a>` : '-');
-                $('.masukan').html((res.data.hasil.masukan) ? `<a href="` + base_url +
-                    `cdn/vendor/masukan/` + res.data.hasil.masukan + `">` + res.data.hasil.masukan +
-                    `</a>` : '-');
-                if (res.data.hasil.status == '1') {
-                    status = 'Lanjut (Sempurna)';
-                } else if (res.data.hasil.status == '2') {
-                    status = 'Lanjut (Perbaikan)';
-                } else {
-                    status = 'Ditolak/Belum Dinilai';
-                }
-                $('.status').html(status);
+                $('.berita_acara').html((res.data.hasil.berita_acara) ? `<a href="` + base_url +
+                    `cdn/vendor/berita_acara/` + res.data.hasil.berita_acara + `">` + res.data.hasil
+                    .berita_acara + `</a>` : '-');
+                // if (res.data.hasil.status == '1') {
+                //     status = 'Lanjut (Sempurna)';
+                // } else if (res.data.hasil.status == '2') {
+                //     status = 'Lanjut (Perbaikan)';
+                // } else {
+                //     status = 'Ditolak/Belum Dinilai';
+                // }
+                // $('.status').html(status);
+
+                $('[name=status]').val(res.data.hasil.status);
+                $('[name=email]').val(res.data.email);
+                $('[name=def_status]').val(res.data.hasil.status);
             }
         })
     }
 
     show()
+
+    $(document).on('submit', 'form#edit', function(e) {
+        e.preventDefault();
+        $(".btn-act").attr('disabled', true).html('Loading...')
+        call('api/hasil_seminar/edit/' + seminar_id, $(this).serialize()).done(function(res) {
+            if (res.error == true) {
+                notif(res.message, 'error', true);
+                $(".btn-act").attr('disabled', false).html('Selesai')
+            } else {
+                notif(res.message, 'success');
+                show();
+                $(".btn-act").attr('disabled', false).html('Selesai')
+            }
+        })
+    })
 
 })
 </script>

@@ -43,8 +43,8 @@
                     <th class="kartu_bimbingan">-</th>
                 </tr>
                 <tr>
-                    <td>Masukan</td>
-                    <th class="masukan">-</th>
+                    <td>Berita Acara</td>
+                    <th class="berita_acara"></th>
                 </tr>
                 <tr>
                     <td>Status</td>
@@ -80,8 +80,9 @@ $(document).ready(function() {
                     tanggal_jam = '<span class="badge badge-danger">Data Belum Diset</span>';
                 }
                 $('.tanggal_jam').html(tanggal_jam);
-                if (res.data.nama_penguji != null) {
-                    nama_penguji = res.data.nama_penguji;
+                if (res.data.dosen_penguji_id != null) {
+                    nama_penguji = '1. ' + res.data.dosen_penguji_id + '<br>2. ' + res.data
+                        .dosen_penguji2_id;
                 } else {
                     nama_penguji = '<span class="badge badge-danger">Data Belum Diset</span>';
                 }
@@ -100,9 +101,9 @@ $(document).ready(function() {
                     .data.syarat_seminar + `">` + res.data.syarat_seminar + `</a>`);
                 $('.kartu_bimbingan').html(`<a href="` + base_url + `cdn/vendor/kartu_bimbingan/` + res
                     .data.kartu_bimbingan + `">` + res.data.kartu_bimbingan + `</a>`);
-                $('.masukan').html((res.data.hasil.masukan) ? `<a href="` + base_url +
-                    `cdn/vendor/masukan/` + res.data.hasil.masukan + `">` + res.data.hasil.masukan +
-                    `</a>` : '-');
+                $('.berita_acara').html((res.data.hasil.berita_acara) ? `<a href="` + base_url +
+                    `cdn/vendor/berita_acara/` + res.data.hasil.berita_acara + `">` + res.data.hasil
+                    .berita_acara + `</a>` : 'Sedang Di Proses...');
                 if (res.data.hasil.status == '1') {
                     status = 'Lanjut (Sempurna)';
                 } else if (res.data.hasil.status == '2') {

@@ -1,11 +1,12 @@
-<?php 
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
 
 require APPPATH . 'libraries/REST_Controller.php';
 
 use Restserver\Libraries\REST_Controller;
 
-class AuthMahasiswa extends REST_Controller {
+class AuthMahasiswa extends REST_Controller
+{
 
     public function __construct()
     {
@@ -18,7 +19,6 @@ class AuthMahasiswa extends REST_Controller {
         $response = $this->model->loginMahasiswa($this->input->post());
         return $this->response($response);
     }
-
 }
 
 /* End of file Auth.php */

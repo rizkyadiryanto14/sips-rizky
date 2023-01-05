@@ -307,7 +307,6 @@ $(document).ready(function() {
                     }
                 },
                 {
-
                     data: "hasil_seminar_status",
                     render: function(data) {
                         if (data == 1) {

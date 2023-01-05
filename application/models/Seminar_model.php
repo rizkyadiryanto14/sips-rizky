@@ -90,6 +90,7 @@ class Seminar_model extends CI_Model
 			$data_id = $this->db->insert_id();
 			$this->db->insert("hasil_seminar", [
 				'seminar_id' => $data_id,
+				'berita_acara' => "",
 				'masukan' => "",
 				'status' => '3'
 			]);
@@ -182,6 +183,7 @@ class Seminar_model extends CI_Model
 		$this->db->select('
 			seminar.id,
 			seminar.proposal_mahasiswa_id,
+			seminar.dosen_penguji2_id,
 			seminar.tanggal,
 			seminar.jam,
 			seminar.dosen_id,
@@ -195,11 +197,13 @@ class Seminar_model extends CI_Model
 			mahasiswa.id as mahasiswa_id,
 			mahasiswa.nama as mahasiswa_nama,
 			mahasiswa.email,
+			dosen.nama as pembimbing_nama,
 		');
 
 		$this->db->from($this->table);
 		$this->db->join('proposal_mahasiswa', 'proposal_mahasiswa.id = seminar.proposal_mahasiswa_id', 'left');
 		$this->db->join('mahasiswa', 'mahasiswa.id = proposal_mahasiswa.mahasiswa_id', 'left');
+		$this->db->join('dosen', 'dosen.id = seminar.dosen_id');
 		$this->db->where('seminar.id', $id);
 
 		$seminar = $this->db->get()->row_array();

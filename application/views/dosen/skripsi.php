@@ -158,16 +158,10 @@ $(document).ready(function() {
                     }
                 },
                 {
-                    data: "mahasiswa",
-                    render: function(data) {
-                        return data.nim;
-                    }
+                   data:"nim"
                 },
                 {
-                    data: "mahasiswa",
-                    render: function(data) {
-                        return data.nama;
-                    }
+                   data:"nama_mahasiswa"
                 },
                 {
                     data: "judul_skripsi"
@@ -181,10 +175,10 @@ $(document).ready(function() {
                 {
                     data: "jadwal_skripsi"
                 },
-                {
-                    data: "persetujuan",
+               {
+                    data: "krs",
                     render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/skripsi/persetujuan/' +
+                        return '<a href="' + base_url + 'cdn/vendor/skripsi/krs/' +
                             data + '">' + data + '</a>';
                     }
                 },
@@ -196,17 +190,65 @@ $(document).ready(function() {
                     }
                 },
                 {
-                    data: "sk_tim",
+                    data: "formulir",
                     render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/skripsi/sk_tim/' +
+                        return '<a href="' + base_url + 'cdn/vendor/skripsi/formulir/' +
                             data + '">' + data + '</a>';
                     }
                 },
                 {
-                    data: "bukti_konsultasi",
+                    data: "kwitansi",
                     render: function(data) {
                         return '<a href="' + base_url +
-                            'cdn/vendor/skripsi/bukti_konsultasi/' + data + '">' + data +
+                            'cdn/vendor/skripsi/kwitansi/' + data + '">' + data +
+                            '</a>';
+                    }
+                },
+                {
+                    data: "lulus_mkWajib",
+                    render: function(data) {
+                        return '<a href="' + base_url +
+                            'cdn/vendor/skripsi/lulus_mkWajib/' + data + '">' + data +
+                            '</a>';
+                    }
+                },
+                {
+                    data: "kartu_bimbingan",
+                    render: function(data) {
+                        return '<a href="' + base_url +
+                            'cdn/vendor/skripsi/kartu_bimbingan/' + data + '">' + data +
+                            '</a>';
+                    }
+                },
+                {
+                    data: "transkip",
+                    render: function(data) {
+                        return '<a href="' + base_url +
+                            'cdn/vendor/skripsi/transkip/' + data + '">' + data +
+                            '</a>';
+                    }
+                },
+                {
+                    data: "sertifikat",
+                    render: function(data) {
+                        return '<a href="' + base_url +
+                            'cdn/vendor/skripsi/sertifikat/' + data + '">' + data +
+                            '</a>';
+                    }
+                },
+                {
+                    data: "bebas_bauk",
+                    render: function(data) {
+                        return '<a href="' + base_url +
+                            'cdn/vendor/skripsi/bebas_bauk/' + data + '">' + data +
+                            '</a>';
+                    }
+                },
+                {
+                    data: "lembar_persetujuan",
+                    render: function(data) {
+                        return '<a href="' + base_url +
+                            'cdn/vendor/skripsi/lembar_persetujuan/' + data + '">' + data +
                             '</a>';
                     }
                 },

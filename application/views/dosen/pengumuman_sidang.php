@@ -114,56 +114,18 @@ $(document).ready(function() {
                         if (data.dosen_id == '<?= $this->session->userdata('id') ?>' || data
                             .dosen_penguji_id == '<?= $this->session->userdata('id') ?>') {
                             if (data.status == '1') {
-                                status = '\
-                            <button class="btn btn-sm btn-setuju btn-success" type="button" data-id="' + data.id +
-                                    '" data-judul_skripsi="' + data.judul_skripsi +
-                                    '" data-status="' + data.status + '" data-toggle="modal" data-target="#setujui">\
-                                <i class="fa fa-check"></i>\
-                            </button>\
-                            ';
-                            } else {
-                                status = '\
-                            <button class="btn btn-sm btn-setuju btn-danger" type="button" data-id="' + data.id +
-                                    '" data-judul_skripsi="' + data.judul_skripsi +
-                                    '" data-status="' + data.status + '" data-toggle="modal" data-target="#setujui">\
-                                <i class="fa fa-times"></i>\
-                            </button>\
-                            ';
+                               return '<span class="badge badge-success">ACC</span>'
+                            }else{
+                                return '<span class="badge badge-danger">Belum Di ACC</span>'
                             }
-                            return '\
-                            <div class="text-center">' + status + '</div>\
-                            ';
-                        } else {
-                            if (data.status == '1') {
-                                status = '\
-                            <button class="btn btn-sm btn-setuju btn-success" type="button>\
-                                <i class="fa fa-check"></i>\
-                            </button>\
-                            ';
-                            } else {
-                                status = '\
-                            <button class="btn btn-sm btn-setuju btn-danger" type="button">\
-                                <i class="fa fa-times"></i>\
-                            </button>\
-                            ';
-                            }
-                            return '\
-                            <div class="text-center">' + status + '</div>\
-                            ';
-                        }
+                        } 
                     }
                 },
                 {
-                    data: "mahasiswa",
-                    render: function(data) {
-                        return data.nim;
-                    }
+                   data:"nim"
                 },
                 {
-                    data: "mahasiswa",
-                    render: function(data) {
-                        return data.nama;
-                    }
+                    data:"nama_mahasiswa"
                 },
                 {
                     data: "judul_skripsi"
@@ -176,79 +138,6 @@ $(document).ready(function() {
                 },
                 {
                     data: "jadwal_skripsi"
-                },
-                {
-                    data: "krs",
-                    render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/skripsi/krs/' + data +
-                            '">' + data + '</a>';
-                    }
-                },
-                {
-                    data: "file_skripsi",
-                    render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/skripsi/file_skripsi/' +
-                            data + '">' + data + '</a>';
-                    }
-                },
-                {
-                    data: "formulir",
-                    render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/skripsi/formulir/' +
-                            data + '">' + data + '</a>';
-                    }
-                },
-                {
-                    data: "kwitansi",
-                    render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/skripsi/kwitansi/' +
-                            data + '">' + data + '</a>';
-                    }
-                },
-                {
-                    data: "lulus_mkWajib",
-                    render: function(data) {
-                        return '<a href="' + base_url +
-                            'cdn/vendor/skripsi/lulus_mkWajib/' + data + '">' + data +
-                            '</a>';
-                    }
-                },
-                {
-                    data: "kartu_bimbingan",
-                    render: function(data) {
-                        return '<a href="' + base_url +
-                            'cdn/vendor/skripsi/kartu_bimbingan/' + data + '">' + data +
-                            '</a>';
-                    }
-                },
-                {
-                    data: "transkip",
-                    render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/skripsi/transkip/' +
-                            data + '">' + data + '</a>';
-                    }
-                },
-                {
-                    data: "sertifikat",
-                    render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/skripsi/sertifikat/' +
-                            data + '">' + data + '</a>';
-                    }
-                },
-                {
-                    data: "lembar_persetujuan",
-                    render: function(data) {
-                        return '<a href="' + base_url +
-                            'cdn/vendor/skripsi/lembar_persetujuan/' + data + '">' + data +
-                            '</a>';
-                    }
-                },
-                {
-                    data: "bebas_bauk",
-                    render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/skripsi/bebas_bauk/' +
-                            data + '">' + data + '</a>';
-                    }
                 },
 
             ],

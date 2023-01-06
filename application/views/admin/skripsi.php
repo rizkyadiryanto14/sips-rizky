@@ -78,7 +78,7 @@
                     <input type="hidden" name="mahasiswa_id" value="<?= $this->session->userdata('id'); ?>">
                     <div class="form-group">
                         <label for="">Nama Mahasiswa</label>
-                        <input type="text" name="mahasiswa_id" id="mahasiswa_id">
+                        <input type="text" name="mahasiswa_id" id="mahasiswa_id" class="form-control">
                     </div>
                     <div class="form-group">
                         <label>Judul Skripsi</label>

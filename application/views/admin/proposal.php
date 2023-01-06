@@ -152,7 +152,7 @@
     </div>
 </div>
 <div class="modal fade" id="hapus">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <form id="hapus">
                 <div class="modal-header">

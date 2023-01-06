@@ -1,1 +1,142 @@
+<<<<<<< HEAD
 ERROR - 2022-12-28 06:57:30 --> 404 Page Not Found: Assets/essence
+=======
+ERROR - 2022-12-28 03:29:05 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) /home/jaksparo/sips-informatika.jaksparohserver.my.id/system/database/drivers/mysqli/mysqli_driver.php 201
+ERROR - 2022-12-28 03:29:05 --> Unable to connect to the database
+ERROR - 2022-12-28 03:29:05 --> Query error: Access denied for user ''@'localhost' (using password: NO) - Invalid query: SELECT *
+FROM `home_template`
+ERROR - 2022-12-28 03:29:05 --> Severity: error --> Exception: Call to a member function result() on bool /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/controllers/Home.php 15
+ERROR - 2022-12-28 03:30:06 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) /home/jaksparo/sips-informatika.jaksparohserver.my.id/system/database/drivers/mysqli/mysqli_driver.php 201
+ERROR - 2022-12-28 03:30:06 --> Unable to connect to the database
+ERROR - 2022-12-28 03:30:06 --> Query error: Access denied for user ''@'localhost' (using password: NO) - Invalid query: SELECT *
+FROM `home_template`
+ERROR - 2022-12-28 03:30:06 --> Severity: error --> Exception: Call to a member function result() on bool /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/controllers/Home.php 15
+ERROR - 2022-12-28 03:32:04 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) /home/jaksparo/sips-informatika.jaksparohserver.my.id/system/database/drivers/mysqli/mysqli_driver.php 201
+ERROR - 2022-12-28 03:32:04 --> Unable to connect to the database
+ERROR - 2022-12-28 03:32:04 --> Query error: Access denied for user ''@'localhost' (using password: NO) - Invalid query: SELECT *
+FROM `home_template`
+ERROR - 2022-12-28 03:32:04 --> Severity: error --> Exception: Call to a member function result() on bool /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/controllers/Home.php 15
+ERROR - 2022-12-28 03:34:10 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) /home/jaksparo/sips-informatika.jaksparohserver.my.id/system/database/drivers/mysqli/mysqli_driver.php 201
+ERROR - 2022-12-28 03:34:10 --> Unable to connect to the database
+ERROR - 2022-12-28 03:34:10 --> Query error: Access denied for user ''@'localhost' (using password: NO) - Invalid query: SELECT *
+FROM `home_template`
+ERROR - 2022-12-28 03:34:10 --> Severity: error --> Exception: Call to a member function result() on bool /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/controllers/Home.php 15
+ERROR - 2022-12-28 03:06:01 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:09:30 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:10:46 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:10:47 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:11:32 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Prodi' does not have a method 'index_get' /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/libraries/REST_Controller.php 742
+ERROR - 2022-12-28 03:15:44 --> Severity: Warning --> Invalid argument supplied for foreach() /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Daftar_judul_model.php 19
+ERROR - 2022-12-28 03:15:44 --> Severity: Warning --> Invalid argument supplied for foreach() /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Daftar_judul_model.php 24
+ERROR - 2022-12-28 03:18:48 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:19:12 --> Severity: Warning --> Invalid argument supplied for foreach() /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Daftar_judul_model.php 19
+ERROR - 2022-12-28 03:19:12 --> Severity: Warning --> Invalid argument supplied for foreach() /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Daftar_judul_model.php 24
+ERROR - 2022-12-28 03:20:54 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 03:22:14 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:22:41 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 03:22:44 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 03:26:40 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:31:07 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 03:31:12 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 03:34:12 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 03:34:25 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 03:34:58 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:39:13 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:39:52 --> Severity: Warning --> Invalid argument supplied for foreach() /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Daftar_judul_model.php 19
+ERROR - 2022-12-28 03:39:52 --> Severity: Warning --> Invalid argument supplied for foreach() /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Daftar_judul_model.php 24
+ERROR - 2022-12-28 03:40:09 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:40:28 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:41:18 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 03:41:20 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 03:41:58 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 03:42:03 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:42:19 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:44:24 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:44:48 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 03:45:28 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 03:46:03 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 03:47:32 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 04:00:54 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:06:37 --> Severity: Warning --> unlink(/home/jaksparo/sips-informatika.jaksparohserver.my.id/cdn/vendor/skripsi/sk_tim/): No such file or directory /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Skripsi_model.php 276
+ERROR - 2022-12-28 04:06:37 --> Severity: Warning --> unlink(/home/jaksparo/sips-informatika.jaksparohserver.my.id/cdn/vendor/skripsi/persetujuan/): No such file or directory /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Skripsi_model.php 277
+ERROR - 2022-12-28 04:06:37 --> Severity: Warning --> unlink(/home/jaksparo/sips-informatika.jaksparohserver.my.id/cdn/vendor/skripsi/bukti_konsultasi/): No such file or directory /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Skripsi_model.php 278
+ERROR - 2022-12-28 04:06:58 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:07:12 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:11:00 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:11:16 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 04:11:20 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:11:43 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:12:21 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:12:22 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:12:33 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:13:03 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:14:14 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:14:23 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:16:11 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:17:35 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:20:47 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:21:47 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 04:30:11 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:41:35 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:44:02 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 04:45:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 04:45:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 04:45:19 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 04:45:19 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 04:45:52 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 07:47:05 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 07:47:59 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 07:54:55 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 07:55:45 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 07:57:56 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 07:58:33 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 07:58:33 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 07:58:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 07:58:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 07:59:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 07:59:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:00:12 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:00:12 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:00:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:00:57 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:03:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:03:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:05:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:05:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:06:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:06:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:08:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:08:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:08:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:08:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:11:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:11:23 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-28 08:33:26 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 08:36:10 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 08:38:35 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 08:39:26 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 08:40:45 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 08:41:01 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 08:41:29 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 08:42:13 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 08:42:44 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 08:42:49 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-28 08:44:12 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 08:45:25 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 08:46:19 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 08:48:10 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 08:50:44 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 09:12:58 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 09:16:19 --> Severity: Warning --> unlink(/home/jaksparo/sips-informatika.jaksparohserver.my.id/cdn/vendor/skripsi/sk_tim/): No such file or directory /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Skripsi_model.php 276
+ERROR - 2022-12-28 09:16:19 --> Severity: Warning --> unlink(/home/jaksparo/sips-informatika.jaksparohserver.my.id/cdn/vendor/skripsi/persetujuan/): No such file or directory /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Skripsi_model.php 277
+ERROR - 2022-12-28 09:16:19 --> Severity: Warning --> unlink(/home/jaksparo/sips-informatika.jaksparohserver.my.id/cdn/vendor/skripsi/bukti_konsultasi/): No such file or directory /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Skripsi_model.php 278
+ERROR - 2022-12-28 09:16:30 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 09:26:58 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 09:32:35 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 09:50:41 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 09:51:41 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 10:17:21 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 11:10:07 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 11:39:20 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-28 12:18:45 --> 404 Page Not Found: Assets/essence
+>>>>>>> c9e36949c5ea492a31193545c75f12d557e75167

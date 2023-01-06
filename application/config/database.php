@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------
@@ -80,6 +80,10 @@ $db['default'] = array(
 	'username' => $web['username'],
 	'password' => $web['password'],
 	'database' => $web['database'],
+	// 'hostname' => 'localhost',
+	// 'username' => 'jaksparo_sips',
+	// 'password' => 'Rizky140820!',
+	// 'database' => 'jaksparo_sips',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

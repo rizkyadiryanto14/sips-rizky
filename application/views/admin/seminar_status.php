@@ -18,18 +18,24 @@
                 <input type="date" name="tanggal" id="" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="">Jam Seminar</label>
+                <label for="">Jam Mulai</label>
                 <input type="time" name="jam" id="" class="form-control" required>
             </div>
             <div class="form-group">
+                <label for="">Jam Selesai</label>
+                <input type="time" name="jam_selesai" class="form-control" required>
+            </div>
+            <div class="form-group">
                 <label for="">Nama Dosen Penguji 1</label>
-                <input type="text" name="dosen_penguji_id" id="" class="form-control"
-                    placeholder="Masukan Dosen Penguji 1" required>
+                <select name="dosen_penguji_id" class="form-control" id="">
+                    <option value=""> -pilih Dosen Penguji 1- </option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="">Nama Dosen Penguji 2</label>
-                <input type="text" name="dosen_penguji2_id" id="" class="form-control"
-                    placeholder="Masukan Dosen Penguji 2" required>
+                <select name="dosen_penguji2_id" class="form-control" id="">
+                    <option value=""> -pilih dosen penguji 2- </option>
+                </select>
             </div>
             <div class="form-group text-right">
                 <input type="submit" class="btn btn-primary" valid="Update">
@@ -46,10 +52,10 @@
 <script>
 $(document).ready(function(res) {
     call('api/dosen').done(function(res) {
-        dosen = '<option value="">- Pilih Dosen -</option>';
+        dosen = '<option value="">- Pilih Dosen penguji -</option>';
         if (res.data) {
             res.data.forEach(obj => {
-                dosen += '<option value="' + obj.id + '">' + obj.nama + '</option>';
+                dosen += '<option value="' + obj.nama + '">' + obj.nama + '</option>';
             })
         }
         $('[name=dosen_penguji_id]').html(dosen);
@@ -57,6 +63,13 @@ $(document).ready(function(res) {
     })
 })
 </script>
+
+<?php if ($this->session->flashdata('error')) { ?>
+<script>
+let mess = "<?= $this->session->flashdata('error'); ?>"
+notif(mess, 'error', true);
+</script>
+<?php } ?>
 
 <?php $this->app->endSection('script') ?>
 

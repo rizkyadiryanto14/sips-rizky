@@ -186,6 +186,13 @@ foreach ($daftar_judul as $daftar) : $no++; ?>
 
 <?php $this->app->section() ?>
 
+<?php if ($this->session->flashdata('error')) { ?>
+<script>
+let mess = "<?= $this->session->flashdata('error'); ?>"
+notif(mess, 'error', true);
+</script>
+<?php } ?>
+
 <?php $this->app->endSection('script') ?>
 
 <?php $this->app->init() ?>

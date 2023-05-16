@@ -1,0 +1,8 @@
+ERROR - 2023-05-02 09:49:14 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-05-02 09:53:05 --> Severity: error --> Exception: Call to undefined method Penjadwalan_model::EditRuangan() C:\xampp\htdocs\sips\application\controllers\admin\penjadwalan\Ruangan.php 46
+ERROR - 2023-05-02 10:01:41 --> Query error: Column 'nama_ruangan' cannot be null - Invalid query: INSERT INTO `ruangan` (`nama_ruangan`) VALUES (NULL)
+ERROR - 2023-05-02 10:01:48 --> Query error: Column 'nama_ruangan' cannot be null - Invalid query: INSERT INTO `ruangan` (`nama_ruangan`) VALUES (NULL)
+ERROR - 2023-05-02 10:02:11 --> 404 Page Not Found: admin/GenerateSempro/index
+ERROR - 2023-05-02 10:43:43 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-05-02 11:14:15 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-05-02 11:15:19 --> 404 Page Not Found: Assets/essence

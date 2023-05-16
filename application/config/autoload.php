@@ -103,7 +103,7 @@ $autoload['helper'] = array('url', 'helperku', 'form', 'download');
 | config files.  Otherwise, leave it blank.
 |
 */
-$autoload['config'] = array();
+$autoload['config'] = 'vendor/autoload';
 
 /*
 | -------------------------------------------------------------------

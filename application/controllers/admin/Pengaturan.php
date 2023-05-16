@@ -7,6 +7,7 @@ class Pengaturan extends MY_Controller
 	public function index()
 	{
 		$data['dataEmail'] = $this->db->get('email_sender')->result();
+		$data['kuota'] = $this->db->get('kuota_bimbingan')->result();
 		return $this->load->view('admin/pengaturan', $data);
 	}
 

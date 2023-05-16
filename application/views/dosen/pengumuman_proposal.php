@@ -1,6 +1,6 @@
 <?php $this->app->extend('template/dosen') ?>
 
-<?php $this->app->setVar('title', "Pendaftaran Skripsi") ?>
+<?php $this->app->setVar('title', "Pengumuman Skripsi") ?>
 
 <?php $this->app->section() ?>
 <div class="card">
@@ -40,7 +40,6 @@
                         <th>Mahasiswa</th>
                         <th>Nama Prodi</th>
                         <th>Judul</th>
-                        <th>Outline</th>
                         <th>Pembimbing</th>
                         <th>Status</th>
                     </tr>
@@ -97,6 +96,9 @@ $(document).ready(function() {
             "ajax": {
                 "url": base_url + 'api/proposal_mahasiswa',
                 "method": "POST",
+                "data": {
+                    dosen_id: '<?= $this->session->userdata('id') ?>'
+                },
                 "dataSrc": "data"
             },
             "columns": [{
@@ -128,14 +130,6 @@ $(document).ready(function() {
                 },
 
                 {
-                    data: "outline_skripsi",
-                    render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/skripsi/outline_skripsi/' +
-                            data +
-                            '">' + data + '</a>';
-                    }
-                },
-                {
                     data: null,
                     render: function(data) {
                         return data.pembimbing.nama
@@ -144,7 +138,7 @@ $(document).ready(function() {
                 {
                     data: null,
                     render: function(data) {
-                        if (data.status = 1) {
+                        if (data.status == 1) {
                             return '<span class="badge badge-success">Judul di Acc</span>'
                         } else {
                             return '<span class="badge badge-danger">Judul Belum di Acc</span>'

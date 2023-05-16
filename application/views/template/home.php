@@ -48,6 +48,7 @@
                             <span class="nav-link-inner--text">Home</span>
                         </a>
                     </li>
+
                     <li class="nav-item">
                         <a href="<?= base_url() ?>home/registrasi"
                             class="nav-link <?= (strtolower($title) == 'registrasi') ? "active" : "" ?>">

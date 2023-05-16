@@ -14,7 +14,7 @@ class Daftar_judul extends REST_Controller
     }
 
     public function index_post()
-    {
+    {   
         $response = $this->model->index($this->input->post());
         return $this->response($response);
     }

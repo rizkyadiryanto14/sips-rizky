@@ -12,25 +12,6 @@ foreach ($dataUser as $du) {
 
 <?php $this->app->section() ?>
 <?php if ($verifikasi == 1) { ?>
-<div class="card card-stats">
-    <div class="card-body">
-        <div class="row">
-            <div class="col">
-                <h5 class="card-title text-uppercase text-muted mb-0">Total Pendaftaran Skrispi</h5>
-                <span class="h2 font-weight-bold mb-0 total-proposal">0</span>
-            </div>
-            <div class="col-auto">
-                <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
-                    <i class="ni ni-active-40"></i>
-                </div>
-            </div>
-        </div>
-        <p class="mt-3 mb-0 text-sm">
-            <a href="<?= base_url() ?>mahasiswa/proposal" class="text-success mr-2"><i class="fa fa-arrow-left"></i>
-                Selengkapnya</a>
-        </p>
-    </div>
-</div>
 
 <?php } ?>
 

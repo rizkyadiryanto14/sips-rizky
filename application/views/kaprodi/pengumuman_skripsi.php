@@ -106,15 +106,24 @@ $(document).ready(function() {
                     data: "nama_pembimbing"
                 },
                 {
-                    data: "nama_penguji"
+                    data: null,
+                    render: function(data) {
+                        if (data.dosen_penguji_id != null) {
+                            return '1. ' + data.dosen_penguji_id + '<br>2. ' +
+                                data
+                                .dosen_penguji2_id;
+                        } else {
+                            return '<span class="badge badge-danger">Data Belum di set</span>';
+                        }
+                    }
                 },
                 {
                     data: null,
                     render: function(data) {
                         if (data.jadwal_skripsi != null) {
-                            return data.jadwal_skripsi
+                            return data.jadwal_skripsi + ' - ' + data.jam_selesai
                         } else {
-                            return 'Belum Di Set'
+                            return '<span class="badge badge-danger">Data Belum di set</span>';
                         }
                     }
                     // data: "jadwal_skripsi"
@@ -125,10 +134,11 @@ $(document).ready(function() {
                         if (data.tempat != null) {
                             return data.tempat
                         } else {
-                            return 'Belum Di Set'
+                            return '<span class="badge badge-danger">Data Belum di set</span>';
                         }
                     }
                 },
+
             ],
             "language": {
                 "zeroRecords": "data tidak tersedia"

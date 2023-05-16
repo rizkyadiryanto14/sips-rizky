@@ -18,24 +18,20 @@ class Mahasiswa_model extends CI_Model
         $this->db->select("*");
         $mahasiswa = $this->db->get($this->table)->result_array();
 
+
         $hasil['error'] = false;
         $hasil['message'] = ($mahasiswa) ? "data berhasil ditemukan" : "data tidak tersedia";
         $hasil['data'] = $mahasiswa;
 
         foreach ($mahasiswa as $key => $item) {
-            $prodi = $this->db->get_where('prodi', ['prodi.id' => $item['prodi_id']])->row_array();
-            $prodi['fakultas'] = $this->db->get_where('fakultas', ['fakultas.id' => $prodi['fakultas_id']])->row_array();
+            $prodi = $this->db->join('fakultas', 'prodi.fakultas_id = fakultas.id')->get_where('prodi', ['prodi.id' => $item['prodi_id']])->row_array();
             $hasil['data'][$key]['prodi'] = $prodi;
-            $x =  $this->db->get_where('proposal_mahasiswa', ['proposal_mahasiswa.mahasiswa_id' => $item['id']]);
-            $hasil['data'][$key]['usulan_proposal'] = $x->num_rows();
-            foreach ($x->result_array() as $k => $value) {
-                $hasil['data'][$key]['seminar_proposal'] += $this->db->get_where('seminar', ['seminar.proposal_mahasiswa_id' => $value['id']])->num_rows();
-                $hasil['data'][$key]['hasil_penelitian'] += $this->db->get_where('penelitian', ['penelitian.proposal_mahasiswa_id' => $value['id']])->num_rows();
-            }
+            $hasil['data'][$key]['usulan_proposal'] = $this->db->get_where('proposal_mahasiswa', ['proposal_mahasiswa.mahasiswa_id' => $item['id']])->num_rows();
+            $hasil['data'][$key]['seminar_proposal'] = $this->db->get_where('seminar', ['seminar.mahasiswa_id' => $item['id']])->num_rows();
+            $hasil['data'][$key]['hasil_penelitian'] = $this->db->get_where('penelitian', ['penelitian.proposal_mahasiswa_id' => $item['id']])->num_rows();            
             $hasil['data'][$key]['hk3'] = $this->db->get_where('hasil_kegiatan', ['hasil_kegiatan.mahasiswa_id' => $item['id']])->num_rows();
             $hasil['data'][$key]['skripsi'] = $this->db->get_where('skripsi', ['skripsi.mahasiswa_id' => $item['id']])->num_rows();
         }
-
         return $hasil;
     }
     public function password($input, $id)

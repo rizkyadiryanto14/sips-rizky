@@ -6,7 +6,8 @@ class Skripsi extends MY_Controller
 
     public function index()
     {
-        return $this->load->view('admin/skripsi');
+        $data['mahasiswa'] = $this->db->get('proposal_mahasiswa_v')->result_array();
+        return $this->load->view('admin/skripsi', $data);
     }
 
     public function status($id = null)
@@ -19,27 +20,19 @@ class Skripsi extends MY_Controller
 
     public function updatestatus($id = null)
     {
-        $this->db->select('jadwal_skripsi');
-        $this->db->from('skripsi');
-        $query = $this->db->get()->num_rows();
         if ($id) {
-            $jadwal_skripsi = $this->input->post('jadwal_skripsi');
-            // var_dump($jadwal_skripsi);
-            // var_dump($query);
-            // die();
-            // foreach ($query as $file) {
-            //     echo $file;
-            // }
-            if ($jadwal_skripsi == $query) {
-                echo 'tanggal sama';
-            } else {
-                $this->db->update('skripsi', $this->input->post(), ['id' => $id]);
-                return redirect(base_url('admin/skripsi'));
+
+            $tgl = date('Y-m-d', strtotime($this->input->post('jadwal_skripsi')));
+            $time = date('H:i:s', strtotime($this->input->post('jadwal_skripsi')));
+            $cekWaktu1 = $this->db->where('date(jadwal_skripsi)', $tgl)->where('time(jadwal_skripsi)', $time)->get('skripsi')->row_array();
+
+            if (!empty($cekWaktu1)) {
+                $this->session->set_flashdata('error-jadwal', 'Jadwal telah digunakan.');
+                return redirect(base_url('admin/skripsi/status/' . $id));
             }
 
-
-            // $result = $jadwal_skripsi;
-
+            $this->db->update('skripsi', $this->input->post(), ['id' => $id]);
+            return redirect(base_url('admin/skripsi'));
         }
     }
 }

@@ -65,6 +65,23 @@ $route['getDeadline']               = 'mahasiswa/dashboard/getDeadline';
 
 $route['atur-send-email']           = 'admin/pengaturan/atur_send_email';
 
+// Penjadwalan
+$route['admin/hari']                      = 'admin/penjadwalan/Hari';
+$route['admin/TambahHari']                = 'admin/penjadwalan/Hari/TambahHari';
+$route['admin/ruangan']                   = 'admin/penjadwalan/Ruangan';
+$route['admin/tambahRuangan']             = 'admin/penjadwalan/Ruangan/TambahRuangan';
+$route['admin/EditRuangan']               = 'admin/penjadwalan/Ruangan/EditRuangan';
+$route['admin/HapusRuangan']              = 'admin/penjadwalan/Ruangan/HapusRuangan';
+$route['admin/jam']                       = 'admin/penjadwalan/Jam';
+$route['admin/Tambahjam']                 = 'admin/penjadwalan/Jam/TambahJam';
+$route['admin/EditHari']                  = 'admin/penjadwalan/Hari/EditHari';
+$route['admin/HapusHari']                 = 'admin/penjadwalan/hari/HapusHari';
+$route['admin/jadwal_dosen']              = 'admin/penjadwalan/Jadwal_dosen';
+$route['admin/tambahJadwal']              = 'admin/penjadwalan/Jadwal_dosen/TambahJadwal';
+$route['admin/cetakExcel']                = 'admin/penjadwalan/Jadwal_dosen/ImportExcel';
+$route['admin/EditJadwal']                = 'admin/penjadwalan/Jadwal_dosen/EditJadwalDosen';
+$route['admin/DeleteJadwal']              = 'admin/penjadwalan/Jadwal_dosen/DeleteJadwal';
+
 // Home
 $route['home-template']             = 'Home/home_template';
 $route['update-home-template']      = 'Home/update_home_template';

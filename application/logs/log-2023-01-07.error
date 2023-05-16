@@ -1,0 +1,56 @@
+ERROR - 2023-01-07 00:10:42 --> Severity: error --> Exception: WriteHTML() requires $html be an integer, float, string, boolean or an object with the __toString() magic method. C:\xampp\htdocs\sips\vendor\mpdf\mpdf\src\Mpdf.php 13213
+ERROR - 2023-01-07 00:18:31 --> Severity: error --> Exception: Call to undefined method Mpdf\Mpdf::SetImportUse() C:\xampp\htdocs\sips\vendor\mpdf\mpdf\src\Strict.php 15
+ERROR - 2023-01-07 00:18:44 --> Severity: Warning --> fopen(testfile.pdf): failed to open stream: No such file or directory C:\xampp\htdocs\sips\vendor\setasign\fpdi\src\PdfParser\StreamReader.php 42
+ERROR - 2023-01-07 00:18:44 --> Severity: error --> Exception: No stream given. C:\xampp\htdocs\sips\vendor\setasign\fpdi\src\PdfParser\StreamReader.php 104
+ERROR - 2023-01-07 01:14:35 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:08:46 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:08:47 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:12:56 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:12:56 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:13:09 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:13:13 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:13:13 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:13:41 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:13:41 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:13:52 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:14:28 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:14:28 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:14:57 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:14:57 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:15:21 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:15:30 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:15:30 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:15:45 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:16:17 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:16:17 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:16:39 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:16:54 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:16:54 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:17:19 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:17:19 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:17:34 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:17:48 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:17:48 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:19:30 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:19:31 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:21:44 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:21:45 --> 404 Page Not Found: Cdn/img
+ERROR - 2023-01-07 21:22:44 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:22:44 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:25:21 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 21:25:22 --> 404 Page Not Found: Cdn/img
+ERROR - 2023-01-07 22:11:09 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 22:11:09 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 23:22:14 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 23:22:14 --> 404 Page Not Found: Cdn/img
+ERROR - 2023-01-07 23:22:32 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 23:22:32 --> 404 Page Not Found: Cdn/img
+ERROR - 2023-01-07 23:24:17 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 23:24:17 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 23:35:14 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 23:35:14 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 23:35:33 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 23:36:45 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 23:36:53 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 23:41:01 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-07 23:41:01 --> 404 Page Not Found: Assets/essence

@@ -20,14 +20,14 @@ class Hasil_seminar_model extends CI_Model
 		$validation = $this->app->validate($data);
 
 		if ($validation === true) {
-			if ($input['berita_acara']) {
+			if (isset($input['berita_acara'])) {
 				$berita_acara_file = explode(';base64,', $input['berita_acara'])[1];
 				$berita_acara_nama = date('Ymdhis') . '.pdf';
 				file_put_contents(FCPATH . 'cdn/vendor/berita_acara/' . $berita_acara_nama, base64_decode($berita_acara_file));
 				$data['berita_acara'] = $berita_acara_nama;
 			}
 
-			if ($input['masukan']) {
+			if ($input['masukan'] != "") {
 				$masukan_file = explode(';base64,', $input['masukan'])[1];
 				$masukan_nama = date('Ymdhis') . '.pdf';
 				file_put_contents(FCPATH . 'cdn/vendor/masukan/' . $masukan_nama, base64_decode($masukan_file));

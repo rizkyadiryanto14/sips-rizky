@@ -14,15 +14,15 @@ class Proposal_mahasiswa_model extends CI_Model
     public function get($input)
     {
         $kondisi = [];
-        if ($input['dosen_id']) {
+        if (isset($input['dosen_id'])) {
             $kondisi['proposal_mahasiswa.dosen_id'] = $input['dosen_id'];
         }
 
-        if ($input['status']) {
+        if (isset($input['status'])) {
             $kondisi['status'] = $input['status'];
         }
 
-        if ($input['mahasiswa_id']) {
+        if (isset($input['mahasiswa_id'])) {
             $kondisi['mahasiswa_id'] = $input['mahasiswa_id'];
         }
 
@@ -45,15 +45,22 @@ class Proposal_mahasiswa_model extends CI_Model
         return $hasil;
     }
 
+    public function ambilData()
+    {
+        $this->db->get($this->table)->result();
+    }
+
     public function create($input)
     {
         $data = [
-            'mahasiswa_id' => $input['mahasiswa_id'],
-            'judul' => $input['judul'],
-            'outline_skripsi' => $input['outline_skripsi'],
-            'dosen_id' => $input['dosen_id'],
-            'krs' => $input['krs'],
-            'transkip' => $input['transkip']
+            'mahasiswa_id'          => $input['mahasiswa_id'],
+            'judul'                 => $input['judul'],
+            'outline_skripsi'       => $input['outline_skripsi'],
+            'dosen_id'              => $input['dosen_id'],
+            'lulus_mkMetodologi'    => $input['lulus_mkMetodologi'],
+            'lulus_mkWajib'         => $input['lulus_mkWajib'],
+            'krs'                   => $input['krs'],
+            'transkip'              => $input['transkip']
         ];
 
         $validate = $this->app->validate($data);
@@ -95,18 +102,18 @@ class Proposal_mahasiswa_model extends CI_Model
         $judul = [];
         foreach ($data as $item) {
             $id[] = $item['id'];
-            $judul[] = $item['judul_skripsi'];
+            $judul[] = $item['judul'];
         }
 
         foreach ($data as $item) {
-            $resultCheck = [];
+            $resultCheck = 0;
             for ($i = 0; $i < count($judul); $i++) {
                 if ($item['id'] != $id[$i]) {
-                    similar_text(strtolower(str_replace(' ', '', $judul[$i])), strtolower(str_replace(' ', '', $item['judul_skripsi'])), $resPercent);
-                    $resultCheck[] = $resPercent;
+                    similar_text(strtolower(str_replace(' ', '', $judul[$i])), strtolower(str_replace(' ', '', $item['judul'])), $resPercent);
+                    $resultCheck = $resPercent;
                 }
             }
-            $item['plagiat'] = round(max($resultCheck), 2) . '%';
+            $item['plagiat'] = $resultCheck == 0 ? '0' : round($resultCheck, 2) . '%';
             $allData[] = $item;
         }
         return $allData;
@@ -115,10 +122,14 @@ class Proposal_mahasiswa_model extends CI_Model
     public function update($input, $id)
     {
         $data = [
-            'mahasiswa_id' => $input['mahasiswa_id'],
-            'judul' => $input['judul'],
-            'ringkasan' => $input['ringkasan'],
-            'dosen_id' => $input['dosen_id'],
+            'mahasiswa_id'          => $input['mahasiswa_id'],
+            'dosen_id'              => $input['dosen_id'],
+            'judul'                 => $input['judul'],
+            'lulus_mkMetodologi'    => $input['lulus_mkMetodologi'],
+            'lulus_mkWajib'         => $input['lulus_mkWajib'],
+            'krs'                   => $input['krs'],
+            'outline_skripsi'       => $input['outline_skripsi'],
+            'transkip'              => $input['transkip']
         ];
 
         $kondisi = ['proposal_mahasiswa.id' => $id];
@@ -145,6 +156,15 @@ class Proposal_mahasiswa_model extends CI_Model
                     $krs_file = explode(';base64,', $input['krs'])[1];
                     file_put_contents(FCPATH . 'cdn/vendor/skripsi/krs/' . $file_nama, base64_decode($krs_file));
                     $data['krs'] = $file_nama;
+                }
+
+                if ($input['outline_skripsi'] != '') {
+                    unlink(FCPATH . 'cdn/vendor/skripsi/outline_skripsi/' . $input['def_outline_skripsi']);
+                    $file_nama = date('Ymdhis') . '.pdf';
+                    // upload base64 outline_skripsi
+                    $outline_skripsi_file = explode(';base64,', $input['outline_skripsi'])[1];
+                    file_put_contents(FCPATH . 'cdn/vendor/skripsi/outline_skripsi/' . $file_nama, base64_decode($outline_skripsi_file));
+                    $data['outline_skripsi'] = $file_nama;
                 }
 
                 $this->db->update($this->table, $data, $kondisi);
@@ -189,9 +209,9 @@ class Proposal_mahasiswa_model extends CI_Model
     public function agree($id)
     {
         $kondisi = ['proposal_mahasiswa.id' => $id];
-        $cek = $this->db->get_where($this->table, $kondisi);
+        $cek = $this->db->get_where($this->table, $kondisi)->result_array();
 
-        if ($cek > 00) {
+        if (count($cek) > 0) {
             $dataUpdate = array(
                 'status' => '1',
             );
@@ -226,9 +246,9 @@ class Proposal_mahasiswa_model extends CI_Model
     public function disagree($id)
     {
         $kondisi = ['proposal_mahasiswa.id' => $id];
-        $cek = $this->db->get_where($this->table, $kondisi);
+        $cek = $this->db->get_where($this->table, $kondisi)->result_array();
 
-        if ($cek > 00) {
+        if (count($cek) > 0) {
 
             $email = '';
             $dProposal = $this->db->get_where('proposal_mahasiswa_v', array('id' => $id))->result();

@@ -1,0 +1,31 @@
+ERROR - 2023-04-10 10:11:38 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user 'jaksparo_sips'@'localhost' (using password: YES) C:\xampp\htdocs\sips\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2023-04-10 10:11:38 --> Unable to connect to the database
+ERROR - 2023-04-10 15:11:38 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user 'jaksparo_sips'@'localhost' (using password: YES) C:\xampp\htdocs\sips\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2023-04-10 15:11:38 --> Unable to connect to the database
+ERROR - 2023-04-10 15:11:38 --> Query error: Access denied for user 'jaksparo_sips'@'localhost' (using password: YES) - Invalid query: SELECT *
+FROM `home_template`
+ERROR - 2023-04-10 15:11:38 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\controllers\Home.php 15
+ERROR - 2023-04-10 10:12:57 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user 'jaksparo_sips'@'localhost' (using password: YES) C:\xampp\htdocs\sips\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2023-04-10 10:12:57 --> Unable to connect to the database
+ERROR - 2023-04-10 15:12:57 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user 'jaksparo_sips'@'localhost' (using password: YES) C:\xampp\htdocs\sips\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2023-04-10 15:12:57 --> Unable to connect to the database
+ERROR - 2023-04-10 15:12:57 --> Query error: Access denied for user 'jaksparo_sips'@'localhost' (using password: YES) - Invalid query: SELECT *
+FROM `home_template`
+ERROR - 2023-04-10 15:12:57 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\controllers\Home.php 15
+ERROR - 2023-04-10 10:13:46 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) C:\xampp\htdocs\sips\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2023-04-10 10:13:46 --> Unable to connect to the database
+ERROR - 2023-04-10 15:13:46 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) C:\xampp\htdocs\sips\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2023-04-10 15:13:46 --> Unable to connect to the database
+ERROR - 2023-04-10 15:13:46 --> Query error: Access denied for user ''@'localhost' (using password: NO) - Invalid query: SELECT *
+FROM `home_template`
+ERROR - 2023-04-10 15:13:46 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\controllers\Home.php 15
+ERROR - 2023-04-10 10:13:53 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) C:\xampp\htdocs\sips\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2023-04-10 10:13:53 --> Unable to connect to the database
+ERROR - 2023-04-10 15:13:53 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) C:\xampp\htdocs\sips\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2023-04-10 15:13:53 --> Unable to connect to the database
+ERROR - 2023-04-10 15:13:53 --> Query error: Access denied for user ''@'localhost' (using password: NO) - Invalid query: SELECT *
+FROM `home_template`
+ERROR - 2023-04-10 15:13:53 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\controllers\Home.php 15
+ERROR - 2023-04-10 10:14:02 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-04-10 10:35:09 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-04-10 10:35:09 --> 404 Page Not Found: Cdn/vendor

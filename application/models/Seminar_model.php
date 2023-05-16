@@ -8,11 +8,20 @@ class Seminar_model extends CI_Model
 
 	public function index($input)
 	{
+		$kondisi = [];
+		if (isset($input['dosen_id'])) {
+			$kondisi['seminar.dosen_id'] = $input['dosen_id'];
+		}
+
+		if (isset($input['mahasiswa_id'])) {
+			$kondisi['seminar.mahasiswa_id'] = $input['mahasiswa_id'];
+		}
 		$this->db->select('
 			seminar.id,
 			seminar.proposal_mahasiswa_id,
 			seminar.tanggal,
 			seminar.jam,
+			seminar.jam_selesai,
 			seminar.dosen_penguji_id,
 			seminar.dosen_penguji2_id,
 			seminar.dosen_id,
@@ -35,8 +44,9 @@ class Seminar_model extends CI_Model
 		$this->db->join('proposal_mahasiswa_v', 'proposal_mahasiswa_v.id = seminar.proposal_mahasiswa_id', 'left');
 		$this->db->join('dosen d', 'd.id=proposal_mahasiswa_v.dosen_id', 'LEFT');
 		$this->db->join('dosen e', 'e.id=proposal_mahasiswa_v.dosen_penguji_id', 'LEFT');
-		if ($input['mahasiswa_id']) {
-			$this->db->where('proposal_mahasiswa_v.mahasiswa_id', $input['mahasiswa_id']);
+
+		if ($kondisi) {
+			$this->db->where($kondisi);
 		}
 
 		$seminar = $this->db->get()->result_array();
@@ -54,6 +64,7 @@ class Seminar_model extends CI_Model
 	{
 		$data = [
 			'proposal_mahasiswa_id' => $input['proposal_mahasiswa_id'],
+			'mahasiswa_id' => $input['mahasiswa_id'],
 			'dosen_id' => $input['dosen_id'],
 			'file_proposal' => $input['file_proposal'],
 			'kartu_bimbingan' => $input['kartu_bimbingan'],
@@ -189,6 +200,7 @@ class Seminar_model extends CI_Model
 			seminar.dosen_id,
 			seminar.dosen_penguji_id,
 			seminar.tempat,
+			seminar.mahasiswa_id,
 			seminar.surat_permohonan,
 			seminar.file_proposal,
 			seminar.syarat_seminar,

@@ -21,12 +21,6 @@
             <div class="col">
                 <div class="card-title">Sidang Skripsi</div>
             </div>
-            <!-- <div class="col text-right">
-                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">
-                    <i class="fa fa-plus"></i>
-                    Tambah
-                </button>
-            </div> -->
         </div>
         <div class="card-tools mt-2">
             <span class="badge badge-success"><i class="fa fa-check"></i> Disetujui</span>
@@ -52,178 +46,7 @@
         </div>
     </div>
 </div>
-<div class="modal fade" id="edit">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form id="edit">
-                <div class="modal-header">
-                    <div class="modal-title">Edit Proposal</div>
-                </div>
-                <div class="modal-body">
-                    <input type="hidden" class="id">
-                    <input type="hidden" name="mahasiswa_id" value="<?= $this->session->userdata('id') ?>">
-                    <div class="form-group">
-                        <label>Judul Skripsi</label>
-                        <input type="text" class="form-control" name="judul_skripsi"
-                            placeholder="Masukkan Judul Skripsi">
-                    </div>
-                    <div class="form-group">
-                        <label>Pembimbing</label>
-                        <select name="dosen_id" class="form-control">
-                            <option value="">- Pilih Pembimbing -</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Penguji</label>
-                        <select name="dosen_penguji_id" class="form-control">
-                            <option value="">- Pilih Penguji -</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Jadwal Skripsi</label>
-                        <input name="jadwal_skripsi" type="text" class="form-control dateTime"
-                            placeholder="Pilih Jadwal Skripsi" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label>Tempat</label>
-                        <input type="text" class="form-control" name="tempat" placeholder="Masukkan Tempat">
-                    </div>
-                    <div class="form-group">
-                        <label>krs</label>
-                        <input type="file" class="form-control" name="pilih-krs" accept="application/pdf">
-                        <input type="hidden" name="krs">
-                        <input type="hidden" name="def_krs">
-                    </div>
-                    <div class="form-group">
-                        <label>File Skripsi</label>
-                        <input type="file" class="form-control" name="pilih-file_skripsi" accept="application/pdf">
-                        <input type="hidden" name="file_skripsi">
-                        <input type="hidden" name="def_file_skripsi">
-                    </div>
-                    <div class="form-group">
-                        <label>Formulir</label>
-                        <input type="file" class="form-control" name="pilih-formulir" accept="application/pdf">
-                        <input type="hidden" name="formulir">
-                        <input type="hidden" name="def_formulir">
-                    </div>
-                    <div class="form-group">
-                        <label>kwitansi</label>
-                        <input type="file" class="form-control" name="pilih-kwitansi" accept="application/pdf">
-                        <input type="hidden" name="kwitansi">
-                        <input type="hidden" name="def_kwitansi">
-                    </div>
-                    <div class="form-group">
-                        <label>lulus_MK Wajib</label>
-                        <input type="file" class="form-control" name="pilih-lulus_mkWajib" accept="application/pdf">
-                        <input type="hidden" name="lulus_mkWajib">
-                        <input type="hidden" name="def_lulus_mkWajib">
-                    </div>
-                    <div class="form-group">
-                        <label>kartu_bimbingan</label>
-                        <input type="file" class="form-control" name="pilih-kartu_bimbingan" accept="application/pdf">
-                        <input type="hidden" name="kartu_bimbingan">
-                        <input type="hidden" name="def_kartu_bimbingan">
-                    </div>
-                    <div class="form-group">
-                        <label>transkip</label>
-                        <input type="file" class="form-control" name="pilih-transkip" accept="application/pdf">
-                        <input type="hidden" name="transkip">
-                        <input type="hidden" name="def_transkip">
-                    </div>
-                    <div class="form-group">
-                        <label>sertifikat</label>
-                        <input type="file" class="form-control" name="pilih-sertifikat" accept="application/pdf">
-                        <input type="hidden" name="sertifikat">
-                        <input type="hidden" name="def_sertifikat">
-                    </div>
-                    <div class="form-group">
-                        <label>surat_bebas_bauk</label>
-                        <input type="file" class="form-control" name="pilih-bebas_bauk" accept="application/pdf">
-                        <input type="hidden" name="bebas_bauk">
-                        <input type="hidden" name="def_bebas_bauk">
-                    </div>
-                    <div class="form-group">
-                        <label>surat_lembar_persetujuan</label>
-                        <input type="file" class="form-control" name="pilih-lembar_persetujuan"
-                            accept="application/pdf">
-                        <input type="hidden" name="lembar_persetujuan">
-                        <input type="hidden" name="def_lembar_persetujuan">
-                    </div>
 
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-primary">Simpan</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="jadwal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form id="edit" action="<?= base_url() ?>admin/skripsi/updatestatus/<?= $skripsi_id ?>" method="POST">
-                <div class="card-header">
-                    <div class="card-title">Update Skripsi</div>
-                </div>
-                <div class="card-body">
-                    <div class="form-group">
-                        <label for="">Tempat Seminar</label>
-                        <input type="text" name="tempat" id="" class="form-control" placeholder="Tempat A" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Jadwal Skripsi</label>
-                        <input name="jadwal_skripsi" type="text" class="form-control dateTime"
-                            placeholder="Pilih Jadwal Skripsi" readonly>
-                    </div>
-                    <div class="form-group text-right">
-                        <input type="submit" class="btn btn-primary" valid="Update">
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="hapus">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form id="hapus">
-                <div class="modal-header">
-                    <div class="modal-title">Hapus Penelitian</div>
-                </div>
-                <div class="modal-body">
-                    <input type="hidden" class="id">
-                    <p>Anda yakin menghapus penelitian terpilih ?</p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-primary">Hapus</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="setujui">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form id="setujui">
-                <div class="modal-header">
-                    <div class="modal-title">Status Skripsi</div>
-                </div>
-                <div class="modal-body">
-                    <input type="hidden" class="id">
-                    <input type="hidden" class="status">
-                    <p>Anda yakin <span class="status">mengetujui / batal menyetujui</span> skripsi <strong
-                            class="judul">Judul Proposal</strong> ?</p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-primary btn-konfirmasi">Konfirmasi</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
 <?php $this->app->endSection('content') ?>
 
 <?php $this->app->section() ?>
@@ -286,15 +109,24 @@ $(document).ready(function() {
                     data: "nama_pembimbing"
                 },
                 {
-                    data: "nama_penguji"
+                    data: null,
+                    render: function(data) {
+                        if (data.dosen_penguji_id != null) {
+                            return '1. ' + data.dosen_penguji_id + '<br>2. ' +
+                                data
+                                .dosen_penguji2_id;
+                        } else {
+                            return '<span class="badge badge-danger">Data Belum di set</span>';
+                        }
+                    }
                 },
                 {
                     data: null,
                     render: function(data) {
                         if (data.jadwal_skripsi != null) {
-                            return data.jadwal_skripsi
+                            return data.jadwal_skripsi + ' - ' + data.jam_selesai
                         } else {
-                            return 'Belum Di Set'
+                            return '<span class="badge badge-danger">Data Belum di set</span>';
                         }
                     }
                     // data: "jadwal_skripsi"
@@ -305,132 +137,11 @@ $(document).ready(function() {
                         if (data.tempat != null) {
                             return data.tempat
                         } else {
-                            return 'Belum Di Set'
+                            return '<span class="badge badge-danger">Data Belum di set</span>';
                         }
                     }
                 },
-                // {
-                //     data: "krs",
-                //     render: function(data) {
-                //         return '<a href="' + base_url + 'cdn/vendor/skripsi/krs/' +
-                //             data + '">' + data + '</a>';
-                //     }
-                // },
-                // {
-                //     data: "file_skripsi",
-                //     render: function(data) {
-                //         return '<a href="' + base_url + 'cdn/vendor/skripsi/file_skripsi/' +
-                //             data + '">' + data + '</a>';
-                //     }
-                // },
-                // {
-                //     data: "formulir",
-                //     render: function(data) {
-                //         return '<a href="' + base_url + 'cdn/vendor/skripsi/formulir/' +
-                //             data + '">' + data + '</a>';
-                //     }
-                // },
-                // {
-                //     data: "kwitansi",
-                //     render: function(data) {
-                //         return '<a href="' + base_url +
-                //             'cdn/vendor/skripsi/kwitansi/' + data + '">' + data +
-                //             '</a>';
-                //     }
-                // },
-                // {
-                //     data: "lulus_mkWajib",
-                //     render: function(data) {
-                //         return '<a href="' + base_url +
-                //             'cdn/vendor/skripsi/lulus_mkWajib/' + data + '">' + data +
-                //             '</a>';
-                //     }
-                // },
-                // {
-                //     data: "kartu_bimbingan",
-                //     render: function(data) {
-                //         return '<a href="' + base_url +
-                //             'cdn/vendor/skripsi/kartu_bimbingan/' + data + '">' + data +
-                //             '</a>';
-                //     }
-                // },
-                // {
-                //     data: "transkip",
-                //     render: function(data) {
-                //         return '<a href="' + base_url +
-                //             'cdn/vendor/skripsi/transkip/' + data + '">' + data +
-                //             '</a>';
-                //     }
-                // },
-                // {
-                //     data: "sertifikat",
-                //     render: function(data) {
-                //         return '<a href="' + base_url +
-                //             'cdn/vendor/skripsi/sertifikat/' + data + '">' + data +
-                //             '</a>';
-                //     }
-                // },
-                // {
-                //     data: "bebas_bauk",
-                //     render: function(data) {
-                //         return '<a href="' + base_url +
-                //             'cdn/vendor/skripsi/bebas_bauk/' + data + '">' + data +
-                //             '</a>';
-                //     }
-                // },
-                // {
-                //     data: "lembar_persetujuan",
-                //     render: function(data) {
-                //         return '<a href="' + base_url +
-                //             'cdn/vendor/skripsi/lembar_persetujuan/' + data + '">' + data +
-                //             '</a>';
-                //     }
-                // },
-                // {
-                //     data: "plagiat"
-                // },
-                // {
-                //     data: null,
-                //     render: function(data) {
-                //         return '<div class="text-center">\
-                //             <button class="btn btn-sm btn-info btn-edit" type="button" data-toggle="modal" data-target="#edit" data-id="' +
-                //             data.id + '" data-mahasiswa_id="' + data.mahasiswa_id +
-                //             '" data-judul_skripsi="' + data.judul_skripsi +
-                //             '" data-jadwal_skripsi="' + data.jadwal_skripsi +
-                //             '" data-dosen_id="' + data.dosen_id +
-                //             '" data-dosen_penguji_id="' + data.dosen_penguji_id +
-                //             '" data-file_skripsi="' + data.file_skripsi +
-                //             '" data-krs="' + data.krs + '" data-formulir="' + data
-                //             .formulir + '" data-kwitansi="' + data
-                //             .kwitansi + '" data-kartu_bimbingan="' + data.kartu_bimbingan +
-                //             '" data-transkip="' + data.transkip + '" data-lulus_mkWajib="' +
-                //             data.lulus_mkWajib + '" data-sertifikat="' +
-                //             '" data-bebas_bauk="' + data.bebas_bauk +
-                //             '" data-lembar_persetujuan="' + data.lembar_persetujuan +
-                //             data.sertifikat +
-                //             '">\
-                //                 <i class="fa fa-pen"></i>\
-                //             </button>\
-                // 			<button class="btn btn-danger btn-sm btn-hapus" type="button" data-toggle="modal" data-target="#hapus" data-id="' +
-                //             data.id + '">\
-                // 				<i class="fa fa-trash"></i>\
-                // 			</button>\
-                // 		</div>'
-                //     }
-                // },
-                // {
-                //     data: null,
-                //     render: function(data) {
-                //         return `
-                //         <div class="text-center">
-                //             <a href="` + base_url + `admin/skripsi/status/` + data.id +
-                //             `" class="btn btn-sm btn-info ${data.tempat != null ? 'd-none' : '' }">
-                //                 Atur Jadwal</i>
-                //             </a>
-                //         </div>
-                //         `;
-                //     }
-                // }
+
             ],
             "language": {
                 "zeroRecords": "data tidak tersedia"

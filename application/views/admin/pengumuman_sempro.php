@@ -1,6 +1,6 @@
 <?php $this->app->extend('template/admin') ?>
 
-<?php $this->app->setVar('title', 'Seminar') ?>
+<?php $this->app->setVar('title', 'Pengumuman Seminar') ?>
 
 <?php $this->app->section() ?>
 <div class="card">
@@ -17,7 +17,7 @@
 </div>
 <div class="card">
     <div class="card-header">
-        <div class="card-title">Pengumuman Seminar</div>
+        <div class="card-title">Pengumuman Semina Proposal</div>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -86,7 +86,8 @@ $(document).ready(function() {
                     data: null,
                     render: function(data) {
                         if (data.tanggal != null) {
-                            return data.tanggal + ' : ' + data.jam
+                            return data.tanggal + ' : ' + data.jam + ' - ' + data
+                                .jam_selesai
                         } else {
                             return "Belum di set"
                         }

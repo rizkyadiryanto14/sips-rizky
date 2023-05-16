@@ -75,26 +75,27 @@
                     <div class="modal-title">Tambah Sidang Skripsi</div>
                 </div>
                 <div class="modal-body">
-                    <input type="hidden" name="mahasiswa_id" value="<?= $this->session->userdata('id'); ?>">
                     <div class="form-group">
                         <label for="">Nama Mahasiswa</label>
-                        <input type="text" name="mahasiswa_id" id="mahasiswa_id" class="form-control">
+                        <select name="mahasiswa_id" class="form-control">
+                            <?php foreach ($mahasiswa as $m) { ?>
+                            <option value="<?php echo $m['mahasiswa_id'] ?>"><?php echo $m['nama_mahasiswa'] ?></option>
+                            <?php } ?>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label>Judul Skripsi</label>
-                        <input type="text" class="form-control" name="judul_skripsi"
-                            placeholder="Masukkan Judul Skripsi">
+                        <select name="judul_skripsi" class="form-control">
+                            <?php foreach ($mahasiswa as $m) { ?>
+                            <option value="<?php echo $m['id'] ?>">
+                                <?php echo $m['judul'] ?></option>
+                            <?php } ?>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label>Pembimbing</label>
                         <select name="dosen_id" class="form-control">
                             <option value="">- Pilih Pembimbing -</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Penguji</label>
-                        <select name="dosen_penguji_id" class="form-control">
-                            <option value="">- Pilih Penguji -</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -106,6 +107,11 @@
                         <label>File Skripsi</label>
                         <input type="file" class="form-control" name="pilih-file_skripsi" accept="application/pdf">
                         <input type="hidden" name="file_skripsi">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Formulir Pendaftaran</label>
+                        <input type="file" class="form-control" name="pilih-formulir" accept="application/pdf">
+                        <input type="hidden" name="formulir">
                     </div>
                     <div class="form-group">
                         <label>Kwitansi Pembayaran</label>
@@ -303,6 +309,25 @@
     </div>
 </div>
 
+<div class="modal fade" id="alerts">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="hapus">
+                <div class="modal-header">
+                    <div class="modal-title">Warning !!!</div>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" class="id">
+                    <p>Belum Di ACC Dosen Pembimbing</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 <?php $this->app->endSection('content') ?>
 
 <?php $this->app->section() ?>
@@ -320,7 +345,6 @@ $(document).ready(function() {
             })
         }
         $('[name=dosen_id]').html(dosen);
-        $('[name=dosen_penguji_id]').html(dosen);
     })
 
     show = () => {
@@ -371,13 +395,22 @@ $(document).ready(function() {
                     data: "nama_pembimbing"
                 },
                 {
-                    data: "nama_penguji"
+                    data: null,
+                    render: function(data) {
+                        if (data.dosen_penguji_id != null) {
+                            return '1. ' + data.dosen_penguji_id + '<br>2. ' +
+                                data
+                                .dosen_penguji2_id;
+                        } else {
+                            return '<span class="badge badge-danger">Data Belum di set</span>';
+                        }
+                    }
                 },
                 {
                     data: null,
                     render: function(data) {
                         if (data.jadwal_skripsi != null) {
-                            return data.jadwal_skripsi
+                            return data.jadwal_skripsi + ' - ' + data.jam_selesai
                         } else {
                             return 'Belum Di Set'
                         }
@@ -502,14 +535,24 @@ $(document).ready(function() {
                 {
                     data: null,
                     render: function(data) {
-                        return `
+                        if (data.status = 1) {
+                            return `
                         <div class="text-center">
                             <a href="` + base_url + `admin/skripsi/status/` + data.id +
-                            `" class="btn btn-sm btn-info ${data.tempat != null ? 'd-none' : '' }">
+                                `" class="btn btn-sm btn-info">
                                 Atur Jadwal</i>
                             </a>
                         </div>
                         `;
+                        } else {
+                            return `<div class="text-center">
+                            <button class="btn btn-sm btn-info" type="button" data-toggle="modal" data-target="#alerts">
+                                <i class="fa fa-check"></i>
+                            </button>
+                        </div>
+                        `;
+                        }
+
                     }
                 }
             ],

@@ -27,7 +27,16 @@ class Skripsi extends REST_Controller
     } 
 
     public function create_post()
-    {
+    {   
+        $id =$this->session->userdata('id');
+		$cekSkripsi = $this->db->get_where('skripsi', ['status' => ' ', 'mahasiswa_id' => $id])->result_array();
+		if (count($cekSkripsi) > 0) {
+			$response = [
+				'error' => true,
+				'message' => 'Terdapat skripsi yang belum diselesaikan, Harap tunggu!'
+			];
+			return $this->response($response);
+		}
         $response = $this->model->create($this->input->post());
         return $this->response($response);
     }

@@ -246,7 +246,8 @@ $(document).ready(function() {
                     data: null,
                     render: function(data) {
                         if (data.tanggal != null) {
-                            return data.tanggal + ' : ' + data.jam
+                            return data.tanggal + ' : ' + data.jam + ' - ' + data
+                                .jam_selesai
                         } else {
                             return '<span class="badge badge-danger">Data belum di set</span>';
                         }
@@ -352,6 +353,8 @@ $(document).ready(function() {
         call('api/seminar/create', $(this).serialize()).done(function(res) {
             if (res.error == true) {
                 notif(res.message, 'error', true);
+                $('form#tambah [name]').val('');
+                $('div#tambah').modal('hide');
             } else {
                 notif(res.message, 'success');
                 $('form#tambah [name]').val('');

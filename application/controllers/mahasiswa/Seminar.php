@@ -46,6 +46,7 @@ class Seminar extends MY_Controller
                 seminar.tanggal,
                 seminar.jam,
                 seminar.dosen_penguji_id,
+                seminar.dosen_penguji2_id,
                 seminar.dosen_id,
                 seminar.tempat,
                 seminar.file_proposal,

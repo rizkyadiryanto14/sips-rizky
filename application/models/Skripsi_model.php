@@ -13,15 +13,19 @@ class Skripsi_model extends CI_Model
     public function index($input)
     {
         $kondisi = [];
-        if ($input['mahasiswa_id']) {
-            $kondisi['skripsi_vl.mahasiswa_id'] = $input['mahasiswa_id'];
+        if (isset($input['mahasiswa_id'])) {
+            $kondisi['skripsi_v.mahasiswa_id'] = $input['mahasiswa_id'];
+        }
+
+        if (isset($input['dosen_id'])) {
+            $kondisi['skripsi_v.dosen_id'] = $input['dosen_id'];
         }
 
         if ($kondisi) {
             $this->db->where($kondisi);
         }
 
-        $skripsi = $this->db->get('skripsi_vl')->result_array();
+        $skripsi = $this->db->get('skripsi_v')->result_array();
 
         $hasil = [
             'error' => false,
@@ -34,7 +38,7 @@ class Skripsi_model extends CI_Model
 
     public function admin_index($input)
     {
-        $skripsi = $this->db->get('skripsi_vl')->result_array();
+        $skripsi = $this->db->get('skripsi_v')->result_array();
 
         $hasil = [
             'error' => false,
@@ -51,7 +55,6 @@ class Skripsi_model extends CI_Model
         $data = [
             'judul_skripsi' => $input['judul_skripsi'],
             'dosen_id' => $input['dosen_id'],
-            'dosen_penguji_id' => $input['dosen_penguji_id'],
             'mahasiswa_id' => $input['mahasiswa_id'],
             'krs' => $input['krs'],
             'file_skripsi' => $input['file_skripsi'],
@@ -134,10 +137,7 @@ class Skripsi_model extends CI_Model
     {
         $data = [
             'judul_skripsi' => $input['judul_skripsi'],
-            'jadwal_skripsi' => $input['jadwal_skripsi'],
-            'tempat' => $input['tempat'],
             'dosen_id' => $input['dosen_id'],
-            'dosen_penguji_id' => $input['dosen_penguji_id'],
             'mahasiswa_id' => $input['mahasiswa_id'],
             'krs' => $input['krs'],
             'file_skripsi' => $input['file_skripsi'],
@@ -294,7 +294,7 @@ class Skripsi_model extends CI_Model
     public function agree($id)
     {
         $kondisi = ['skripsi.id' => $id];
-        $cek = $this->db->get_where($this->table, $kondisi);
+        $cek = $this->db->get_where($this->table, $kondisi)->result_array();
 
         $email = '';
         $dskripsi = $this->db->get_where('skripsi_vl', array('id' => $id))->result();
@@ -302,7 +302,7 @@ class Skripsi_model extends CI_Model
             $email = $ds->email;
         }
 
-        if ($cek > 00) {
+        if (count($cek) > 0) {
             if ($this->db->update($this->table, ['status' => "1"], $kondisi)) {
                 $isi_email = '
                     <p>Seminar akhir / skripsi anda telah disetujui</p>
@@ -327,14 +327,14 @@ class Skripsi_model extends CI_Model
     public function disagree($id)
     {
         $kondisi = ['skripsi.id' => $id];
-        $cek = $this->db->get_where($this->table, $kondisi);
+        $cek = $this->db->get_where($this->table, $kondisi)->result_array();
 
         $email = '';
         $dskripsi = $this->db->get_where('skripsi_vl', array('id' => $id))->result();
         foreach ($dskripsi as $ds) {
             $email = $ds->email;
         }
-        if ($cek > 00) {
+        if (count($cek) > 0) {
             if ($this->db->update($this->table, ['status' => "0"], $kondisi)) {
                 $isi_email = '
                     <p>Seminar akhir / skripsi anda ditolak</p>

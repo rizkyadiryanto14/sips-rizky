@@ -118,7 +118,7 @@ function show() {
             {
                 data: "status",
                 render: function(data) {
-                    if (data == '1') {
+                    if (data >= '1') {
                         return '<center><span class="badge badge-success"><i class="fa fa-check"></i></span></center>';
                     } else {
                         return '<center><span class="badge badge-danger"><i class="fa fa-times"></i></span></center>';
@@ -128,7 +128,7 @@ function show() {
             {
                 data: "usulan_proposal",
                 render: function(data) {
-                    if (data == '1') {
+                    if (data >= '1') {
                         return '<center><span class="badge badge-success"><i class="fa fa-check"></i></span></center>';
                     } else {
                         return '<center><span class="badge badge-danger"><i class="fa fa-times"></i></span></center>';
@@ -138,7 +138,7 @@ function show() {
             {
                 data: "seminar_proposal",
                 render: function(data) {
-                    if (data == '1') {
+                    if (data >= '1') {
                         return '<center><span class="badge badge-success"><i class="fa fa-check"></i></span></center>';
                     } else {
                         return '<center><span class="badge badge-danger"><i class="fa fa-times"></i></span></center>';
@@ -148,7 +148,7 @@ function show() {
             {
                 data: "skripsi",
                 render: function(data) {
-                    if (data == '1') {
+                    if (data >= '1') {
                         return '<center><span class="badge badge-success"><i class="fa fa-check"></i></span></center>';
                     } else {
                         return '<center><span class="badge badge-danger"><i class="fa fa-times"></i></span></center>';

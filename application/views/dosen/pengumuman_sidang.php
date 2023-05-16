@@ -1,6 +1,6 @@
 <?php $this->app->extend('template/dosen') ?>
 
-<?php $this->app->setVar('title', 'Seminar Akhir') ?>
+<?php $this->app->setVar('title', ' Sidang Skripsi') ?>
 
 <?php $this->app->section() ?>
 <div class="card">
@@ -22,14 +22,8 @@
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Seminar Akhir / Skripsi</div>
+                <div class="card-title">Pengumuman Sidang Skripsi</div>
             </div>
-            <!-- <div class="col text-right">
-                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambah">
-                    <i class="fa fa-plus"></i>
-                    Tambah
-                </button>
-            </div> -->
         </div>
         <div class="card-tools mt-2">
             <span class="badge badge-success"><i class="fa fa-check"></i> Disetujui</span>
@@ -37,10 +31,6 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="text-center">
-            <small>(Klik tombol X untuk menyetujui atau tombol Ceklis untuk batal menyetujui</small><br />
-            <small>Dosen hanya dapat mengkonfirmasi seminar akhir / skripsi mahasiswa bimbingannya</small>
-        </div>
         <div class="table-responsive">
             <table class="table table-hover" id="data-skripsi">
                 <thead>
@@ -70,8 +60,10 @@
                 <div class="modal-body">
                     <input type="hidden" class="id">
                     <input type="hidden" class="status">
-                    <p>Anda yakin <span class="status">mengetujui / batal menyetujui</span> skripsi <strong
-                            class="judul">Judul Proposal</strong> ?</p>
+                    <p>Anda yakin <span class="status">mengetujui / batal menyetujui</span> skripsi</p>
+                    <p>Judul : <strong class="judul">Judul Skripsi</strong></p>
+                    <p>Nama : <strong class="nama">Nama Mahasiswa</strong></p>
+                    <p>Nim : <strong class="nim">Nim Mahasiswa</strong></p>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
@@ -95,10 +87,10 @@ $(document).ready(function() {
         $('#data-skripsi').DataTable({
             "deferRender": true,
             "ajax": {
-                "url": base_url + "api/skripsi/admin_index",
+                "url": base_url + "api/skripsi",
                 "method": "POST",
                 "data": {
-                    user_id: "<?= $this->session->userdata('id') ?>"
+                    dosen_id: '<?= $this->session->userdata('id') ?>'
                 },
                 "dataSrc": "data"
             },
@@ -111,21 +103,18 @@ $(document).ready(function() {
                 {
                     data: null,
                     render: function(data) {
-                        if (data.dosen_id == '<?= $this->session->userdata('id') ?>' || data
-                            .dosen_penguji_id == '<?= $this->session->userdata('id') ?>') {
-                            if (data.status == '1') {
-                               return '<span class="badge badge-success">ACC</span>'
-                            }else{
-                                return '<span class="badge badge-danger">Belum Di ACC</span>'
-                            }
-                        } 
+                        if (data.status == 1) {
+                            return '<span class="badge badge-success">ACC</span>'
+                        } else {
+                            return '<span class="badge badge-success">ACC</span>'
+                        }
                     }
                 },
                 {
-                   data:"nim"
+                    data: "nim"
                 },
                 {
-                    data:"nama_mahasiswa"
+                    data: "nama_mahasiswa"
                 },
                 {
                     data: "judul_skripsi"
@@ -134,10 +123,27 @@ $(document).ready(function() {
                     data: "nama_pembimbing"
                 },
                 {
-                    data: "nama_penguji"
+
+                    data: null,
+                    render: function(data) {
+                        if (data.dosen_penguji_id != null) {
+                            return '1. ' + data.dosen_penguji_id + '<br>2. ' + data
+                                .dosen_penguji2_id;
+                        } else {
+                            return '<span class="badge badge-danger">Data Belum di set</span>';
+                        }
+                    }
                 },
                 {
-                    data: "jadwal_skripsi"
+                    data: null,
+                    render: function(data) {
+                        if (data.jadwal_skripsi != null) {
+                            return data.jadwal_skripsi + ' - ' + data.jam_selesai
+                        } else {
+                            return '<span class="badge badge-danger">Data Belum di set</span>';
+                        }
+                    }
+
                 },
 
             ],
@@ -175,6 +181,8 @@ $(document).on('click', 'button.btn-setuju', function() {
     $('form#setujui input.status').val($(this).data('status'));
     $('form#setujui span.status').html(($(this).data('status') == '1') ? 'batal menyetujui' : 'menyetujui');
     $('form#setujui .judul').html($(this).data('judul_skripsi'));
+    $('form#setujui .nama').html($(this).data('nama_mahasiswa'));
+    $('form#setujui .nim').html($(this).data('nim'));
 })
 
 $(document).on('submit', 'form#setujui', function(e) {

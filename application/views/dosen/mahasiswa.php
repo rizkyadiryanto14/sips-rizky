@@ -105,7 +105,7 @@
                     {
                         data: "usulan_proposal",
                         render: function(data) {
-                            if (data == '1') {
+                            if (data >= '1') {
                                 return '<center><span class="badge badge-success"><i class="fa fa-check"></i></span></center>';
                             } else {
                                 return '<center><span class="badge badge-danger"><i class="fa fa-times"></i></span></center>';
@@ -115,7 +115,7 @@
                     {
                         data: "seminar_proposal",
                         render: function(data) {
-                            if (data == '1') {
+                            if (data >= '1') {
                                 return '<center><span class="badge badge-success"><i class="fa fa-check"></i></span></center>';
                             } else {
                                 return '<center><span class="badge badge-danger"><i class="fa fa-times"></i></span></center>';
@@ -125,7 +125,7 @@
                     {
                         data: "hasil_penelitian",
                         render: function(data) {
-                            if (data == '1') {
+                            if (data >= '1') {
                                 return '<center><span class="badge badge-success"><i class="fa fa-check"></i></span></center>';
                             } else {
                                 return '<center><span class="badge badge-danger"><i class="fa fa-times"></i></span></center>';
@@ -135,7 +135,7 @@
                     {
                         data: "hk3",
                         render: function(data) {
-                            if (data == '1') {
+                            if (data >= '1') {
                                 return '<center><span class="badge badge-success"><i class="fa fa-check"></i></span></center>';
                             } else {
                                 return '<center><span class="badge badge-danger"><i class="fa fa-times"></i></span></center>';
@@ -145,7 +145,7 @@
                     {
                         data: "skripsi",
                         render: function(data) {
-                            if (data == '1') {
+                            if (data >= '1') {
                                 return '<center><span class="badge badge-success"><i class="fa fa-check"></i></span></center>';
                             } else {
                                 return '<center><span class="badge badge-danger"><i class="fa fa-times"></i></span></center>';

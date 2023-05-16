@@ -28,72 +28,54 @@
             </div>
             <div class="col-md-9">
                 <?php $verifikasi = '';
-                foreach ($mahasiswa as $data) {
-                    $verifikasi = $data->status; ?>
-                    <p class="font-weight-bold">: <?= $data->nim; ?></p>
-                    <p class="font-weight-bold">: <?= $data->nama; ?></p>
-                    <p class="font-weight-bold">: <?= $data->nama_prodi; ?></p>
-                    <p class="font-weight-bold">: <?= $data->jenis_kelamin; ?></p>
-                    <p class="font-weight-bold">: <?= $data->tempat_lahir; ?></p>
-                    <p class="font-weight-bold">: <?= $data->tanggal_lahir; ?></p>
-                    <p class="font-weight-bold">: <?= $data->email; ?></p>
-                    <p class="font-weight-bold">: <?= $data->alamat; ?></p>
-                    <p class="font-weight-bold">: <?= $data->nomor_telepon; ?></p>
-                    <p class="font-weight-bold">: <?= $data->alamat_orang_tua; ?></p>
-                    <p class="font-weight-bold">: <?= $data->nomor_telepon_orang_tua; ?></p>
-                    <p class="font-weight-bold">: <?= $data->nomor_telepon_orang_dekat; ?></p>
-                    <p class="font-weight-bold">: <?= $data->ipk; ?></p>
-                <?php } ?>
+                $verifikasi = $mahasiswa->status; ?>
+                <p class="font-weight-bold">: <?= $mahasiswa->nim; ?></p>
+                <p class="font-weight-bold">: <?= $mahasiswa->nama; ?></p>
+                <p class="font-weight-bold">: <?= $mahasiswa->nama_prodi; ?></p>
+                <p class="font-weight-bold">: <?= $mahasiswa->jenis_kelamin; ?></p>
+                <p class="font-weight-bold">: <?= $mahasiswa->tempat_lahir; ?></p>
+                <p class="font-weight-bold">: <?= $mahasiswa->tanggal_lahir; ?></p>
+                <p class="font-weight-bold">: <?= $mahasiswa->email; ?></p>
+                <p class="font-weight-bold">: <?= $mahasiswa->alamat; ?></p>
+                <p class="font-weight-bold">: <?= $mahasiswa->nomor_telepon; ?></p>
+                <p class="font-weight-bold">: <?= $mahasiswa->alamat_orang_tua; ?></p>
+                <p class="font-weight-bold">: <?= $mahasiswa->nomor_telepon_orang_tua; ?></p>
+                <p class="font-weight-bold">: <?= $mahasiswa->nomor_telepon_orang_dekat; ?></p>
+                <p class="font-weight-bold">: <?= $mahasiswa->ipk; ?></p>
             </div>
             <div class="col-md-3">
                 <p>Status Verifikasi</p>
-                <p>Status Usulan Proposal</p>
+                <p>Status Pendaftaran Skripsi</p>
                 <p>Status Seminar Proposal</p>
-                <p>Status Seminar Hasil Penelitian</p>
                 <p>Status Seminar Akhir / Skripsi</p>
-                <p>Status HK3</p>
             </div>
             <div class="col-md-9">
                 <p class="font-weight-bold">:
                     <?php if ($verifikasi == '1') { ?>
-                        <span class="badge badge-success"><i class="fa fa-check"></i> Sudah Diverifikasi</span>
+                    <span class="badge badge-success"><i class="fa fa-check"></i> Sudah Diverifikasi</span>
                     <?php } else { ?>
-                        <span class="badge badge-danger"><i class="fa fa-times"></i> Belum Diverifikasi</span>
+                    <span class="badge badge-danger"><i class="fa fa-times"></i> Belum Diverifikasi</span>
                     <?php } ?>
                 </p>
                 <p class="font-weight-bold">:
                     <?php if ($usulan_proposal > 0) { ?>
-                        <span class="badge badge-success"><i class="fa fa-check"></i> Sudah Melaksanakan</span>
+                    <span class="badge badge-success"><i class="fa fa-check"></i> Sudah Melaksanakan</span>
                     <?php } else { ?>
-                        <span class="badge badge-danger"><i class="fa fa-times"></i> Belum Melaksanakan</span>
+                    <span class="badge badge-danger"><i class="fa fa-times"></i> Belum Melaksanakan</span>
                     <?php } ?>
                 </p>
                 <p class="font-weight-bold">:
                     <?php if ($seminar_proposal > 0) { ?>
-                        <span class="badge badge-success"><i class="fa fa-check"></i> Sudah Melaksanakan</span>
+                    <span class="badge badge-success"><i class="fa fa-check"></i> Sudah Melaksanakan</span>
                     <?php } else { ?>
-                        <span class="badge badge-danger"><i class="fa fa-times"></i> Belum Melaksanakan</span>
-                    <?php } ?>
-                </p>
-                <p class="font-weight-bold">:
-                    <?php if ($hasil_penelitian > 0) { ?>
-                        <span class="badge badge-success"><i class="fa fa-check"></i> Sudah Melaksanakan</span>
-                    <?php } else { ?>
-                        <span class="badge badge-danger"><i class="fa fa-times"></i> Belum Melaksanakan</span>
+                    <span class="badge badge-danger"><i class="fa fa-times"></i> Belum Melaksanakan</span>
                     <?php } ?>
                 </p>
                 <p class="font-weight-bold">:
                     <?php if ($skripsi > 0) { ?>
-                        <span class="badge badge-success"><i class="fa fa-check"></i> Sudah Melaksanakan</span>
+                    <span class="badge badge-success"><i class="fa fa-check"></i> Sudah Melaksanakan</span>
                     <?php } else { ?>
-                        <span class="badge badge-danger"><i class="fa fa-times"></i> Belum Melaksanakan</span>
-                    <?php } ?>
-                </p>
-                <p class="font-weight-bold">:
-                    <?php if ($hk3 > 0) { ?>
-                        <span class="badge badge-success"><i class="fa fa-check"></i> Sudah Melaksanakan</span>
-                    <?php } else { ?>
-                        <span class="badge badge-danger"><i class="fa fa-times"></i> Belum Melaksanakan</span>
+                    <span class="badge badge-danger"><i class="fa fa-times"></i> Belum Melaksanakan</span>
                     <?php } ?>
                 </p>
             </div>

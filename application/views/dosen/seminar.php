@@ -111,6 +111,9 @@ $(document).ready(function() {
             "ajax": {
                 "url": base_url + 'api/seminar',
                 "method": "POST",
+                "data": {
+                    dosen_id: '<?= $this->session->userdata('id') ?>'
+                },
                 "dataSrc": "data"
             },
             "columns": [{
@@ -147,7 +150,8 @@ $(document).ready(function() {
                     data: null,
                     render: function(data) {
                         if (data.tanggal != null) {
-                            return data.tanggal + ' : ' + data.jam
+                            return data.tanggal + ' : ' + data.jam + ' - ' + data
+                                .jam_selesai
                         } else {
                             return "<span class='badge badge-danger'>Belum Di set</span>"
                         }

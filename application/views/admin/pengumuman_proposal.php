@@ -1,6 +1,6 @@
 <?php $this->app->extend('template/admin') ?>
 
-<?php $this->app->setVar('title', 'Skripsi') ?>
+<?php $this->app->setVar('title', "Pendaftaran Skripsi") ?>
 
 <?php $this->app->section() ?>
 <div class="card">
@@ -9,9 +9,12 @@
         <form id="form_cari" action="<?= base_url('hasil-pencarian-mahasiswa'); ?>" method="POST"
             onsubmit="disableBtn()">
             <input type="hidden" name="level" value="Admin">
-            <select class="select2" name="id" required id="wadah_select2"> </select>
-            <button class="btn btn-primary mt-3 btn-act" type="sumbit">Lihat Selengkapnya <i
-                    class="fa fa-chevron-right"></i></button>
+            <select class="select2" name="id" required id="wadah_select2">
+
+            </select>
+            <button class="btn btn-primary mt-3 btn-act" type="sumbit">
+                Lihat Selengkapnya <i class="fa fa-chevron-right"></i>
+            </button>
         </form>
     </div>
 </div>
@@ -19,7 +22,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col">
-                <div class="card-title">Data Pengumuman Skripsi</div>
+                <div class="card-title">Data Pengumuman Pendaftaran Skripsi</div>
             </div>
         </div>
         <div class="card-tools mt-2">
@@ -36,8 +39,6 @@
                         <th>NIM</th>
                         <th>Mahasiswa</th>
                         <th>Judul</th>
-                        <th>Outline</th>
-                        <th>Pembimbing</th>
                         <th>Status</th>
                     </tr>
                 </thead>
@@ -45,7 +46,6 @@
         </div>
     </div>
 </div>
-
 <?php $this->app->endSection('content') ?>
 
 <?php $this->app->section() ?>
@@ -58,7 +58,7 @@ $(document).ready(function() {
     call('api/mahasiswa').done(function(req) {
         mahasiswa = '<option value="">- Pilih Mahasiswa -</option>';
         if (req.data) {
-            req.data.forEach((obj) => {
+            $.each(req.data, function(index, obj) {
                 mahasiswa += '<option value="' + obj.id + '">' + obj.nama + '</option>';
             })
         }
@@ -82,6 +82,9 @@ $(document).ready(function() {
             "ajax": {
                 "url": base_url + 'api/proposal_mahasiswa',
                 "method": "POST",
+                "data": {
+                    user_id: "<?= $this->session->userdata('id') ?>"
+                },
                 "dataSrc": "data"
             },
             "columns": [{
@@ -92,33 +95,34 @@ $(document).ready(function() {
                     }
                 },
                 {
-                    data: "mahasiswa.nim",
+                    data: null,
+                    render: function(data) {
+                        return data.mahasiswa.nim
+                    }
                 },
                 {
-                    data: "mahasiswa.nama",
+                    data: null,
+                    render: function(data) {
+                        return data.mahasiswa.nama
+                    }
                 },
                 {
                     data: "judul"
                 },
                 {
-                    data: "outline_skripsi",
-                    render: function(data) {
-                        return '<a href="' + base_url + 'cdn/vendor/skripsi/outline_skripsi/' +
-                            data +
-                            '">' + data + '</a>';
-                    }
-                },
-                {
-                    data: "pembimbing.nama"
-                },
-                {
                     data: null,
                     render: function(data) {
                         if (data.status == '1') {
-                            return '<span class="badge badge-success">Judul Di ACC</span>';
+                            status = '\
+                            <span class="badge badge-success mr-2">Judul Diterima</span>';
                         } else {
-                            return '<span class="badge badge-danger">Judul belum dinilai/ditolak';
+                            status = '\
+                            <span class="badge badge-danger">Judul Ditolak/Belum disetujui</span>\
+                            ';
                         }
+                        return '\
+                            <div class="text-center">' + status + '</div>\
+                            ';
                     }
                 },
 
@@ -166,6 +170,12 @@ $(document).ready(function() {
     $(document).on('change', 'form#edit [name=pilih-file_krs]', function() {
         read('form#edit [name=pilih-file_krs]', function(data) {
             $('form#edit [name=file_krs]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#tambah [name=pilih-outline_skripsi]', function() {
+        read('form#tambah [name=pilih-outline_skripsi]', function(data) {
+            $('form#tambah [name=outline_skripsi]').val(data.result);
         })
     })
 
@@ -219,7 +229,9 @@ $(document).ready(function() {
         $('form#setujui input.status').val($(this).data('status'));
         $('form#setujui span.status').html(($(this).data('status') == '1') ? 'batal menyetujui' :
             'menyetujui');
-        $('form#setujui .judul').html($(this).data('judul_skripsi'));
+        $('form#setujui .judul').html($(this).data('judul'));
+        $('form#setujui .nama').html($(this).data('mahasiswa.nama'));
+        $('form#setujui .nim').html($(this).data('mahasiswa.nim'));
     })
 
 

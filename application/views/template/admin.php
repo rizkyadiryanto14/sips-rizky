@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
     <meta name="author" content="Creative Tim">
+
     <title>Skripsi - <?= $title ?></title>
     <?php include('_main/css.php') ?>
     <style>
@@ -79,6 +80,41 @@
                             </div>
                         </div>
                         <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" href="#penjadwalan" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fa fa-clock text-info"></i>
+                                <span>Penjadwalan</span>
+                            </a>
+                        </li>
+                        <div class="collapse" id="penjadwalan">
+                            <div class="card card-body">
+                                <a href="<?= base_url("admin/hari") ?>" class="nav-link">
+                                    <i class="ni ni-app text-red"></i>
+                                    <span class="nav-link-text"> Hari</span>
+                                </a>
+                                <a href="<?= base_url("admin/ruangan") ?>" class="nav-link">
+                                    <i class="ni ni-books text-danger"></i>
+                                    <span class="nav-link-text">Ruangan</span>
+                                </a>
+                                <a class="nav-link" href="<?= base_url() ?>admin/jam">
+                                    <i class="fa fa-user text-warning"></i>
+                                    <span class="nav-link-text">Jam</span>
+                                </a>
+                                <a class="nav-link" href="<?= base_url() ?>admin/jadwal_dosen">
+                                    <i class="fa fa-calendar text-primary"></i>
+                                    <span class="nav-link-text">Jadwal Dosen</span>
+                                </a>
+                                <a class="nav-link" href="<?= base_url() ?>admin/GenerateSempro">
+                                    <i class="fa fa-clock text-danger"></i>
+                                    <span class="nav-link-text">Generate Sempro</span>
+                                </a>
+                                <a class="nav-link" href="<?= base_url() ?>admin/skripsi">
+                                    <i class="fa fa-clock text-primary"></i>
+                                    <span class="nav-link-text">Generate Skripsi</span>
+                                </a>
+                            </div>
+                        </div>
+                        <li class="nav-item">
                             <a class="nav-link" data-toggle="collapse" href="#pengumuman" role="button"
                                 aria-expanded="false" aria-controls="collapseExample">
                                 <i class="fa fa-bullhorn text-primary"></i>
@@ -120,52 +156,6 @@
                                 </a>
                             </div>
                         </div>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() ?>admin/fakultas">
-                                <i class="fa fa-building text-primary"></i>
-                                <span class="nav-link-text">Fakultas</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-
-                        </li>
-                        <li class="nav-item">
-
-                        </li>
-                        <li class="nav-item">
-
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() ?>admin/proposal">
-                                <i class="ni ni-app text-red"></i>
-                                <span class="nav-link-text">Pendaftaran Skripsi</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() ?>admin/seminar">
-                                <i class="ni ni-books text-danger"></i>
-                                <span class="nav-link-text">Seminar Proposal</span>
-                            </a>
-                        </li> -->
-                        <!-- <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url() ?>admin/penelitian">
-                            <i class="ni ni-bulb-61 text-purple"></i>
-                            <span class="nav-link-text">Seminar Hasil Penelitian</span>
-                        </a>
-                    </li> -->
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url() ?>admin/skripsi">
-                                <i class="fa fa-list text-primary"></i>
-                                <span class="nav-link-text">Seminar Akhir / Skripsi</span>
-                            </a>
-                        </li> -->
-                        <!-- <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url() ?>admin/hasilkegiatan">
-                            <i class="fa fa-crown text-warning"></i>
-                            <span class="nav-link-text">HK3</span>
-                        </a>
-                    </li> -->
-
                         <li class="nav-item">
                             <a class="nav-link" href="<?= base_url() ?>admin/users">
                                 <i class="fa fa-list text-primary"></i>
@@ -320,6 +310,30 @@
         }
     })
     </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <?php if ($this->session->flashdata('sukses')) : ?>
+    <script>
+    Swal.fire({
+        title: 'Succes!',
+        text: '<?php echo $this->session->flashdata('sukses'); ?>',
+        icon: 'success',
+        confirmButtonText: 'OK'
+    });
+    </script>
+    <?php endif; ?>
+
+    <?php if ($this->session->flashdata('gagal')) : ?>
+    <script>
+    Swal.fire({
+        title: 'Wrong !',
+        text: '<?php echo $this->session->flashdata('gagal'); ?>',
+        icon: 'error',
+        confirmButtonText: 'OK'
+    });
+    </script>
+    <?php endif; ?>
 </body>
 
 </html>

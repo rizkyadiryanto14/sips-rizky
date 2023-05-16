@@ -26,7 +26,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $http               = isset($_SERVER['HTTPS']) ? "https://" : "http://";
 $url                = str_replace("index.php", "", $_SERVER['SCRIPT_NAME']);
 $config['base_url'] = $http . $_SERVER['SERVER_NAME'] . $url;
-// $config['base_url'] = "http://localhost/olivera";
 
 /*
 |--------------------------------------------------------------------------

@@ -1,0 +1,4 @@
+ERROR - 2023-04-11 13:01:25 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-04-11 13:57:10 --> Severity: error --> Exception: syntax error, unexpected '}' C:\xampp\htdocs\sips\application\controllers\admin\Penjadwalan.php 25
+ERROR - 2023-04-11 13:57:15 --> Severity: error --> Exception: syntax error, unexpected '}' C:\xampp\htdocs\sips\application\controllers\admin\Penjadwalan.php 25
+ERROR - 2023-04-11 13:57:21 --> Severity: error --> Exception: syntax error, unexpected '}' C:\xampp\htdocs\sips\application\controllers\admin\Penjadwalan.php 25

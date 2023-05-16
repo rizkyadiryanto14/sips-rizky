@@ -63,7 +63,7 @@
                         </li>
                         <li class="nav-item ml-3">
                             <center>
-                                <a class="btn btn-primary" href="<?= base_url() ?>home/registrasi">Mulai</a>
+                                <a class="btn btn-primary" href="<?= base_url() ?>home/cek">Mulai</a>
                             </center>
                         </li>
                     </ul>

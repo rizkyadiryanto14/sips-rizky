@@ -24,15 +24,23 @@ class Daftar_judul extends MY_Controller
         $abstrak        = $this->input->post('abstrak');
         $tahun_lulus    = $this->input->post('tahun_lulus');
 
-        $data = array(
-            'nim'           => $nim,
-            'nama'          => $nama,
-            'abstrak'       => $abstrak,
-            'tahun_lulus'   => $tahun_lulus,
-            'judul_skripsi' => $judul_skripsi
-        );
+        $cek = $this->db->get_where('daftar_judul', ['daftar_judul.nim' => $nim])->num_rows();
 
-        $this->Daftar_judul_model->tambahData($data);
+        if ($cek > 0) {
+            $this->session->set_flashdata('error', 'Data nim sudah ada');
+            return redirect('admin/daftar_judul');
+        } else {
+            $data = array(
+                'nim'           => $nim,
+                'nama'          => $nama,
+                'abstrak'       => $abstrak,
+                'tahun_lulus'   => $tahun_lulus,
+                'judul_skripsi' => $judul_skripsi
+            );
+
+            $this->Daftar_judul_model->tambahData($data);
+            redirect('admin/daftar_judul');
+        }
         redirect('admin/daftar_judul');
     }
 

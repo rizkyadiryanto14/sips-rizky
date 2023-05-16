@@ -63,9 +63,19 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
+                        <label for="">Mahasiswa</label>
+                        <select name="mahasiswa_id" class="form-control">
+                            <?php foreach ($mahasiswa as $m) { ?>
+                            <option value="<?php echo $m['mahasiswa_id'] ?>"><?php echo $m['nama_mahasiswa'] ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                    <div class="form-group">
                         <label>Proposal</label>
-                        <select name="proposal_mahasiswa_id" class="form-control">
-                            <option value="">- Pilih Proposal -</option>
+                        <select name="proposal_mahasiswa_id" class="form-control" required>
+                            <?php foreach ($mahasiswa as $m) { ?>
+                            <option value="<?php echo $m['id'] ?>"><?php echo $m['judul'] ?></option>
+                            <?php } ?>
                         </select>
                     </div>
                     <div class="form-group">
@@ -153,48 +163,7 @@
 base_url = '<?= base_url() ?>'
 $(document).ready(function() {
 
-    // $.ajax({
-    //     url: base_url + 'getData/proposal_mahasiswa',
-    //     type: 'post',
-    //     data: {
-    //         mahasiswa_id: <?= $this->session->userdata('id') ?>
-    //     },
-    //     dataType: 'json',
-    //     success: function(res) {
-    //         proposal = `<option value="">- Pilih Proposal -</option>`;
-    //         $.each(res, function(i, item) {
-    //             if (item.status == '1') {
-    //                 proposal += `<option value="` + item.id + `">` + item.judul +
-    //                     `</option>`;
-    //             }
-    //         })
-    //         $('[name=proposal_mahasiswa_id]').html(proposal);
-    //     }
-    // })
     getDataSelect()
-    call('api/proposal_mahasiswa').done(function(req) {
-        proposal = `<option value="">- Pilih Proposal -</option>`;
-        if (req.data) {
-            req.data.forEach(obj => {
-                if (obj.status == 1) {
-                    proposal += `<option value="` + obj.proposal_mahasiswa_id +
-                        `">` + obj.judul + `</option>`;
-                }
-            })
-        }
-        $('[name=proposal_mahasiswa_id]').html(proposal);
-    })
-
-    // call('api/proposal_mahasiswa').done(function(res) {
-    //     proposal = `<option value="">- Pilih Proposal -</option>`;
-    //     if (res.data) {
-    //         res.data.forEach(obj => {
-    //             proposal += `<option value="` + item.id + `">` + item.judul +
-    //                 `</option>`;
-    //         })
-    //     }
-    //     $('[name=proposal_mahasiswa_id]').html(proposal);
-    // })
 
     call('api/dosen').done(function(res) {
         dosen = `<option value="">- Pilih Dosen -</option>`;
@@ -241,7 +210,8 @@ $(document).ready(function() {
                     data: null,
                     render: function(data) {
                         if (data.tanggal != null) {
-                            return data.tanggal + ' : ' + data.jam
+                            return data.tanggal + ' : ' + data.jam + ' - ' + data
+                                .jam_selesai
                         } else {
                             return '<span class="badge badge-danger">Data Belum di set</span>';
                         }
@@ -328,22 +298,19 @@ $(document).ready(function() {
                     data: null,
                     render: function(data) {
                         data: "hasil_seminar_status"
-                        if (data.hasil_seminar_status == 1 || data.hasil_seminar_status ==
-                            2) {
+                        if (data.hasil_seminar_status == 1 || (data.hasil_seminar_status ==
+                                2)) {
                             return `
                         <div class="text-center">
                             <a href="` + base_url + `admin/seminar/status/` + data.id +
-                                `" class="btn btn-sm btn-info ${data.tempat != null ? 'd-none' : '' }">
+                                `" class="btn btn-sm btn-info">
                                 <i class="fa fa-check"></i>
                             </a>
                         </div>
                         `;
                         } else {
-                            return `
-                        <div class="text-center">
-                            <button class="btn btn-sm btn-info" type="button" data-toggle="modal" data-target="#alerts" data-id="` +
-                                data
-                                .id + `">
+                            return `<div class="text-center">
+                            <button class="btn btn-sm btn-info" type="button" data-toggle="modal" data-target="#alerts">
                                 <i class="fa fa-check"></i>
                             </button>
                         </div>
@@ -383,14 +350,66 @@ $(document).ready(function() {
         call('api/seminar/create', $(this).serialize()).done(function(res) {
             if (res.error == true) {
                 notif(res.message, 'error', true);
+                $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
             } else {
                 notif(res.message, 'success');
+                $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
                 $('form#tambah [name]').val('');
                 $('div#tambah').modal('hide');
                 show();
             }
         })
     })
+
+    $(document).on('change', 'form#tambah [name=pilih-file_proposal]', function() {
+        read('form#tambah [name=pilih-file_proposal]', function(data) {
+            $('form#tambah [name=file_proposal]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#tambah [name=pilih-surat_permohonan]', function() {
+        read('form#tambah [name=pilih-surat_permohonan]', function(data) {
+            $('form#tambah [name=surat_permohonan]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#tambah [name=pilih-syarat_seminar]', function() {
+        read('form#tambah [name=pilih-syarat_seminar]', function(data) {
+            $('form#tambah [name=syarat_seminar]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#tambah [name=pilih-kartu_bimbingan]', function() {
+        read('form#tambah [name=pilih-kartu_bimbingan]', function(data) {
+            $('form#tambah [name=kartu_bimbingan]').val(data.result);
+        })
+    })
+
+    // form edit
+    $(document).on('change', 'form#edit [name=pilih-surat_permohonan]', function() {
+        read('form#edit [name=pilih-surat_permohonan]', function(data) {
+            $('form#edit [name=surat_permohonan]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#edit [name=pilih-file_proposal]', function() {
+        read('form#edit [name=pilih-file_proposal]', function(data) {
+            $('form#edit [name=file_proposal]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#edit [name=pilih-kartu_bimbingan]', function() {
+        read('form#edit [name=pilih-kartu_bimbingan]', function(data) {
+            $('form#edit [name=kartu_bimbingan]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#edit [name=pilih-syarat_seminar]', function() {
+        read('form#edit [name=pilih-syarat_seminar]', function(data) {
+            $('form#edit [name=syarat_seminar]').val(data.result);
+        })
+    })
+
 
     $(document).on('click', 'button.btn-hapus', function() {
         $('form#hapus .id').val($(this).data('id'));
@@ -428,6 +447,31 @@ function getDataSelect() {
         }
     })
 }
+
+$(document).on('click', 'button.btn-edit', function() {
+    $('form#edit .id').val($(this).data('id'));
+    $('form#edit [name=proposal_mahasiswa_id]').val($(this).data('proposal_mahasiswa_id'));
+    $('form#edit [name=dosen_id]').val($(this).data('dosen_id'));
+    $('form#edit [name=def_surat_permohonan]').val($(this).data('surat_permohonan'));
+    $('form#edit [name=def_file_proposal]').val($(this).data('file_proposal'));
+    $('form#edit [name=def_kartu_bimbingan]').val($(this).data('kartu_bimbingan'));
+    $('form#edit [name=def_syarat_seminar]').val($(this).data('syarat_seminar'));
+})
+
+$(document).on('submit', 'form#edit', function(e) {
+    e.preventDefault();
+    var id = $('form#edit .id').val();
+    call('api/seminar/update/' + id, $(this).serialize()).done(function(req) {
+        if (req.error == true) {
+            notif(req.message, 'error', true);
+        } else {
+            notif(req.message, 'success');
+            $('form#edit [name]').val('');
+            $('div#edit').modal('hide');
+            show();
+        }
+    })
+})
 
 function disableBtn() {
     $(".btn-act").attr('disabled', true).html('Loading ...')

@@ -47,6 +47,7 @@
 		</div>
 	</div>
 </form>
+
 <?php foreach ($dataEmail as $de) { ?>
 	<form action="<?= base_url('atur-send-email'); ?>" method="POST">
 		<div class="row">
@@ -80,6 +81,55 @@
 		</div>
 	</form>
 <?php } ?>
+
+<div class="col-md-12">
+	<div class="card">
+		<div class="card-header">
+			<div class="card-title">Seting kuota Bimbingan</div>
+		</div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">No</th>
+					<th scope="col">Kuota</th>
+					<th scope="col">Aksi</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php
+				$no = 1;
+				foreach ($kuota as $data) { ?>
+					<tr>
+						<td><?php echo $no++ ?></td>
+						<td><?php echo $data->nilai ?></td>
+						<td>
+							<button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#ubah">Edit</button>
+						</td>
+					</tr>
+				<?php } ?>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="modal fade" id="ubah">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3>Seting Kuota Bimbingan</h3>
+			</div>
+			<form action="<?= base_url('admin/dospem') ?>" method="POST">
+				<div class="modal-body">
+					<label for="Kuota">Kuota</label>
+					<input type="text" name="kuota" class="form-control" placeholder="Masukan Angka" required>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary" type="submit">Simpan</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
 <?php $this->app->endSection('content') ?>
 
 <?php $this->app->section() ?>
@@ -91,6 +141,21 @@
 <script src="<?= base_url() ?>cdn/plugins/canvas-resize/exif.js"></script>
 <script src="<?= base_url() ?>cdn/plugins/canvas-resize/binaryajax.js"></script>
 <script src="<?= base_url() ?>cdn/plugins/canvas-resize/zepto.min.js"></script>
+
+<?php if ($this->session->flashdata('error')) { ?>
+	<script>
+		let mess = "<?= $this->session->flashdata('error'); ?>"
+		notif(mess, 'error', true);
+	</script>
+<?php } ?>
+
+<?php if ($this->session->flashdata('sukses')) { ?>
+	<script>
+		let mess = "<?= $this->session->flashdata('sukses'); ?>"
+		notif(mess, 'sukses', true);
+	</script>
+<?php } ?>
+
 <script>
 	$(document).ready(function() {
 

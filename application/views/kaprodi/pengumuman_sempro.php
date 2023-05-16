@@ -83,7 +83,8 @@ $(document).ready(function() {
                     data: null,
                     render: function(data) {
                         if (data.tanggal != null) {
-                            return data.tanggal + ' : ' + data.jam
+                            return data.tanggal + ' : ' + data.jam + ' - ' + data
+                                .jam_selesai
                         } else {
                             return "Belum di set"
                         }
@@ -96,17 +97,19 @@ $(document).ready(function() {
                         if (data.tempat != null) {
                             return data.tempat
                         } else {
-                            return "Belum di set"
+                            return '<span class="badge badge-danger">Data Belum di set</span>';
                         }
                     }
                 },
                 {
                     data: null,
                     render: function(data) {
-                        if (data.penguji_nama != null) {
-                            return data.penguji_nama;
+                        if (data.dosen_penguji_id != null) {
+                            return '1. ' + data.dosen_penguji_id + '<br>2. ' +
+                                data
+                                .dosen_penguji2_id;
                         } else {
-                            return "Belum di set";
+                            return '<span class="badge badge-danger">Data Belum di set</span>';
                         }
                     }
                 },

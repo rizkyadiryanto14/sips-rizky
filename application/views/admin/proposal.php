@@ -9,9 +9,12 @@
         <form id="form_cari" action="<?= base_url('hasil-pencarian-mahasiswa'); ?>" method="POST"
             onsubmit="disableBtn()">
             <input type="hidden" name="level" value="Admin">
-            <select class="select2" name="id" required id="wadah_select2"> </select>
-            <button class="btn btn-primary mt-3 btn-act" type="sumbit">Lihat Selengkapnya <i
-                    class="fa fa-chevron-right"></i></button>
+            <select class="select2" name="id" required id="wadah_select2">
+
+            </select>
+            <button class="btn btn-primary mt-3 btn-act" type="sumbit">
+                Lihat Selengkapnya <i class="fa fa-chevron-right"></i>
+            </button>
         </form>
     </div>
 </div>
@@ -46,6 +49,9 @@
                         <th>KRS</th>
                         <th>Outline</th>
                         <th>Pembimbing</th>
+                        <th>Cek Kemiripan</th>
+                        <th>Lulus MK Metodologi</th>
+                        <th>Lulus MK Wajib</th>
                         <th>Status</th>
                         <th>Aksi</th>
                     </tr>
@@ -54,17 +60,21 @@
         </div>
     </div>
 </div>
+
 <div class="modal fade" id="tambah">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form id="tambah">
+            <form id="tambah" action="javascript:;">
                 <div class="modal-header">
-                    <div class="modal-title">Tambah Proposal</div>
+                    <div class="modal-title">Tambah Pendaftaran </div>
                 </div>
                 <div class="modal-body">
+                    <!-- <input type="hidden" name="mahasiswa_id" value="<?= $this->session->userdata('id') ?>"> -->
                     <div class="form-group">
-                        <label>Mahasiswa</label>
-                        <select name="mahasiswa_id" class="form-control"></select>
+                        <label for="">Mahasiswa</label>
+                        <select name="mahasiswa_id" class="form-control">
+                            <option value=""> -Pilih Mahasiswa- </option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label>Judul</label>
@@ -78,12 +88,12 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Transkip</label>
+                        <label>Transkrip</label>
                         <input type="file" class="form-control" name="pilih-transkip" accept="application/pdf">
                         <input type="hidden" name="transkip">
                     </div>
                     <div class="form-group">
-                        <label>KRS</label>
+                        <label>KRS Terakhir</label>
                         <input type="file" class="form-control" name="pilih-krs" accept="application/pdf">
                         <input type="hidden" name="krs">
                     </div>
@@ -93,15 +103,27 @@
                             accept="application/pdf">
                         <input type="hidden" name="outline_skripsi">
                     </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                    <div class="form-group">
+                        <label for="">Lulus MK Metodologi</label>
+                        <input type="radio" name="lulus_mkMetodologi" value="Lulus" class="form-check">Lulus
+                        <input type="radio" name="lulus_mkMetodologi" value="Tidak Lulus" class="form-check">Tidak Lulus
                     </div>
+                    <div class="form-group">
+                        <label for="">Lulus MK Wajib</label>
+                        <input type="radio" name="lulus_mkWajib" value="Lulus" class="form-check">Lulus
+                        <input type="radio" name="lulus_mkWajib" value="Tidak Lulus" class="form-check">Tidak Lulus
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-primary btn-tambah">Simpan</button>
+                </div>
             </form>
         </div>
     </div>
 </div>
-<div class="modal fade" id="edit">
+
+<div class="modal fade" id="edit" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <form id="edit">
@@ -126,7 +148,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Transkip</label>
+                        <label>Transkrip</label>
                         <input type="file" class="form-control" name="pilih-transkip" accept="application/pdf">
                         <input type="hidden" name="transkip">
                         <input type="hidden" name="def_transkip">
@@ -139,8 +161,19 @@
                     </div>
                     <div class="form-group">
                         <label>Outline</label>
-                        <textarea name="ringkasan" rows="5" class="form-control"
-                            placeholder="Masukkan Ringkasan"></textarea>
+                        <input type="file" class="form-control" name="pilih-outline_skripsi" accept="application/pdf">
+                        <input type="hidden" name="outline_skripsi">
+                        <input type="hidden" name="def_outline_skripsi">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Lulus MK Metodologi</label>
+                        <input type="radio" name="lulus_mkMetodologi" value="Lulus" class="form-check">Lulus
+                        <input type="radio" name="lulus_mkMetodologi" value="Tidak Lulus" class="form-check">Tidak Lulus
+                    </div>
+                    <div class="form-group">
+                        <label for="">Lulus MK Wajib</label>
+                        <input type="radio" name="lulus_mkWajib" value="Lulus" class="form-check">Lulus
+                        <input type="radio" name="lulus_mkWajib" value="Tidak Lulus" class="form-check">Tidak Lulus
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -151,7 +184,7 @@
         </div>
     </div>
 </div>
-<div class="modal fade" id="hapus">
+<div class="modal fade" id="hapus" tabindex="-1">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <form id="hapus">
@@ -173,7 +206,8 @@
         </div>
     </div>
 </div>
-<div class="modal fade" id="setujui">
+
+<div class="modal fade" id="setujui" tabindex="-2">
     <div class="modal-dialog">
         <div class="modal-content">
             <form id="setujui">
@@ -183,8 +217,10 @@
                 <div class="modal-body">
                     <input type="hidden" class="id">
                     <input type="hidden" class="status">
-                    <p>Anda yakin <span class="status">mengetujui / batal menyetujui</span> skripsi <strong
-                            class="judul">Judul Proposal</strong> ?</p>
+                    <p>Anda yakin <span class="status">mengetujui / batal menyetujui</span> skripsi
+                    <p>Nama :<strong class="nama">Nama Mahasiswa</strong></p>
+                    <p>Nim : <strong class="nim">Nim Mahasiswa</strong></p>
+                    <p>Judul : <strong class="judul">Judul Skripsi</strong></p>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-default" type="button" data-dismiss="modal">Batal</button>
@@ -206,7 +242,7 @@ $(document).ready(function() {
     call('api/mahasiswa').done(function(req) {
         mahasiswa = '<option value="">- Pilih Mahasiswa -</option>';
         if (req.data) {
-            req.data.forEach((obj) => {
+            $.each(req.data, function(index, obj) {
                 mahasiswa += '<option value="' + obj.id + '">' + obj.nama + '</option>';
             })
         }
@@ -230,6 +266,9 @@ $(document).ready(function() {
             "ajax": {
                 "url": base_url + 'api/proposal_mahasiswa',
                 "method": "POST",
+                "data": {
+                    user_id: "<?= $this->session->userdata('id') ?>"
+                },
                 "dataSrc": "data"
             },
             "columns": [{
@@ -240,10 +279,16 @@ $(document).ready(function() {
                     }
                 },
                 {
-                    data: "mahasiswa.nim",
+                    data: null,
+                    render: function(data) {
+                        return data.mahasiswa.nim
+                    }
                 },
                 {
-                    data: "mahasiswa.nama",
+                    data: null,
+                    render: function(data) {
+                        return data.mahasiswa.nama
+                    }
                 },
                 {
                     data: "judul"
@@ -274,13 +319,23 @@ $(document).ready(function() {
                     data: "pembimbing.nama"
                 },
                 {
+                    data: "plagiat"
+                },
+                {
+                    data: "lulus_mkMetodologi"
+                },
+                {
+                    data: "lulus_mkWajib"
+                },
+                {
                     data: null,
                     render: function(data) {
                         if (data.status == '1') {
                             status = '\
                             <button class="btn btn-sm btn-setuju btn-success" type="button" data-id="' + data.id +
                                 '" data-judul="' + data.judul + '" data-status="' + data
-                                .status + '" data-toggle="modal" data-target="#setujui">\
+                                .status + '"data-mahasiswa.nama="' + data.mahasiswa.nama +
+                                '" data-mahasiswa.nim="' + data.mahasiswa.nim + '"  data-toggle="modal" data-target="#setujui">\
                                 <i class="fa fa-check"></i>\
                             </button>\
                             ';
@@ -288,7 +343,8 @@ $(document).ready(function() {
                             status = '\
                             <button class="btn btn-sm btn-setuju btn-danger" type="button" data-id="' + data.id +
                                 '" data-judul="' + data.judul + '" data-status="' + data
-                                .status + '" data-toggle="modal" data-target="#setujui">\
+                                .status + '"data-mahasiswa.nama="' + data.mahasiswa.nama +
+                                '" data-mahasiswa.nim="' + data.mahasiswa.nim + '" data-toggle="modal" data-target="#setujui">\
                                 <i class="fa fa-times"></i>\
                             </button>\
                             ';
@@ -305,14 +361,16 @@ $(document).ready(function() {
                             return '\
                                 <div class="text-center">\
                                 <button class="btn btn-sm btn-info btn-edit" type="button" data-toggle="modal" data-target="#edit" data-id="' +
-                                data.id + '" data-mahasiswa_id="' + data.mahasiswa_id +
+                                data.id + '" data-mahasiswa.nama="' + data.mahasiswa.nama +
                                 '" data-judul="' + data.judul + '" data-ringkasan="' +
                                 '">\
                                     <i class="fa fa-pen"></i>\
                                 </button>\
                                 <button class="btn btn-sm btn-danger btn-hapus" type="button" data-toggle="modal" data-target="#hapus" data-id="' +
                                 data.id +
-                                '" data-judul="' + data.judul + '">\
+                                '" data-judul="' + data.judul + '"  data-mahasiswa.nama="' +
+                                data.mahasiswa.nama +
+                                '">\
                                     <i class="fa fa-trash"></i>\
                                 </button>\
                                 </div>\
@@ -333,6 +391,7 @@ $(document).ready(function() {
 
     $(document).on('submit', 'form#tambah', function(e) {
         e.preventDefault();
+        $(".btn-tambah").attr('disabled', true).html('Loading...')
         call('api/proposal_mahasiswa/create', $(this).serialize()).done(function(req) {
             if (req.error == true) {
                 notif(req.message, 'error', true);
@@ -357,21 +416,28 @@ $(document).ready(function() {
         })
     })
 
-    $(document).on('change', 'form#edit [name=pilih-file_transkip]', function() {
-        read('form#edit [name=pilih-file_transkip]', function(data) {
-            $('form#edit [name=file_transkip]').val(data.result);
-        })
-    })
-
-    $(document).on('change', 'form#edit [name=pilih-file_krs]', function() {
-        read('form#edit [name=pilih-file_krs]', function(data) {
-            $('form#edit [name=file_krs]').val(data.result);
-        })
-    })
-
     $(document).on('change', 'form#tambah [name=pilih-outline_skripsi]', function() {
         read('form#tambah [name=pilih-outline_skripsi]', function(data) {
             $('form#tambah [name=outline_skripsi]').val(data.result);
+        })
+    })
+
+
+    $(document).on('change', 'form#edit [name=pilih-transkip]', function() {
+        read('form#edit [name=pilih-transkip]', function(data) {
+            $('form#edit [name=transkip]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#edit [name=pilih-krs]', function() {
+        read('form#edit [name=pilih-krs]', function(data) {
+            $('form#edit [name=krs]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#edit [name=pilih-outline_skripsi]', function() {
+        read('form#edit [name=pilih-outline_skripsi]', function(data) {
+            $('form#edit [name=outline_skripsi]').val(data.result);
         })
     })
 
@@ -382,7 +448,7 @@ $(document).ready(function() {
         $('form#edit [name=dosen_id]').val($(this).data('dosen_id'));
         $('form#edit [name=def_transkip]').val($(this).data('transkip'));
         $('form#edit [name=def_krs]').val($(this).data('krs'));
-        $('form#edit [name=ringkasan]').val($(this).data('ringkasan'));
+        $('form#edit [name=def_outline_skripsi]').val($(this).data('outline_skripsi'));
     })
 
     $(document).on('submit', 'form#edit', function(e) {
@@ -425,7 +491,9 @@ $(document).ready(function() {
         $('form#setujui input.status').val($(this).data('status'));
         $('form#setujui span.status').html(($(this).data('status') == '1') ? 'batal menyetujui' :
             'menyetujui');
-        $('form#setujui .judul').html($(this).data('judul_skripsi'));
+        $('form#setujui .judul').html($(this).data('judul'));
+        $('form#setujui .nama').html($(this).data('mahasiswa.nama'));
+        $('form#setujui .nim').html($(this).data('mahasiswa.nim'));
     })
 
 

@@ -1,0 +1,210 @@
+ERROR - 2022-12-26 02:43:48 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-26 03:27:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 03:27:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 03:27:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 03:27:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 03:32:51 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 03:32:51 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 03:40:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 03:40:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 06:48:24 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-26 07:01:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:01:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:04:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:04:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:05:00 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:05:00 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:06:54 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:06:54 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:07:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:07:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:07:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:07:10 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:07:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:07:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:08:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:08:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:08:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:08:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:10:54 --> Severity: error --> Exception: syntax error, unexpected '}' C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 11
+ERROR - 2022-12-26 07:10:55 --> Severity: error --> Exception: syntax error, unexpected '}' C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 11
+ERROR - 2022-12-26 07:10:56 --> Severity: error --> Exception: syntax error, unexpected '}' C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 11
+ERROR - 2022-12-26 07:10:56 --> Severity: error --> Exception: syntax error, unexpected '}' C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 11
+ERROR - 2022-12-26 07:10:57 --> Severity: error --> Exception: syntax error, unexpected '}' C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 11
+ERROR - 2022-12-26 07:10:57 --> Severity: error --> Exception: syntax error, unexpected '}' C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 11
+ERROR - 2022-12-26 07:13:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:13:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:20:25 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 38
+ERROR - 2022-12-26 07:22:49 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 38
+ERROR - 2022-12-26 07:22:59 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 38
+ERROR - 2022-12-26 07:24:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:24:13 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 38
+ERROR - 2022-12-26 07:24:19 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 38
+ERROR - 2022-12-26 07:25:39 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:25:39 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:25:39 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:25:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:25:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:25:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:27:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:27:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:27:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:27:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:27:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:27:17 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:27:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:27:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:27:27 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:27:27 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:28:17 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 38
+ERROR - 2022-12-26 07:33:47 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 38
+ERROR - 2022-12-26 07:33:54 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 38
+ERROR - 2022-12-26 07:39:38 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 38
+ERROR - 2022-12-26 07:50:39 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 38
+ERROR - 2022-12-26 07:54:06 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 38
+ERROR - 2022-12-26 07:54:15 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 38
+ERROR - 2022-12-26 07:54:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:54:21 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:54:21 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:54:21 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:54:25 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 38
+ERROR - 2022-12-26 07:55:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:55:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:55:34 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 38
+ERROR - 2022-12-26 07:56:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:56:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:56:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:56:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:57:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:57:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:57:44 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 36
+ERROR - 2022-12-26 07:58:36 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 36
+ERROR - 2022-12-26 07:58:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:58:38 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:58:39 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:58:39 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:59:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:59:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:59:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:59:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 07:59:27 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 32
+ERROR - 2022-12-26 08:00:03 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:00:03 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:00:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:00:04 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:00:08 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 32
+ERROR - 2022-12-26 08:00:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:00:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:00:26 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:00:26 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:00:30 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 31
+ERROR - 2022-12-26 08:00:32 --> Severity: error --> Exception: Call to a member function upload_signature() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 31
+ERROR - 2022-12-26 08:07:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:07:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:07:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:07:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:08:21 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:08:21 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:08:26 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-26 08:19:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:19:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:20:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:20:06 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:20:09 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:20:09 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 08:20:22 --> Severity: Warning --> call_user_func_array() expects parameter 1 to be a valid callback, class 'Dosen' does not have a method 'index_get' C:\xampp\htdocs\sips-update-v3\application\libraries\REST_Controller.php 742
+ERROR - 2022-12-26 09:32:47 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:32:47 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:33:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:33:08 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:33:13 --> Severity: error --> Exception: Call to a member function get() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 45
+ERROR - 2022-12-26 09:33:16 --> Severity: error --> Exception: Call to a member function edit() on null C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 62
+ERROR - 2022-12-26 09:33:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:33:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:33:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:33:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:35:35 --> 404 Page Not Found: Profil/index
+ERROR - 2022-12-26 09:36:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:36:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:36:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:36:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:38:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:38:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:38:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:38:31 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:38:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:38:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 09:42:08 --> Severity: error --> Exception: Object of class stdClass could not be converted to string C:\xampp\htdocs\sips-update-v3\application\views\dosen\profil.php 45
+ERROR - 2022-12-26 10:17:00 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-26 10:18:12 --> Severity: Warning --> max(): Array must contain at least one element C:\xampp\htdocs\sips-update-v3\application\models\Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 10:19:28 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips-update-v3\cdn/vendor/file_proposal/): Is a directory C:\xampp\htdocs\sips-update-v3\application\models\Seminar_model.php 128
+ERROR - 2022-12-26 10:19:44 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-26 10:20:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips-update-v3\application\models\Daftar_judul_model.php 19
+ERROR - 2022-12-26 10:20:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips-update-v3\application\models\Daftar_judul_model.php 24
+ERROR - 2022-12-26 10:20:31 --> Severity: Warning --> max(): Array must contain at least one element C:\xampp\htdocs\sips-update-v3\application\models\Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 10:21:12 --> Severity: Warning --> max(): Array must contain at least one element C:\xampp\htdocs\sips-update-v3\application\models\Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 10:21:58 --> Severity: Warning --> max(): Array must contain at least one element C:\xampp\htdocs\sips-update-v3\application\models\Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 10:22:29 --> Severity: Warning --> max(): Array must contain at least one element C:\xampp\htdocs\sips-update-v3\application\models\Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 10:25:44 --> Severity: Warning --> max(): Array must contain at least one element C:\xampp\htdocs\sips-update-v3\application\models\Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 11:00:42 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-26 11:01:04 --> Severity: error --> Exception: syntax error, unexpected '}' C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 39
+ERROR - 2022-12-26 11:01:06 --> Severity: error --> Exception: syntax error, unexpected '}' C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 39
+ERROR - 2022-12-26 11:01:07 --> Severity: error --> Exception: syntax error, unexpected '}' C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 39
+ERROR - 2022-12-26 11:01:12 --> Severity: error --> Exception: syntax error, unexpected '}' C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 39
+ERROR - 2022-12-26 11:01:14 --> Severity: error --> Exception: syntax error, unexpected '}' C:\xampp\htdocs\sips-update-v3\application\controllers\dosen\Profil.php 39
+ERROR - 2022-12-26 11:35:45 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-26 18:01:29 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-26 18:06:36 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips-update-v3/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 18:07:44 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips-update-v3/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 18:09:16 --> Severity: Warning --> Invalid argument supplied for foreach() /opt/lampp/htdocs/sips-update-v3/application/models/Daftar_judul_model.php 19
+ERROR - 2022-12-26 18:09:16 --> Severity: Warning --> Invalid argument supplied for foreach() /opt/lampp/htdocs/sips-update-v3/application/models/Daftar_judul_model.php 24
+ERROR - 2022-12-26 18:09:21 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips-update-v3/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 18:09:25 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips-update-v3/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 18:11:02 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips-update-v3/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 18:37:59 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips-update-v3/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 18:40:06 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-26 18:40:33 --> Severity: Warning --> Invalid argument supplied for foreach() /opt/lampp/htdocs/sips-update-v3/application/models/Daftar_judul_model.php 19
+ERROR - 2022-12-26 18:40:33 --> Severity: Warning --> Invalid argument supplied for foreach() /opt/lampp/htdocs/sips-update-v3/application/models/Daftar_judul_model.php 24
+ERROR - 2022-12-26 18:42:31 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-26 18:42:55 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips-update-v3/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 18:43:51 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips-update-v3/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 18:43:57 --> Query error: Unknown column 'proposal_mahasiswa.ringkasan' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-26 18:43:57 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/sips-update-v3/application/models/Konsultasi_model.php 48
+ERROR - 2022-12-26 18:44:04 --> Query error: Unknown column 'proposal_mahasiswa.ringkasan' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-26 18:44:04 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/sips-update-v3/application/models/Konsultasi_model.php 48
+ERROR - 2022-12-26 18:44:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 18:44:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 18:44:11 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 18:44:11 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 18:44:11 --> Query error: Unknown column 'proposal_mahasiswa.ringkasan' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-26 18:44:11 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/sips-update-v3/application/models/Konsultasi_model.php 48
+ERROR - 2022-12-26 18:45:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 18:45:55 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 18:45:57 --> Query error: Unknown column 'proposal_mahasiswa.ringkasan' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-26 18:45:57 --> Severity: error --> Exception: Call to a member function result_array() on bool /opt/lampp/htdocs/sips-update-v3/application/models/Konsultasi_model.php 48
+ERROR - 2022-12-26 18:46:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 18:46:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 18:47:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 18:47:15 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-26 18:48:44 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips-update-v3/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-26 18:48:48 --> Severity: Warning --> max(): Array must contain at least one element /opt/lampp/htdocs/sips-update-v3/application/models/Proposal_mahasiswa_model.php 109

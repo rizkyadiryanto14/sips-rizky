@@ -1,0 +1,126 @@
+ERROR - 2022-12-04 04:42:30 --> 404 Page Not Found: api/Seminar_mahasiswa/details
+ERROR - 2022-12-04 08:03:48 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 08:03:48 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 08:05:24 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 08:05:24 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 08:16:08 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+WHERE `proposal_mahasiswa`.`mahasiswa_id` = '3'
+ERROR - 2022-12-04 08:16:08 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 08:16:15 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+WHERE `proposal_mahasiswa`.`mahasiswa_id` = '3'
+ERROR - 2022-12-04 08:16:15 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 08:49:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-04 08:49:24 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-04 16:28:00 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 16:28:00 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\newxampp2\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 16:28:56 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 16:28:56 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\newxampp2\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 16:44:21 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 16:44:21 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\newxampp2\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 16:45:31 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 16:45:31 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\newxampp2\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 16:50:46 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 16:50:46 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\newxampp2\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 16:50:52 --> 404 Page Not Found: admin/Seminar/status
+ERROR - 2022-12-04 16:52:18 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 16:52:18 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\newxampp2\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 16:52:24 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 16:52:24 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\newxampp2\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 16:56:17 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 16:56:17 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\newxampp2\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 17:03:26 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 17:03:26 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\newxampp2\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 17:04:05 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 17:04:05 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\newxampp2\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 17:05:13 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 17:05:13 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\newxampp2\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 17:05:14 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 17:05:14 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\newxampp2\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 17:05:37 --> Query error: Unknown column 'proposal_mahasiswa.dosen2_id' in 'field list' - Invalid query: SELECT `konsultasi`.`id`, `konsultasi`.`proposal_mahasiswa_id`, `konsultasi`.`tanggal`, `konsultasi`.`jam`, `konsultasi`.`bukti`, `konsultasi`.`isi`, `konsultasi`.`sk_tim`, `konsultasi`.`persetujuan_pembimbing`, `konsultasi`.`persetujuan_kaprodi`, `konsultasi`.`komentar_pembimbing`, `konsultasi`.`komentar_kaprodi`, `proposal_mahasiswa`.`mahasiswa_id` as `proposal_mahasiswa_mahasiswa_id`, `proposal_mahasiswa`.`judul` as `proposal_mahasiswa_judul`, `proposal_mahasiswa`.`ringkasan` as `proposal_mahasiswa_ringkasan`, `proposal_mahasiswa`.`dosen_id` as `proposal_mahasiswa_pembimbing_id`, `proposal_mahasiswa`.`dosen2_id` as `proposal_mahasiswa_pembimbing2_id`, `mahasiswa`.`nama` as `mahasiswa_nama`, `mahasiswa`.`prodi_id` as `mahasiswa_prodi_id`, `prodi`.`dosen_id` as `prodi_kaprodi_id`, `dosen`.`nama`
+FROM `konsultasi`
+LEFT JOIN `proposal_mahasiswa` ON `proposal_mahasiswa`.`id` = `konsultasi`.`proposal_mahasiswa_id`
+LEFT JOIN `mahasiswa` ON `mahasiswa`.`id` = `proposal_mahasiswa`.`mahasiswa_id`
+LEFT JOIN `prodi` ON `prodi`.`id` = `mahasiswa`.`prodi_id`
+LEFT JOIN `dosen` ON `dosen`.`id` = `proposal_mahasiswa`.`dosen_id`
+ERROR - 2022-12-04 17:05:37 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\newxampp2\htdocs\olivera\application\models\Konsultasi_model.php 49
+ERROR - 2022-12-04 17:20:52 --> 404 Page Not Found: admin/Tes/index

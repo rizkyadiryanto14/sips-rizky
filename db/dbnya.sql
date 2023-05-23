@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Waktu pembuatan: 16 Bulan Mei 2023 pada 03.00
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.4.4
+-- Host: localhost:3306
+-- Generation Time: May 21, 2023 at 07:34 PM
+-- Server version: 10.6.12-MariaDB-cll-lve
+-- PHP Version: 8.1.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,16 +18,15 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `wiki`
+-- Database: `ela39087_covid`
 --
 
 -- --------------------------------------------------------
 
 --
--- Stand-in struktur untuk tampilan `bimbingan_dosen_v`
--- (Lihat di bawah untuk tampilan aktual)
+-- Stand-in structure for view `bimbingan_dosen_v`
+-- (See below for the actual view)
 --
-DROP VIEW IF EXISTS `bimbingan_dosen_v`;
 CREATE TABLE `bimbingan_dosen_v` (
 `nip` varchar(30)
 ,`nama` varchar(100)
@@ -44,10 +43,9 @@ CREATE TABLE `bimbingan_dosen_v` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `daftar_judul`
+-- Table structure for table `daftar_judul`
 --
 
-DROP TABLE IF EXISTS `daftar_judul`;
 CREATE TABLE `daftar_judul` (
   `id` int(11) NOT NULL,
   `nim` varchar(255) NOT NULL,
@@ -55,10 +53,10 @@ CREATE TABLE `daftar_judul` (
   `nama` varchar(255) NOT NULL,
   `abstrak` text NOT NULL,
   `tahun_lulus` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 --
--- Dumping data untuk tabel `daftar_judul`
+-- Dumping data for table `daftar_judul`
 --
 
 INSERT INTO `daftar_judul` (`id`, `nim`, `judul_skripsi`, `nama`, `abstrak`, `tahun_lulus`) VALUES
@@ -71,23 +69,21 @@ INSERT INTO `daftar_judul` (`id`, `nim`, `judul_skripsi`, `nama`, `abstrak`, `ta
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `dokumen_hasil`
+-- Table structure for table `dokumen_hasil`
 --
 
-DROP TABLE IF EXISTS `dokumen_hasil`;
 CREATE TABLE `dokumen_hasil` (
   `id` bigint(20) NOT NULL,
   `mahasiswa_id` bigint(20) NOT NULL,
   `kegiatan` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `dosen`
+-- Table structure for table `dosen`
 --
 
-DROP TABLE IF EXISTS `dosen`;
 CREATE TABLE `dosen` (
   `id` bigint(20) NOT NULL,
   `nip` varchar(30) NOT NULL,
@@ -95,44 +91,44 @@ CREATE TABLE `dosen` (
   `nama` varchar(100) NOT NULL,
   `nomor_telepon` varchar(30) NOT NULL,
   `email` varchar(100) NOT NULL,
+  `jadwal` varchar(225) NOT NULL,
   `level` enum('1','2','4') NOT NULL DEFAULT '2' COMMENT '1 = admin, 2 = dosen, 4 = kaprodi',
   `signature` varchar(30) DEFAULT NULL,
   `password` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data untuk tabel `dosen`
+-- Dumping data for table `dosen`
 --
 
-INSERT INTO `dosen` (`id`, `nip`, `prodi_id`, `nama`, `nomor_telepon`, `email`, `level`, `signature`, `password`) VALUES
-(1, '20201011', 1, 'Azhari Ali, M.Kom.', '00852254168', 'dosen1@gmail.com', '2', 'signature-66a7e018a6.png', 'dosen12345'),
-(2, '20201015', 1, 'Superadmin', '082330538265', 'admin@admin.com', '1', NULL, 'percobaan'),
-(4, '20201017', 1, 'Ambarwati S. Kom', '08215674535786', 'ambarrannazwa@gmail.com', '2', NULL, 'dosen12345'),
-(7, '20201018', 1, 'Binaga Sinaga, M.H', '0872928234', 'binaga@gmail.com', '2', NULL, 'percobaan2'),
-(8, '20201019', 1, 'Nina Sulistyo, M.M', '083652776522', 'nina@gmail.com', '2', NULL, 'dosen12345'),
-(9, '20201020', 1, 'Ateng, M.Ag', '083876329987', 'ateng@gmail.com', '2', NULL, 'dosen12345'),
-(10, '2011210', 1, 'Rizky Adi Ryanto', '085333411680', 'rizky14082000@gmail.com', '2', NULL, 'Rizky140820'),
-(12, '2001013006', 1, 'wardatuljannah', '085333411680', 'wardatuljannah0707@gmail.com', '4', NULL, '12345678'),
-(13, '123456789000', 1, 'rizky', '085333411680', 'rizky@gmail.com', '4', NULL, '12345'),
-(14, '1901013055', 1, 'kaprodi', '08324832432', 'kaprodi@gmail.com', '4', NULL, 'kaprodi');
+INSERT INTO `dosen` (`id`, `nip`, `prodi_id`, `nama`, `nomor_telepon`, `email`, `jadwal`, `level`, `signature`, `password`) VALUES
+(1, '20201011', 1, 'Azhari Ali, M.Kom.', '00852254168', 'dosen1@gmail.com', '08.00 - 10.30', '2', 'signature-66a7e018a6.png', 'dosen12345'),
+(2, '20201015', 1, 'Superadmin', '082330538265', 'admin@admin.com', '09.00 - 11.30', '1', NULL, 'percobaan'),
+(4, '20201017', 1, 'Ambarwati S. Kom', '08215674535786', 'ambarrannazwa@gmail.com', '13.00 - 15.30', '2', NULL, 'dosen12345'),
+(7, '20201018', 1, 'Binaga Sinaga, M.H', '0872928234', 'binaga@gmail.com', '10.30 - 13.00', '2', NULL, 'percobaan2'),
+(8, '20201019', 1, 'Nina Sulistyo, M.M', '083652776522', 'nina@gmail.com', '', '2', NULL, 'dosen12345'),
+(9, '20201020', 1, 'Ateng, M.Ag', '083876329987', 'ateng@gmail.com', '', '2', NULL, 'dosen12345'),
+(10, '2011210', 1, 'Rizky Adi Ryanto', '085333411680', 'rizky14082000@gmail.com', '', '2', NULL, 'Rizky140820'),
+(12, '2001013006', 1, 'wardatuljannah', '085333411680', 'wardatuljannah0707@gmail.com', '', '4', NULL, '12345678'),
+(13, '123456789000', 1, 'rizky', '085333411680', 'rizky@gmail.com', '', '4', NULL, '12345'),
+(14, '1901013055', 1, 'kaprodi', '08324832432', 'kaprodi@gmail.com', '', '4', NULL, 'kaprodi');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `email_sender`
+-- Table structure for table `email_sender`
 --
 
-DROP TABLE IF EXISTS `email_sender`;
 CREATE TABLE `email_sender` (
   `id` int(11) NOT NULL,
-  `email` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `password` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `smtp_port` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `smtp_host` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+  `email` varchar(100) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL,
+  `smtp_port` varchar(50) DEFAULT NULL,
+  `smtp_host` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data untuk tabel `email_sender`
+-- Dumping data for table `email_sender`
 --
 
 INSERT INTO `email_sender` (`id`, `email`, `password`, `smtp_port`, `smtp_host`) VALUES
@@ -141,18 +137,17 @@ INSERT INTO `email_sender` (`id`, `email`, `password`, `smtp_port`, `smtp_host`)
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `fakultas`
+-- Table structure for table `fakultas`
 --
 
-DROP TABLE IF EXISTS `fakultas`;
 CREATE TABLE `fakultas` (
   `id` int(11) NOT NULL,
   `nama` varchar(255) NOT NULL,
   `dekan` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data untuk tabel `fakultas`
+-- Dumping data for table `fakultas`
 --
 
 INSERT INTO `fakultas` (`id`, `nama`, `dekan`) VALUES
@@ -162,30 +157,32 @@ INSERT INTO `fakultas` (`id`, `nama`, `dekan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `hari`
+-- Table structure for table `hari`
 --
 
-DROP TABLE IF EXISTS `hari`;
 CREATE TABLE `hari` (
   `id` int(11) NOT NULL,
   `nama_hari` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `hari`
+-- Dumping data for table `hari`
 --
 
 INSERT INTO `hari` (`id`, `nama_hari`) VALUES
 (1, 'Senin'),
-(2, 'Selasa');
+(2, 'Selasa'),
+(3, 'Rabu'),
+(4, 'Kamis'),
+(5, 'Jumat'),
+(6, 'Sabtu');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `hasil_kegiatan`
+-- Table structure for table `hasil_kegiatan`
 --
 
-DROP TABLE IF EXISTS `hasil_kegiatan`;
 CREATE TABLE `hasil_kegiatan` (
   `id` bigint(20) NOT NULL,
   `mahasiswa_id` bigint(20) NOT NULL,
@@ -193,15 +190,14 @@ CREATE TABLE `hasil_kegiatan` (
   `kegiatan` varchar(5000) DEFAULT NULL,
   `file_kegiatan` varchar(50) DEFAULT NULL,
   `status` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Stand-in struktur untuk tampilan `hasil_kegiatan_v`
--- (Lihat di bawah untuk tampilan aktual)
+-- Stand-in structure for view `hasil_kegiatan_v`
+-- (See below for the actual view)
 --
-DROP VIEW IF EXISTS `hasil_kegiatan_v`;
 CREATE TABLE `hasil_kegiatan_v` (
 `mahasiswa_id` bigint(20)
 ,`id` bigint(20)
@@ -217,35 +213,33 @@ CREATE TABLE `hasil_kegiatan_v` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `hasil_penelitian`
+-- Table structure for table `hasil_penelitian`
 --
 
-DROP TABLE IF EXISTS `hasil_penelitian`;
 CREATE TABLE `hasil_penelitian` (
   `id` bigint(20) NOT NULL,
   `penelitian_id` bigint(20) NOT NULL,
   `berita_acara` varchar(50) NOT NULL,
   `masukan` varchar(50) NOT NULL,
   `status` enum('1','2') NOT NULL COMMENT '1 = lulus, 2 = tidak lulus'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `hasil_seminar`
+-- Table structure for table `hasil_seminar`
 --
 
-DROP TABLE IF EXISTS `hasil_seminar`;
 CREATE TABLE `hasil_seminar` (
   `id` bigint(20) NOT NULL,
   `seminar_id` bigint(20) NOT NULL,
   `berita_acara` text NOT NULL,
   `masukan` text NOT NULL COMMENT 'komentar pdf (pembimbing, penguji, catatan)',
   `status` enum('1','2','3') NOT NULL COMMENT '1 = lanjut, 2 = lanjut (perbaikan), 3 = ditolak'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data untuk tabel `hasil_seminar`
+-- Dumping data for table `hasil_seminar`
 --
 
 INSERT INTO `hasil_seminar` (`id`, `seminar_id`, `berita_acara`, `masukan`, `status`) VALUES
@@ -257,46 +251,45 @@ INSERT INTO `hasil_seminar` (`id`, `seminar_id`, `berita_acara`, `masukan`, `sta
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `home_template`
+-- Table structure for table `home_template`
 --
 
-DROP TABLE IF EXISTS `home_template`;
 CREATE TABLE `home_template` (
   `id` int(11) NOT NULL,
-  `carousel_bg1` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `carousel_subtitle1` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `carousel_title1` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `carousel_description1` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `carousel_btn_href1` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `carousel_btn_text1` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `carousel_bg2` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `carousel_subtitle2` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `carousel_title2` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `carousel_description2` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `carousel_btn_href2` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `carousel_btn_text2` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `carousel_bg3` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `carousel_subtitle3` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `carousel_title3` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `carousel_description3` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `carousel_btn_href3` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `carousel_btn_text3` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `timeline` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `panduanskripsi` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `tentang_kami_subtitle` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `tentang_kami_isi` varchar(5000) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `social_description` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `link_fb` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `link_twitter` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `alamat` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `phone` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `email` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `kontak_subtitle` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `page_title` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+  `carousel_bg1` varchar(100) DEFAULT NULL,
+  `carousel_subtitle1` varchar(100) DEFAULT NULL,
+  `carousel_title1` varchar(100) DEFAULT NULL,
+  `carousel_description1` varchar(500) DEFAULT NULL,
+  `carousel_btn_href1` varchar(100) DEFAULT NULL,
+  `carousel_btn_text1` varchar(20) DEFAULT NULL,
+  `carousel_bg2` varchar(100) DEFAULT NULL,
+  `carousel_subtitle2` varchar(100) DEFAULT '',
+  `carousel_title2` varchar(100) DEFAULT '',
+  `carousel_description2` varchar(500) DEFAULT '',
+  `carousel_btn_href2` varchar(100) DEFAULT '',
+  `carousel_btn_text2` varchar(20) DEFAULT '',
+  `carousel_bg3` varchar(100) DEFAULT '',
+  `carousel_subtitle3` varchar(100) DEFAULT '',
+  `carousel_title3` varchar(100) DEFAULT '',
+  `carousel_description3` varchar(500) DEFAULT '',
+  `carousel_btn_href3` varchar(100) DEFAULT '',
+  `carousel_btn_text3` varchar(20) DEFAULT '',
+  `timeline` varchar(100) DEFAULT NULL,
+  `panduanskripsi` varchar(100) DEFAULT NULL,
+  `tentang_kami_subtitle` varchar(100) DEFAULT NULL,
+  `tentang_kami_isi` varchar(5000) DEFAULT '',
+  `social_description` varchar(500) DEFAULT NULL,
+  `link_fb` varchar(100) DEFAULT NULL,
+  `link_twitter` varchar(100) DEFAULT NULL,
+  `alamat` varchar(100) DEFAULT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `kontak_subtitle` varchar(100) DEFAULT NULL,
+  `page_title` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data untuk tabel `home_template`
+-- Dumping data for table `home_template`
 --
 
 INSERT INTO `home_template` (`id`, `carousel_bg1`, `carousel_subtitle1`, `carousel_title1`, `carousel_description1`, `carousel_btn_href1`, `carousel_btn_text1`, `carousel_bg2`, `carousel_subtitle2`, `carousel_title2`, `carousel_description2`, `carousel_btn_href2`, `carousel_btn_text2`, `carousel_bg3`, `carousel_subtitle3`, `carousel_title3`, `carousel_description3`, `carousel_btn_href3`, `carousel_btn_text3`, `timeline`, `panduanskripsi`, `tentang_kami_subtitle`, `tentang_kami_isi`, `social_description`, `link_fb`, `link_twitter`, `alamat`, `phone`, `email`, `kontak_subtitle`, `page_title`) VALUES
@@ -305,37 +298,74 @@ INSERT INTO `home_template` (`id`, `carousel_bg1`, `carousel_subtitle1`, `carous
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `jadwal_dosen`
+-- Table structure for table `jadwalsempro`
 --
 
-DROP TABLE IF EXISTS `jadwal_dosen`;
+CREATE TABLE `jadwalsempro` (
+  `id` int(11) NOT NULL,
+  `id_dosen` int(11) NOT NULL,
+  `id_dosen_2` int(11) NOT NULL,
+  `id_jam` int(11) NOT NULL,
+  `id_hari` int(11) NOT NULL,
+  `id_ruang` int(11) NOT NULL,
+  `id_sempro` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `jadwalsempro`
+--
+
+INSERT INTO `jadwalsempro` (`id`, `id_dosen`, `id_dosen_2`, `id_jam`, `id_hari`, `id_ruang`, `id_sempro`) VALUES
+(1, 1, 9, 3, 3, 1, 84),
+(2, 2, 12, 3, 1, 3, 85),
+(3, 4, 13, 3, 4, 3, 86),
+(4, 7, 13, 2, 1, 1, 87),
+(5, 8, 13, 1, 4, 1, 88),
+(6, 9, 1, 3, 2, 1, 89),
+(7, 10, 13, 3, 5, 4, 90),
+(8, 12, 7, 2, 3, 1, 91),
+(9, 13, 8, 2, 4, 1, 92);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jadwal_dosen`
+--
+
 CREATE TABLE `jadwal_dosen` (
   `id` int(11) NOT NULL,
   `nama_dosen` varchar(50) NOT NULL,
   `jadwal` datetime NOT NULL,
   `ruangan` varchar(50) NOT NULL,
   `nama_mk` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `jam`
+-- Table structure for table `jam`
 --
 
-DROP TABLE IF EXISTS `jam`;
 CREATE TABLE `jam` (
   `id` int(11) NOT NULL,
   `range_jam` varchar(225) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `jam`
+--
+
+INSERT INTO `jam` (`id`, `range_jam`) VALUES
+(1, '08.00-10.00'),
+(2, '10.30-13.00'),
+(3, '13.30- 16.00');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `konsultasi`
+-- Table structure for table `konsultasi`
 --
 
-DROP TABLE IF EXISTS `konsultasi`;
 CREATE TABLE `konsultasi` (
   `id` bigint(20) NOT NULL,
   `proposal_mahasiswa_id` bigint(20) NOT NULL,
@@ -348,10 +378,10 @@ CREATE TABLE `konsultasi` (
   `persetujuan_kaprodi` enum('1','0') NOT NULL DEFAULT '0' COMMENT '1 = true, 0 = false',
   `komentar_pembimbing` text DEFAULT NULL,
   `komentar_kaprodi` text DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data untuk tabel `konsultasi`
+-- Dumping data for table `konsultasi`
 --
 
 INSERT INTO `konsultasi` (`id`, `proposal_mahasiswa_id`, `tanggal`, `jam`, `isi`, `bukti`, `sk_tim`, `persetujuan_pembimbing`, `persetujuan_kaprodi`, `komentar_pembimbing`, `komentar_kaprodi`) VALUES
@@ -362,29 +392,27 @@ INSERT INTO `konsultasi` (`id`, `proposal_mahasiswa_id`, `tanggal`, `jam`, `isi`
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kuota_bimbingan`
+-- Table structure for table `kuota_bimbingan`
 --
 
-DROP TABLE IF EXISTS `kuota_bimbingan`;
 CREATE TABLE `kuota_bimbingan` (
   `id` int(11) NOT NULL,
   `nilai` varchar(50) NOT NULL DEFAULT '8'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 --
--- Dumping data untuk tabel `kuota_bimbingan`
+-- Dumping data for table `kuota_bimbingan`
 --
 
 INSERT INTO `kuota_bimbingan` (`id`, `nilai`) VALUES
-(2, '10');
+(2, '30');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `mahasiswa`
+-- Table structure for table `mahasiswa`
 --
 
-DROP TABLE IF EXISTS `mahasiswa`;
 CREATE TABLE `mahasiswa` (
   `id` bigint(20) NOT NULL,
   `nim` varchar(50) NOT NULL,
@@ -403,10 +431,10 @@ CREATE TABLE `mahasiswa` (
   `foto` varchar(50) DEFAULT NULL,
   `password` text NOT NULL,
   `status` enum('1','0') NOT NULL DEFAULT '0' COMMENT '1 = aktif, 0 = nonaktif'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data untuk tabel `mahasiswa`
+-- Dumping data for table `mahasiswa`
 --
 
 INSERT INTO `mahasiswa` (`id`, `nim`, `nama`, `prodi_id`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `email`, `alamat_orang_tua`, `nomor_telepon_orang_tua`, `alamat`, `nomor_telepon`, `nomor_telepon_orang_dekat`, `ipk`, `foto`, `password`, `status`) VALUES
@@ -423,17 +451,17 @@ INSERT INTO `mahasiswa` (`id`, `nim`, `nama`, `prodi_id`, `jenis_kelamin`, `temp
 (36, '1901013008', 'Asri Ramdani', 2, 'perempuan', 'boak', '2001-11-09', 'asri02@gmail.com', '08766233511', '0876663554221', 'Boak', '087889765332', '082117665998', '3.20', NULL, '$2y$10$QlzAotCCMYl0O9hKhxUz0O3dsTwjoqE9JCz.RsISdZzQENBp34jBa', '0'),
 (37, '1901013043', 'mahasiswa1', 2, 'laki-laki', 'bima', '2023-01-02', 'adiryantorizky140820@gmail.com', 'fdsf', '23423', 'bima', '3423423', '23423', '4.0', '20230109074601.png', '$2y$10$GnW0htBtD1lCOXWZ.gY4IuToZyofypf65MZvKbnO93RleiaDdW42i', '0'),
 (38, '1901013025', 'ewrew', 2, 'laki-laki', 'wqeqw', '2023-01-01', 'adiryantorizky140820@gmail.com', 'sadas', '34234', 'sdafdsa', '23423423', '23423', '4', NULL, '$2y$10$1/XrDfwvISPnNQzTdkBjBONwtKqv/bJdG9gPwrtnvy9XEF4Apsdna', '0'),
-(39, '1901013044', 'Rizky', 2, 'laki-laki', 'sdas', '2000-02-01', 'rizky14082000@gmail.com', 'saasd', 'asdas', 'asdsa', '312312', 'sadsa', '4.0', '20230113021850.png', '$2y$10$KDeW9jUZTrl7TjRGEAbTE.J8iYcs33wKl0ABSdKoMgMaCZ6/4LJYG', '1'),
+(39, '1901013044', 'Rizky', 2, 'laki-laki', 'sdas', '2000-02-01', 'rizky14082000@gmail.com', 'saasd', 'asdas', 'asdsa', '312312', 'sadsa', '4.0', '20230113021850.png', '$2y$10$DpFb.65pidI7.Tgqr1gqieoZ8Amhw6EccxfXeh3aUlkyq/CMivd8y', '1'),
 (40, '2001013026', 'osama', 2, 'laki-laki', 'Taliwang ', '2000-01-17', 'osama@gmail.com', 'taliwang', '085333411680', 'Taliwang ', '085333411680', '085333411680', '4.0', '20230116045515.png', '$2y$10$HW0QfBdMy0WXbBucwqQHpucmD7cM5OAhO4RpU7RZuQ9bhCjQpLBZe', '1'),
-(41, '1901013050', 'Wiki Nasmansyah', 2, 'laki-laki', 'Batam', '2000-12-03', 'wikinasmansyah@gmail.com', 'Desa Lanta Kecematan Lambu', '085345627645', 'kos belakang akper', '085238746750', '083216745890', '3.49', '20230408080832.png', '$2y$10$KvSUSVLlH0gWewxCpUrZcO.84NZukAOz40MQFynPIn/tlElsMzHmi', '1');
+(41, '1901013050', 'Wiki Nasmansyah', 2, 'laki-laki', 'Batam', '2000-12-03', 'wikinasmansyah@gmail.com', 'Desa Lanta Kecematan Lambu', '085345627645', 'kos belakang akper', '085238746750', '083216745890', '3.49', '20230408080832.png', '$2y$10$KvSUSVLlH0gWewxCpUrZcO.84NZukAOz40MQFynPIn/tlElsMzHmi', '1'),
+(42, '1901013010', 'Rizky testing', 2, 'laki-laki', 'Bima', '2008-06-18', 'adiryantorizky140820@gmail.com', 'bima', '085333411680', 'Sumbawa', '085333411680', '085333411680', '4', '20230516045757.png', '$2y$10$4N6gxno7Ozk/MCVMJ0tCIOeNUc6nlcYfWn4zYtw7r5fdDl2nKqbSC', '1');
 
 -- --------------------------------------------------------
 
 --
--- Stand-in struktur untuk tampilan `mahasiswa_v`
--- (Lihat di bawah untuk tampilan aktual)
+-- Stand-in structure for view `mahasiswa_v`
+-- (See below for the actual view)
 --
-DROP VIEW IF EXISTS `mahasiswa_v`;
 CREATE TABLE `mahasiswa_v` (
 `nama_prodi` varchar(50)
 ,`id` bigint(20)
@@ -458,10 +486,9 @@ CREATE TABLE `mahasiswa_v` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `penelitian`
+-- Table structure for table `penelitian`
 --
 
-DROP TABLE IF EXISTS `penelitian`;
 CREATE TABLE `penelitian` (
   `id` bigint(20) NOT NULL,
   `judul_penelitian` varchar(100) DEFAULT NULL,
@@ -476,15 +503,14 @@ CREATE TABLE `penelitian` (
   `sk_tim` varchar(50) DEFAULT NULL,
   `file_seminar` varchar(50) DEFAULT NULL,
   `bukti_konsultasi` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Stand-in struktur untuk tampilan `penguji_dosen_v`
--- (Lihat di bawah untuk tampilan aktual)
+-- Stand-in structure for view `penguji_dosen_v`
+-- (See below for the actual view)
 --
-DROP VIEW IF EXISTS `penguji_dosen_v`;
 CREATE TABLE `penguji_dosen_v` (
 `nip` varchar(30)
 ,`nama` varchar(100)
@@ -501,20 +527,19 @@ CREATE TABLE `penguji_dosen_v` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `prodi`
+-- Table structure for table `prodi`
 --
 
-DROP TABLE IF EXISTS `prodi`;
 CREATE TABLE `prodi` (
   `id` bigint(20) NOT NULL,
   `kode` varchar(30) NOT NULL,
   `nama` varchar(50) NOT NULL,
   `dosen_id` bigint(20) NOT NULL COMMENT 'ketua prodi (pembimbing)',
   `fakultas_id` int(11) NOT NULL DEFAULT 1
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data untuk tabel `prodi`
+-- Dumping data for table `prodi`
 --
 
 INSERT INTO `prodi` (`id`, `kode`, `nama`, `dosen_id`, `fakultas_id`) VALUES
@@ -523,10 +548,9 @@ INSERT INTO `prodi` (`id`, `kode`, `nama`, `dosen_id`, `fakultas_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `proposal_mahasiswa`
+-- Table structure for table `proposal_mahasiswa`
 --
 
-DROP TABLE IF EXISTS `proposal_mahasiswa`;
 CREATE TABLE `proposal_mahasiswa` (
   `id` bigint(20) NOT NULL,
   `mahasiswa_id` bigint(20) NOT NULL,
@@ -539,28 +563,29 @@ CREATE TABLE `proposal_mahasiswa` (
   `status` enum('1','0') NOT NULL DEFAULT '0' COMMENT '1 = disetujui, 0 = tidak disetujui',
   `lulus_mkMetodologi` varchar(50) NOT NULL,
   `lulus_mkWajib` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data untuk tabel `proposal_mahasiswa`
+-- Dumping data for table `proposal_mahasiswa`
 --
 
 INSERT INTO `proposal_mahasiswa` (`id`, `mahasiswa_id`, `judul`, `outline_skripsi`, `dosen_id`, `dosen_penguji_id`, `transkip`, `krs`, `status`, `lulus_mkMetodologi`, `lulus_mkWajib`) VALUES
-(84, 40, 'contoh', '20230116045752.pdf', 8, NULL, '20230116045752.pdf', '20230116045752.pdf', '0', 'Lulus', 'Lulus'),
-(85, 28, 'contoh', '20230116051242.pdf', 10, NULL, '20230116051242.pdf', '20230116051242.pdf', '0', 'Lulus', 'Lulus'),
-(86, 29, 'sadsad', '20230116053107.pdf', 1, NULL, '20230116053107.pdf', '20230116053107.pdf', '0', 'Lulus', 'Lulus'),
-(87, 30, 'sdsdfsdf', '20230116053205.pdf', 1, NULL, '20230116053205.pdf', '20230116053205.pdf', '0', 'Lulus', 'Lulus'),
-(88, 31, 'Sistem informasi', '20230116053530.pdf', 1, NULL, '20230116053530.pdf', '20230116053530.pdf', '0', 'Lulus', 'Lulus'),
-(89, 32, 'Sistem informasi pengajuan layanan', '20230116053716.pdf', 8, NULL, '20230116053716.pdf', '20230116053716.pdf', '0', 'Lulus', 'Lulus'),
-(90, 41, 'PENERAPAN ALGORITMA GENETIKA UNTUK PENJADWALAN OTOMATIS SEMINAR DAN SIDANG SKRIPSI PADA SISTEM INFOR', '20230408081941.pdf', 1, NULL, '20230408081941.pdf', '20230408081941.pdf', '1', 'Lulus', 'Lulus');
+(84, 40, 'contoh', '20230116045752.pdf', 8, NULL, '20230116045752.pdf', '20230116045752.pdf', '1', 'Lulus', 'Lulus'),
+(85, 28, 'contoh', '20230116051242.pdf', 10, NULL, '20230116051242.pdf', '20230116051242.pdf', '1', 'Lulus', 'Lulus'),
+(86, 29, 'sadsad', '20230116053107.pdf', 1, NULL, '20230116053107.pdf', '20230116053107.pdf', '1', 'Lulus', 'Lulus'),
+(87, 30, 'sdsdfsdf', '20230116053205.pdf', 1, NULL, '20230116053205.pdf', '20230116053205.pdf', '1', 'Lulus', 'Lulus'),
+(88, 31, 'Sistem informasi', '20230116053530.pdf', 1, NULL, '20230116053530.pdf', '20230116053530.pdf', '1', 'Lulus', 'Lulus'),
+(89, 32, 'Sistem informasi pengajuan layanan', '20230116053716.pdf', 8, NULL, '20230116053716.pdf', '20230116053716.pdf', '1', 'Lulus', 'Lulus'),
+(90, 41, 'PENERAPAN ALGORITMA GENETIKA UNTUK PENJADWALAN OTOMATIS SEMINAR DAN SIDANG SKRIPSI PADA SISTEM INFOR', '20230408081941.pdf', 1, NULL, '20230408081941.pdf', '20230408081941.pdf', '1', 'Lulus', 'Lulus'),
+(91, 39, 'judul 1', '20230516051743.pdf', 4, NULL, '20230516051743.pdf', '20230516051743.pdf', '1', 'Lulus', 'Lulus'),
+(92, 42, 'judul1', '20230516051841.pdf', 1, NULL, '20230516051841.pdf', '20230516051841.pdf', '1', 'Lulus', 'Lulus');
 
 -- --------------------------------------------------------
 
 --
--- Stand-in struktur untuk tampilan `proposal_mahasiswa_v`
--- (Lihat di bawah untuk tampilan aktual)
+-- Stand-in structure for view `proposal_mahasiswa_v`
+-- (See below for the actual view)
 --
-DROP VIEW IF EXISTS `proposal_mahasiswa_v`;
 CREATE TABLE `proposal_mahasiswa_v` (
 `id` bigint(20)
 ,`mahasiswa_id` bigint(20)
@@ -580,22 +605,31 @@ CREATE TABLE `proposal_mahasiswa_v` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ruangan`
+-- Table structure for table `ruangan`
 --
 
-DROP TABLE IF EXISTS `ruangan`;
 CREATE TABLE `ruangan` (
   `id` int(11) NOT NULL,
   `nama_ruangan` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `ruangan`
+--
+
+INSERT INTO `ruangan` (`id`, `nama_ruangan`) VALUES
+(1, 'Ruang 1'),
+(2, 'Ruang 2'),
+(3, 'Ruang 3'),
+(4, 'Ruang 4'),
+(5, 'Ruang 5');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `seminar`
+-- Table structure for table `seminar`
 --
 
-DROP TABLE IF EXISTS `seminar`;
 CREATE TABLE `seminar` (
   `id` bigint(20) NOT NULL,
   `proposal_mahasiswa_id` bigint(20) NOT NULL,
@@ -612,52 +646,54 @@ CREATE TABLE `seminar` (
   `dosen_penguji_id` varchar(50) DEFAULT NULL,
   `dosen_penguji2_id` varchar(50) DEFAULT NULL,
   `dosen_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data untuk tabel `seminar`
+-- Dumping data for table `seminar`
 --
 
 INSERT INTO `seminar` (`id`, `proposal_mahasiswa_id`, `mahasiswa_id`, `tanggal`, `jam`, `jam_selesai`, `tempat`, `file_proposal`, `syarat_seminar`, `surat_permohonan`, `kartu_bimbingan`, `signature`, `dosen_penguji_id`, `dosen_penguji2_id`, `dosen_id`) VALUES
-(49, 88, 29, NULL, NULL, NULL, NULL, '20230408080207.pdf', '20230408080207.pdf', '20230408080207.pdf', '20230408080207.pdf', NULL, NULL, NULL, 4);
+(49, 88, 29, NULL, NULL, NULL, NULL, '20230408080207.pdf', '20230408080207.pdf', '20230408080207.pdf', '20230408080207.pdf', NULL, NULL, NULL, 4),
+(50, 89, 32, NULL, NULL, NULL, NULL, 'file_proposal.pdf', 'syarat.pdf', 'surat_permohonan.pdf', 'kartu_bimbingan.pdf', NULL, NULL, NULL, 8),
+(51, 90, 41, NULL, NULL, NULL, NULL, 'file_proposal.pdf', 'syarat.pdf', 'surat_permohonan.pdf', 'kartu_bimbingan.pdf', NULL, NULL, NULL, 1),
+(52, 91, 39, NULL, NULL, NULL, NULL, 'file_proposal.pdf', 'syarat.pdf', 'surat_permohonan.pdf', 'kartu_bimbingan.pdf', NULL, NULL, NULL, 4),
+(53, 92, 42, NULL, NULL, NULL, NULL, 'file_proposal.pdf', 'syarat.pdf', 'surat_permohonan.pdf', 'kartu_bimbingan.pdf', NULL, NULL, NULL, 1);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `skripsi`
+-- Table structure for table `skripsi`
 --
 
-DROP TABLE IF EXISTS `skripsi`;
 CREATE TABLE `skripsi` (
   `id` int(11) NOT NULL,
-  `judul_skripsi` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `judul_skripsi` varchar(100) DEFAULT NULL,
   `dosen_id` int(11) DEFAULT NULL,
-  `dosen_penguji_id` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `dosen_penguji2_id` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `file_skripsi` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT '',
+  `dosen_penguji_id` varchar(50) DEFAULT NULL,
+  `dosen_penguji2_id` varchar(50) DEFAULT NULL,
+  `file_skripsi` varchar(50) DEFAULT '',
   `mahasiswa_id` int(11) DEFAULT NULL,
-  `jadwal_skripsi` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `jadwal_skripsi` varchar(100) DEFAULT NULL,
   `jam_selesai` time DEFAULT NULL,
-  `tempat` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `status` varchar(1) COLLATE utf8mb4_unicode_ci DEFAULT '',
-  `krs` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `formulir` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `kwitansi` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `lulus_mkWajib` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `kartu_bimbingan` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `transkip` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `sertifikat` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `lembar_persetujuan` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `bebas_bauk` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL
+  `tempat` text DEFAULT NULL,
+  `status` varchar(1) DEFAULT '',
+  `krs` varchar(50) DEFAULT NULL,
+  `formulir` varchar(50) DEFAULT NULL,
+  `kwitansi` varchar(50) NOT NULL,
+  `lulus_mkWajib` varchar(50) NOT NULL,
+  `kartu_bimbingan` varchar(50) NOT NULL,
+  `transkip` varchar(50) NOT NULL,
+  `sertifikat` varchar(50) NOT NULL,
+  `lembar_persetujuan` varchar(50) NOT NULL,
+  `bebas_bauk` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Stand-in struktur untuk tampilan `skripsi_v`
--- (Lihat di bawah untuk tampilan aktual)
+-- Stand-in structure for view `skripsi_v`
+-- (See below for the actual view)
 --
-DROP VIEW IF EXISTS `skripsi_v`;
 CREATE TABLE `skripsi_v` (
 `nim` varchar(50)
 ,`nama_prodi` varchar(50)
@@ -689,10 +725,9 @@ CREATE TABLE `skripsi_v` (
 -- --------------------------------------------------------
 
 --
--- Stand-in struktur untuk tampilan `skripsi_vl`
--- (Lihat di bawah untuk tampilan aktual)
+-- Stand-in structure for view `skripsi_vl`
+-- (See below for the actual view)
 --
-DROP VIEW IF EXISTS `skripsi_vl`;
 CREATE TABLE `skripsi_vl` (
 `nim` varchar(50)
 ,`nama_prodi` varchar(50)
@@ -725,330 +760,335 @@ CREATE TABLE `skripsi_vl` (
 -- --------------------------------------------------------
 
 --
--- Struktur untuk view `bimbingan_dosen_v`
+-- Structure for view `bimbingan_dosen_v`
 --
 DROP TABLE IF EXISTS `bimbingan_dosen_v`;
 
-DROP VIEW IF EXISTS `bimbingan_dosen_v`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `bimbingan_dosen_v`  AS  select `dosen`.`nip` AS `nip`,`dosen`.`nama` AS `nama`,`dosen`.`nomor_telepon` AS `nomor_telepon`,`dosen`.`email` AS `email`,`dosen`.`level` AS `level`,`proposal_mahasiswa_v`.`nim` AS `nim`,`proposal_mahasiswa_v`.`nama_mahasiswa` AS `nama_mahasiswa`,`proposal_mahasiswa_v`.`nama_prodi` AS `nama_prodi`,`proposal_mahasiswa_v`.`mahasiswa_id` AS `mahasiswa_id`,`dosen`.`id` AS `id` from (`dosen` join `proposal_mahasiswa_v` on(`dosen`.`id` = `proposal_mahasiswa_v`.`dosen_id`)) ;
+CREATE ALGORITHM=UNDEFINED  SQL SECURITY DEFINER VIEW `bimbingan_dosen_v`  AS SELECT `dosen`.`nip` AS `nip`, `dosen`.`nama` AS `nama`, `dosen`.`nomor_telepon` AS `nomor_telepon`, `dosen`.`email` AS `email`, `dosen`.`level` AS `level`, `proposal_mahasiswa_v`.`nim` AS `nim`, `proposal_mahasiswa_v`.`nama_mahasiswa` AS `nama_mahasiswa`, `proposal_mahasiswa_v`.`nama_prodi` AS `nama_prodi`, `proposal_mahasiswa_v`.`mahasiswa_id` AS `mahasiswa_id`, `dosen`.`id` AS `id` FROM (`dosen` join `proposal_mahasiswa_v` on(`dosen`.`id` = `proposal_mahasiswa_v`.`dosen_id`)) ;
 
 -- --------------------------------------------------------
 
 --
--- Struktur untuk view `hasil_kegiatan_v`
+-- Structure for view `hasil_kegiatan_v`
 --
 DROP TABLE IF EXISTS `hasil_kegiatan_v`;
 
-DROP VIEW IF EXISTS `hasil_kegiatan_v`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `hasil_kegiatan_v`  AS  select `hasil_kegiatan`.`mahasiswa_id` AS `mahasiswa_id`,`hasil_kegiatan`.`id` AS `id`,`hasil_kegiatan`.`file` AS `file`,`hasil_kegiatan`.`kegiatan` AS `kegiatan`,`hasil_kegiatan`.`file_kegiatan` AS `file_kegiatan`,`mahasiswa_v`.`nim` AS `nim`,`mahasiswa_v`.`nama` AS `nama_mahasiswa`,`mahasiswa_v`.`nama_prodi` AS `nama_prodi`,`hasil_kegiatan`.`status` AS `status` from (`hasil_kegiatan` join `mahasiswa_v` on(`mahasiswa_v`.`id` = `hasil_kegiatan`.`mahasiswa_id`)) ;
+CREATE ALGORITHM=UNDEFINED  SQL SECURITY DEFINER VIEW `hasil_kegiatan_v`  AS SELECT `hasil_kegiatan`.`mahasiswa_id` AS `mahasiswa_id`, `hasil_kegiatan`.`id` AS `id`, `hasil_kegiatan`.`file` AS `file`, `hasil_kegiatan`.`kegiatan` AS `kegiatan`, `hasil_kegiatan`.`file_kegiatan` AS `file_kegiatan`, `mahasiswa_v`.`nim` AS `nim`, `mahasiswa_v`.`nama` AS `nama_mahasiswa`, `mahasiswa_v`.`nama_prodi` AS `nama_prodi`, `hasil_kegiatan`.`status` AS `status` FROM (`hasil_kegiatan` join `mahasiswa_v` on(`mahasiswa_v`.`id` = `hasil_kegiatan`.`mahasiswa_id`)) ;
 
 -- --------------------------------------------------------
 
 --
--- Struktur untuk view `mahasiswa_v`
+-- Structure for view `mahasiswa_v`
 --
 DROP TABLE IF EXISTS `mahasiswa_v`;
 
-DROP VIEW IF EXISTS `mahasiswa_v`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `mahasiswa_v`  AS  select `prodi`.`nama` AS `nama_prodi`,`mahasiswa`.`id` AS `id`,`mahasiswa`.`nim` AS `nim`,`mahasiswa`.`nama` AS `nama`,`mahasiswa`.`prodi_id` AS `prodi_id`,`mahasiswa`.`jenis_kelamin` AS `jenis_kelamin`,`mahasiswa`.`tempat_lahir` AS `tempat_lahir`,`mahasiswa`.`tanggal_lahir` AS `tanggal_lahir`,`mahasiswa`.`email` AS `email`,`mahasiswa`.`alamat_orang_tua` AS `alamat_orang_tua`,`mahasiswa`.`nomor_telepon_orang_tua` AS `nomor_telepon_orang_tua`,`mahasiswa`.`alamat` AS `alamat`,`mahasiswa`.`nomor_telepon` AS `nomor_telepon`,`mahasiswa`.`nomor_telepon_orang_dekat` AS `nomor_telepon_orang_dekat`,`mahasiswa`.`ipk` AS `ipk`,`mahasiswa`.`foto` AS `foto`,`mahasiswa`.`password` AS `password`,`mahasiswa`.`status` AS `status` from (`mahasiswa` join `prodi` on(`mahasiswa`.`prodi_id` = `prodi`.`id`)) ;
+CREATE ALGORITHM=UNDEFINED  SQL SECURITY DEFINER VIEW `mahasiswa_v`  AS SELECT `prodi`.`nama` AS `nama_prodi`, `mahasiswa`.`id` AS `id`, `mahasiswa`.`nim` AS `nim`, `mahasiswa`.`nama` AS `nama`, `mahasiswa`.`prodi_id` AS `prodi_id`, `mahasiswa`.`jenis_kelamin` AS `jenis_kelamin`, `mahasiswa`.`tempat_lahir` AS `tempat_lahir`, `mahasiswa`.`tanggal_lahir` AS `tanggal_lahir`, `mahasiswa`.`email` AS `email`, `mahasiswa`.`alamat_orang_tua` AS `alamat_orang_tua`, `mahasiswa`.`nomor_telepon_orang_tua` AS `nomor_telepon_orang_tua`, `mahasiswa`.`alamat` AS `alamat`, `mahasiswa`.`nomor_telepon` AS `nomor_telepon`, `mahasiswa`.`nomor_telepon_orang_dekat` AS `nomor_telepon_orang_dekat`, `mahasiswa`.`ipk` AS `ipk`, `mahasiswa`.`foto` AS `foto`, `mahasiswa`.`password` AS `password`, `mahasiswa`.`status` AS `status` FROM (`mahasiswa` join `prodi` on(`mahasiswa`.`prodi_id` = `prodi`.`id`)) ;
 
 -- --------------------------------------------------------
 
 --
--- Struktur untuk view `penguji_dosen_v`
+-- Structure for view `penguji_dosen_v`
 --
 DROP TABLE IF EXISTS `penguji_dosen_v`;
 
-DROP VIEW IF EXISTS `penguji_dosen_v`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `penguji_dosen_v`  AS  select `dosen`.`nip` AS `nip`,`dosen`.`nama` AS `nama`,`dosen`.`nomor_telepon` AS `nomor_telepon`,`dosen`.`email` AS `email`,`dosen`.`level` AS `level`,`dosen`.`id` AS `id`,`proposal_mahasiswa_v`.`mahasiswa_id` AS `mahasiswa_id`,`proposal_mahasiswa_v`.`nim` AS `nim`,`proposal_mahasiswa_v`.`nama_mahasiswa` AS `nama_mahasiswa`,`proposal_mahasiswa_v`.`nama_prodi` AS `nama_prodi` from (`dosen` join `proposal_mahasiswa_v` on(`dosen`.`id` = `proposal_mahasiswa_v`.`dosen_penguji_id`)) ;
+CREATE ALGORITHM=UNDEFINED  SQL SECURITY DEFINER VIEW `penguji_dosen_v`  AS SELECT `dosen`.`nip` AS `nip`, `dosen`.`nama` AS `nama`, `dosen`.`nomor_telepon` AS `nomor_telepon`, `dosen`.`email` AS `email`, `dosen`.`level` AS `level`, `dosen`.`id` AS `id`, `proposal_mahasiswa_v`.`mahasiswa_id` AS `mahasiswa_id`, `proposal_mahasiswa_v`.`nim` AS `nim`, `proposal_mahasiswa_v`.`nama_mahasiswa` AS `nama_mahasiswa`, `proposal_mahasiswa_v`.`nama_prodi` AS `nama_prodi` FROM (`dosen` join `proposal_mahasiswa_v` on(`dosen`.`id` = `proposal_mahasiswa_v`.`dosen_penguji_id`)) ;
 
 -- --------------------------------------------------------
 
 --
--- Struktur untuk view `proposal_mahasiswa_v`
+-- Structure for view `proposal_mahasiswa_v`
 --
 DROP TABLE IF EXISTS `proposal_mahasiswa_v`;
 
-DROP VIEW IF EXISTS `proposal_mahasiswa_v`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `proposal_mahasiswa_v`  AS  select `proposal_mahasiswa`.`id` AS `id`,`proposal_mahasiswa`.`mahasiswa_id` AS `mahasiswa_id`,`proposal_mahasiswa`.`judul` AS `judul`,`proposal_mahasiswa`.`outline_skripsi` AS `outline_skripsi`,`proposal_mahasiswa`.`dosen_id` AS `dosen_id`,`proposal_mahasiswa`.`dosen_penguji_id` AS `dosen_penguji_id`,`proposal_mahasiswa`.`transkip` AS `transkip`,`proposal_mahasiswa`.`krs` AS `krs`,`proposal_mahasiswa`.`status` AS `status`,`mahasiswa_v`.`nim` AS `nim`,`mahasiswa_v`.`nama` AS `nama_mahasiswa`,`mahasiswa_v`.`nama_prodi` AS `nama_prodi`,`mahasiswa_v`.`email` AS `email` from (`proposal_mahasiswa` join `mahasiswa_v` on(`proposal_mahasiswa`.`mahasiswa_id` = `mahasiswa_v`.`id`)) ;
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `proposal_mahasiswa_v`  AS SELECT `proposal_mahasiswa`.`id` AS `id`, `proposal_mahasiswa`.`mahasiswa_id` AS `mahasiswa_id`, `proposal_mahasiswa`.`judul` AS `judul`, `proposal_mahasiswa`.`outline_skripsi` AS `outline_skripsi`, `proposal_mahasiswa`.`dosen_id` AS `dosen_id`, `proposal_mahasiswa`.`dosen_penguji_id` AS `dosen_penguji_id`, `proposal_mahasiswa`.`transkip` AS `transkip`, `proposal_mahasiswa`.`krs` AS `krs`, `proposal_mahasiswa`.`status` AS `status`, `mahasiswa_v`.`nim` AS `nim`, `mahasiswa_v`.`nama` AS `nama_mahasiswa`, `mahasiswa_v`.`nama_prodi` AS `nama_prodi`, `mahasiswa_v`.`email` AS `email` FROM (`proposal_mahasiswa` join `mahasiswa_v` on(`proposal_mahasiswa`.`mahasiswa_id` = `mahasiswa_v`.`id`)) ;
 
 -- --------------------------------------------------------
 
 --
--- Struktur untuk view `skripsi_v`
+-- Structure for view `skripsi_v`
 --
 DROP TABLE IF EXISTS `skripsi_v`;
 
-DROP VIEW IF EXISTS `skripsi_v`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `skripsi_v`  AS  select `mahasiswa_v`.`nim` AS `nim`,`mahasiswa_v`.`nama_prodi` AS `nama_prodi`,`mahasiswa_v`.`nama` AS `nama_mahasiswa`,`mahasiswa_v`.`id` AS `mahasiswa_id`,`skripsi`.`judul_skripsi` AS `judul_skripsi`,`skripsi`.`dosen_id` AS `dosen_id`,`skripsi`.`dosen_penguji_id` AS `dosen_penguji_id`,`skripsi`.`dosen_penguji2_id` AS `dosen_penguji2_id`,`skripsi`.`id` AS `id`,`dosen`.`nama` AS `nama_pembimbing`,`skripsi`.`jadwal_skripsi` AS `jadwal_skripsi`,`skripsi`.`jam_selesai` AS `jam_selesai`,`skripsi`.`tempat` AS `tempat`,`skripsi`.`file_skripsi` AS `file_skripsi`,`skripsi`.`status` AS `status`,`skripsi`.`krs` AS `krs`,`skripsi`.`formulir` AS `formulir`,`skripsi`.`kwitansi` AS `kwitansi`,`skripsi`.`lulus_mkWajib` AS `lulus_mkWajib`,`skripsi`.`kartu_bimbingan` AS `kartu_bimbingan`,`skripsi`.`transkip` AS `transkip`,`skripsi`.`sertifikat` AS `sertifikat`,`skripsi`.`lembar_persetujuan` AS `lembar_persetujuan`,`skripsi`.`bebas_bauk` AS `bebas_bauk`,`mahasiswa_v`.`email` AS `email` from ((`skripsi` join `mahasiswa_v` on(`skripsi`.`mahasiswa_id` = `mahasiswa_v`.`id`)) join `dosen` on(`skripsi`.`dosen_id` = `dosen`.`id`)) ;
+CREATE ALGORITHM=UNDEFINED  SQL SECURITY DEFINER VIEW `skripsi_v`  AS SELECT `mahasiswa_v`.`nim` AS `nim`, `mahasiswa_v`.`nama_prodi` AS `nama_prodi`, `mahasiswa_v`.`nama` AS `nama_mahasiswa`, `mahasiswa_v`.`id` AS `mahasiswa_id`, `skripsi`.`judul_skripsi` AS `judul_skripsi`, `skripsi`.`dosen_id` AS `dosen_id`, `skripsi`.`dosen_penguji_id` AS `dosen_penguji_id`, `skripsi`.`dosen_penguji2_id` AS `dosen_penguji2_id`, `skripsi`.`id` AS `id`, `dosen`.`nama` AS `nama_pembimbing`, `skripsi`.`jadwal_skripsi` AS `jadwal_skripsi`, `skripsi`.`jam_selesai` AS `jam_selesai`, `skripsi`.`tempat` AS `tempat`, `skripsi`.`file_skripsi` AS `file_skripsi`, `skripsi`.`status` AS `status`, `skripsi`.`krs` AS `krs`, `skripsi`.`formulir` AS `formulir`, `skripsi`.`kwitansi` AS `kwitansi`, `skripsi`.`lulus_mkWajib` AS `lulus_mkWajib`, `skripsi`.`kartu_bimbingan` AS `kartu_bimbingan`, `skripsi`.`transkip` AS `transkip`, `skripsi`.`sertifikat` AS `sertifikat`, `skripsi`.`lembar_persetujuan` AS `lembar_persetujuan`, `skripsi`.`bebas_bauk` AS `bebas_bauk`, `mahasiswa_v`.`email` AS `email` FROM ((`skripsi` join `mahasiswa_v` on(`skripsi`.`mahasiswa_id` = `mahasiswa_v`.`id`)) join `dosen` on(`skripsi`.`dosen_id` = `dosen`.`id`)) ;
 
 -- --------------------------------------------------------
 
 --
--- Struktur untuk view `skripsi_vl`
+-- Structure for view `skripsi_vl`
 --
 DROP TABLE IF EXISTS `skripsi_vl`;
 
-DROP VIEW IF EXISTS `skripsi_vl`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `skripsi_vl`  AS  select `skripsi_v`.`nim` AS `nim`,`skripsi_v`.`nama_prodi` AS `nama_prodi`,`skripsi_v`.`nama_mahasiswa` AS `nama_mahasiswa`,`skripsi_v`.`id` AS `id`,`skripsi_v`.`judul_skripsi` AS `judul_skripsi`,`skripsi_v`.`dosen_id` AS `dosen_id`,`skripsi_v`.`dosen_penguji_id` AS `dosen_penguji_id`,`skripsi_v`.`dosen_penguji2_id` AS `dosen_penguji2_id`,`skripsi_v`.`mahasiswa_id` AS `mahasiswa_id`,`skripsi_v`.`nama_pembimbing` AS `nama_pembimbing`,`dosen`.`nama` AS `nama_penguji`,`skripsi_v`.`jadwal_skripsi` AS `jadwal_skripsi`,`skripsi_v`.`jam_selesai` AS `jam_selesai`,`skripsi_v`.`tempat` AS `tempat`,`skripsi_v`.`file_skripsi` AS `file_skripsi`,`skripsi_v`.`status` AS `status`,`skripsi_v`.`krs` AS `krs`,`skripsi_v`.`formulir` AS `formulir`,`skripsi_v`.`kwitansi` AS `kwitansi`,`skripsi_v`.`lulus_mkWajib` AS `lulus_mkWajib`,`skripsi_v`.`kartu_bimbingan` AS `kartu_bimbingan`,`skripsi_v`.`transkip` AS `transkip`,`skripsi_v`.`sertifikat` AS `sertifikat`,`skripsi_v`.`lembar_persetujuan` AS `lembar_persetujuan`,`skripsi_v`.`bebas_bauk` AS `bebas_bauk`,`skripsi_v`.`email` AS `email` from (`skripsi_v` join `dosen` on(`skripsi_v`.`dosen_penguji_id` = `dosen`.`id`)) ;
+CREATE ALGORITHM=UNDEFINED  SQL SECURITY DEFINER VIEW `skripsi_vl`  AS SELECT `skripsi_v`.`nim` AS `nim`, `skripsi_v`.`nama_prodi` AS `nama_prodi`, `skripsi_v`.`nama_mahasiswa` AS `nama_mahasiswa`, `skripsi_v`.`id` AS `id`, `skripsi_v`.`judul_skripsi` AS `judul_skripsi`, `skripsi_v`.`dosen_id` AS `dosen_id`, `skripsi_v`.`dosen_penguji_id` AS `dosen_penguji_id`, `skripsi_v`.`dosen_penguji2_id` AS `dosen_penguji2_id`, `skripsi_v`.`mahasiswa_id` AS `mahasiswa_id`, `skripsi_v`.`nama_pembimbing` AS `nama_pembimbing`, `dosen`.`nama` AS `nama_penguji`, `skripsi_v`.`jadwal_skripsi` AS `jadwal_skripsi`, `skripsi_v`.`jam_selesai` AS `jam_selesai`, `skripsi_v`.`tempat` AS `tempat`, `skripsi_v`.`file_skripsi` AS `file_skripsi`, `skripsi_v`.`status` AS `status`, `skripsi_v`.`krs` AS `krs`, `skripsi_v`.`formulir` AS `formulir`, `skripsi_v`.`kwitansi` AS `kwitansi`, `skripsi_v`.`lulus_mkWajib` AS `lulus_mkWajib`, `skripsi_v`.`kartu_bimbingan` AS `kartu_bimbingan`, `skripsi_v`.`transkip` AS `transkip`, `skripsi_v`.`sertifikat` AS `sertifikat`, `skripsi_v`.`lembar_persetujuan` AS `lembar_persetujuan`, `skripsi_v`.`bebas_bauk` AS `bebas_bauk`, `skripsi_v`.`email` AS `email` FROM (`skripsi_v` join `dosen` on(`skripsi_v`.`dosen_penguji_id` = `dosen`.`id`)) ;
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `daftar_judul`
+-- Indexes for table `daftar_judul`
 --
 ALTER TABLE `daftar_judul`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `dokumen_hasil`
+-- Indexes for table `dokumen_hasil`
 --
 ALTER TABLE `dokumen_hasil`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `dosen`
+-- Indexes for table `dosen`
 --
 ALTER TABLE `dosen`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `email_sender`
+-- Indexes for table `email_sender`
 --
 ALTER TABLE `email_sender`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `fakultas`
+-- Indexes for table `fakultas`
 --
 ALTER TABLE `fakultas`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `hari`
+-- Indexes for table `hari`
 --
 ALTER TABLE `hari`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `hasil_kegiatan`
+-- Indexes for table `hasil_kegiatan`
 --
 ALTER TABLE `hasil_kegiatan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `hasil_penelitian`
+-- Indexes for table `hasil_penelitian`
 --
 ALTER TABLE `hasil_penelitian`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `hasil_seminar`
+-- Indexes for table `hasil_seminar`
 --
 ALTER TABLE `hasil_seminar`
   ADD PRIMARY KEY (`id`),
   ADD KEY `seminar_id` (`seminar_id`);
 
 --
--- Indeks untuk tabel `home_template`
+-- Indexes for table `home_template`
 --
 ALTER TABLE `home_template`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `jadwal_dosen`
+-- Indexes for table `jadwalsempro`
+--
+ALTER TABLE `jadwalsempro`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `jadwal_dosen`
 --
 ALTER TABLE `jadwal_dosen`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `jam`
+-- Indexes for table `jam`
 --
 ALTER TABLE `jam`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `konsultasi`
+-- Indexes for table `konsultasi`
 --
 ALTER TABLE `konsultasi`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `kuota_bimbingan`
+-- Indexes for table `kuota_bimbingan`
 --
 ALTER TABLE `kuota_bimbingan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `mahasiswa`
+-- Indexes for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `penelitian`
+-- Indexes for table `penelitian`
 --
 ALTER TABLE `penelitian`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `prodi`
+-- Indexes for table `prodi`
 --
 ALTER TABLE `prodi`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `proposal_mahasiswa`
+-- Indexes for table `proposal_mahasiswa`
 --
 ALTER TABLE `proposal_mahasiswa`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `ruangan`
+-- Indexes for table `ruangan`
 --
 ALTER TABLE `ruangan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `seminar`
+-- Indexes for table `seminar`
 --
 ALTER TABLE `seminar`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `skripsi`
+-- Indexes for table `skripsi`
 --
 ALTER TABLE `skripsi`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `daftar_judul`
+-- AUTO_INCREMENT for table `daftar_judul`
 --
 ALTER TABLE `daftar_judul`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT untuk tabel `dokumen_hasil`
+-- AUTO_INCREMENT for table `dokumen_hasil`
 --
 ALTER TABLE `dokumen_hasil`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `dosen`
+-- AUTO_INCREMENT for table `dosen`
 --
 ALTER TABLE `dosen`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT untuk tabel `email_sender`
+-- AUTO_INCREMENT for table `email_sender`
 --
 ALTER TABLE `email_sender`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT untuk tabel `fakultas`
+-- AUTO_INCREMENT for table `fakultas`
 --
 ALTER TABLE `fakultas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT untuk tabel `hari`
+-- AUTO_INCREMENT for table `hari`
 --
 ALTER TABLE `hari`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT untuk tabel `hasil_kegiatan`
+-- AUTO_INCREMENT for table `hasil_kegiatan`
 --
 ALTER TABLE `hasil_kegiatan`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT untuk tabel `hasil_penelitian`
+-- AUTO_INCREMENT for table `hasil_penelitian`
 --
 ALTER TABLE `hasil_penelitian`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT untuk tabel `hasil_seminar`
+-- AUTO_INCREMENT for table `hasil_seminar`
 --
 ALTER TABLE `hasil_seminar`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
--- AUTO_INCREMENT untuk tabel `home_template`
+-- AUTO_INCREMENT for table `home_template`
 --
 ALTER TABLE `home_template`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT untuk tabel `jadwal_dosen`
+-- AUTO_INCREMENT for table `jadwalsempro`
+--
+ALTER TABLE `jadwalsempro`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `jadwal_dosen`
 --
 ALTER TABLE `jadwal_dosen`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `jam`
+-- AUTO_INCREMENT for table `jam`
 --
 ALTER TABLE `jam`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT untuk tabel `konsultasi`
+-- AUTO_INCREMENT for table `konsultasi`
 --
 ALTER TABLE `konsultasi`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT untuk tabel `kuota_bimbingan`
+-- AUTO_INCREMENT for table `kuota_bimbingan`
 --
 ALTER TABLE `kuota_bimbingan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `mahasiswa`
+-- AUTO_INCREMENT for table `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
--- AUTO_INCREMENT untuk tabel `penelitian`
+-- AUTO_INCREMENT for table `penelitian`
 --
 ALTER TABLE `penelitian`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT untuk tabel `prodi`
+-- AUTO_INCREMENT for table `prodi`
 --
 ALTER TABLE `prodi`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT untuk tabel `proposal_mahasiswa`
+-- AUTO_INCREMENT for table `proposal_mahasiswa`
 --
 ALTER TABLE `proposal_mahasiswa`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=93;
 
 --
--- AUTO_INCREMENT untuk tabel `ruangan`
+-- AUTO_INCREMENT for table `ruangan`
 --
 ALTER TABLE `ruangan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT untuk tabel `seminar`
+-- AUTO_INCREMENT for table `seminar`
 --
 ALTER TABLE `seminar`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
--- AUTO_INCREMENT untuk tabel `skripsi`
+-- AUTO_INCREMENT for table `skripsi`
 --
 ALTER TABLE `skripsi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;

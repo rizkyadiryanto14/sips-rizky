@@ -1,0 +1,52 @@
+ERROR - 2023-04-12 15:33:54 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-04-12 16:12:32 --> 404 Page Not Found: TambahHari/index
+ERROR - 2023-04-12 17:31:08 --> Query error: Column 'nama_hari' cannot be null - Invalid query: INSERT INTO `hari` (`nama_hari`) VALUES (NULL)
+ERROR - 2023-04-12 19:02:26 --> 404 Page Not Found: Ruanganadmin/seminar
+ERROR - 2023-04-12 19:02:34 --> 404 Page Not Found: Ruanganadmin/seminar
+ERROR - 2023-04-12 19:03:15 --> Query error: Table 'jaksparo_sips.ruangan' doesn't exist - Invalid query: SELECT *
+FROM `ruangan`
+ERROR - 2023-04-12 19:03:15 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\models\Penjadwalan_model.php 22
+ERROR - 2023-04-12 19:49:19 --> Query error: Table 'jaksparo_sips.ruangan' doesn't exist - Invalid query: SELECT *
+FROM `ruangan`
+ERROR - 2023-04-12 19:49:19 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\models\Penjadwalan_model.php 22
+ERROR - 2023-04-12 19:51:34 --> Query error: Table 'jaksparo_sips.ruangan' doesn't exist - Invalid query: SELECT *
+FROM `ruangan`
+ERROR - 2023-04-12 19:51:34 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\models\Penjadwalan_model.php 22
+ERROR - 2023-04-12 19:52:37 --> Query error: Table 'jaksparo_sips.ruangan' doesn't exist - Invalid query: SELECT *
+FROM `ruangan`
+ERROR - 2023-04-12 19:52:37 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\models\Penjadwalan_model.php 22
+ERROR - 2023-04-12 19:52:55 --> Query error: Table 'jaksparo_sips.ruangan' doesn't exist - Invalid query: SELECT *
+FROM `ruangan`
+ERROR - 2023-04-12 19:52:55 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\models\Penjadwalan_model.php 22
+ERROR - 2023-04-12 20:10:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-04-12 20:10:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-04-12 20:10:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-04-12 20:10:30 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-04-12 20:10:35 --> Query error: Table 'jaksparo_sips.ruangan' doesn't exist - Invalid query: SELECT *
+FROM `ruangan`
+ERROR - 2023-04-12 20:10:35 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\models\Penjadwalan_model.php 22
+ERROR - 2023-04-12 20:14:35 --> Query error: Table 'jaksparo_sips.ruangan' doesn't exist - Invalid query: SELECT *
+FROM `ruangan`
+ERROR - 2023-04-12 20:14:35 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\models\Penjadwalan_model.php 22
+ERROR - 2023-04-12 20:33:22 --> Query error: Table 'jaksparo_sips.ruangan' doesn't exist - Invalid query: SELECT *
+FROM `ruangan`
+ERROR - 2023-04-12 20:33:22 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\models\Penjadwalan_model.php 22
+ERROR - 2023-04-12 20:37:28 --> Query error: Table 'jaksparo_sips.ruangan' doesn't exist - Invalid query: SELECT *
+FROM `ruangan`
+ERROR - 2023-04-12 20:37:28 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\models\Penjadwalan_model.php 22
+ERROR - 2023-04-12 20:58:42 --> Query error: Table 'jaksparo_sips.ruangan' doesn't exist - Invalid query: SELECT *
+FROM `ruangan`
+ERROR - 2023-04-12 20:58:42 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\models\Penjadwalan_model.php 22
+ERROR - 2023-04-12 20:58:45 --> Query error: Table 'jaksparo_sips.ruangan' doesn't exist - Invalid query: SELECT *
+FROM `ruangan`
+ERROR - 2023-04-12 20:58:45 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\models\Penjadwalan_model.php 22
+ERROR - 2023-04-12 21:00:29 --> Query error: Table 'jaksparo_sips.ruangan' doesn't exist - Invalid query: SELECT *
+FROM `ruangan`
+ERROR - 2023-04-12 21:00:29 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\models\Penjadwalan_model.php 22
+ERROR - 2023-04-12 21:00:37 --> 404 Page Not Found: Admin/Penjadwalan/Penjadwalan/index
+ERROR - 2023-04-12 21:00:41 --> Query error: Table 'jaksparo_sips.ruangan' doesn't exist - Invalid query: SELECT *
+FROM `ruangan`
+ERROR - 2023-04-12 21:00:41 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\models\Penjadwalan_model.php 22
+ERROR - 2023-04-12 21:02:32 --> Query error: Table 'jaksparo_sips.ruangan' doesn't exist - Invalid query: SELECT *
+FROM `ruangan`
+ERROR - 2023-04-12 21:02:32 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips\application\models\Penjadwalan_model.php 22

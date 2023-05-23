@@ -1,0 +1,47 @@
+ERROR - 2022-12-29 02:45:42 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 02:46:29 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 02:49:44 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 02:52:18 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 03:07:08 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 03:10:07 --> Severity: Warning --> Invalid argument supplied for foreach() /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Daftar_judul_model.php 19
+ERROR - 2022-12-29 03:10:07 --> Severity: Warning --> Invalid argument supplied for foreach() /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Daftar_judul_model.php 24
+ERROR - 2022-12-29 03:12:24 --> Severity: Warning --> Invalid argument supplied for foreach() /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Daftar_judul_model.php 19
+ERROR - 2022-12-29 03:12:24 --> Severity: Warning --> Invalid argument supplied for foreach() /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Daftar_judul_model.php 24
+ERROR - 2022-12-29 03:12:33 --> Severity: Warning --> Invalid argument supplied for foreach() /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Daftar_judul_model.php 19
+ERROR - 2022-12-29 03:12:33 --> Severity: Warning --> Invalid argument supplied for foreach() /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Daftar_judul_model.php 24
+ERROR - 2022-12-29 03:18:40 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 03:22:35 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 03:23:48 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-29 03:23:55 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 03:25:14 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 03:25:46 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-29 03:29:12 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 03:30:27 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 03:32:51 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 03:48:01 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 03:51:02 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 03:51:42 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 03:56:58 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 03:58:26 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-29 03:58:32 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-29 04:04:12 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 04:06:40 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 04:57:15 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 04:58:06 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 05:04:57 --> Severity: Warning --> Invalid argument supplied for foreach() /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Daftar_judul_model.php 19
+ERROR - 2022-12-29 05:04:57 --> Severity: Warning --> Invalid argument supplied for foreach() /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Daftar_judul_model.php 24
+ERROR - 2022-12-29 05:07:08 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-29 05:08:06 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-29 05:08:35 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-29 05:08:45 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 05:08:55 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 05:09:34 --> Severity: Warning --> max(): Array must contain at least one element /home/jaksparo/sips-informatika.jaksparohserver.my.id/application/models/Proposal_mahasiswa_model.php 109
+ERROR - 2022-12-29 05:10:56 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 05:25:04 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 05:27:52 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 05:32:56 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 05:45:02 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 05:45:25 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 05:52:43 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 05:54:20 --> 404 Page Not Found: Assets/essence
+ERROR - 2022-12-29 12:33:30 --> 404 Page Not Found: Assets/essence

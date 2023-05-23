@@ -30,11 +30,19 @@ class Proposal_mahasiswa extends REST_Controller
         $id = $this->session->userdata('id');
         $dosen = $this->input->post('dosen_id');
         $cekPendaftaran = $this->db->get_where('proposal_mahasiswa_v', ['mahasiswa_id' => $id, 'status' => '0'])->result_array();
-        // $cekDospem = $this->db->get_where('proposal_mahasiswa_v', ['proposal_mahasiswa_v.dosen_id' => $dosen])->result_array();
+        $cekDospem = $this->db->get_where('proposal_mahasiswa_v', ['proposal_mahasiswa_v.dosen_id' => $dosen])->result_array();
         if (count($cekPendaftaran) > 0) {
             $response = [
                 'error' => true,
                 'message' => 'Masih terdapat pendaftaran yang belum di review, Harap tunggu !'
+            ];
+            return $this->response($response);
+        }
+
+        if (count($cekDospem) == $kuota->nilai) {
+            $response = [
+                'error' => true,
+                'message' => 'Kouta Dosen Pembimbing Penuh'
             ];
             return $this->response($response);
         }

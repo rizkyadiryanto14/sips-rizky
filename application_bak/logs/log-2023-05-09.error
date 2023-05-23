@@ -1,0 +1,357 @@
+ERROR - 2023-05-09 07:25:22 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-05-09 07:39:42 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-05-09 07:42:26 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-05-09 07:44:33 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-05-09 07:45:11 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-05-09 07:52:07 --> 404 Page Not Found: admin/Jadwal_dosen/index
+ERROR - 2023-05-09 08:03:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 08:03:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 08:04:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 08:04:07 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 08:11:17 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-05-09 08:42:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:42:33 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:42:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:42:34 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:42:35 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:42:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:42:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:42:37 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:42:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:42:37 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:44:42 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:44:42 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:44:42 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:44:42 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:44:43 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:44:43 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:44:44 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:44:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:44:45 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:44:45 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:44:53 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:44:53 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:44:53 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:44:53 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:44:54 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:44:54 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:52:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:52:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:52:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:52:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:52:08 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:52:08 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:52:08 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:52:08 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:52:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:52:28 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:52:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:52:28 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:52:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:52:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:52:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:52:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:52:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:52:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:52:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:52:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:53:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:53:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:53:11 --> Severity: error --> Exception: Call to a member function TambahJadwal() on null C:\xampp\htdocs\sips\application\controllers\admin\penjadwalan\Jadwal_dosen.php 33
+ERROR - 2023-05-09 08:53:14 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:53:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:53:14 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:53:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:54:26 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:54:26 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:54:26 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:54:26 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:54:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:54:39 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:54:39 --> Severity: error --> Exception: Call to a member function TambahJadwal() on null C:\xampp\htdocs\sips\application\controllers\admin\penjadwalan\Jadwal_dosen.php 33
+ERROR - 2023-05-09 08:54:55 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:54:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:54:55 --> Severity: error --> Exception: Call to a member function TambahJadwal() on null C:\xampp\htdocs\sips\application\controllers\admin\penjadwalan\Jadwal_dosen.php 33
+ERROR - 2023-05-09 08:55:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:55:17 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:55:17 --> Severity: error --> Exception: Call to a member function TambahJadwal() on null C:\xampp\htdocs\sips\application\controllers\admin\penjadwalan\Jadwal_dosen.php 33
+ERROR - 2023-05-09 08:55:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:55:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 08:55:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 08:55:20 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 08:55:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 08:55:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:05:44 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:05:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:05:44 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:05:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:05:44 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:05:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:05:45 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:05:45 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:06:10 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:06:10 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:06:10 --> Query error: Unknown column 'jadwa' in 'field list' - Invalid query: INSERT INTO `jadwal_dosen` (`nama_dosen`, `jadwa`, `ruangan`, `nama_mk`) VALUES ('Dosen 1', '2023-05-09T15:06', 'ruangan 1', 'mkdu')
+ERROR - 2023-05-09 09:06:10 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:06:10 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:06:10 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:06:10 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:06:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 09:06:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 09:06:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:06:16 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:06:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 09:06:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 09:06:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:06:16 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:06:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:06:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:06:25 --> Query error: Unknown column 'jadwa' in 'field list' - Invalid query: INSERT INTO `jadwal_dosen` (`nama_dosen`, `jadwa`, `ruangan`, `nama_mk`) VALUES ('Dosen 1', '2023-05-09T15:06', 'ruangan 1', 'mkdu')
+ERROR - 2023-05-09 09:06:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:06:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:06:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 09:06:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 09:06:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:06:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:18:41 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:18:41 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:18:41 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:18:41 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:19:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:19:16 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:19:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:19:16 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:19:47 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:19:47 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:19:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:19:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:19:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:19:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:19:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:19:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:19:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:19:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:19:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:19:52 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:19:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:19:52 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:20:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:20:03 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:20:03 --> Query error: Unknown column 'jadwa' in 'field list' - Invalid query: INSERT INTO `jadwal_dosen` (`nama_dosen`, `jadwa`, `ruangan`, `nama_mk`) VALUES ('Dosen 1', '2023-05-09T16:19', 'ruangan 1', 'mkdu')
+ERROR - 2023-05-09 09:20:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:20:03 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:20:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:20:03 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:25:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:25:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:25:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 28
+ERROR - 2023-05-09 09:25:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:25:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:26:40 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:26:40 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:26:40 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 28
+ERROR - 2023-05-09 09:26:40 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:26:40 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:29:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:29:32 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:29:32 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 28
+ERROR - 2023-05-09 09:29:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:29:32 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:44:04 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:44:04 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:44:04 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 28
+ERROR - 2023-05-09 09:44:04 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:44:04 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:44:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:44:06 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:44:06 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 28
+ERROR - 2023-05-09 09:44:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:44:06 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:46:14 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:46:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:46:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 28
+ERROR - 2023-05-09 09:46:14 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:46:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:46:18 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:46:18 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:46:18 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 28
+ERROR - 2023-05-09 09:46:18 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:46:18 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:46:42 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:46:42 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:46:42 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 28
+ERROR - 2023-05-09 09:46:42 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:46:42 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:51:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:51:37 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:51:37 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 29
+ERROR - 2023-05-09 09:51:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:51:37 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:51:58 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:51:58 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:51:58 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 29
+ERROR - 2023-05-09 09:51:58 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:51:58 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:51:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:51:59 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:51:59 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 29
+ERROR - 2023-05-09 09:51:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:51:59 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:52:08 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:52:08 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:52:08 --> Query error: Unknown column 'jadwa' in 'field list' - Invalid query: INSERT INTO `jadwal_dosen` (`nama_dosen`, `jadwa`, `ruangan`, `nama_mk`) VALUES ('Dosen 1', '2023-05-09T15:52', 'ruangan 1', 'mkdu')
+ERROR - 2023-05-09 09:52:08 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:52:08 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:52:08 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 29
+ERROR - 2023-05-09 09:52:08 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:52:08 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:52:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:52:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:52:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 29
+ERROR - 2023-05-09 09:52:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:52:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:52:57 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:52:57 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:53:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:53:30 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:53:30 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 29
+ERROR - 2023-05-09 09:53:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:53:30 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:53:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:53:30 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:53:30 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 29
+ERROR - 2023-05-09 09:53:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:53:30 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:53:36 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:53:36 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:53:36 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 29
+ERROR - 2023-05-09 09:53:36 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:53:36 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:53:46 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:53:46 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:53:46 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:53:46 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:53:46 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\application\views\admin\penjadwalan\jadwal_dosen.php 29
+ERROR - 2023-05-09 09:53:46 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:53:46 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:54:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:54:24 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:54:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:54:24 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:54:26 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:54:26 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:54:26 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:54:26 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:57:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:57:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:57:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:57:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:58:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:58:59 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:58:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:58:59 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:59:38 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:59:38 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 09:59:38 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 09:59:38 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:00:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:00:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:00:08 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:00:08 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:01:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:01:39 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:01:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:01:39 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:02:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:02:28 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:02:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:02:28 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:02:38 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:02:38 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:02:38 --> Severity: error --> Exception: Call to a member function EditJadwal() on null C:\xampp\htdocs\sips\application\controllers\admin\penjadwalan\Jadwal_dosen.php 63
+ERROR - 2023-05-09 10:02:41 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:02:41 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:02:41 --> Severity: error --> Exception: Call to a member function EditJadwal() on null C:\xampp\htdocs\sips\application\controllers\admin\penjadwalan\Jadwal_dosen.php 63
+ERROR - 2023-05-09 10:02:46 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:02:46 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:02:46 --> Severity: error --> Exception: Call to a member function EditJadwal() on null C:\xampp\htdocs\sips\application\controllers\admin\penjadwalan\Jadwal_dosen.php 63
+ERROR - 2023-05-09 10:02:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:02:49 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:02:49 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:02:49 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:02:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:02:49 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:03:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:03:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:03:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:03:25 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:03:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:03:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:03:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:03:29 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:03:29 --> Query error: Unknown column 'jadwa' in 'field list' - Invalid query: UPDATE `jadwal_dosen` SET `nama_dosen` = 'Dosen 2', `jadwa` = '2023-05-09T15:53', `ruangan` = 'ruangan 1', `nama_mk` = 'mkdu'
+WHERE `id` = '1'
+ERROR - 2023-05-09 10:03:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:03:29 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:03:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:03:29 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:03:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:03:29 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:03:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:03:34 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:03:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:03:34 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:03:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:03:34 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:03:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:03:39 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:03:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:03:39 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:03:39 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:03:39 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:03:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:03:39 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:07:41 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:07:41 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:07:41 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:07:41 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:07:41 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:07:41 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:07:51 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:07:51 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:07:51 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:07:51 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:07:51 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:07:51 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:08:44 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:08:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:08:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:08:45 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:08:45 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:08:45 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:09:13 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:09:13 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:09:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:09:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:09:14 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:09:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:10:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:10:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:10:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:10:48 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:10:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:10:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:10:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:10:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:10:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:10:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:10:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:10:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:10:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:10:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:10:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:10:52 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334
+ERROR - 2023-05-09 10:10:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:10:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2023-05-09 10:10:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\sips\system\core\Loader.php 1332
+ERROR - 2023-05-09 10:10:52 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips\system\core\Loader.php 1334

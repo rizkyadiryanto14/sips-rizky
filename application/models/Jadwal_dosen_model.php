@@ -7,8 +7,9 @@ class Jadwal_dosen_model extends CI_Model
         return $this->db->get('dosen')->result();
     }
 
-    public function TambahJadwal($data)
+    public function TambahJadwal($data, $id)
     {
+        $this->db->where('id', $id);
         return $this->db->insert('dosen', $data);
     }
 

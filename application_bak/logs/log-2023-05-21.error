@@ -1,0 +1,6 @@
+ERROR - 2023-05-21 16:58:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /opt/lampp/htdocs/sips/system/core/Loader.php 1332
+ERROR - 2023-05-21 16:58:32 --> Severity: Warning --> Invalid argument supplied for foreach() /opt/lampp/htdocs/sips/system/core/Loader.php 1334
+ERROR - 2023-05-21 16:58:32 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-05-21 16:59:09 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /opt/lampp/htdocs/sips/system/core/Loader.php 1332
+ERROR - 2023-05-21 16:59:09 --> Severity: Warning --> Invalid argument supplied for foreach() /opt/lampp/htdocs/sips/system/core/Loader.php 1334
+ERROR - 2023-05-21 16:59:09 --> 404 Page Not Found: Assets/essence

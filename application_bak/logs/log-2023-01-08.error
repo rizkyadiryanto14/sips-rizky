@@ -1,0 +1,81 @@
+ERROR - 2023-01-08 00:21:18 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 00:21:18 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 00:21:33 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 00:22:57 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 00:23:00 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 00:23:00 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 00:53:56 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 00:53:56 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 00:54:19 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 01:14:11 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 01:14:11 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 01:14:27 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 01:14:27 --> 404 Page Not Found: Cdn/img
+ERROR - 2023-01-08 01:31:08 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/file_proposal/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Seminar_model.php 140
+ERROR - 2023-01-08 01:31:08 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/kartu_bimbingan/20230107081648.pdf): No such file or directory C:\xampp\htdocs\sips_informatika\application\models\Seminar_model.php 149
+ERROR - 2023-01-08 01:31:08 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/surat_permohonan/20230107081648.pdf): No such file or directory C:\xampp\htdocs\sips_informatika\application\models\Seminar_model.php 158
+ERROR - 2023-01-08 01:31:08 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/syarat_seminar/20230107081648.pdf): No such file or directory C:\xampp\htdocs\sips_informatika\application\models\Seminar_model.php 167
+ERROR - 2023-01-08 06:01:45 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 06:01:45 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 06:01:46 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 06:01:46 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 06:02:27 --> 404 Page Not Found: Cdn/img
+ERROR - 2023-01-08 06:50:58 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 06:51:01 --> 404 Page Not Found: Cdn/img
+ERROR - 2023-01-08 07:10:49 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/transkip/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Proposal_mahasiswa_model.php 139
+ERROR - 2023-01-08 07:10:49 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/krs/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Proposal_mahasiswa_model.php 148
+ERROR - 2023-01-08 07:10:49 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/outline_skripsi/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Proposal_mahasiswa_model.php 157
+ERROR - 2023-01-08 07:12:51 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/transkip/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Proposal_mahasiswa_model.php 139
+ERROR - 2023-01-08 07:12:51 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/krs/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Proposal_mahasiswa_model.php 148
+ERROR - 2023-01-08 07:12:51 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/outline_skripsi/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Proposal_mahasiswa_model.php 157
+ERROR - 2023-01-08 07:26:20 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/krs/20230107081445.pdf): No such file or directory C:\xampp\htdocs\sips_informatika\application\models\Skripsi_model.php 162
+ERROR - 2023-01-08 07:26:20 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/file_skripsi/20230107081445.pdf): No such file or directory C:\xampp\htdocs\sips_informatika\application\models\Skripsi_model.php 170
+ERROR - 2023-01-08 07:26:20 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/formulir/20230107081445.pdf): No such file or directory C:\xampp\htdocs\sips_informatika\application\models\Skripsi_model.php 178
+ERROR - 2023-01-08 07:26:20 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/kwitansi/20230107081445.pdf): No such file or directory C:\xampp\htdocs\sips_informatika\application\models\Skripsi_model.php 186
+ERROR - 2023-01-08 07:26:20 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/lulus_mkWajib/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Skripsi_model.php 195
+ERROR - 2023-01-08 07:26:20 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/kartu_bimbingan/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Skripsi_model.php 204
+ERROR - 2023-01-08 07:26:20 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/transkip/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Skripsi_model.php 213
+ERROR - 2023-01-08 07:26:20 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/sertifikat/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Skripsi_model.php 222
+ERROR - 2023-01-08 07:26:20 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/lembar_persetujuan/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Skripsi_model.php 231
+ERROR - 2023-01-08 07:26:20 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/bebas_bauk/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Skripsi_model.php 240
+ERROR - 2023-01-08 07:29:25 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 07:29:26 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 08:06:05 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips_informatika\application\views\admin\seminar.php 68
+ERROR - 2023-01-08 08:06:32 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips_informatika\application\views\admin\seminar.php 68
+ERROR - 2023-01-08 08:06:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips_informatika\application\views\admin\seminar.php 68
+ERROR - 2023-01-08 08:08:34 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips_informatika\application\views\admin\seminar.php 68
+ERROR - 2023-01-08 08:10:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips_informatika\application\views\admin\seminar.php 68
+ERROR - 2023-01-08 08:10:37 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips_informatika\application\views\admin\seminar.php 68
+ERROR - 2023-01-08 08:16:21 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/transkip/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Proposal_mahasiswa_model.php 144
+ERROR - 2023-01-08 08:16:21 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/krs/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Proposal_mahasiswa_model.php 153
+ERROR - 2023-01-08 08:16:21 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/outline_skripsi/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Proposal_mahasiswa_model.php 162
+ERROR - 2023-01-08 08:16:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips_informatika\application\views\admin\seminar.php 68
+ERROR - 2023-01-08 08:17:26 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips_informatika\application\views\admin\seminar.php 68
+ERROR - 2023-01-08 08:17:40 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 08:17:40 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 08:17:53 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 08:26:52 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 08:26:52 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 08:57:00 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 08:57:00 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 08:57:13 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips_informatika\application\views\admin\seminar.php 68
+ERROR - 2023-01-08 08:58:08 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips_informatika\application\views\admin\seminar.php 68
+ERROR - 2023-01-08 09:03:33 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips_informatika\application\views\admin\seminar.php 68
+ERROR - 2023-01-08 09:04:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\sips_informatika\application\views\admin\seminar.php 68
+ERROR - 2023-01-08 09:25:45 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 09:25:45 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 09:35:39 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/sk_tim/): No such file or directory C:\xampp\htdocs\sips_informatika\application\models\Skripsi_model.php 276
+ERROR - 2023-01-08 09:35:39 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/persetujuan/): No such file or directory C:\xampp\htdocs\sips_informatika\application\models\Skripsi_model.php 277
+ERROR - 2023-01-08 09:35:39 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/bukti_konsultasi/): No such file or directory C:\xampp\htdocs\sips_informatika\application\models\Skripsi_model.php 278
+ERROR - 2023-01-08 11:01:52 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 11:01:52 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-01-08 11:36:18 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/transkip/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Proposal_mahasiswa_model.php 144
+ERROR - 2023-01-08 11:36:18 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/krs/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Proposal_mahasiswa_model.php 153
+ERROR - 2023-01-08 11:36:18 --> Severity: Warning --> unlink(C:\xampp\htdocs\sips_informatika\cdn/vendor/skripsi/outline_skripsi/): Is a directory C:\xampp\htdocs\sips_informatika\application\models\Proposal_mahasiswa_model.php 162
+ERROR - 2023-01-08 12:33:29 --> Query error: Unknown column 'nim' in 'field list' - Invalid query: SELECT `nim`
+WHERE `daftar_judul` IS NULL
+ERROR - 2023-01-08 12:33:50 --> Query error: Unknown column 'nim' in 'field list' - Invalid query: SELECT `nim`
+WHERE `daftar_judul` IS NULL
+ERROR - 2023-01-08 12:33:50 --> Severity: error --> Exception: Call to a member function result() on bool C:\xampp\htdocs\sips_informatika\application\controllers\admin\Daftar_judul.php 23
+ERROR - 2023-01-08 12:58:20 --> Severity: error --> Exception: syntax error, unexpected '}', expecting ';' C:\xampp\htdocs\sips_informatika\application\controllers\admin\Daftar_judul.php 53
+ERROR - 2023-01-08 12:58:26 --> Severity: error --> Exception: syntax error, unexpected '}', expecting ';' C:\xampp\htdocs\sips_informatika\application\controllers\admin\Daftar_judul.php 53

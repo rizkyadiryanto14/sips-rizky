@@ -31,9 +31,24 @@
                                 <tr>
                                     <td><?= $no++ ?></td>
                                     <td><?= $item->nama ?></td>
-                                    <td><?= $item->jadwal ?></td>
-                                    <td><?= $item->ruangan ?></td>
-                                    <td><?= $item->nama_mk ?></td>
+                                    <td><?php if ($item->jadwal != null) {  ?>
+                                            <?= $item->jadwal ?>
+                                        <?php } else { ?>
+                                            <span class="badge badge-danger">Tidak Ada Jadwal</span>
+                                        <?php } ?>
+                                    </td>
+                                    <td><?php if ($item->ruangan != null) {  ?>
+                                            <?= $item->ruangan ?>
+                                        <?php } else { ?>
+                                            <span class="badge badge-danger">Tidak Ada Jadwal</span>
+                                        <?php } ?>
+                                    </td>
+                                    <td><?php if ($item->nama_mk != null) {  ?>
+                                            <?= $item->nama_mk ?>
+                                        <?php } else { ?>
+                                            <span class="badge badge-danger">Tidak Ada Jadwal</span>
+                                        <?php } ?>
+                                    </td>
                                     <td>
                                         <button class="btn btn-warning btn-sm" data-target="#EditData<?= $item->id ?>" data-toggle="modal"><i class="fas fa-edit"></i></button>
                                         <button class="btn btn-danger btn-sm" data-target="#hapusData<?= $item->id ?>" data-toggle="modal"><i class="fas fa-trash"></i></button>
@@ -84,11 +99,11 @@
                         <div class="form-group">
                             <label for="">Nama Dosen</label>
                             <input type="hidden" name="id" id="id" value="<?= $item->id ?>">
-                            <input type="text" name="nama" id="nama" class="form-control" value="<?= $item->nama ?>">
+                            <input type="text" name="nama_dosen" id="nama_dosen" class="form-control" value="<?= $item->nama_dosen ?>">
                         </div>
                         <div class="form-group">
                             <label for="">Jadwal</label>
-                            <input type="text" name="jadwal" id="jadwal" class="form-control" value="<?= $item->jadwal ?>">
+                            <input type="datetime-local" name="jadwal" id="jadwal" class="form-control" value="<?= $item->jadwal ?>">
                         </div>
                         <div class="form-group">
                             <label for="">Ruangan</label>
@@ -109,6 +124,7 @@
     </div>
 <?php endforeach  ?>
 
+
 <div class="modal fade" id="tambahJadwal">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -119,11 +135,16 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="">Nama Dosen</label>
-                        <input type="text" name="nama" id="nama" class="form-control">
+                        <select name="id_dosen" id="id_dosen" class="form-control">
+                            <option selected disabled>Pilih Dosen</option>
+                            <?php foreach ($jadwal_dosen as $item) : ?>
+                                <option value="<?= $item->id ?>"><?= $item->nama ?></option>
+                            <?php endforeach ?>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="">Jadwal Dosen</label>
-                        <input type="text" name="jadwal" id="jadwal" class="form-control">
+                        <input type="text" name="jadwal" id="jadwal" class="form-control" placeholder="08.00 - 10.00">
                     </div>
                     <div class="form-group">
                         <label for="">Ruangan</label>

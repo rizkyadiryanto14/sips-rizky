@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    .left-item {
-        position: absolute;
-        left: auto;
-    }
+        .left-item {
+            position: absolute;
+            left: auto;
+        }
     </style>
 </head>
 
@@ -427,8 +427,7 @@
             <tr class="font-weight">
                 <td style="height: 150px;">
 
-                    <img src="<?= base_url() ?>assets/uploads/signature/<?= $showData[0]['penguji_signatutre']; ?>"
-                        height="15%">
+                    <img src="<?= base_url() ?>assets/uploads/signature/<?= $showData[0]['penguji_signatutre']; ?>" height="15%">
                 </td>
             <tr>
             <tr class="font-weight">

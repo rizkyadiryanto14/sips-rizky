@@ -27,21 +27,21 @@ class Jadwal_dosen extends MY_Controller
     public function TambahJadwal()
     {
 
-        $nama       = $this->input->post('nama');
+        $id_dosen   = $this->input->post('id_dosen');
         $jadwal     = $this->input->post('jadwal');
         $ruangan    = $this->input->post('ruangan');
         $nama_mk    = $this->input->post('nama_mk');
 
         $data = array(
-            'nama'          => $nama,
+            'id_dosen'      => $id_dosen,
             'jadwal'        => $jadwal,
             'ruangan'       => $ruangan,
             'nama_mk'       => $nama_mk
         );
-        // var_dump($data);
-        // die();
+        var_dump($data);
+        die();
 
-        $insert = $this->Jadwal_dosen_model->TambahJadwal($data);
+        $insert = $this->Jadwal_dosen_model->TambahJadwal($id_dosen, $data);
 
         if ($insert) {
             $this->session->set_flashdata('sukses', 'Data Jadwal Dosen Berhasil Di Tambahkan');
@@ -55,14 +55,14 @@ class Jadwal_dosen extends MY_Controller
     public function EditJadwalDosen()
     {
         $id         = $this->input->post('id');
-        $nama       = $this->input->post('nama');
+        $nama_dosen = $this->input->post('nama_dosen');
         $jadwal     = $this->input->post('jadwal');
         $ruangan    = $this->input->post('ruangan');
         $nama_mk    = $this->input->post('nama_mk');
 
         $data = array(
-            'nama'          => $nama,
-            'jadwal'        => $jadwal,
+            'nama_dosen'    => $nama_dosen,
+            'jadwal'         => $jadwal,
             'ruangan'       => $ruangan,
             'nama_mk'       => $nama_mk
         );

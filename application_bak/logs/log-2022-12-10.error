@@ -1,0 +1,56 @@
+ERROR - 2022-12-10 00:43:52 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-10 00:51:20 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-10 01:38:00 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-10 01:41:42 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-10 00:06:56 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-10 00:07:39 --> Severity: Warning --> max(): Array must contain at least one element C:\laragon\www\olivera\application\models\Skripsi_model.php 68
+ERROR - 2022-12-10 07:12:59 --> Severity: Warning --> unlink(./assets/essence/img/slider/): Is a directory C:\laragon\www\olivera\application\controllers\Home.php 327
+ERROR - 2022-12-10 07:12:59 --> Severity: error --> Exception: Call to a member function data() on null C:\laragon\www\olivera\application\controllers\Home.php 331
+ERROR - 2022-12-10 00:19:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:19:28 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 07:19:30 --> Severity: Warning --> unlink(./assets/essence/img/slider/): Is a directory C:\laragon\www\olivera\application\controllers\Home.php 327
+ERROR - 2022-12-10 07:19:30 --> Severity: error --> Exception: Call to a member function data() on null C:\laragon\www\olivera\application\controllers\Home.php 331
+ERROR - 2022-12-10 07:19:48 --> Severity: Warning --> unlink(./assets/essence/img/slider/): Is a directory C:\laragon\www\olivera\application\controllers\Home.php 327
+ERROR - 2022-12-10 07:19:48 --> Severity: error --> Exception: Call to a member function data() on null C:\laragon\www\olivera\application\controllers\Home.php 331
+ERROR - 2022-12-10 00:19:49 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:19:49 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:19:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:19:50 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:19:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:19:52 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 07:20:13 --> Severity: Warning --> unlink(./assets/essence/img/slider/): Is a directory C:\laragon\www\olivera\application\controllers\Home.php 327
+ERROR - 2022-12-10 07:20:13 --> Severity: error --> Exception: Call to a member function data() on null C:\laragon\www\olivera\application\controllers\Home.php 331
+ERROR - 2022-12-10 00:20:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:20:16 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:20:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:20:40 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:22:12 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:22:13 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 07:22:44 --> Severity: Warning --> unlink(./assets/essence/img/slider/): Is a directory C:\laragon\www\olivera\application\controllers\Home.php 327
+ERROR - 2022-12-10 07:22:44 --> Severity: error --> Exception: Call to a member function data() on null C:\laragon\www\olivera\application\controllers\Home.php 331
+ERROR - 2022-12-10 00:22:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:22:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:23:00 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:23:00 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:23:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:23:05 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 07:23:45 --> Severity: Warning --> unlink(./assets/essence/img/timeline/): Is a directory C:\laragon\www\olivera\application\controllers\Home.php 328
+ERROR - 2022-12-10 07:23:45 --> Severity: error --> Exception: Call to a member function data() on null C:\laragon\www\olivera\application\controllers\Home.php 332
+ERROR - 2022-12-10 07:25:30 --> Severity: Warning --> unlink(./assets/essence/img/timeline/): Is a directory C:\laragon\www\olivera\application\controllers\Home.php 329
+ERROR - 2022-12-10 07:25:30 --> Severity: error --> Exception: Call to a member function data() on null C:\laragon\www\olivera\application\controllers\Home.php 333
+ERROR - 2022-12-10 00:25:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:25:32 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:25:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:25:37 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 07:25:44 --> Severity: Warning --> unlink(./assets/essence/img/timeline/): Is a directory C:\laragon\www\olivera\application\controllers\Home.php 329
+ERROR - 2022-12-10 07:25:44 --> Severity: error --> Exception: Call to a member function data() on null C:\laragon\www\olivera\application\controllers\Home.php 333
+ERROR - 2022-12-10 00:25:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:25:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 07:26:12 --> Severity: Warning --> unlink(./assets/essence/img/timeline/): Is a directory C:\laragon\www\olivera\application\controllers\Home.php 329
+ERROR - 2022-12-10 07:26:12 --> Severity: error --> Exception: Call to a member function data() on null C:\laragon\www\olivera\application\controllers\Home.php 333
+ERROR - 2022-12-10 00:26:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:26:14 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:27:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 00:27:59 --> 404 Page Not Found: Cdn/vendor
+ERROR - 2022-12-10 07:28:11 --> Severity: Warning --> unlink(./assets/essence/img/timeline/): Is a directory C:\laragon\www\olivera\application\controllers\Home.php 331
+ERROR - 2022-12-10 07:28:11 --> Severity: error --> Exception: Call to a member function data() on null C:\laragon\www\olivera\application\controllers\Home.php 335

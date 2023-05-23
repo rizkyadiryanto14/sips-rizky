@@ -1,0 +1,4 @@
+ERROR - 2023-05-19 23:51:19 --> Severity: User Error --> Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.4.0". You are running 5.6.40. /home2/ela39087/demo.elaksi.com/vendor/composer/platform_check.php 25
+ERROR - 2023-05-19 23:52:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-19 23:52:25 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-19 23:52:26 --> 404 Page Not Found: Assets/essence

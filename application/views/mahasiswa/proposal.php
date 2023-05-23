@@ -53,11 +53,11 @@
                     <div class="modal-title">Tambah Pendaftaran </div>
                 </div>
                 <div class="modal-body">
-
+                    <input type="hidden" name="mahasiswa_id" value="<?= $this->session->userdata('id') ?>">
                     <div class="form-group">
                         <label>Judul</label>
-                        <input type="hidden" name="mahasiswa_id" value="<?= $this->session->userdata('id') ?>">
-                        <input name="judul" placeholder="Masukkan Judul" autocomplete="off" type="text" class="form-control">
+                        <input name="judul" placeholder="Masukkan Judul" autocomplete="off" type="text"
+                            class="form-control">
                     </div>
                     <div class="form-group">
                         <label>Dosen Pembimbing</label>
@@ -77,7 +77,8 @@
                     </div>
                     <div class="form-group">
                         <label>Outline</label>
-                        <input type="file" class="form-control" name="pilih-outline_skripsi" id="outline_skripsi" accept="application/pdf">
+                        <input type="file" class="form-control" name="pilih-outline_skripsi" id="outline_skripsi"
+                            accept="application/pdf">
                         <input type="hidden" name="outline_skripsi">
                     </div>
                     <div class="form-group">
@@ -185,237 +186,237 @@
 <script src="<?= base_url() ?>cdn/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="<?= base_url() ?>cdn/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script>
-    $(document).ready(function() {
+$(document).ready(function() {
 
-        call('api/dosen').done(function(req) {
-            dosen = '<option value="">- Pilih Dosen -</option>';
-            if (req.data) {
-                $.each(req.data, function(index, obj) {
-                    dosen += '<option value="' + obj.id + '">' + obj.nama + '</option>';
-                })
-            }
-            $('[name=dosen_id]').html(dosen);
-        })
+    call('api/dosen').done(function(req) {
+        dosen = '<option value="">- Pilih Dosen -</option>';
+        if (req.data) {
+            $.each(req.data, function(index, obj) {
+                dosen += '<option value="' + obj.id + '">' + obj.nama + '</option>';
+            })
+        }
+        $('[name=dosen_id]').html(dosen);
+    })
 
-        function show() {
-            $('#data-proposal').DataTable().destroy();
-            $('#data-proposal').DataTable({
-                "deferRender": true,
-                "ajax": {
-                    "url": base_url + 'api/proposal_mahasiswa',
-                    "method": "POST",
-                    "data": {
-                        mahasiswa_id: '<?= $this->session->userdata('id') ?>'
-                    },
-                    "dataSrc": "data"
+    function show() {
+        $('#data-proposal').DataTable().destroy();
+        $('#data-proposal').DataTable({
+            "deferRender": true,
+            "ajax": {
+                "url": base_url + 'api/proposal_mahasiswa',
+                "method": "POST",
+                "data": {
+                    mahasiswa_id: '<?= $this->session->userdata('id') ?>'
                 },
-                "columns": [{
-                        data: null,
-                        render: function(data, type, row, meta) {
-                            return meta.row + meta.settings._iDisplayStart + 1;
+                "dataSrc": "data"
+            },
+            "columns": [{
+                    data: null,
+                    render: function(data, type, row, meta) {
+                        return meta.row + meta.settings._iDisplayStart + 1;
+                    }
+                },
+                {
+                    data: "mahasiswa",
+                    render: function(data) {
+                        return data.nim;
+                    }
+                },
+                {
+                    data: "mahasiswa",
+                    render: function(data) {
+                        return data.nama;
+                    }
+                },
+                {
+                    data: "judul"
+                },
+                {
+                    data: "transkip",
+                    render: function(data) {
+                        return '<a href="' + base_url + 'cdn/vendor/skripsi/transkip/' + data +
+                            '">' + data + '</a>';
+                    }
+                },
+                {
+                    data: "krs",
+                    render: function(data) {
+                        return '<a href="' + base_url + 'cdn/vendor/skripsi/krs/' + data +
+                            '">' + data + '</a>';
+                    }
+                },
+                {
+                    data: "outline_skripsi",
+                    render: function(data) {
+                        return '<a href="' + base_url + 'cdn/vendor/skripsi/outline_skripsi/' +
+                            data +
+                            '">' + data + '</a>';
+                    }
+                },
+                {
+                    data: null,
+                    render: function(data) {
+                        return data.pembimbing.nama
+                    }
+                },
+                {
+                    data: "plagiat"
+                },
+                {
+                    data: "lulus_mkMetodologi"
+                },
+                {
+                    data: "lulus_mkWajib"
+                },
+                {
+                    data: null,
+                    render: function(data) {
+                        if (data.status == 1) {
+                            return '<span class="badge badge-success">Judul Diterima</span>';
+                        } else if (data.status == 0) {
+                            return '<span class="badge badge-danger">Menunggu Di Review</span>';
+                        } else if (data.status == 2) {
+                            return '<span class="badge badge-warning">Menunggu Di Review</span>';
                         }
-                    },
-                    {
-                        data: "mahasiswa",
-                        render: function(data) {
-                            return data.nim;
-                        }
-                    },
-                    {
-                        data: "mahasiswa",
-                        render: function(data) {
-                            return data.nama;
-                        }
-                    },
-                    {
-                        data: "judul"
-                    },
-                    {
-                        data: "transkip",
-                        render: function(data) {
-                            return '<a href="' + base_url + 'cdn/vendor/skripsi/transkip/' + data +
-                                '">' + data + '</a>';
-                        }
-                    },
-                    {
-                        data: "krs",
-                        render: function(data) {
-                            return '<a href="' + base_url + 'cdn/vendor/skripsi/krs/' + data +
-                                '">' + data + '</a>';
-                        }
-                    },
-                    {
-                        data: "outline_skripsi",
-                        render: function(data) {
-                            return '<a href="' + base_url + 'cdn/vendor/skripsi/outline_skripsi/' +
-                                data +
-                                '">' + data + '</a>';
-                        }
-                    },
-                    {
-                        data: null,
-                        render: function(data) {
-                            return data.pembimbing.nama
-                        }
-                    },
-                    {
-                        data: "plagiat"
-                    },
-                    {
-                        data: "lulus_mkMetodologi"
-                    },
-                    {
-                        data: "lulus_mkWajib"
-                    },
-                    {
-                        data: null,
-                        render: function(data) {
-                            if (data.status == 1) {
-                                return '<span class="badge badge-success">Judul Diterima</span>';
-                            } else if (data.status == 0) {
-                                return '<span class="badge badge-danger">Menunggu Di Review</span>';
-                            } else if (data.status == 2) {
-                                return '<span class="badge badge-warning">Menunggu Di Review</span>';
-                            }
-                        }
+                    }
 
-                    },
-                    {
-                        data: null,
-                        render: function(data) {
-                            return '\
+                },
+                {
+                    data: null,
+                    render: function(data) {
+                        return '\
                             <div class="text-center">\
                             <button class="btn btn-sm btn-info btn-edit" type="button" data-toggle="modal" data-target="#edit" data-id="' +
-                                data.id + '" data-mahasiswa_id="' + data.mahasiswa_id +
-                                '" data-judul="' + data.judul + '" data-ringkasan="' + data
-                                .ringkasan + '" data-dosen_id="' + data.dosen_id +
-                                '">\
+                            data.id + '" data-mahasiswa_id="' + data.mahasiswa_id +
+                            '" data-judul="' + data.judul + '" data-ringkasan="' + data
+                            .ringkasan + '" data-dosen_id="' + data.dosen_id +
+                            '">\
                                 <i class="fa fa-pen"></i>\
                             </button>\
                             <button class="btn btn-sm btn-danger btn-hapus" type="button" data-toggle="modal" data-target="#hapus" data-id="' +
-                                data.id + '" data-judul="' +
-                                data.judul + '">\
+                            data.id + '" data-judul="' +
+                            data.judul + '">\
                                 <i class="fa fa-trash"></i>\
                             </button>\
                             </div>\
                             ';
-                        }
                     }
-                ],
-                "language": {
-                    "zeroRecords": "data tidak tersedia"
                 }
-            });
-        }
+            ],
+            "language": {
+                "zeroRecords": "data tidak tersedia"
+            }
+        });
+    }
 
-        show();
+    show();
 
-        $(document).on('submit', 'form#tambah', function(e) {
-            e.preventDefault();
-            $(".btn-konfirmasi").attr('disabled', true).html('Loading...')
-            call('api/proposal_mahasiswa/create', $(this).serialize()).done(function(req) {
-                if (req.error == true) {
-                    notif(req.message, 'error', true);
-                    $('form#tambah [name]').val('');
-                    $('div#tambah').modal('hide');
-                    $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
-                } else {
-                    notif(req.message, 'success');
-                    $('form#tambah [name]').val('');
-                    $('div#tambah').modal('hide');
-                    show();
-                    $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
-                }
-            })
+    $(document).on('submit', 'form#tambah', function(e) {
+        e.preventDefault();
+        $(".btn-konfirmasi").attr('disabled', true).html('Loading...')
+        call('api/proposal_mahasiswa/create', $(this).serialize()).done(function(req) {
+            if (req.error == true) {
+                notif(req.message, 'error', true);
+                $('form#tambah [name]').val('');
+                $('div#tambah').modal('hide');
+                $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
+            } else {
+                notif(req.message, 'success');
+                $('form#tambah [name]').val('');
+                $('div#tambah').modal('hide');
+                show();
+                $(".btn-konfirmasi").attr('disabled', false).html('Konfirmasi')
+            }
         })
-
-
-        // form tambah file
-        $(document).on('change', 'form#tambah [name=pilih-transkip]', function() {
-            read('form#tambah [name=pilih-transkip]', function(data) {
-                $('form#tambah [name=transkip]').val(data.result);
-            })
-        })
-
-        $(document).on('change', 'form#tambah [name=pilih-krs]', function() {
-            read('form#tambah [name=pilih-krs]', function(data) {
-                $('form#tambah [name=krs]').val(data.result);
-            })
-        })
-
-        $(document).on('change', 'form#tambah [name=pilih-outline_skripsi]', function() {
-            read('form#tambah [name=pilih-outline_skripsi]', function(data) {
-                $('form#tambah [name=outline_skripsi]').val(data.result);
-            })
-        })
-
-
-        // form edit file
-        $(document).on('change', 'form#edit [name=pilih-transkip]', function() {
-            read('form#edit [name=pilih-transkip]', function(data) {
-                $('form#edit [name=transkip]').val(data.result);
-            })
-        })
-
-        $(document).on('change', 'form#edit [name=pilih-krs]', function() {
-            read('form#edit [name=pilih-krs]', function(data) {
-                $('form#edit [name=krs]').val(data.result);
-            })
-        })
-
-        $(document).on('change', 'form#edit [name=pilih-outline_skripsi]', function() {
-            read('form#edit [name=pilih-outline_skripsi]', function(data) {
-                $('form#edit [name=outline_skripsi]').val(data.result);
-            })
-        })
-
-        $(document).on('click', 'button.btn-edit', function() {
-            $('form#edit .id').val($(this).data('id'));
-            $('form#edit [name=mahasiswa_id]').val($(this).data('mahasiswa_id'));
-            $('form#edit [name=judul]').val($(this).data('judul'));
-            $('form#edit [name=dosen_id]').val($(this).data('dosen_id'));
-            $('form#edit [name=def_transkip]').val($(this).data('transkip'));
-            $('form#edit [name=def_krs]').val($(this).data('krs'));
-            $('form#edit [name=def_outline_skripsi]').val($(this).data('outline_skripsi'));
-        })
-
-        $(document).on('submit', 'form#edit', function(e) {
-            e.preventDefault();
-            $(".btn-konfirmasi").attr('disabled', true).html('Loading...')
-            var id = $('form#edit .id').val();
-            call('api/proposal_mahasiswa/update/' + id, $(this).serialize()).done(function(req) {
-                if (req.error == true) {
-                    notif(req.message, 'error', true);
-                } else {
-                    notif(req.message, 'success');
-                    $('form#edit [name]').val('');
-                    $('div#edit').modal('hide');
-                    show();
-                }
-            })
-        })
-
-        $(document).on('click', 'button.btn-hapus', function() {
-            $('form#hapus .id').val($(this).data('id'));
-            $('form#hapus .judul').html($(this).data('judul'));
-        })
-
-        $(document).on('submit', 'form#hapus', function(e) {
-            e.preventDefault();
-            var id = $('form#hapus .id').val();
-            call('api/proposal_mahasiswa/destroy/' + id).done(function(req) {
-                if (req.error == true) {
-                    notif(req.message, 'error', true);
-                } else {
-                    notif(req.message, 'success');
-                    $('form#hapus [name]').val('');
-                    $('div#hapus').modal('hide');
-                    show();
-                }
-            })
-        })
-
     })
+
+
+    // form tambah file
+    $(document).on('change', 'form#tambah [name=pilih-transkip]', function() {
+        read('form#tambah [name=pilih-transkip]', function(data) {
+            $('form#tambah [name=transkip]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#tambah [name=pilih-krs]', function() {
+        read('form#tambah [name=pilih-krs]', function(data) {
+            $('form#tambah [name=krs]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#tambah [name=pilih-outline_skripsi]', function() {
+        read('form#tambah [name=pilih-outline_skripsi]', function(data) {
+            $('form#tambah [name=outline_skripsi]').val(data.result);
+        })
+    })
+
+
+    // form edit file
+    $(document).on('change', 'form#edit [name=pilih-transkip]', function() {
+        read('form#edit [name=pilih-transkip]', function(data) {
+            $('form#edit [name=transkip]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#edit [name=pilih-krs]', function() {
+        read('form#edit [name=pilih-krs]', function(data) {
+            $('form#edit [name=krs]').val(data.result);
+        })
+    })
+
+    $(document).on('change', 'form#edit [name=pilih-outline_skripsi]', function() {
+        read('form#edit [name=pilih-outline_skripsi]', function(data) {
+            $('form#edit [name=outline_skripsi]').val(data.result);
+        })
+    })
+
+    $(document).on('click', 'button.btn-edit', function() {
+        $('form#edit .id').val($(this).data('id'));
+        $('form#edit [name=mahasiswa_id]').val($(this).data('mahasiswa_id'));
+        $('form#edit [name=judul]').val($(this).data('judul'));
+        $('form#edit [name=dosen_id]').val($(this).data('dosen_id'));
+        $('form#edit [name=def_transkip]').val($(this).data('transkip'));
+        $('form#edit [name=def_krs]').val($(this).data('krs'));
+        $('form#edit [name=def_outline_skripsi]').val($(this).data('outline_skripsi'));
+    })
+
+    $(document).on('submit', 'form#edit', function(e) {
+        e.preventDefault();
+        $(".btn-konfirmasi").attr('disabled', true).html('Loading...')
+        var id = $('form#edit .id').val();
+        call('api/proposal_mahasiswa/update/' + id, $(this).serialize()).done(function(req) {
+            if (req.error == true) {
+                notif(req.message, 'error', true);
+            } else {
+                notif(req.message, 'success');
+                $('form#edit [name]').val('');
+                $('div#edit').modal('hide');
+                show();
+            }
+        })
+    })
+
+    $(document).on('click', 'button.btn-hapus', function() {
+        $('form#hapus .id').val($(this).data('id'));
+        $('form#hapus .judul').html($(this).data('judul'));
+    })
+
+    $(document).on('submit', 'form#hapus', function(e) {
+        e.preventDefault();
+        var id = $('form#hapus .id').val();
+        call('api/proposal_mahasiswa/destroy/' + id).done(function(req) {
+            if (req.error == true) {
+                notif(req.message, 'error', true);
+            } else {
+                notif(req.message, 'success');
+                $('form#hapus [name]').val('');
+                $('div#hapus').modal('hide');
+                show();
+            }
+        })
+    })
+
+})
 </script>
 <?php $this->app->endSection('script') ?>
 

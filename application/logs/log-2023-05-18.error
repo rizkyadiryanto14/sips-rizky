@@ -1,0 +1,768 @@
+ERROR - 2023-05-18 00:00:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:00:39 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:02:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:02:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:02:29 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from proposal_mahasiswa where status='1' and id not in (select id_sempro from...' at line 1 - Invalid query: INSERT id from proposal_mahasiswa where status='1' and id not in (select id_sempro from jadwalsempro)
+ERROR - 2023-05-18 00:02:29 --> Severity: error --> Exception: Call to a member function row() on bool /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 148
+ERROR - 2023-05-18 00:02:53 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:02:53 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:02:54 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,3,3,0,)
+ERROR - 2023-05-18 00:04:23 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:04:23 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:04:23 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'rand()' at line 1 - Invalid query: select id from proposal_mahasiswa where status='1' and id not in (select id_sempro from jadwalsempro) order by id rand()
+ERROR - 2023-05-18 00:04:23 --> Severity: error --> Exception: Call to a member function row() on bool /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 148
+ERROR - 2023-05-18 00:05:44 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:05:44 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:05:44 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,2,6,0,)
+ERROR - 2023-05-18 00:07:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:07:50 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:07:51 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,6,7,)
+ERROR - 2023-05-18 00:08:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:08:48 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:08:48 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '89)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(9,3,5,,89)
+ERROR - 2023-05-18 00:08:48 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '89)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(10,1,4,,89)
+ERROR - 2023-05-18 00:08:48 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '89)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(12,2,2,,89)
+ERROR - 2023-05-18 00:08:48 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '89)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(13,1,3,,89)
+ERROR - 2023-05-18 00:08:48 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '89)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,5,,89)
+ERROR - 2023-05-18 00:10:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:10:39 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:10:39 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,3,1,3,)
+ERROR - 2023-05-18 00:12:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:12:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:12:29 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,3,1,)
+ERROR - 2023-05-18 00:13:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:13:39 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:13:40 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,2,6,1,)
+ERROR - 2023-05-18 00:14:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:14:02 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:14:03 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,3,3,3,)
+ERROR - 2023-05-18 00:24:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:24:17 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:24:18 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '85)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(2,2,1,,85)
+ERROR - 2023-05-18 00:24:18 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '85)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(4,1,2,,85)
+ERROR - 2023-05-18 00:24:18 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '85)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(7,1,3,,85)
+ERROR - 2023-05-18 00:24:18 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '85)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(8,2,2,,85)
+ERROR - 2023-05-18 00:24:18 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '86)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(10,3,1,,86)
+ERROR - 2023-05-18 00:24:18 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '86)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(12,3,3,,86)
+ERROR - 2023-05-18 00:24:18 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '86)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(13,1,1,,86)
+ERROR - 2023-05-18 00:24:18 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '86)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,2,4,,86)
+ERROR - 2023-05-18 00:24:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:24:56 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:24:58 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '85)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(2,1,1,,85)
+ERROR - 2023-05-18 00:24:58 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '85)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(4,3,5,,85)
+ERROR - 2023-05-18 00:24:58 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '85)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(7,3,2,,85)
+ERROR - 2023-05-18 00:24:58 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '87)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(10,2,2,,87)
+ERROR - 2023-05-18 00:24:58 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '87)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(12,3,4,,87)
+ERROR - 2023-05-18 00:24:58 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '87)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(13,3,3,,87)
+ERROR - 2023-05-18 00:27:01 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:27:01 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:27:01 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,3,6,3,)
+ERROR - 2023-05-18 00:29:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:29:02 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:29:02 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(1,2,2,1,2,3,4,5,84)
+ERROR - 2023-05-18 00:29:02 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(2,2,3,1,2,3,4,5,84)
+ERROR - 2023-05-18 00:29:02 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(4,1,4,1,2,3,4,5,84)
+ERROR - 2023-05-18 00:29:02 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(7,2,1,1,2,3,4,5,84)
+ERROR - 2023-05-18 00:29:02 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(8,1,6,1,2,3,4,5,84)
+ERROR - 2023-05-18 00:29:02 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(9,1,1,1,2,3,4,5,84)
+ERROR - 2023-05-18 00:29:02 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(10,3,6,1,2,3,4,5,84)
+ERROR - 2023-05-18 00:29:02 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(12,1,5,1,2,3,4,5,84)
+ERROR - 2023-05-18 00:29:02 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(13,2,6,1,2,3,4,5,84)
+ERROR - 2023-05-18 00:29:02 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,3,2,1,2,3,4,5,84)
+ERROR - 2023-05-18 00:29:47 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:29:47 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:30:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:30:30 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:30:30 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(1,3,2,1,2,3,4,5,84)
+ERROR - 2023-05-18 00:30:30 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(4,3,4,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:30:30 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(7,3,5,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:30:30 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(8,1,6,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:30:30 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(9,1,1,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:30:30 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(10,3,3,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:30:30 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(12,3,1,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:30:30 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(13,1,3,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:30:30 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,2,1,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:31:12 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:31:12 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:31:12 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(1,2,6,1,2,3,4,5,84)
+ERROR - 2023-05-18 00:31:12 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(4,3,4,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:31:12 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(7,3,5,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:31:12 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(8,1,2,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:31:12 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(9,1,4,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:31:12 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(10,2,1,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:31:12 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(12,2,2,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:31:12 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(13,1,3,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:31:12 --> Query error: Column count doesn't match value count at row 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,2,4,1,2,3,4,5,85)
+ERROR - 2023-05-18 00:31:42 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:31:42 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:31:43 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '84)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(1,2,6,.$room.,84)
+ERROR - 2023-05-18 00:31:43 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '84)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(2,3,1,.$room.,84)
+ERROR - 2023-05-18 00:31:43 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '84)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(4,1,3,.$room.,84)
+ERROR - 2023-05-18 00:31:43 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '84)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(7,2,4,.$room.,84)
+ERROR - 2023-05-18 00:31:43 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '85)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(9,3,3,.$room.,85)
+ERROR - 2023-05-18 00:31:43 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '86)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(12,3,5,.$room.,86)
+ERROR - 2023-05-18 00:31:43 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '86)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(13,1,6,.$room.,86)
+ERROR - 2023-05-18 00:31:43 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '86)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,4,.$room.,86)
+ERROR - 2023-05-18 00:34:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:34:33 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:34:34 --> Severity: Warning --> array_rand() expects parameter 1 to be array, string given /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 152
+ERROR - 2023-05-18 00:34:34 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '85)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(2,1,4,,85)
+ERROR - 2023-05-18 00:34:34 --> Severity: Warning --> array_rand() expects parameter 1 to be array, string given /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 152
+ERROR - 2023-05-18 00:34:34 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '85)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(4,1,2,,85)
+ERROR - 2023-05-18 00:34:34 --> Severity: Warning --> array_rand() expects parameter 1 to be array, string given /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 152
+ERROR - 2023-05-18 00:34:34 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '85)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(7,3,6,,85)
+ERROR - 2023-05-18 00:34:34 --> Severity: Warning --> array_rand() expects parameter 1 to be array, string given /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 152
+ERROR - 2023-05-18 00:34:34 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '86)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(9,2,4,,86)
+ERROR - 2023-05-18 00:34:34 --> Severity: Warning --> array_rand() expects parameter 1 to be array, string given /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 152
+ERROR - 2023-05-18 00:34:34 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '87)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(12,1,5,,87)
+ERROR - 2023-05-18 00:34:34 --> Severity: Warning --> array_rand() expects parameter 1 to be array, string given /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 152
+ERROR - 2023-05-18 00:34:34 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '88)' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,3,,88)
+ERROR - 2023-05-18 00:36:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:36:56 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:36:57 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,6,3,)
+ERROR - 2023-05-18 00:37:36 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:37:36 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:37:36 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,3,2,5,)
+ERROR - 2023-05-18 00:39:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:39:25 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:39:26 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:39:26 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:39:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:39:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:39:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:39:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:39:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:39:34 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:39:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:39:34 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:39:35 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:39:35 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:39:35 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:39:35 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:41:31 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:41:31 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:41:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:41:32 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:41:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:41:49 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:41:50 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,2,4,1,)
+ERROR - 2023-05-18 00:41:50 --> 404 Page Not Found: admin/GenerateSempro/jadwal
+ERROR - 2023-05-18 00:42:14 --> Severity: Compile Error --> Cannot redeclare GenerateSempro::index() /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 60
+ERROR - 2023-05-18 00:42:45 --> Severity: Compile Error --> Cannot redeclare GenerateSempro::index() /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 60
+ERROR - 2023-05-18 00:42:47 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:42:47 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:42:47 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:42:47 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:42:47 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:42:47 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:42:47 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:42:47 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:43:40 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:43:40 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:43:41 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:43:41 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:43:41 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:43:41 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:43:41 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:43:41 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:43:43 --> Severity: Compile Error --> Cannot redeclare GenerateSempro::index() /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 60
+ERROR - 2023-05-18 00:44:08 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:44:08 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:44:08 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:44:08 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:44:09 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:44:09 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:44:10 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,4,1,)
+ERROR - 2023-05-18 00:44:10 --> 404 Page Not Found: admin/GenerateSempro/jadwal
+ERROR - 2023-05-18 00:44:19 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:44:19 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:44:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:44:20 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:44:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:44:20 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:44:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:44:20 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:46:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:46:02 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:46:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:46:03 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:54:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:54:34 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:54:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:54:34 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:54:53 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:54:53 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:54:54 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:54:54 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:55:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:55:37 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:55:37 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:55:37 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:57:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:57:25 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:57:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:57:25 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:57:54 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:57:54 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:57:54 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:57:54 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:58:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:58:17 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:58:18 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:58:18 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:58:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:58:49 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:58:49 --> Query error: Unknown column 'nama_ruang' in 'field list' - Invalid query: select nama_ruang from ruangan where id='4'
+ERROR - 2023-05-18 00:58:49 --> Severity: error --> Exception: Call to a member function row() on bool /home2/ela39087/demo.elaksi.com/application/views/admin/jadwalsempro.php 33
+ERROR - 2023-05-18 00:59:08 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:59:08 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 00:59:09 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 00:59:09 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:00:04 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:00:04 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:00:04 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:00:04 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:02:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:02:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:02:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:02:30 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:02:58 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:02:58 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:02:58 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:02:58 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:03:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:03:17 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:03:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:03:17 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:05:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:05:03 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:05:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:05:03 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:05:36 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:05:36 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:05:36 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:05:36 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:05:58 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:05:58 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:05:58 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:05:58 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:06:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:06:48 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:06:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:06:49 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:06:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:06:52 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:06:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:06:52 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:06:53 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:06:53 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:06:54 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,4,3,)
+ERROR - 2023-05-18 01:06:54 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:06:54 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:06:55 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:06:55 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:07:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:07:52 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:07:53 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:07:53 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:08:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:08:03 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:08:04 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:08:04 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:08:42 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:08:42 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:08:42 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:08:42 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:09:04 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:09:04 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:09:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:09:05 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:09:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:09:06 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:09:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:09:06 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:09:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:09:07 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:09:08 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,6,5,)
+ERROR - 2023-05-18 01:09:08 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:09:08 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:09:09 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:09:09 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:13 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:13 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:13 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:13 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:15 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:15 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:16 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,2,1,4,)
+ERROR - 2023-05-18 01:10:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:16 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:17 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:19 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:19 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:20 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:23 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:23 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:23 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,2,4,)
+ERROR - 2023-05-18 01:10:23 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:23 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:24 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:28 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:28 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:29 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,2,1,)
+ERROR - 2023-05-18 01:10:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:30 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:30 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:45 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:45 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:46 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:46 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:46 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:46 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:47 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,2,1,3,)
+ERROR - 2023-05-18 01:10:47 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:47 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:47 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:47 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:52 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:53 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:53 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:54 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:54 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:54 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,3,6,2,)
+ERROR - 2023-05-18 01:10:54 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:54 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:10:55 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:10:55 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:05 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:06 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:07 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:07 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,2,3,2,)
+ERROR - 2023-05-18 01:11:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:07 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:07 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:25 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:25 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:26 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:26 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:26 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,3,6,3,)
+ERROR - 2023-05-18 01:11:26 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:26 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:27 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:27 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:46 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:46 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:46 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:46 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:47 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:47 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:47 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,1,3,)
+ERROR - 2023-05-18 01:11:47 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:47 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:48 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:52 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:52 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:56 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:56 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,4,2,)
+ERROR - 2023-05-18 01:11:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:56 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:11:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:11:56 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:13:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:13:07 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 01:13:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 01:13:07 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:39:35 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:39:35 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:39:36 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-05-18 19:39:43 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:39:43 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:39:47 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:39:47 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:39:52 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:39:52 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:39:53 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:39:53 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:39:53 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:39:53 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:39:54 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:39:54 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:39:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:39:56 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:39:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:39:56 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:39:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:39:56 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:39:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:39:56 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:40:00 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:40:00 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:40:00 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:40:00 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:40:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:40:02 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:40:03 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,1,3,)
+ERROR - 2023-05-18 19:40:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:40:03 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:40:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:40:03 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:43:18 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:43:18 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:43:19 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:43:19 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:45:04 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:45:04 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:45:04 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:45:04 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:45:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:45:05 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:45:05 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,14,3,2,3,)
+ERROR - 2023-05-18 19:45:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:45:05 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:45:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:45:06 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:09 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:09 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:10 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:10 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:10 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:10 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:11 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:12 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:12 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:12 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,0,3,2,4,)
+ERROR - 2023-05-18 19:47:12 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:12 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:12 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:12 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:16 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:16 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:17 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:17 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,0,1,2,1,)
+ERROR - 2023-05-18 19:47:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:17 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:17 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:19 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:19 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:19 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:19 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:20 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:21 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,0,3,6,2,)
+ERROR - 2023-05-18 19:47:21 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:21 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:47:22 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:47:22 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:48:27 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:48:27 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:48:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:48:28 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:48:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:48:28 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:48:29 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,1,5,2,)
+ERROR - 2023-05-18 19:48:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:48:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:48:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:48:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:51:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:51:24 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:51:24 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:51:24 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:51:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:51:25 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:51:25 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,2,1,4,)
+ERROR - 2023-05-18 19:51:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:51:25 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:51:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:51:25 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:52:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:52:06 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:52:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:52:06 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:52:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:52:07 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:52:07 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,3,5,3,)
+ERROR - 2023-05-18 19:52:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:52:07 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:52:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:52:07 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:53:22 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:53:22 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:53:22 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:53:22 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:53:23 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:53:23 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:53:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:53:34 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:53:55 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:53:55 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:54:12 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:54:12 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:54:13 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and jadwal !='08.00-10.00'' at line 1 - Invalid query: select id from dosen where id not in (1,) and jadwal !='08.00-10.00'
+ERROR - 2023-05-18 19:54:13 --> Severity: error --> Exception: Call to a member function row() on bool /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 167
+ERROR - 2023-05-18 19:54:31 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:54:31 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:54:31 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and jadwal !='08.00-10.00'' at line 1 - Invalid query: select id from dosen where id not in (1,) and jadwal !='08.00-10.00'
+ERROR - 2023-05-18 19:54:31 --> Severity: error --> Exception: Call to a member function row() on bool /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 169
+ERROR - 2023-05-18 19:55:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:55:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:55:29 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,1,6,1,)
+ERROR - 2023-05-18 19:55:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:55:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:55:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:55:30 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:55:55 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:55:55 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:55:55 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:55:55 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:55:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:55:56 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:55:56 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and jadwal !='10.30-13.00'' at line 1 - Invalid query: select id from dosen where id not in (14,) and jadwal !='10.30-13.00'
+ERROR - 2023-05-18 19:55:56 --> Severity: error --> Exception: Call to a member function row() on bool /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 175
+ERROR - 2023-05-18 19:56:25 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:56:25 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:56:26 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,3,6,2,)
+ERROR - 2023-05-18 19:56:27 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:56:27 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:56:27 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:56:27 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:01 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:01 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:02 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:02 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:03 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,12,1,2,1,)
+ERROR - 2023-05-18 19:57:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:03 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:03 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:17 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:17 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:17 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:18 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:18 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:18 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'rand()' at line 1 - Invalid query: select id from dosen where id not in (1,1) and jadwal !='13.30- 16.00' order by id rand()
+ERROR - 2023-05-18 19:57:18 --> Severity: error --> Exception: Call to a member function row() on bool /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 173
+ERROR - 2023-05-18 19:57:31 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:31 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:31 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,1,6,4,)
+ERROR - 2023-05-18 19:57:31 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:31 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:32 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:32 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:47 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:47 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:48 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:48 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:49 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,1,2,6,5,)
+ERROR - 2023-05-18 19:57:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:49 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:57:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:57:49 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:58:12 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:58:12 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:58:13 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:58:13 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:58:14 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:58:14 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:58:14 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,9,2,3,1,)
+ERROR - 2023-05-18 19:58:14 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:58:14 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:58:14 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:58:14 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:58:38 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:58:38 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:58:38 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:58:38 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:58:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:58:39 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:58:39 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,9,1,5,5,)
+ERROR - 2023-05-18 19:58:39 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:58:39 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:58:40 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:58:40 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:59:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:59:48 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:59:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:59:48 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:59:58 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:59:58 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:59:58 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,2,3,1,4,)
+ERROR - 2023-05-18 19:59:58 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:59:58 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 19:59:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 19:59:59 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:02:59 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:02:59 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:03:00 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:03:00 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:03:00 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:03:00 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:03:01 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,12,2,6,4,)
+ERROR - 2023-05-18 20:03:01 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:03:01 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:03:01 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:03:01 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:03:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:03:28 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:03:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:03:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:03:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:03:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:03:30 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,2,2,6,1,)
+ERROR - 2023-05-18 20:03:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:03:30 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:03:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:03:30 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:05:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:05:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:05:29 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:05:29 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:05:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:05:30 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:05:30 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') and jadwal !='10.30-13.00' order by rand()' at line 1 - Invalid query: select id from dosen where id not in (14,13,) and jadwal !='10.30-13.00' order by rand()
+ERROR - 2023-05-18 20:05:30 --> Severity: error --> Exception: Call to a member function row() on bool /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 170
+ERROR - 2023-05-18 20:05:53 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:05:53 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:05:53 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '14,13) and jadwal !='13.30- 16.00' order by rand()' at line 1 - Invalid query: select id from dosen where id not in (,14,13) and jadwal !='13.30- 16.00' order by rand()
+ERROR - 2023-05-18 20:05:53 --> Severity: error --> Exception: Call to a member function row() on bool /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 170
+ERROR - 2023-05-18 20:06:09 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:06:09 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:06:10 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '14,13) and jadwal !='10.30-13.00' order by rand()' at line 1 - Invalid query: select id from dosen where id not in (,14,13) and jadwal !='10.30-13.00' order by rand()
+ERROR - 2023-05-18 20:06:10 --> Severity: error --> Exception: Call to a member function row() on bool /home2/ela39087/demo.elaksi.com/application/controllers/admin/GenerateSempro.php 172
+ERROR - 2023-05-18 20:07:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:07:28 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:07:28 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,12,3,2,5,)
+ERROR - 2023-05-18 20:07:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:07:28 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:07:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:07:28 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:10:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:10:33 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:10:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:10:33 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:10:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:10:34 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:10:35 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,9,1,5,1,)
+ERROR - 2023-05-18 20:10:35 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:10:35 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:10:35 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:10:35 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:10:54 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:10:54 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:10:54 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:10:54 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:10:55 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:10:55 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:10:55 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,4,2,3,3,)
+ERROR - 2023-05-18 20:10:55 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:10:55 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:10:56 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:10:56 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:11:04 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:11:04 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:11:04 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:11:04 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:11:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:11:05 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:11:05 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,9,3,5,3,)
+ERROR - 2023-05-18 20:11:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:11:05 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:11:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:11:06 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:12:01 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:12:01 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:12:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:12:02 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:12:02 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:12:02 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:12:03 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,8,2,6,3,)
+ERROR - 2023-05-18 20:12:03 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:12:03 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:12:04 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:12:04 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:13:19 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:13:19 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:13:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:13:20 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:13:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:13:20 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:13:21 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,12,3,4,1,)
+ERROR - 2023-05-18 20:13:21 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:13:21 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:13:21 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:13:21 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:22:40 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:22:40 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:22:41 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-05-18 20:22:42 --> 404 Page Not Found: Assets/essence
+ERROR - 2023-05-18 20:22:49 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:22:49 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:22:51 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:22:51 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:05 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:05 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:06 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:06 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:06 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:06 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:06 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:06 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:06 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:06 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:22 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:22 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:22 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:22 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:27 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:27 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:28 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,7,3,4,4,)
+ERROR - 2023-05-18 20:23:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:28 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:28 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:28 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:42 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:42 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:42 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:42 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:47 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:47 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:48 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 - Invalid query: INSERT INTO jadwalsempro(id_dosen,id_dosen_2,id_jam,id_hari,id_ruang,id_sempro) VALUES(14,12,1,6,4,)
+ERROR - 2023-05-18 20:23:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:48 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-18 20:23:48 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-18 20:23:48 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334

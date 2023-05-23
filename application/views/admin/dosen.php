@@ -26,6 +26,7 @@
                         <th>NIP</th>
                         <th>Nama</th>
                         <th>Nomor Telepon</th>
+                        <th>Jadwal Dosen</th>
                         <th>Email</th>
                         <th>Aksi</th>
                     </tr>
@@ -44,24 +45,19 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label>NIP</label><input type="text" class="form-control" name="nip" placeholder="Masukkan NIP"
-                            autocomplete="off">
+                        <label>NIP</label><input type="text" class="form-control" name="nip" placeholder="Masukkan NIP" autocomplete="off">
                     </div>
                     <div class="form-group">
-                        <label>Nama</label><input type="text" class="form-control" name="nama"
-                            placeholder="Masukkan Nama" autocomplete="off">
+                        <label>Nama</label><input type="text" class="form-control" name="nama" placeholder="Masukkan Nama" autocomplete="off">
                     </div>
                     <div class="form-group">
-                        <label>Nomor Telepon</label><input type="text" class="form-control" name="nomor_telepon"
-                            placeholder="Masukkan Nomor Telepon" autocomplete="off">
+                        <label>Nomor Telepon</label><input type="text" class="form-control" name="nomor_telepon" placeholder="Masukkan Nomor Telepon" autocomplete="off">
                     </div>
                     <div class="form-group">
-                        <label>Email</label><input type="email" class="form-control" name="email"
-                            placeholder="Masukkan Email" autocomplete="off">
+                        <label>Email</label><input type="email" class="form-control" name="email" placeholder="Masukkan Email" autocomplete="off">
                     </div>
                     <div class="form-group">
-                        <label>Password</label><input type="password" class="form-control" name="password"
-                            placeholder="Masukkan Password" autocomplete="off">
+                        <label>Password</label><input type="password" class="form-control" name="password" placeholder="Masukkan Password" autocomplete="off">
                     </div>
                     <div class="form-group">
                         <label for="">Level Users</label>
@@ -90,20 +86,16 @@
                 <div class="modal-body">
                     <input type="hidden" class="id">
                     <div class="form-group">
-                        <label>NIP</label><input type="text" class="form-control" name="nip" placeholder="Masukkan NIP"
-                            autocomplete="off">
+                        <label>NIP</label><input type="text" class="form-control" name="nip" placeholder="Masukkan NIP" autocomplete="off">
                     </div>
                     <div class="form-group">
-                        <label>Nama</label><input type="text" class="form-control" name="nama"
-                            placeholder="Masukkan Nama" autocomplete="off">
+                        <label>Nama</label><input type="text" class="form-control" name="nama" placeholder="Masukkan Nama" autocomplete="off">
                     </div>
                     <div class="form-group">
-                        <label>Nomor Telepon</label><input type="text" class="form-control" name="nomor_telepon"
-                            placeholder="Masukkan Nomor Telepon" autocomplete="off">
+                        <label>Nomor Telepon</label><input type="text" class="form-control" name="nomor_telepon" placeholder="Masukkan Nomor Telepon" autocomplete="off">
                     </div>
                     <div class="form-group">
-                        <label>Email</label><input type="email" class="form-control" name="email"
-                            placeholder="Masukkan Email" autocomplete="off">
+                        <label>Email</label><input type="email" class="form-control" name="email" placeholder="Masukkan Email" autocomplete="off">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -140,45 +132,49 @@
 <script src="<?= base_url() ?>cdn/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="<?= base_url() ?>cdn/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script>
-$(document).ready(function() {
+    $(document).ready(function() {
 
-    function show() {
-        $('#data-dosen').DataTable().destroy();
-        $('#data-dosen').DataTable({
-            "deferRender": true,
-            "ajax": {
-                "url": base_url + "api/dosen",
-                "method": "POST",
-                "dataSrc": "data"
-            },
-            "columns": [{
-                    data: null,
-                    render: function(data, type, row, meta) {
-                        return meta.row + meta.settings._iDisplayStart + 1;
-                    }
+        function show() {
+            $('#data-dosen').DataTable().destroy();
+            $('#data-dosen').DataTable({
+                "deferRender": true,
+                "ajax": {
+                    "url": base_url + "api/dosen",
+                    "method": "POST",
+                    "dataSrc": "data"
                 },
-                {
-                    data: "nip"
-                },
-                {
-                    data: "nama"
-                },
-                {
-                    data: "nomor_telepon",
-                    render: function(data) {
-                        return '<a href="tel:' + data + '">' + data + '</a>';
-                    }
-                },
-                {
-                    data: "email",
-                    render: function(data) {
-                        return '<a href="mailto:' + data + '">' + data + '</a>';
-                    }
-                },
-                {
-                    data: null,
-                    render: function(data) {
-                        return `
+                "columns": [{
+                        data: null,
+                        render: function(data, type, row, meta) {
+                            return meta.row + meta.settings._iDisplayStart + 1;
+                        }
+                    },
+                    {
+                        data: "nip"
+                    },
+                    {
+                        data: "nama"
+                    },
+                    {
+                        data: "nomor_telepon",
+                        render: function(data) {
+                            return '<a href="tel:' + data + '">' + data + '</a>';
+                        }
+                    },
+                    {
+                        data: "jadwal",
+
+                    },
+                    {
+                        data: "email",
+                        render: function(data) {
+                            return '<a href="mailto:' + data + '">' + data + '</a>';
+                        }
+                    },
+                    {
+                        data: null,
+                        render: function(data) {
+                            return `
 							<div class="text-center">
 								<a 
 									class="btn btn-edit btn-primary btn-sm" 
@@ -211,71 +207,71 @@ $(document).ready(function() {
 								</button>
 							</div>
 							`;
+                        }
                     }
+                ]
+            })
+        }
+
+        show();
+
+        $(document).on('submit', 'form#tambah', function(e) {
+            e.preventDefault();
+            call('api/dosen/create', $(this).serialize()).done(function(req) {
+                if (req.error == true) {
+                    notif(req.message, 'error', true);
+                } else {
+                    notif(req.message, 'success');
+                    $('form#tambah [name]').val('');
+                    $('div#tambah').modal('hide');
+                    show();
                 }
-            ]
+            })
         })
-    }
 
-    show();
-
-    $(document).on('submit', 'form#tambah', function(e) {
-        e.preventDefault();
-        call('api/dosen/create', $(this).serialize()).done(function(req) {
-            if (req.error == true) {
-                notif(req.message, 'error', true);
-            } else {
-                notif(req.message, 'success');
-                $('form#tambah [name]').val('');
-                $('div#tambah').modal('hide');
-                show();
-            }
+        $(document).on('click', 'button.btn-edit', function() {
+            $('form#edit .id').val($(this).data('id'));
+            $('form#edit [name=nip]').val($(this).data('nip'));
+            $('form#edit [name=nama]').val($(this).data('nama'));
+            $('form#edit [name=nomor_telepon]').val($(this).data('nomor_telepon'));
+            $('form#edit [name=email]').val($(this).data('email'));
         })
-    })
 
-    $(document).on('click', 'button.btn-edit', function() {
-        $('form#edit .id').val($(this).data('id'));
-        $('form#edit [name=nip]').val($(this).data('nip'));
-        $('form#edit [name=nama]').val($(this).data('nama'));
-        $('form#edit [name=nomor_telepon]').val($(this).data('nomor_telepon'));
-        $('form#edit [name=email]').val($(this).data('email'));
-    })
-
-    $(document).on('submit', 'form#edit', function(e) {
-        e.preventDefault();
-        const id = $('form#edit .id').val();
-        call('api/dosen/update/' + id, $(this).serialize()).done(function(req) {
-            if (req.error == true) {
-                notif(req.message, 'error', true);
-            } else {
-                notif(req.message, 'success');
-                $('form#edit [name]').val('');
-                $('div#edit').modal('hide');
-                show();
-            }
+        $(document).on('submit', 'form#edit', function(e) {
+            e.preventDefault();
+            const id = $('form#edit .id').val();
+            call('api/dosen/update/' + id, $(this).serialize()).done(function(req) {
+                if (req.error == true) {
+                    notif(req.message, 'error', true);
+                } else {
+                    notif(req.message, 'success');
+                    $('form#edit [name]').val('');
+                    $('div#edit').modal('hide');
+                    show();
+                }
+            })
         })
-    })
 
-    $(document).on('click', 'button.btn-hapus', function() {
-        $('form#hapus .id').val($(this).data('id'));
-        $('form#hapus .nama').html($(this).data('nama'));
-    })
-
-    $(document).on('submit', 'form#hapus', function(e) {
-        e.preventDefault();
-        const id = $('form#hapus .id').val();
-        call('api/dosen/destroy/' + id).done(function(req) {
-            if (req.error == true) {
-                notif(req.message, 'error', true);
-            } else {
-                notif(req.message, 'success');
-                $('div#hapus').modal('hide');
-                show();
-            }
+        $(document).on('click', 'button.btn-hapus', function() {
+            $('form#hapus .id').val($(this).data('id'));
+            $('form#hapus .nama').html($(this).data('nama'));
         })
-    })
 
-})
+        $(document).on('submit', 'form#hapus', function(e) {
+            e.preventDefault();
+            const id = $('form#hapus .id').val();
+            call('api/dosen/destroy/' + id).done(function(req) {
+                if (req.error == true) {
+                    notif(req.message, 'error', true);
+                } else {
+                    notif(req.message, 'success');
+                    $('div#hapus').modal('hide');
+                    show();
+                }
+            })
+        })
+
+    })
 </script>
 <?php $this->app->endSection('script') ?>
 

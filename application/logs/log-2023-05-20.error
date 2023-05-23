@@ -1,0 +1,3 @@
+ERROR - 2023-05-20 00:01:16 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1332
+ERROR - 2023-05-20 00:01:16 --> Severity: Warning --> Invalid argument supplied for foreach() /home2/ela39087/demo.elaksi.com/system/core/Loader.php 1334
+ERROR - 2023-05-20 23:40:40 --> 404 Page Not Found: Coba/index
